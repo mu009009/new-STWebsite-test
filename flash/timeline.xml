@@ -1,0 +1,148 @@
+<content imagepath="extimages/timeline/">
+	
+	<item>
+		<image>oct_99.png</image>
+		<date><![CDATA[<span class='itemDate'>October '99</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Idea Hatches, Jack and Pres decide that good jobs with steady pay are overrated, Jack and Preston develop business plan.</span>]]></copy>
+	</item>
+	<item>
+		<image>jun_00a.png</image>
+		<date><![CDATA[<span class='itemDate'>June '00</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Technekes acquires first "real" client, Derivion, an e-payment  dot-com. Jack and Preston decline job offers from Rooster.com. Instead, make them the second "real" client, another dot-com.</span>]]></copy>
+	</item>
+	<item>
+		<image>jun_00b.png</image>
+		<date><![CDATA[<span class='itemDate'>June '00</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Jack installs server rack in the kitchen of his rented house. Power requirements are too great for the small house's old electrical system. Blows many fuses!</span>]]></copy>
+	</item>
+	<item>
+		<image>oct_00.png</image>
+		<date><![CDATA[<span class='itemDate'>October '00</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Technekes opens first "real" office. A loft apartment at the renovated Lance cracker plant near uptown Charlotte.</span>]]></copy>
+	</item>
+	<item>
+		<image>apr_01.png</image>
+		<date><![CDATA[<span class='itemDate'>April '01</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Rooster.com dies. Derivion is sold. Jack and Preston are left with no clients and no income!</span>]]></copy>
+	</item>
+	<item>
+		<image>oct_01.png</image>
+		<date><![CDATA[<span class='itemDate'>October '01</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Months of starvation ends with acquisition of first large, agriculture client. First invoice is a whopping $700!</span>]]></copy>
+	</item>
+	<item>
+		<image>aug_02.png</image>
+		<date><![CDATA[<span class='itemDate'>August '02</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Kristin Terdik joins our team to help oversee work with Lowe's and GE Capital.</span>]]></copy>
+	</item>
+	<item>
+		<image>dec_02.png</image>
+		<date><![CDATA[<span class='itemDate'>December '02</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Breaks the $1 million sales mark.</span>]]></copy>
+	</item>
+	<item>
+		<image>aug_03a.png</image>
+		<date><![CDATA[<span class='itemDate'>August '03</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Technekes moves to a 4,000 sq ft office at the Pattern Shop in the Cedar Street Design Center. Subleases from an architect who took on too much space. Technekes is a marketing company among a sea of interior designers!</span>]]></copy>
+	</item>
+	<item>
+		<image>aug_03b.png</image>
+		<date><![CDATA[<span class='itemDate'>August '03</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Ashley Williams joins as SVP, Director of Client Services.</span>]]></copy>
+	</item>
+	<item>
+		<image>nov_03.png</image>
+		<date><![CDATA[<span class='itemDate'>November '03</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Technekes lands its first animal health client, the biggest in the industry.</span>]]></copy>
+	</item>
+	<item>
+		<image>dec_02.png</image>
+		<date><![CDATA[<span class='itemDate'>December '04</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Breaks the $4 million sales mark.</span>]]></copy>
+	</item>
+	<!--<item>
+		<image>jan_05.png</image>
+		<date><![CDATA[<span class='itemDate'>January '05</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Technekes opens its own Customer Support Center and call center capability because it couldn't find any suppliers who believed in doing this sort of work right!</span>]]></copy>
+	</item>-->
+	<item>
+		<image>jan_05.png</image>
+		<date><![CDATA[<span class='itemDate'>January '05</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Unable to find suppliers to meet our best-in-class standards, Technekes opens its own Customer Support Center and Call Center at 1318 Dale St. in Raleigh. </span>]]></copy>
+	</item>
+	<item>
+		<image>jun_05.png</image>
+		<date><![CDATA[<span class='itemDate'>June '05</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Dale McKee joins Technekes as VP Client Development.</span>]]></copy>
+	</item>
+	<item>
+		<image>jul_06.png</image>
+		<date><![CDATA[<span class='itemDate'>July '06</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Technekes acquires its first pharmaceutical industry client. We were brought along when a key client contact transitioned from animal health to pharma. Became a preferred supplier within six months.</span>]]></copy>
+	</item>
+	<item>
+		<image>nov_06.png</image>
+		<date><![CDATA[<span class='itemDate'>November '06</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Scott Miner joins Technekes as Director of Creative Services and opens the Creative Services Department.</span>]]></copy>
+	</item>
+	<item>
+		<image>dec_06.png</image>
+		<date><![CDATA[<span class='itemDate'>December '06</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Kristin Terdik earns the first ever Technekes Top Gear Award. </span>]]></copy>
+	</item>
+	<item>
+		<image>jan_07.png</image>
+		<date><![CDATA[<span class='itemDate'>January '07</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Evolved our services model to begin intensive sales support activities for the country's largest financial services company.</span>]]></copy>
+	</item>
+	<item>
+		<image>dec_02.png</image>
+		<date><![CDATA[<span class='itemDate'>December '07</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Breaks the $6 million sales mark.</span>]]></copy>
+	</item>
+	<item>
+		<image>dec_07b.png</image>
+		<date><![CDATA[<span class='itemDate'>December '07</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Top Gear Award: Mike Lewis.</span>]]></copy>
+	</item>
+	<item>
+		<image>jun_08.png</image>
+		<date><![CDATA[<span class='itemDate'>June '08</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Steve Amedio assumes role of Chief Operating Officer to run day-to-day operations of the Technekes. Previously, Steve was a close consultant of Technekes' since 2001.</span>]]></copy>
+	</item>
+	<item>
+		<image>dec_02.png</image>
+		<date><![CDATA[<span class='itemDate'>December '08</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Breaks the $8 million sales mark.</span>]]></copy>
+	</item>
+	<item>
+		<image>dec_08b.png</image>
+		<date><![CDATA[<span class='itemDate'>December '08</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Top Gear Award: Diana Henderson.</span>]]></copy>
+	</item>
+	<item>
+		<image>may_09.png</image>
+		<date><![CDATA[<span class='itemDate'>May '09</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Technekes moves its Customer Care Center to Perimeter Park in Morrisville, NC. Acquires over 13,000 sq ft to accommodate significant growth in these operations.</span>]]></copy>
+	</item>
+	<item>
+		<image>dec_09a.png</image>
+		<date><![CDATA[<span class='itemDate'>December '09</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>We managed to grow 25% in the midst of the worst economic time in the US since the Great Depression. </span>]]></copy>
+	</item>
+	<item>
+		<image>dec_02.png</image>
+		<date><![CDATA[<span class='itemDate'>December '09</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Breaks the $12 million sales mark.</span>]]></copy>
+	</item>
+	<item>
+		<image>dec_09c.png</image>
+		<date><![CDATA[<span class='itemDate'>December '09</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Top Gear Award: Crystal Stallings.</span>]]></copy>
+	</item>
+	<item>
+		<image>mar_10.png</image>
+		<date><![CDATA[<span class='itemDate'>March '10</span>]]></date>
+		<copy><![CDATA[<span class='itemCopy'>Technekes moves Charlotte headquarters location to 10,000 sq ft location in South End.</span>]]></copy>
+	</item>
+</content>

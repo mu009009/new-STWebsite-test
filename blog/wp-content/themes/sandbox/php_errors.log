@@ -1,0 +1,2 @@
+[01-Sep-2011 04:00:43] PHP Fatal error:  Call to undefined function get_header() in D:\Ignition.NET\IgnitionWeb\technekes\webroot\blog\wp-content\themes\sandbox\index.php on line 1
+[24-Oct-2011 17:54:19] PHP Fatal error:  Call to undefined function get_header() in D:\Ignition.NET\IgnitionWeb\technekes\webroot\blog\wp-content\themes\sandbox\index.php on line 1

@@ -1,0 +1,167 @@
+html, body {
+	height : 100%;
+	margin : 0px;
+}
+
+body, td {
+	font-family : calibri, arial, helvetica, sans-serif;
+	font-size : 12px;
+}
+
+img {
+	border : none;
+}
+
+
+#siteContainer {
+	min-height : 100%;
+}
+
+#siteWidth {
+	width : 960px;
+	margin : 0px auto;
+}
+
+#welcome {
+	height : 49px;
+	font-size : 20px;
+}
+
+#welcome a {
+	text-decoration : none;
+	font-size : 14px;
+}
+
+#brandHeader {
+	height : 99px;
+	position : relative;
+	font-size : 24px;
+}
+
+#brandLogo {
+	position : absolute;
+	text-indent : -99999px;
+	outline : none;
+}
+
+.padding {
+	padding : 20px;
+	overflow : hidden;
+}
+
+#welcome .padding {
+	padding : 10px 20px;
+}
+
+#copyright {
+	font-size : 12px;
+	padding : 10px 20px;
+}
+
+footer .padding {
+	padding-right : 10px;
+	padding-left : 10px;
+}
+
+.footerBox {
+	width : 290px;
+	float : left;
+	margin : 0px 10px;
+}
+
+.footerBox ul.pdf {
+	list-style : none;
+	margin : 0px;
+	padding : 0px;
+}
+
+.footerBox ul.pdf li a {
+	display : block;
+	padding-left : 30px;
+	height : 21px;
+	margin-bottom : 5px;
+	background : url(../images/icon_pdf.png) no-repeat left center;
+	text-decoration : none;
+	line-height : 20px;
+}
+
+#infoBox {
+	width : 420px;
+	float : left;
+	line-height : 1.2em;
+	font-size : 14px;
+}
+
+#infoBoxBorder {
+	border-style : solid;
+	border-width : 10px;
+	padding : 4px;
+}
+
+#supportBox {
+	float : right;
+	width : 481px;
+}
+
+#repPhotoContainer {
+	position : relative;
+}
+
+#repPhotoContainer img {
+	display : block;
+}
+
+#repPhotoContainer .overlay {
+	z-index : 10;
+	position : absolute;
+	bottom : 0px;
+	right : 0px;
+	font-style : italic;
+}
+
+#repPhotoContainer .overlay cite {
+	text-align : right;
+	margin-top : 5px;
+	font-size : 10px;
+	display : block;
+}
+
+#supportRibbon {
+	background : url(../images/support_ribbon_bg.png) no-repeat;
+	width : 481px;
+	height : 95px;
+}
+
+#supportRibbon .padding {
+	padding : 10px;
+}
+
+.supportRibbonItem {
+	float : left;
+	font-size : 9px;
+	color : #878383;
+	font-family : arial;
+	text-align : center;
+	margin : 0px 2px;
+}
+
+.suppportRibbonPhone {
+	padding : 10px;
+	background : #3D3D3D;
+	color : #fff;
+	text-align : center;
+	font-size : 14px;
+	margin-left : 10px;
+}
+
+.suppportRibbonPhone div {
+	font-size : 22px;
+}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#simplemodal-container {padding : 10px; height:400px; width:500px;}
+.simplemodal-wrap {background : #fff;}
+#simplemodal-data { padding : 10px;}

@@ -1,0 +1,1 @@
+[30-Jan-2015 23:24:51] PHP Fatal error:  Call to undefined function plugin_dir_url() in D:\Ignition.NET\IgnitionWeb\technekes\webroot\blog\wp-content\plugins\akismet\akismet.php on line 32

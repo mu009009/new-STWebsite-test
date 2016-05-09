@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600italic,700italic);
+body {
+  margin: 0 0 100px 0;
+  height: 100%; }
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #7fcbff;
+  background: -moz-radial-gradient(center, ellipse cover, #7fcbff 0%, #27a9f9 40%, #0086c7 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #7fcbff 0%, #27a9f9 40%, #0086c7 100%);
+  background: radial, ellipse center, #7fcbff 0%, #27a9f9 40%, #0086c7 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7fcbff', endColorstr='#0086c7',GradientType=1 ); }
+
+.logo {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 100;
+  max-width: 300px;
+  margin-bottom: 20px; }
+
+.gear_snow {
+  position: fixed;
+  width: 100%;
+  display: block; }
+
+.container {
+  position: absolute;
+  width: 100%;
+  padding-top: 50px;
+  z-index: 999999; }
+  .container h1 {
+    position: relative;
+    z-index: 100;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.2;
+    color: white;
+    width: 75%;
+    max-width: 800px;
+    margin: 0 auto 10px;
+    text-align: center; }
+    @media screen and (max-width: 400px) {
+      .container h1 {
+        font-size: 50px; } }
+  .container h2 {
+    font-family: "Mountains of Christmas", "RockSalt", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    color: white;
+    width: 75%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; }
+  .container .content {
+    width: 600px;
+    padding: 8px;
+    position: relative;
+    z-index: 9999999;
+    background: white;
+    margin: 25px auto 0;
+    border-radius: 5px; }
+    @media screen and (max-width: 700px) {
+      .container .content {
+        padding: 8px;
+        width: 400px; } }
+    @media screen and (max-width: 545px) {
+      .container .content {
+        width: 300px; } }
+    @media screen and (max-width: 400px) {
+      .container .content {
+        width: 250px; } }
+    .container .content iframe {
+      margin: 0 auto;
+      display: block;
+      width: 600px;
+      height: 337px; }
+      @media screen and (max-width: 700px) {
+        .container .content iframe {
+          width: 400px;
+          height: 221px; } }
+      @media screen and (max-width: 545px) {
+        .container .content iframe {
+          width: 300px;
+          height: 169px; } }
+      @media screen and (max-width: 400px) {
+        .container .content iframe {
+          width: 250px;
+          height: 141px; } }
+    .container .content p {
+      font-size: 14px;
+      font-family: Helvetica, Arial, sans-serif; }
+  .container .action {
+    width: 618px;
+    margin: 5px auto;
+    position: relative;
+    z-index: 100; }
+    @media screen and (max-width: 700px) {
+      .container .action {
+        width: 418px; } }
+    @media screen and (max-width: 545px) {
+      .container .action {
+        width: 318px; } }
+    @media screen and (max-width: 400px) {
+      .container .action {
+        width: 267px; } }
+
+#footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  max-height: 50px;
+  width: 100%;
+  background: white;
+  z-index: 1;
+  overflow: visible; }
+  #footer img {
+    position: fixed;
+    bottom: 0; }
+    #footer img.snow-right {
+      right: 0; }
+      @media screen and (max-width: 1000px) {
+        #footer img.snow-right {
+          right: -100px; } }
+    #footer img.snow-left {
+      left: 0; }
+
+/* IE 6 */
+* html #footer {
+  position: absolute;
+  top: expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px'); }

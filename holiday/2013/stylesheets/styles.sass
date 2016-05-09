@@ -1,0 +1,137 @@
+@import "../../bourbon/bourbon"
+
+=bp($max-width)
+  @media screen and (max-width: $max-width)
+    @content
+  
+
+@font-face
+  font-family: 'Mountains of Christmas'
+  src: url('../fonts/MountainsofChristmas-webfont.eot')
+  src: url('../fonts/MountainsofChristmas-webfont.eot?iefix') format('eot'), url('../fonts/MountainsofChristmas-webfont.woff') format('woff'), url('../fonts/MountainsofChristmas-webfont.ttf') format('truetype'), url('../fonts/MountainsofChristmas-webfont.svg#webfont') format('svg')
+
+@font-face
+  font-family: 'Luckiest Guy'
+  src: url('../fonts/Luckiest-Guy.eot')
+  src: url('../fonts/Luckiest-Guy.eot?iefix') format('eot'), url('../fonts/Luckiest-Guy.woff') format('woff'), url('../fonts/Luckiest-Guy.ttf') format('truetype'), url('../fonts/Luckiest-Guy.svg#webfont') format('svg')
+
+body
+  margin: 0 0 100px 0
+  height: 100%
+
+canvas
+  position: absolute
+  top: 0
+  left: 0
+  background-image: linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%)
+  background-image: -o-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%)
+  background-image: -moz-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%)
+  background-image: -webkit-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%)
+  background-image: -ms-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%)  
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(105,173,212)), color-stop(0.84, rgb(23,82,145)))
+.container
+  position: absolute
+  width: 100%
+  padding-top: 50px
+  z-index: 999999
+  h1
+    font-family: 'Luckiest Guy', 'Helsinki', Helvetica, Arial, sans-serif
+    font-size: 60px
+    line-height: 60px
+    color: #fff
+    width: 75%
+    max-width: 800px
+    margin: 0 auto 10px
+    text-align: center
+    +bp(400px)
+      font-size: 50px
+  h2
+    font-family: 'Mountains of Christmas', 'RockSalt', Helvetica, Arial, sans-serif
+    font-size: 30px
+    line-height: 35px
+    color: #fff
+    width: 75%
+    max-width: 800px
+    margin: 0 auto
+    text-align: center
+  .content
+    width: 600px
+    padding: 8px
+    +bp(700px)
+      padding: 8px
+      width: 400px
+    +bp(545px)
+      width: 300px
+    +bp(400px)
+      width: 250px
+    background: #fff
+    margin: 25px auto 0
+    border-radius: 5px
+    iframe
+      margin: 0 auto
+      display: block
+      width: 600px
+      height: 337px
+      +bp(700px)
+        width: 400px
+        height: 221px
+      +bp(545px)
+        width: 300px
+        height: 169px
+      +bp(400px)
+        width: 250px
+        height: 141px
+    p
+      font-size: 14px
+      font-family: Helvetica, Arial, sans-serif
+  .action
+    width: 618px
+    margin: 5px auto
+    +bp(700px)
+      width: 418px
+    +bp(545px)
+      width: 318px
+    +bp(400px)
+      width: 267px
+#footer 
+  position: fixed
+  left: 0px
+  bottom: 0px
+  max-height: 50px
+  width: 100%
+  background: #fff
+  z-index: 1
+  overflow: visible
+  img
+    position: relative
+    top: -78px
+    &.snow-right
+      text-align: right
+      +bp(907px)
+        width: 400px
+        top: -60px
+    &.snow-left
+      +bp(907px)
+        width: 300px
+        top: -58px
+  img.santa
+    position: absolute
+    top: -160px
+    right: 2%
+    width: 250px
+    +bp(600px)
+      width: 200px
+      top: -120px
+      right: -20px
+  img.trees
+    position: absolute
+    top: -80px
+    left: 2%
+    +bp(400px)
+      display: none
+
+
+/* IE 6 */
+* html #footer 
+  position: absolute
+  top: expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px')

@@ -1,0 +1,123 @@
+/* Santura */
+
+body {
+	background : #605146;	
+}
+
+a {
+	color : #2E6369;
+}
+
+#siteContainer {
+	background : url(images/container_bg.png) repeat-y top center;
+}
+
+#welcome {
+	background : url(images/welcome_bg.jpg) no-repeat top center;
+}
+
+#brandHeader {
+	background : url(images/brand_header_bg.jpg) no-repeat top center;
+}
+
+#brandHeader .repName {
+	color : #DE8026;
+	font-weight : bold;
+}
+
+#brandHeader .siteName {
+	color : #2E6369;
+	font-weight : bold;
+}
+
+#brandLogo {
+	top : 30px;
+	right : 20px;
+	background : url(images/brand_logo.png) no-repeat;
+	width : 206px;
+	height : 34px;
+}
+
+
+#siteContent {
+	background : url(images/content_bg.jpg) no-repeat;
+}
+
+
+footer {
+	display : block;
+	background : #493D35 url(images/footer_bg.jpg) no-repeat top center;
+}
+
+#copyright {
+	color : #605146;
+	background : url(images/copyright_bg.jpg) no-repeat top center;
+}
+
+.footerBox, .footerBox a {
+	color : #B9B9B9;
+}
+
+.footerBox h2 {
+	color : #fff;
+	font-size : 16px;
+	border-bottom : 1px solid #565656;
+	padding : 0px;
+	padding-bottom : 10px;
+	margin : 0px;
+	margin-bottom : 10px;
+	font-weight : normal;
+}
+
+#infoBox {
+	background : #fff;
+	color : #484848;
+}
+
+#infoBoxBorder {
+	border-color : #DEDBC8;
+}
+
+
+
+#repPhotoContainer .overlay {
+	width : 165px;
+	background : url(images/overlay_bg.png);
+	color : #fff;
+}
+
+#repPhotoContainer .overlay .padding {
+	padding : 10px;
+}
+
+ul.links {
+	list-style : none;
+	margin : 10px 0px;
+	padding : 0px;
+}
+
+ul.links li a {
+	display : block;
+	padding-left : 18px;
+	height : 13px;
+	margin-bottom : 5px;
+	background : url(images/link_bullet.png) no-repeat left center;
+	text-decoration : none;
+	line-height : 13px;
+}
+
+
+
+#simplemodal-container { background : #D4D1BF url(../images/global/modal_border.png) ;}
+
+#simplemodal-container a.modalCloseImg {
+	background:url(images/modal_close.png) no-repeat;
+	width:53px; 
+	height:15px; 
+	display:inline; 
+	z-index:3200; 
+	position:absolute; 
+	top:15px; 
+	right:15px; 
+	cursor:pointer;
+}
