@@ -2,3 +2,7 @@
 
 blog/wp-content/uploads/**
 images/header/technekes_headlines.psd
+*.sw*
+build/
+.s3_sync
+.sass-cache/
