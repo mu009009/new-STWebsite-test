@@ -1,2 +1,4 @@
-//= require 'jquery'
-//= require 'bootstrap'
+//= require jquery
+//= require bootstrap-sprockets
+//= require tree .
+
