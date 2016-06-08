@@ -23,6 +23,14 @@ configure :development do
   activate :livereload
 end
 
+activate :external_pipeline,
+	 name: :webpack,
+	 command: build? ?
+	 "./node_modules/webpack/bin/webpack.js --bail -p" :
+	 "./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
+	 source: ".tmp/dist",
+	 latency: 1
+
 ###
 # Helpers
 ###
@@ -38,6 +46,10 @@ helpers do
     "(" + rand.to_s[2..4].gsub(/0/) { 4 } + ") " + rand.to_s[2..4] + "-" + rand.to_s[2..5]
   end
 end
+
+set :css_dir, 'assets'
+set :js_dir, 'assets'
+set :images_dir, 'assets/images'
 
 # Build-specific configuration
 configure :build do

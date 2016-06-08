@@ -1,27 +1,24 @@
 !!!
 %html
   %head
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}/
+    %meta{:content => 'IE=edge', 'http-equiv' => 'X-UA-Compatible'}/
+    %meta{:charset => 'utf-8'}/
+    %meta{:content => 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no', :name => 'viewport'}/
 
-    %title= current_page.data.title || "Middleman"
-    / BEN FIX THIS
-    %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
-    %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"}
-    = stylesheet_link_tag :application
+    %title= current_page.data.title || "Technekes"
+    = stylesheet_link_tag 'index.bundle'
 
-  %body{:class => page_classes}
+  %body{class: page_classes}
     %nav.navbar.navbar-fixed-top.navbar-light.bg-faded
       .container
-        %a.navbar-brand{:href => "#"} TECHNEKES
+        %a.navbar-brand{href: '#'} TECHNEKES
         .pull-xs-right
           %button.btn.navbar-toggler.navbar-toggle.collapsed{"data-target" => "#menuModal", "data-toggle" => "modal", :type => "button"}☰
 
-    = partial "layouts/fullscreennav"
+    = partial 'layouts/fullscreennav'
 
     = yield
     %br
-    = partial "layouts/getintouch"
+    = partial 'layouts/getintouch'
 
-    = javascript_include_tag :all
+    = javascript_include_tag 'index.bundle'

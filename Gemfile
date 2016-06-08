@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 # Middleman Gems
-gem 'middleman', '>= 4.0.0'
+gem 'middleman', '>= 4.1.9'
 gem "middleman-sprockets", "~> 4.0.0.rc"
 gem 'middleman-livereload'
 gem 'mime-types'
