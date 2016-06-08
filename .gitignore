@@ -6,3 +6,6 @@ images/header/technekes_headlines.psd
 build/
 .s3_sync
 .sass-cache/
+node_modules/
+.tmp/
+dist/
