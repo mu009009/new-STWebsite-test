@@ -8,11 +8,10 @@
     %title= current_page.data.title || "Technekes"
 
   %body{class: page_classes}
-    %nav.navbar.navbar-fixed-top.navbar-light.bg-faded
-      .container
-        %a.navbar-brand{href: '#'} TECHNEKES
-        .pull-xs-right
-          %button.btn.navbar-toggler.navbar-toggle.collapsed{"data-target" => "#menuModal", "data-toggle" => "modal", :type => "button"}☰
+    %nav.navbar.navbar-fixed-top.navbar-light
+      = image_tag("technekes.png")
+      .pull-xs-right
+        %button.btn.navbar-toggler.navbar-toggle.collapsed{"data-target" => "#menuModal", "data-toggle" => "modal", :type => "button"}☰
 
     = partial 'layouts/fullscreennav'
 
