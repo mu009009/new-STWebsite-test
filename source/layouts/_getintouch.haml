@@ -1,56 +1,28 @@
 .container
-  %nav.navbar.navbar-light.bg-faded
-    %a{"data-target" => ".bd-example-modal-lg", "data-toggle" => "modal"}
-      %h4 Get in Touch
-
-
-.modal.fade.bd-example-modal-lg{"aria-hidden" => "true", "aria-labelledby" => "myLargeModalLabel", :role => "dialog", :tabindex => "-1"}
-  .modal-dialog.modal-lg
-    .modal-content
-      .modal-header
-        .container
-          %p.pull-left Get In Touch
-          %button.close.navbar-toggler.btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
-            %span{"aria-hidden" => "true"} &times;
+  .getintouch-bar.navbar
+    .row
+    .contact-expander-text Get in Touch.
+    .pull-xs-right
+      %button.btn.btn-block.btn-seconday{"data-target" => "#getintouch-expand", "data-toggle" => "collapse", :type => "button"}
+        expand
+        %i.fa.fa-arrow-up{"aria-hidden" => "true"}
+  #getintouch-expand.collapse
+    .container.getintouch-form
       .row
-        %br
-        .col-md-10.col-md-offset-1
-          .col-md-6
-            .row
-              .col-md-6
-                = image_tag 'placeholderbox.png', class: 'mapplaceholder'
-              .col-md-6
-                %h6 US HQ
-                %p
-                  1431 West Moorehead st.
-                  Charlotte, NC 28202
-                  555 5555
-                  555 5555
-            %br
-            .row
-              .col-md-6
-                = image_tag 'placeholderbox.png', class: 'mapplaceholder'
-              .col-md-6
-                %h6 Technekes Canada
-                %p
-                  1431 West Moorehead st.
-                  Charlotte, NC 28202
-                  555 5555
-                  555 5555
-          .col-md-6
-            .container
-              %form
-                %fieldset.form-group
-                  %label{:for => "exampleInputEmail1"} Name
-                  %input#exampleInputEmail1.form-control{:placeholder => "Name", :type => "email"}
-                %fieldset.form-group
-                  %label{:for => "exampleInputPassword1"} Email
-                  %input#exampleInputPassword1.form-control{:placeholder => "Email", :type => "password"}
-                %fieldset.form-group
-                  %label{:for => "exampleInputPassword1"} Phone
-                  %input#exampleInputPassword1.form-control{:placeholder => "Phone", :type => "password"}
-                %fieldset.form-group
-                  %label{:for => "exampleInputPassword1"} Comments
-                  %input#exampleInputPassword1.form-control{:placeholder => "Comments", :type => "password"}
-
-                %button.btn.btn-block.btn-primary{:type => "submit"} Send
+        .col-md-3
+          .subhead-header Contact form
+        .col-md-5.col-md-offset-1
+          %form
+            %fieldset.form-group
+              %label Name
+              %input.form-control{:placeholder => "Name", :type => "email"}
+            %fieldset.form-group
+              %label Email
+              %input.form-control{:placeholder => "Email", :type => "password"}
+            %fieldset.form-group
+              %label Comments
+              %textarea.form-control{:placeholder => "Lorem ispum dolor sit amet.", :type => "textarea", rows: "3"}
+        .col-md-3
+          %button.btn.btn-sm.btn-seconday{:type => "submit"}
+            Send
+            %i.fa.fa-arrow-right{"aria-hidden" => "true"}
