@@ -7,16 +7,25 @@
     .col-lg-6.header-body-copy
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend feugiat tincidunt. Duis in justo nisi. Aliquam sed erat massa. Donec placerat nibh quis sapien gravida, nec venenatis erat tincidunt. Praesent sit amet dapibus magna. Proin sit amet mi enim. Cras hendrerit mauris non ipsum suscipit dapibus eget a tortor.
 
-.container
+.container.content-section.timeline-section
   .row
-    .col-md-12
-      %p Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
-      %p Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
+    .col-md-4
+      .subhead Timeline
+      .highlighted-content-box
+        .highlighted-content A Brief History
+      .body-copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a.
+      %br
+      .body-copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a.
+    .col-md-8
+      = partial 'layouts/timeline'
 
-  .jumbotron.jumbotron-fluid
-    .container
-      %h3.display-4 Leaders
-      %p.lead Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
+.container.content-section
+  .row
+    .col-md-8
+      .subhead The Team
+      .highlighted-content-box
+        .highlighted-content Leaders
+      .body-copy Jack and Preston have continued to expand the leadership team here at Technekes as we evolve into new industries, new geographies, and new offerings.
 .container
   .row
     .col-md-4
@@ -39,20 +48,37 @@
       =image_tag 'placeholderjoe.jpg', class: 'placeholder'
     .col-md-4
       =image_tag 'placeholderjoe.jpg', class: 'placeholder'
+.grey
+  .container.content-section
+    .row
+      .col-md-4
+        .subhead giving back
+        .highlighted-content-box
+          .highlighted-content Community Involvement
+      .col-md-8
+        .body-copy Part of Technekes' culture is rolling up our sleeves and getting involved and making a difference. There are many ways we do this and many groups we work with - both related and unrelated to business.
 
-  .jumbotron.jumbotron-fluid
-    .container
-      %h3.display-4 Community
-      %p.lead Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
 .container
+  .row.content-section
+    .col-md-4
+    .col-md-8
+      .highlighted-content-box
+        .subhead Red shoe shootout
+      .body-copy Our own Jack Ross is a nationally ranked shooter, so helping him found and sponsor the Ronald McDonald House of Charlotte Red Shoe Shootout has been a natural fit for us. Since the first Shootout in 2011, Technekes has also provided organizers, teams, volunteers, and of course, one heckuva sharpshooter.
+      %a.charity-link{href: "#"} Visit site
+
+  .row.content-section
+    .col-md-4
+    .col-md-8
+      .highlighted-content-box
+        .subhead all-in to fight cancer
+      .body-copy When a mutual friend was diagnosed with cancer, Steve and Scott banded some friends together to found All-In To Fight Cancer, which hosts Texas Hold'em fundraisers around the country, with all proceeds going back to the local cancer community of healthcare providers, families, and survivors.
+      %a.charity-link{href: "#"} Visit site
+
+.jumbotron
+  .subhead-header headquarters
+  .highlighted-content-box
+    .highlighted-content Home Sweet Home
   .row
-    .col-md-6
-      %p Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
-    .col-md-3
-      %h4
-        Our Charitable Partners
-      %ul
-        %li All in to Fight Cancer
-        %li Ronald McDonald House
-        %li Red Shoe Shootout
-        %li Other
+    .col-md-6.header-body-copy
+      %p founded and headquartered in Charlotte, Technekes also has a presence in Canada. In addition, we have many team members spread across the country in key markets.
