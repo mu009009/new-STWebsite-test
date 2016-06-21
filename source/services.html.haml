@@ -6,25 +6,51 @@
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend feugiat tincidunt. Duis in justo nisi. Aliquam sed erat massa. Donec placerat nibh quis sapien gravida, nec venenatis erat tincidunt. Praesent sit amet dapibus magna. Proin sit amet mi enim. Cras hendrerit mauris non ipsum suscipit dapibus eget a tortor.
     .col-lg-6.header-body-copy
       %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend feugiat tincidunt. Duis in justo nisi. Aliquam sed erat massa. Donec placerat nibh quis sapien gravida, nec venenatis erat tincidunt. Praesent sit amet dapibus magna. Proin sit amet mi enim. Cras hendrerit mauris non ipsum suscipit dapibus eget a tortor.
-
-
 .container
   .row
-    .col-md-4
+    .col-md-7
+      .subhead How we help
+      .highlighted-content-box
+        .highlighted-content What Problem do you need solved?
+      .body-copy We compiled the most common problems our clients approach us to solve, and broke down our services into each category. Feel free to filter through the problems and discover the different ways Technekes can help you solve them.
+      .subhead I need to...
+      %button.btn.btn-primary{:type => "button"} show all services
+
+.container.content-section
+  .row
+    .col-xs-3.col-md-2
       = image_tag "placeholderbox.png", class: "placeholder"
-    .col-md-4
+    .col-xs-3.col-md-2
       = image_tag "placeholderbox.png", class: "placeholder"
-    .col-md-4
+    .col-xs-3.col-md-2
+      = image_tag "placeholderbox.png", class: "placeholder"
+    .col-xs-3.col-md-2
+      = image_tag "placeholderbox.png", class: "placeholder"
+    .col-xs-3.col-md-2
+      = image_tag "placeholderbox.png", class: "placeholder"
+    .col-xs-3.col-md-2
       = image_tag "placeholderbox.png", class: "placeholder"
   %br
   .row
-    .col-md-4
+    .col-xs-3.col-md-2
       = image_tag "placeholderbox.png", class: "placeholder"
-    .col-md-4
+    .col-xs-3.col-md-2
       = image_tag "placeholderbox.png", class: "placeholder"
-    .col-md-4
+    .col-xs-3.col-md-2
       = image_tag "placeholderbox.png", class: "placeholder"
-  %br
+    .col-xs-3.col-md-2
+      = image_tag "placeholderbox.png", class: "placeholder"
+    .col-xs-3.col-md-2
+      = image_tag "placeholderbox.png", class: "placeholder"
+    .col-xs-3.col-md-2
+      = image_tag "placeholderbox.png", class: "placeholder"
+.container.content-section
+  .row
+    .col-md-7
+      .subhead What we know
+      .highlighted-content-box
+        .highlighted-content Capabilities
+      .body-copy Technekes is filled with talented folks from a range of different fields of work. These are the areas in which we thrive and build upon every day. Click through to read more about each opportunity.
   .row
     .col-md-4
       = image_tag "placeholderbox.png", class: "placeholder"
@@ -32,98 +58,74 @@
       = image_tag "placeholderbox.png", class: "placeholder"
     .col-md-4
       = image_tag "placeholderbox.png", class: "placeholder"
-
-.container
-  %h3.display-4.text-xs-center.p-y-3 Key Industry Verticals
   .row
-    .col-md-6
-      %h5 Agriculture
-      %p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-      %h6 Loyalty, Incentive and Process Outsourcing
-      %ul
-        %li Competitve Response Programs
-        %li Grower/End User Payment Programs
-        %li Channel Payment Programs
-        %li Complaint Handling
-      %button.btn.btn-secondary{:type => "button"} Case Studies
+    .col-md-4
+      = image_tag "placeholderbox.png", class: "placeholder"
+    .col-md-4
+      = image_tag "placeholderbox.png", class: "placeholder"
+    .col-md-4
+      = image_tag "placeholderbox.png", class: "placeholder"
+.grey
+  .container.content-section
+    .row
+      .col-md-7
+        .subhead Who we work with
+        .highlighted-content-box
+          .highlighted-content Key Industry Verticals
+    .row
+      .col-md-6
+        .card.card-block
+          %h4.card-title Agriculture & Life Sciences
+          %p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a. Nulla fermentum urna a erat porttitor suscipit. Donec molestie arcu eu urna scelerisque lobortis. Ut libero tortor, ultricies.
+          .highlighted-content-box
+            .subhead-header subhead example
+          %ul
+            %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            %li Lorem ipsum...
+            %li Lorem ipsum...
+            %li Lorem ipsum...
+      .col-md-6
+        .card.card-block
+          %h4.card-title B2B
+          %p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a. Nulla fermentum urna a erat porttitor suscipit. Donec molestie arcu eu urna scelerisque lobortis. Ut libero tortor, ultricies.
+          .highlighted-content-box
+            .subhead-header subhead example
+          %ul
+            %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            %li Lorem ipsum...
+            %li Lorem ipsum...
+            %li Lorem ipsum...
+    .row
+      .col-md-6
+        .card.card-block
+          %h4.card-title Pharmaceuticals & Medical Devices
+          %p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a. Nulla fermentum urna a erat porttitor suscipit. Donec molestie arcu eu urna scelerisque lobortis. Ut libero tortor, ultricies.
+          .highlighted-content-box
+            .subhead-header subhead example
+          %ul
+            %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            %li Lorem ipsum...
+            %li Lorem ipsum...
+            %li Lorem ipsum...
+      .col-md-6
+        .card.card-block
+          %h4.card-title Manufacturing, Distribution & Construction
+          %p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a. Nulla fermentum urna a erat porttitor suscipit. Donec molestie arcu eu urna scelerisque lobortis. Ut libero tortor, ultricies.
+          .highlighted-content-box
+            .subhead-header subhead example
+          %ul
+            %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            %li Lorem ipsum...
+            %li Lorem ipsum...
+            %li Lorem ipsum...
 
-    .col-md-6
-      %h5 Pharma/Med Device
-      %p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-      %h6 Loyalty, Incentive and Process Outsourcing
-      %ul
-        %li Competitve Response Programs
-        %li Grower/End User Payment Programs
-      %h6 Platform Solutions
-      %ul
-        %li RxMatters P&P Platform
-      %button.btn.btn-secondary{:type => "button"} Case Studies
-
+.container.content-section
   .row
-    .col-md-6
-      %h5 Industrial/Construction
-      %p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-      %h6 Subhead
-      %ul
-        %li Bullet
-        %li Bullet
-        %li Bullet
-      %button.btn.btn-secondary{:type => "button"} Case Studies
-
-    .col-md-6
-      %h5 B2B
-      %p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-      %h6 Subhead
-      %ul
-        %li Bullet
-        %li Bullet
-        %li Bullet
-      %button.btn.btn-secondary{:type => "button"} Case Studies
-
-.container
-  %h3.display-4.text-xs-center.p-y-3 Platform Solutions
-  .container
+    .col-md-7
+      .subhead Our products
+      .highlighted-content-box
+        .highlighted-content Platform Solutions
   .row
-    .col-md-6
-      %h4 RepOnCall
-      %p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-      %p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-
-    .col-md-6
-      %h5 Features
-      %ul
-        %li Feature 1
-        %li Feature 2
-        %li Feature 3
-        %li Feature 4
-        %li Feature 5
-
-  .row
-    .col-md-6
-      %h4 PasSPort
-      %p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-      %p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-
-    .col-md-6
-      %h5 Features
-      %ul
-        %li Feature 1
-        %li Feature 2
-        %li Feature 3
-        %li Feature 4
-        %li Feature 5
-
-  .row
-    .col-md-6
-      %h4 RewardStation
-      %p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo
-      %p Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-
-    .col-md-6
-      %h5 Features
-      %ul
-        %li Feature 1
-        %li Feature 2
-        %li Feature 3
-        %li Feature 4
-        %li Feature 5
+    .col-md-4
+    .col-md-4
+    .col-md-4
