@@ -10,9 +10,8 @@ var definePlugin = new webpack.DefinePlugin({
 var siteConfig = {
   entry: {
     index: [
-			'bootstrap-loader',
 			'font-awesome-webpack',
-      './source/assets/stylesheets/index.sass',
+			'bootstrap-loader',
 			'./source/assets/javascripts/index.js'
     ]
   },
@@ -33,8 +32,6 @@ var siteConfig = {
         exclude: /node_modules|\.tmp|vendor/,
         loader: 'babel-loader',
         query: {
-          // cacheDirectory: true,
-          // presets: ['es2015', 'stage-0', 'babel-preset-react', 'react']
           presets: ['es2015', 'stage-0']
         },
       },
@@ -46,16 +43,12 @@ var siteConfig = {
         loader: "imports?this=>window!exports?window.Modernizr"
       },
 
-      // Load SASS
-      {
-        test: /.*\.sass$/,
-        loader: ExtractTextPlugin.extract(
-          "css-loader!sass-loader?sourceMap&includePaths[]=" + __dirname + "/node_modules"
-        )
-      },
+			// Load styles
+			{ test: /\.s*ss$/, loaders: [ 'style', 'css', 'postcss', 'sass' ] },
+			{ test: /\.css$/, loaders: [ 'style', 'css', 'postcss' ] },
 
-      // Load plain-ol' vanilla CSS
-			{test: /\.css$/, loader: "style-loader!css-loader"},
+			// Load jQuery for Bootstrap 4
+			{ test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' },
 
 			// Fonts
 			{
@@ -72,7 +65,6 @@ var siteConfig = {
   plugins: [
     definePlugin,
     new Clean(['.tmp']),
-		new ExtractTextPlugin("assets/index.bundle.css"),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",

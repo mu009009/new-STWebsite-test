@@ -1,0 +1,28 @@
+$break-xs: 476px
+$break-sm: 638px
+$break-med: 773px
+$break-lg: 991px
+$break-xl: 992px
+$break-home-sm: 421px
+
+.jumbotron
+  height: 600px
+  background-color: $tks-blue
+  border-radius: 0
+  @media screen and (min-width: $break-xl)
+    padding-top: 250px
+  @media screen and (max-width: $break-lg)
+    padding-top: 200px
+  @media screen and (max-width: $break-med)
+    padding-top: 150px
+  @media screen and (max-width: $break-sm)
+    padding-top: 150px
+    height: 750px
+  @media screen and (max-width: $break-xs)
+    height: 900px
+
+.home-header
+  text-align: center
+  height: 800px
+  @media screen and (max-width: $break-home-sm)
+    height: 900px

@@ -1,4 +1,4 @@
-import Bootstrap from 'bootstrap'
+require('bootstrap-loader');
 
 import Instafeed from 'instafeed.js'
 

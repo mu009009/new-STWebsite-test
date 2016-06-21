@@ -3,48 +3,49 @@
   .modal-dialog
     .modal-content
       .modal-header
-        .container
-          %button.close.navbar-toggler.btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
-            %span{"aria-hidden" => "true"} &times;
-        %h4.modal-title.text-center
-          %span.sr-only main navigation
+        = image_tag("technekes.png")
+        %i.fa.fa-instagram.social-icons-nav{"aria-hidden" => "true"}
+        %i.fa.fa-facebook-official.social-icons-nav{"aria-hidden" => "true"}
+        %i.fa.fa-twitter.social-icons-nav{"aria-hidden" => "true"}
+        %i.fa.fa-linkedin-square.social-icons-nav{"aria-hidden" => "true"}
+
+        %button.close.navbar-toggler.btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
+          %i.fa.fa-times{"aria-hidden" => "true"}
       .modal-body.text-center
         .container
           .row
-            .col-md-4
-              %h1
-                = link_to 'Create Demand', '/#.html'
-              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie fringilla nibh vel tempor. Duis vitae consequat massa, nec dignissim sapien. Morbi eu libero in erat egestas rutrum eu et felis. Ut lacinia a eros vel imperdiet. Aliquam suscipit malesuada turpis, et efficitur ligula blandit quis. In a suscipit velit. Donec tristique mauris non orci ornare, vel viverra ligula tristique.
-            .col-md-4
-              %h1
-                = link_to 'Services', '/services.html'
-              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie fringilla nibh vel tempor. Duis vitae consequat massa, nec dignissim sapien. Morbi eu libero in erat egestas rutrum eu et felis. Ut lacinia a eros vel imperdiet. Aliquam suscipit malesuada turpis, et efficitur ligula blandit quis. In a suscipit velit. Donec tristique mauris non orci ornare, vel viverra ligula tristique.
-            .col-md-4
-              %h1
-                = link_to 'Partners', '/partners.html'
-              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie fringilla nibh vel tempor. Duis vitae consequat massa, nec dignissim sapien. Morbi eu libero in erat egestas rutrum eu et felis. Ut lacinia a eros vel imperdiet. Aliquam suscipit malesuada turpis, et efficitur ligula blandit quis. In a suscipit velit. Donec tristique mauris non orci ornare, vel viverra ligula tristique.
+            .col-md-4.nav-card
+              .subhead-nav-box
+                .subhead-header services
+              .nav-headline
+                = link_to 'Capabilities', '/services.html'
+            .col-md-4.nav-card
+              .subhead-nav-box
+                .subhead-header partners
+              .nav-headline
+                = link_to 'Our Friends', '/partners.html'
+            .col-md-4.nav-card
+              .subhead-nav-box
+                .subhead-header about us
+              .nav-headline
+                = link_to 'The Company', '/about.html'
           .row
-            .col-md-4
-              %h1
-                = link_to 'About Us', '/about.html'
-              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie fringilla nibh vel tempor. Duis vitae consequat massa, nec dignissim sapien. Morbi eu libero in erat egestas rutrum eu et felis. Ut lacinia a eros vel imperdiet. Aliquam suscipit malesuada turpis, et efficitur ligula blandit quis. In a suscipit velit. Donec tristique mauris non orci ornare, vel viverra ligula tristique.
-            .col-md-4
-              %h1
-                = link_to 'Join Us', '/joinus.html'
-              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie fringilla nibh vel tempor. Duis vitae consequat massa, nec dignissim sapien. Morbi eu libero in erat egestas rutrum eu et felis. Ut lacinia a eros vel imperdiet. Aliquam suscipit malesuada turpis, et efficitur ligula blandit quis. In a suscipit velit. Donec tristique mauris non orci ornare, vel viverra ligula tristique.
-            .col-md-4
-              %h1
-                = link_to 'News & Resources', '/#.html'
-              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie fringilla nibh vel tempor. Duis vitae consequat massa, nec dignissim sapien. Morbi eu libero in erat egestas rutrum eu et felis. Ut lacinia a eros vel imperdiet. Aliquam suscipit malesuada turpis, et efficitur ligula blandit quis. In a suscipit velit. Donec tristique mauris non orci ornare, vel viverra ligula tristique.
-          .row
-            .col-md-4
-              %h3 @Instagram
-            .col-md-4
-              %h3 @Twitter
-            .col-md-4
-              %h3 @Facebook
-            .col-md-4
-              %h3 @LinkedIn
+            .col-md-4.nav-card
+              .subhead-nav-box
+                .subhead-header join us
+              .nav-headline
+                = link_to 'Careers', '/joinus.html'
+            .col-md-4.nav-card
+              .subhead-nav-box
+                .subhead-header contact
+              .nav-headline
+                = link_to 'Visit Us', '/#.html'
+            .col-md-4.nav-card
+              .subhead-nav-box
+                .subhead-header news & resources
+              .nav-headline
+                = link_to 'Updates & Events', '/#.html'
+
     / /.modal-content
   / /.modal-dialog
 / /.fullscreen
