@@ -31,16 +31,4 @@
       %a.uppercase-link{:href => "/"}Open in maps
       .body-copy-bold P:519.588.6131
     .col-md-6.col-md-offset-2
-      #map.span12
-
-
-:javascript
-  var map;
-
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 35.228897, lng: -80.865287},
-      zoom: 8
-    });
-  }
-%script{:async => "", :defer => "", :src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyD68PlOLwQpf2izRgMYazxyRh0eGgj_az4&callback=initMap"}
+      #map
