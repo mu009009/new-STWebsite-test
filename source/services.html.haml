@@ -19,29 +19,8 @@
         .highlighted-content What Problem do you need solved?
       .body-copy We compiled the most common problems our clients approach us to solve, and broke down our services into each category. Feel free to filter through the problems and discover the different ways Technekes can help you solve them.
       .subhead I need to...
-      %button.btn.btn-primary{type: "button"} show all services
 .container.content-section
-  #gridFilters.filter-button-group
-    %ol
-      %li
-        %button.btn.btn-link{ data: { filter: '.newMarket' } }
-          introduce my product to a new market.
-      %li
-        %button.btn.btn-link{ data: { filter: '.reach' } }
-          extend the reach of my sales force.
-      %li
-        %button.btn.btn-link{ data: { filter: '.leads' } }
-          deliver more qualified leads to my sales team.
-      %li
-        %button.btn.btn-link{ data: { filter: '.funnel' } }
-          grow the funnel.
-      %li
-        %button.btn.btn-link{ data: { filter: '.gap' } }
-          close the gap in field/territory coverage.
   #gridContainer
-    - data.capabilities.each do |cap|
-      .grid-item{ class: "#{cap.categories}" }
-        = cap.name
 
 .container.content-section
   .row
