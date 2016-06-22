@@ -1,39 +1,44 @@
-var webpack = require('webpack');
+const webpack = require('webpack');
 // var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var Clean = require('clean-webpack-plugin');
-
-var definePlugin = new webpack.DefinePlugin({
+const Clean = require('clean-webpack-plugin');
+const path = require('path');
+const definePlugin = new webpack.DefinePlugin({
   __DEVELOPMENT__: JSON.stringify(JSON.parse(process.env.BUILD_DEVELOPMENT || false)),
   __PRODUCTION__: JSON.stringify(JSON.parse(process.env.BUILD_PRODUCTION || false))
 });
 
-var siteConfig = {
+const siteConfig = {
   entry: {
-    index: [
+		vendor: [
 			'font-awesome-webpack',
-			'bootstrap-loader',
-			'./source/assets/javascripts/index.js'
-    ]
+			'bootstrap-loader'],
+		index: './source/assets/javascripts/index.js'
   },
 
   resolve: {
-    root: __dirname + '/source/assets/javascripts',
+		extensions: ['', '.js', '.jsx'],
+		root: __dirname + '/source/assets/javascripts',
+		// root: [path.join(__dirname, './src')]
+		alias: {
+				'masonry': 'masonry-layout',
+				'isotope': 'isotope-layout'
+		} 
   },
+	// resolve: {
+		// root: __dirname + '/source/assets/javascripts',
+  // },
 
   output: {
     path: __dirname + '/.tmp/dist',
-    filename: 'assets/[name].bundle.js',
+    filename: 'assets/[name].bundle.js'
   },
 
   module: {
-    loaders: [
+		loaders: [
       {
         test: /source\/assets\/javascripts\/.*\.js$/,
         exclude: /node_modules|\.tmp|vendor/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'stage-0']
-        },
+        loader: 'babel',
       },
 
       { test: require.resolve("jquery"), loader: "expose?$" },
@@ -71,8 +76,8 @@ var siteConfig = {
 			"window.jQuery": "jquery",
 			"Tether": 'tether',
 			"window.Tether": "tether"
-    }),
-  ],
+    })
+  ]
 };
 
 module.exports = [ siteConfig ];
