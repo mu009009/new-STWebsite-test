@@ -2,43 +2,38 @@
   .subhead-header Join Us
   .header-headline Careers
   .row
-    .col-lg-6.header-body-copy
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend feugiat tincidunt. Duis in justo nisi. Aliquam sed erat massa. Donec placerat nibh quis sapien gravida, nec venenatis erat tincidunt. Praesent sit amet dapibus magna. Proin sit amet mi enim. Cras hendrerit mauris non ipsum suscipit dapibus eget a tortor.
-    .col-lg-6.header-body-copy
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend feugiat tincidunt. Duis in justo nisi. Aliquam sed erat massa. Donec placerat nibh quis sapien gravida, nec venenatis erat tincidunt. Praesent sit amet dapibus magna. Proin sit amet mi enim. Cras hendrerit mauris non ipsum suscipit dapibus eget a tortor.
-
-.container
-  .row
-    .col-md-12
-      %p Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
-      %p Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.
-
-.container
+    .col-md-6.header-body-copy
+      %p We are always insterested in learning how we might grow our team.
+.container.content-section
   .row
     .col-md-4
-      = image_tag 'placeholderbox.png', class: 'placeholder'
-    .col-md-4
-      = image_tag 'placeholderbox.png', class: 'placeholder'
-    .col-md-4
-      = image_tag 'placeholderbox.png', class: 'placeholder'
-  %br
-  .row
-    .col-md-4
-      = image_tag 'placeholderbox.png', class: 'placeholder'
-    .col-md-4
-      = image_tag 'placeholderbox.png', class: 'placeholder'
-    .col-md-4
-      = image_tag 'placeholderbox.png', class: 'placeholder'
-  %br
-  .row
-    .col-md-4
-      = image_tag 'placeholderbox.png', class: 'placeholder'
-    .col-md-4
-      = image_tag 'placeholderbox.png', class: 'placeholder'
-    .col-md-4
-      = image_tag 'placeholderbox.png', class: 'placeholder'
+      .highlighted-content-box
+        .subhead Open positions
+      .body-copy While the available positions change, Technekes wants innovative, fun team members on its team. Check out our listings and apply if you want to work in a great environment.
+      %br
+      .body-copy Don't see the position you're looking for?
+      .body-copy
+        Feel free to email us at
+        %a.link{:href => "/"}jobs@technekes.com
+        and let us know why you'd be a good fit.
+      %br
+      .body-copy
+        Also visit our sister company,
+        %a.link{:href => "/"}Xceleration
+        , to check out other available positions.
 
 
-.container
+.grey
+  .container.content-section
+    .row
+      .col-md-4
+        .highlighted-content-box
+          .subhead equal opportunity employer
+      .col-md-8
+        .body-copy Technekes values a diverse combination of ideas, perspectives, and cultures. As such, Technekes offers equal opportunity opportunities without regard to race, color, gender, religion, age, nationality, social or ethnic origin, sexual orientation, gender identity or expression, marital status, pregnancy, disability, veteran status or any other characteristic protected by law.
+#instafeed
+.container.content-section
   .row
-    #instafeed
+    %button.btn.btn-social{:type => "button"}
+      %i.fa.fa-instagram.social-icons{"aria-hidden" => "true"}
+      technekes_llc
