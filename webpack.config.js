@@ -12,7 +12,8 @@ const siteConfig = {
 		vendor: [
 			'font-awesome-webpack',
 			'bootstrap-loader'],
-		index: './source/assets/javascripts/index.js'
+		index: './source/assets/javascripts/index.js',
+		services: './source/assets/javascripts/components/services.js'
   },
   resolve: {
 		extensions: ['', '.js', '.jsx'],
