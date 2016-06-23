@@ -19,9 +19,13 @@ class Services extends Component {
 	}
 	render() {
 		return (
-			<div>
-				<FilterList onFilterSelect={this.onFilterSelect.bind(this)} />
-				<ServicesGrid services={serviceItems} selectedFilter={this.state.selectedFilter} />
+			<div className="row">
+				<div className="col-xl-4">
+					<FilterList onFilterSelect={this.onFilterSelect.bind(this)} />
+				</div>
+				<div className="col-xl-7">
+					<ServicesGrid services={serviceItems} selectedFilter={this.state.selectedFilter} />
+				</div>
 			</div>
 		);
 	}

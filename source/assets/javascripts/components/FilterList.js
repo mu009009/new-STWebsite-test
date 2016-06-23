@@ -3,7 +3,6 @@ import React from 'react';
 const FilterList = ({ onFilterSelect }) => {
 	return (
 		<div>
-			<button onClick={() => onFilterSelect('ALL')} className="btn btn-primary">show all services</button>
 			<ol>
 				<li>
 					<button onClick={() => onFilterSelect('NEW_MARKET')} className="btn btn-link">introduce my product to a new market.</button>
@@ -21,6 +20,7 @@ const FilterList = ({ onFilterSelect }) => {
 					<button onClick={() => onFilterSelect('GAP')} className="btn btn-link">close the gap in field/territory coverage.</button>
 				</li>
 			</ol>
+			<button onClick={() => onFilterSelect('ALL')} className="btn btn-primary">show all services</button>
 		</div>
 	)
 }
