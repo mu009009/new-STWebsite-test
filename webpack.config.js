@@ -19,10 +19,6 @@ const siteConfig = {
 		extensions: ['', '.js', '.jsx'],
 		root: __dirname + '/source/assets/javascripts',
 		// root: [path.join(__dirname, './src')]
-		alias: {
-				'masonry': 'masonry-layout',
-				'isotope': 'isotope-layout'
-		} 
   },
 	// resolve: {
 		// root: __dirname + '/source/assets/javascripts',

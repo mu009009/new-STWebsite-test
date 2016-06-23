@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
-import AbsoluteGrid from 'react-absolute-grid';
-import FilterList from './FilterList';
-import ServicesGridItem from './ServicesGridItem';
 
-var serviceItems = [
-  {key: 1, name: 'Data Management', sort: 0, filtered: 0, categories: ['ALL', 'FUNNEL']},
-  {key: 2, name: 'Data Hygiene', sort: 1, filtered: 0, categories: ['ALL', 'FUNNEL']},
-  {key: 3, name: 'Analytics', sort: 2, filtered: 0, categories: ['ALL', 'FUNNEL']},
-  {key: 4, name: 'IT Integration', sort: 3, filtered: 0, categories: ['ALL', 'FUNNEL']},
-  {key: 5, name: 'Targeting', sort: 4, filtered: 0, categories: ['ALL', 'FUNNEL']},
-  {key: 6, name: 'CRM', sort: 5, filtered: 0, categories: ['ALL', 'FUNNEL']},
-];
+import FilterList from './FilterList';
+import ServicesGrid from './ServicesGrid';
+import ServiceItems from '../data/ServiceItems';
+
+const serviceItems = ServiceItems;
 
 class Services extends Component {
 	constructor(props) {
@@ -27,9 +21,7 @@ class Services extends Component {
 		return (
 			<div>
 				<FilterList onFilterSelect={this.onFilterSelect.bind(this)} />
-				<AbsoluteGrid
-					items={serviceItems}
-					displayObject={(<ServicesGridItem {...serviceItems} />)} />
+				<ServicesGrid services={serviceItems} selectedFilter={this.state.selectedFilter} />
 			</div>
 		);
 	}
