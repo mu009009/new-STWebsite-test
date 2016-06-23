@@ -1,5 +1,3 @@
-require('bootstrap-loader');
-
 import Instafeed from 'instafeed.js'
 
     var userFeed = new Instafeed({
