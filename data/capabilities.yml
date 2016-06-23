@@ -1,0 +1,24 @@
+- name: Data Management
+  categories: 
+    - new-market
+    - reach
+- name: Data Hygiene
+  categories:
+    - leads
+    - funnel
+- name: Analytics
+  categories:
+    - gap
+    - new-market
+- name: IT Integration
+  categories:
+    - leads
+    - gap
+- name: Targeting
+  categories:
+    - funnel
+    - reach
+- name: CRM
+  categories:
+    - new-market
+    - gap

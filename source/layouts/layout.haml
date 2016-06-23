@@ -21,4 +21,8 @@
     = partial 'layouts/getintouch'
     = partial 'layouts/footer'
 
+    = javascript_include_tag 'commons.js'
+    = javascript_include_tag 'vendor.bundle'
     = javascript_include_tag 'index.bundle'
+    - if current_page.data.js_include
+      = javascript_include_tag current_page.data.js_include
