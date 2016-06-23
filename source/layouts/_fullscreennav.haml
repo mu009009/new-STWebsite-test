@@ -3,14 +3,16 @@
   .modal-dialog
     .modal-content
       .modal-header
-        = image_tag("technekes.png")
-        %i.fa.fa-instagram.social-icons-nav{"aria-hidden" => "true"}
-        %i.fa.fa-facebook-official.social-icons-nav{"aria-hidden" => "true"}
-        %i.fa.fa-twitter.social-icons-nav{"aria-hidden" => "true"}
-        %i.fa.fa-linkedin-square.social-icons-nav{"aria-hidden" => "true"}
-
-        %button.close.navbar-toggler.btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
-          %i.fa.fa-times{"aria-hidden" => "true"}
+        .container.nav-header-box
+          = image_tag("technekes.png")
+          .right
+            .social.hidden-sm-down
+              %i.fa.fa-instagram.social-icons-nav{"aria-hidden" => "true"}
+              %i.fa.fa-facebook-official.social-icons-nav{"aria-hidden" => "true"}
+              %i.fa.fa-twitter.social-icons-nav{"aria-hidden" => "true"}
+              %i.fa.fa-linkedin-square.social-icons-nav{"aria-hidden" => "true"}
+            %button.close-btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
+              %i.fa.fa-times{"aria-hidden" => "true"}
       .modal-body.text-center
         .container
           .row
