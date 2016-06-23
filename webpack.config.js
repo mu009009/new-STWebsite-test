@@ -14,7 +14,6 @@ const siteConfig = {
 			'bootstrap-loader'],
 		index: './source/assets/javascripts/index.js'
   },
-
   resolve: {
 		extensions: ['', '.js', '.jsx'],
 		root: __dirname + '/source/assets/javascripts',
@@ -72,7 +71,8 @@ const siteConfig = {
 			"window.jQuery": "jquery",
 			"Tether": 'tether',
 			"window.Tether": "tether"
-    })
+    }),
+		new webpack.optimize.CommonsChunkPlugin("assets/commons.js")
   ]
 };
 
