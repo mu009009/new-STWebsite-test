@@ -6,7 +6,9 @@ title: Welcome to Middleman
   .container
     .subhead-header-box
       .subhead-header Put Simply
-    .header-headline We Create Demand
+    .header-headline
+      We Create Demand<sup>&reg;</sup>
+
     .row
       .col-md-6.col-md-offset-3
         .header-info Technekes is a sales and marketing company that creates demand for our clients.
@@ -17,12 +19,14 @@ title: Welcome to Middleman
   .subhead-box
     .subhead Who We Are
   .row
-    .col-md-10.col-md-offset-1
-      .highlighted-content When our founders gathered around a kitchen table more than 16 years ago, they wanted to combine their skills of marketing savvy and data analysis to boost marketing efforts and increase sales for Technekes' clients.
-  .row
     .col-md-8.col-md-offset-2
+      .highlighted-content
+        When our founders gathered around a kitchen table more than 16 years ago, they wanted to combine their skills of marketing savvy and data analysis to boost marketing efforts and increase sales for Technekes' clients.
+  .row
+    .col-md-6.col-md-offset-3
       .body-copy Fast forward to today - the team has grown, the tools have changed, and the speed has changed, yet the Technekes team comes to work every day to create demand for our clients.
   %button.btn.btn-primary{:type => "button"} Learn more about us
+
 .grey
   .container.text-xs-center.content-section
     .subhead-box
@@ -40,16 +44,25 @@ title: Welcome to Middleman
         .body-copy really... when they need to create demand.
 
     %button.btn.btn-primary{:type => "button"} see our services
-.jumbotron
+.jumbotron.quote-box
   .row
-    .col-md-6.col-md-offset-3
-      .highlighted-content
-        "For marketing programs to yield positive results and deliver return you expect on investment, there needs to be an ongoing commitment to data management."
+    .col-md-8.col-md-offset-2
+      .big-quote
+        &ldquo;For marketing programs to yield positive results and deliver return you expect on investment, there needs to be an ongoing commitment to data management.&rdquo;
+      .quote-attribute
+        &mdash; Dun & Bradstreet,
+        .quote-source The B2B Marketing Data Report 2016
 .container.text-xs-center.content-section
-  .subhead-box
-    .subhead company news
   .row
-    .col-md-6.col-md-offset-3
+    .col-md-12
+      .subhead-box
+        .subhead Recent Posts
+      #rss-feeds
+      %button.btn.btn-primary{:type => "button"} see all news
 
-
-  %button.btn.btn-primary{:type => "button"} see all news
+#instafeed
+.container.content-section
+  .row
+    %button.btn.btn-social{:type => "button"}
+      %i.fa.fa-instagram.social-icons{"aria-hidden" => "true"}
+      technekes_llc
