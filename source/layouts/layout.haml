@@ -9,9 +9,10 @@
 
   %body{class: page_classes}
     %nav.navbar.navbar-fixed-top.navbar-light
-      = image_tag("technekes.png")
-      .pull-xs-right
-        %button.btn.navbar-toggler.navbar-toggle.collapsed{"data-target" => "#menuModal", "data-toggle" => "modal", :type => "button"}☰
+      .container.nav-header-box
+        = image_tag "technekes.png", class: "tks-logo"
+        .pull-xs-right
+          %button.open-btn{"data-target" => "#menuModal", "data-toggle" => "modal", :type => "button"}☰
 
     = partial 'layouts/fullscreennav'
 
