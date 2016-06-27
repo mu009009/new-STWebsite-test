@@ -18,7 +18,6 @@ js_include: 'services.bundle'
       .highlighted-content-box
         .highlighted-content What Problem do you need solved?
       .body-copy We compiled the most common problems our clients approach us to solve, and broke down our services into each category. Feel free to filter through the problems and discover the different ways Technekes can help you solve them.
-      .subhead I need to...
 .container.content-section
   #gridContainer
 
@@ -29,20 +28,28 @@ js_include: 'services.bundle'
       .highlighted-content-box
         .highlighted-content Capabilities
       .body-copy Technekes is filled with talented folks from a range of different fields of work. These are the areas in which we thrive and build upon every day. Click through to read more about each opportunity.
-  .row
-    .col-md-4
-      = image_tag "placeholderbox.png", class: "placeholder"
-    .col-md-4
-      = image_tag "placeholderbox.png", class: "placeholder"
-    .col-md-4
-      = image_tag "placeholderbox.png", class: "placeholder"
-  .row
-    .col-md-4
-      = image_tag "placeholderbox.png", class: "placeholder"
-    .col-md-4
-      = image_tag "placeholderbox.png", class: "placeholder"
-    .col-md-4
-      = image_tag "placeholderbox.png", class: "placeholder"
+  .row.capabilities-row
+    .col-md-3.col-xs-12.col-sm-6
+      .icon-box
+        = image_tag "capabilities/demand-generation.png", class: "capabilities-icon center-block"
+        = image_tag "capabilities/demand-generation-color.png", class: "capabilities-icon center-block"
+      .what-we-know-title Demand Generation
+    .col-md-3.col-xs-12.col-sm-6
+      .icon-box
+        = image_tag "capabilities/incentive-loyalty_program-mgmt.png", class: "capabilities-icon center-block"
+        = image_tag "capabilities/incentive-loyalty_program-mgmt-color.png", class: "capabilities-icon center-block"
+      .what-we-know-title Incentive/Loyalty Programs
+    .col-md-3.col-xs-12.col-sm-6
+      .icon-box
+        = image_tag "capabilities/marketing_sales-technology.png", class: "capabilities-icon center-block"
+        = image_tag "capabilities/marketing_sales-technology-color.png", class: "capabilities-icon center-block"
+      .what-we-know-title Sales & Marketing Technology
+    .col-md-3.col-xs-12.col-sm-6
+      .icon-box
+        = image_tag "capabilities/teleservices.png", class: "capabilities-icon center-block"
+        = image_tag "capabilities/teleservices-color.png", class: "capabilities-icon center-block"
+      .what-we-know-title Teleservices
+
 .grey
   .container.content-section
     .row
@@ -51,51 +58,59 @@ js_include: 'services.bundle'
         .highlighted-content-box
           .highlighted-content Key Industry Verticals
     .row
-      .col-md-6
-        .card.card-block
-          %h4.card-title Agriculture & Life Sciences
-          %p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a. Nulla fermentum urna a erat porttitor suscipit. Donec molestie arcu eu urna scelerisque lobortis. Ut libero tortor, ultricies.
-          .highlighted-content-box
-            .subhead-header subhead example
-          %ul
-            %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            %li Lorem ipsum...
-            %li Lorem ipsum...
-            %li Lorem ipsum...
-      .col-md-6
-        .card.card-block
-          %h4.card-title B2B
-          %p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a. Nulla fermentum urna a erat porttitor suscipit. Donec molestie arcu eu urna scelerisque lobortis. Ut libero tortor, ultricies.
-          .highlighted-content-box
-            .subhead-header subhead example
-          %ul
-            %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            %li Lorem ipsum...
-            %li Lorem ipsum...
-            %li Lorem ipsum...
+      .col-lg-6.col-lg-offset-0.col-sm-12.col-md-8.col-md-offset-2
+        .industry-box#agriculture
+          .industry-header
+            .industry-title Agriculture & Life Sciences
+            .industry-copy Technekes' first clients were in the Agriculture & Life Sciences business. To this day, we work with leading companies who sell in the industry and work closely in the seasonal business that is agriculture. Many of our early clients are still working with Technekes today.
+          .bullets
+            .highlighted-content-box
+              .subhead-white subhead example
+            %ul.industry-list
+              %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              %li Lorem ipsum...
+              %li Lorem ipsum...
+              %li Lorem ipsum...
+      .col-lg-6.col-lg-offset-0.col-sm-12.col-md-8.col-md-offset-2
+        .industry-box#b2b
+          .industry-header
+            .industry-title B2B
+            .industry-copy Over the years, our experience in other industries has translated well into other fields where our clients have a defined list of targets. In these examples, ranging from retail to financial services to other verticals, we have provided strategy and outsourced support on initiatives and campaigns.
+          .bullets
+            .highlighted-content-box
+              .subhead-white subhead example
+            %ul.industry-list
+              %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              %li Lorem ipsum...
+              %li Lorem ipsum...
+              %li Lorem ipsum...
     .row
-      .col-md-6
-        .card.card-block
-          %h4.card-title Pharmaceuticals & Medical Devices
-          %p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a. Nulla fermentum urna a erat porttitor suscipit. Donec molestie arcu eu urna scelerisque lobortis. Ut libero tortor, ultricies.
-          .highlighted-content-box
-            .subhead-header subhead example
-          %ul
-            %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            %li Lorem ipsum...
-            %li Lorem ipsum...
-            %li Lorem ipsum...
-      .col-md-6
-        .card.card-block
-          %h4.card-title Manufacturing, Distribution & Construction
-          %p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a. Nulla fermentum urna a erat porttitor suscipit. Donec molestie arcu eu urna scelerisque lobortis. Ut libero tortor, ultricies.
-          .highlighted-content-box
-            .subhead-header subhead example
-          %ul
-            %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            %li Lorem ipsum...
-            %li Lorem ipsum...
-            %li Lorem ipsum...
+      .col-lg-6.col-lg-offset-0.col-sm-12.col-md-8.col-md-offset-2
+        .industry-box#pharma
+          .industry-header
+            .industry-title Pharmaceuticals & Medical Devices
+            .industry-copy Technekes started in the healthcare industry ten years ago. A lot has changed since then. What we have learned along the way is that our team has become more more crucial for our client's business. In many cases, the top performing sales reps for our clients are actually Technekes' employees.
+          .bullets
+            .highlighted-content-box
+              .subhead-white subhead example
+            %ul.industry-list
+              %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              %li Lorem ipsum...
+              %li Lorem ipsum...
+              %li Lorem ipsum...
+      .col-lg-6.col-lg-offset-0.col-sm-12.col-md-8.col-md-offset-2
+        .industry-box#manu
+          .industry-header
+            .industry-title Manufacturing, Distribution & Construction
+            .industry-copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a. Nulla fermentum urna a erat porttitor suscipit. Donec molestie arcu eu urna scelerisque lobortis. Ut libero tortor, ultricies.
+          .bullets
+            .highlighted-content-box
+              .subhead-white subhead example
+            %ul.industry-list
+              %li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              %li Lorem ipsum...
+              %li Lorem ipsum...
+              %li Lorem ipsum...
 
 .container.content-section
   .row

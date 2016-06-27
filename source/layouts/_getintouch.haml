@@ -1,7 +1,7 @@
 .container
   .getintouch-bar.navbar
     .row
-    .contact-expander-text Get in Touch.
+    .contact-expander-text Get in Touch
     .pull-xs-right
       %button.btn.btn-block.btn-seconday{"data-target" => "#getintouch-expand", "data-toggle" => "collapse", :type => "button"}
         expand
@@ -15,14 +15,14 @@
           %form
             %fieldset.form-group
               %label Name
-              %input.form-control{:placeholder => "Name", :type => "email"}
+              %input.form-control{ :type => "text" }
             %fieldset.form-group
               %label Email
-              %input.form-control{:placeholder => "Email", :type => "password"}
+              %input.form-control{ :type => "email" }
             %fieldset.form-group
               %label Comments
-              %textarea.form-control{:placeholder => "Lorem ispum dolor sit amet.", :type => "textarea", rows: "3"}
+              %textarea.form-control{ :type => "textarea", rows: "3" }
         .col-md-3
-          %button#getintouch-btn.btn.btn-sm.btn-seconday{:type => "submit"}
+          %button#getintouch-btn.btn.btn-sm.btn-seconday{ :type => "submit" }
             Send
             %i.fa.fa-arrow-right{"aria-hidden" => "true"}

@@ -67,11 +67,18 @@ $Montserrat: 'Montserrat', serif
   font-size: 18px
   text-transform: uppercase
 
+.subhead-white
+  font-family: $Montserrat
+  color: $white
+  font-size: 18px
+
+
 .highlighted-content
-  font-size: 30px
-  opacity: 0.75
+  font-size: 26px
+  opacity: 1.0
   font-family: $Lora
   margin-bottom: 20px
+  font-weight: bold
 
 .highlighted-content-saturated
   font-size: 30px
@@ -87,10 +94,12 @@ $Montserrat: 'Montserrat', serif
 
 .highlighted-content-box
   position: relative
+  margin-bottom: 40px
   ::after
     content: ""
     display: block
     width: 80px
+    padding-bottom: 5px
     border-bottom: 2px solid #ff3301
 
 .resource-name
@@ -122,10 +131,16 @@ $Montserrat: 'Montserrat', serif
 
 .contact-expander-text
   font-family: $Lora
-  font-size: 30px
+  font-size: 28px
   color: #ffffff
   font-style: italic
   display: inline-block
+
+.numeral
+  font-family: $Montserrat
+  font-size: 14px
+  color: $tks-red
+  margin: 5px 10px
 
 .legal
   font-family: $Montserrat
@@ -135,11 +150,63 @@ $Montserrat: 'Montserrat', serif
   display: inline-block
   margin-top: 10px
 
+.blue-title
+  font-family: $Lora
+  font-size: 30px
+  color: $tks-blue
+
+.big-quote
+  font-family: $Lora
+  font-size: 38px
+  font-weight: bold
+  color: $white
+  text-align: center
+  letter-spacing: 1px
+  margin-bottom: 20px
+
+.industry-title
+  font-family: $Lora
+  font-size: 32px
+  font-weight: bold
+  color: $white
+  letter-spacing: 1px
+  margin-bottom: 20px
+
+.industry-copy
+  font-family: $Lora
+  font-size: 17px
+  color: $white
+
+.quote-attribute
+  font-family: $Lora
+  font-size: 20px
+  color: $white
+  text-align: center
+  opacity: .7
+
+.quote-source
+  font-family: $Lora
+  font-size: 20px
+  color: $white
+  text-align: center
+  font-style: italic
+  display: inline-block
+
 .timeline-title
   font-family: $Lora
 
+.industry-list
+  color: $white
+  list-style: disc
+  font-family: $Lora
+  margin-top: 10px
+
 ul
   list-style-type: none
+
+sup
+  font-size: 15px
+  top: -3.5em
 
 .uppercase-link
   font-family: $Montserrat
@@ -150,3 +217,24 @@ ul
 .link
   font-family: $Montserrat
   color: $tks-blue
+
+.capabilities-link
+  font-family: $Lora
+  color: $tks-blue
+
+.capabilities-numeral
+  font-family: $Montserrat
+  font-size: 14px
+  color: $tks-red
+  display: inline-block
+  margin-right: 10px
+  margin-top: 1px
+
+.what-we-know-title
+  font-family: $Lora
+  font-size: 26px
+  color: $tks-blue
+  text-align: center
+
+.filter-header
+  margin-bottom: 20px
