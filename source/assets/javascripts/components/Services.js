@@ -23,7 +23,7 @@ class Services extends Component {
 				<div className="col-xl-4">
 					<FilterList onFilterSelect={this.onFilterSelect.bind(this)} />
 				</div>
-				<div className="col-xl-7">
+				<div className="col-xl-7 grid">
 					<ServicesGrid services={serviceItems} selectedFilter={this.state.selectedFilter} />
 				</div>
 			</div>
