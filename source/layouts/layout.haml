@@ -27,13 +27,3 @@
     = javascript_include_tag 'index.bundle'
     - if current_page.data.js_include
       = javascript_include_tag current_page.data.js_include
-
-:javascript
-  $(window).scroll(function() {
-  if ($(this).scrollTop() > 1){  
-      $('header').addClass("sticky");
-    }
-    else{
-      $('header').removeClass("sticky");
-    }
-  });
