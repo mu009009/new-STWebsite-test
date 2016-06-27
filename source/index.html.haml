@@ -25,7 +25,8 @@ title: Welcome to Middleman
   .row
     .col-md-6.col-md-offset-3
       .body-copy Fast forward to today - the team has grown, the tools have changed, and the speed has changed, yet the Technekes team comes to work every day to create demand for our clients.
-  %button.btn.btn-primary{:type => "button"} Learn more about us
+  %a.centered-link{ href: "/about.html" }
+    %button.btn.btn-primary{:type => "button"} Learn more about us
 
 .grey
   .container.text-xs-center.content-section
@@ -43,7 +44,8 @@ title: Welcome to Middleman
         %br
         .body-copy really... when they need to create demand.
 
-    %button.btn.btn-primary{:type => "button"} see our services
+    %a.centered-link{ href: "/services.html" }
+      %button.btn.btn-primary{:type => "button"} see our services
 .jumbotron.quote-box
   .row
     .col-md-8.col-md-offset-2
@@ -58,11 +60,13 @@ title: Welcome to Middleman
       .subhead-box
         .subhead Recent Posts
       #rss-feeds
-      %button.btn.btn-primary{:type => "button"} see all news
+      %a.centered-link{ href: "/news.html" }
+        %button.btn.btn-primary{:type => "button"} All News at Medium
 
 #instafeed
 .container.content-section
   .row
-    %button.btn.btn-social{:type => "button"}
-      %i.fa.fa-instagram.social-icons{"aria-hidden" => "true"}
-      technekes_llc
+    %a.centered-link{ href: "https://www.instagram.com/technekes_llc/", target: "_blank" }
+      %button.btn.btn-social{:type => "button"}
+        %i.fa.fa-instagram.insta-link-icon{"aria-hidden" => "true"}
+        technekes_llc
