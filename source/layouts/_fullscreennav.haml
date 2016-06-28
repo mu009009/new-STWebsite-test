@@ -1,18 +1,28 @@
 / FULLSCREEN MODAL (.fullscreen)
-#menuModal.modal.fade.fullscreen{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+#menuModal.modal.fade.fullscreen{'aria-hidden' => 'true',
+  'aria-labelledby' => 'myModalLabel', role: 'dialog', tabindex: '-1'}
   .modal-dialog
     .modal-content
       .modal-header
         .container.nav-header-box
-          = image_tag("technekes.png")
+          = image_tag('technekes.png')
           .right
-            .social.hidden-sm-down
-              %i.fa.fa-instagram.social-icons-nav{"aria-hidden" => "true"}
-              %i.fa.fa-facebook-official.social-icons-nav{"aria-hidden" => "true"}
-              %i.fa.fa-twitter.social-icons-nav{"aria-hidden" => "true"}
-              %i.fa.fa-linkedin-square.social-icons-nav{"aria-hidden" => "true"}
-            %button.close-btn{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"}
-              %i.fa.fa-times{"aria-hidden" => "true"}
+            .social.hidden-sm-down.social-links
+              %a{ href: 'https://www.instagram.com/technekes_llc/',
+                target: '_blank' }
+                %i.fa.fa-instagram.social-icons-nav{'aria-hidden' => 'true'}
+              %a{ href: 'https://www.facebook.com/technekes/',
+                target: '_blank' }
+                %i.fa.fa-facebook-official.social-icons-nav{'aria-hidden' => 'true'}
+              %a{ href: 'https://twitter.com/Technekes',
+                target: '_blank' }
+                %i.fa.fa-twitter.social-icons-nav{'aria-hidden' => 'true'}
+              %a{ href: 'https://www.linkedin.com/company/technekes-llc',
+                target: '_blank' }
+                %i.fa.fa-linkedin-square.social-icons-nav{'aria-hidden' => 'true'}
+            %button.close-btn{'aria-hidden' => 'true',
+              'data-dismiss' => 'modal', type: 'button'}
+              %i.fa.fa-times{'aria-hidden' => 'true'}
       .modal-body.text-center
         .container
           .row
