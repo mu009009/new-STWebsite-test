@@ -1,4 +1,4 @@
-.jumbotron
+.jumbotron.about-header
   .container
     .subhead-header About us
     .header-headline The Company
@@ -136,7 +136,8 @@
 
 .container
   .row.content-section
-    .col-md-4
+    .col-md-4.col-xs-12
+      = image_tag "charities/RMHCLogo.png", class: "center-block charity-logo"
     .col-md-8
       .highlighted-content-box
         .subhead Red shoe shootout
@@ -144,7 +145,8 @@
       %a.uppercase-link{href: "#"} Visit site
 
   .row.content-section
-    .col-md-4
+    .col-md-4.col-xs-12
+      = image_tag "charities/allinlogo.png", class: "center-block charity-logo"
     .col-md-8
       .highlighted-content-box
         .subhead all-in to fight cancer
