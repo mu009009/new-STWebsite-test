@@ -26,31 +26,234 @@
         , to check out other available positions.
     .col-md-8
       .row
-        .col-lg-6.col-md-12
-          .position
-            .numeral 01
-            .position-title-box
-              .blue-title Agriculture Sales and Marketing Consultant
-        .col-lg-6.col-md-12
-          .position
-            .numeral 02
-            .position-title-box
-              .blue-title Eloqua Marketing Automation Specialist
-        .col-lg-6.col-md-12
-          .position
-            .numeral 03
-            .position-title-box
-              .blue-title Healthcare Rep on Call (FT)
-        .col-lg-6.col-md-12
-          .position
-            .numeral 04
-            .position-title-box
-              .blue-title Healthcare Rep on Call (FT)
-        .col-lg-6.col-md-12
-          .position
-            .numeral 05
-            .position-title-box
-              .blue-title Another open position
+        .col-xs-12
+          #accordion{"aria-multiselectable" => "true", :role => "tablist"}
+            .panel.panel-default
+              #headingOne.panel-heading{:role => "tab"}
+                %a{"aria-controls" => "collapseOne", "aria-expanded" => "true", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"}
+                  .position
+                    .numeral 01
+                    .position-title-box
+                      .blue-title-small
+                        Agriculture Sales and Marketing Consultant
+              #collapseOne.panel-collapse.collapse.job-description{"aria-labelledby" => "headingOne", :role => "tabpanel"}
+                .row
+                  .col-lg-3
+                    .highlighted-content-box
+                      .subhead Agriculture Sales and Marketing Consultant
+                    .body-copy Please email your resume in .doc, .docx, .pdf, .txt, .html, or .ascii format to the address listed. If you wish to enclose a cover letter, please include it in the body of your email.
+                    %a.centered-link{ href: "/services.html" }
+                      %button.btn.btn-primary{:type => "button"} apply to this job
+                  .col-lg-8
+                    .body-copy
+                      %b Sales and Marketing Consultant
+                      %br
+
+                      Do you know your way around a farm? Do your work boots have a little mud on them? Do you like the idea of helping farmers get the most from their crops? If so, you may be an excellent candidate for our Sales Support Team at Technekes. We hire folks who already know ag, and then train you to have dynamic and productive phone conversations with our client’s customers and prospects. Qualified candidates will be self-starters, results-driven, and intellectually eager to exceed our client’s expectations.
+                      %br
+                      %br
+                      %b Responsibilities
+                      %br
+                      %ul
+                        %li Build long-term and meaningful relationships with our client’s mid- and high-level management
+                        %li Create and execute product and program marketing campaigns for assigned district(s)
+                        %li Act as a two-way communication link between the client (sales reps and district managers) and customers (retailers, growers) to share product and program information and pinpoint trends within your assigned geography
+                        %li Use the phone on behalf of the client to proactively communicate and gather information
+                        %li Act as our client’s advocate and representative, delivering accurate information, excellent service and managing concerns as appropriate
+                        %li Provide support and gather leads for sales reps, to help them grow the business
+                        %li Complete ongoing training and education in customer service and relevant agricultural systems and chemicals
+                        %li Participate in client sales and marketing meetings that may involve limited field travel
+
+                      %b Credentials
+                      %ul
+                        %li College degree, preferably in agronomy, agriculture, business or related field
+                        %li Excellent demonstrated written and verbal communication
+                        %li Proven ability to meet and exceed goals
+                        %li Experience in customer service or inside sales is a strong plus
+
+                      %b The Candidate
+                      %ul
+                        %li Motivated, disciplined and organized multi-tasker
+                        %li Able to speak comfortably and knowledgeably about ag, and convincingly about our client’s product line
+                        %li Able to work independently, while being part of a much larger and supportive team
+                        %li Self-starter, results-driven, and intellectually eager to exceed our client’s expectations
+                        %li Preferably located in the central Midwest within 1-hour of a major airport but can also work from the home office in Charlotte.
+
+                      %b About Technekes
+                      %br
+                      We’re a technology-driven B2B marketing company with an exceptional emphasis on client service. We work hard, we play hard, and we encourage each other to share ideas and best practices. If you’ve got what it takes, we’d like to hear more!
+
+                    %a.centered-link{ href: "/services.html" }
+                      %button.btn.btn-primary{:type => "button"} apply to this job
+
+                    .body-copy
+                      Please email your resume in .doc, .docx, .pdf, .txt, .rtf, .html, or .ascii format to the address below. If you wish to enclose a cover letter, please include it in the body of your email message.
+                    %br
+                    %br
+
+              #headingTwo.panel-heading{:role => "tab"}
+                %h4.panel-title
+                  %a.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"}
+                    .position
+                      .numeral 02
+                      .position-title-box
+                        .blue-title-small Healthcare Rep on Call (PT)
+              #collapseTwo.panel-collapse.collapse.job-description{"aria-labelledby" => "headingTwo", :role => "tabpanel"}
+                .row
+                  .col-lg-3
+                    .highlighted-content-box
+                      .subhead Healthcare Rep on Call (PT)
+                    .body-copy Please email your resume in .doc, .docx, .pdf, .txt, .html, or .ascii format to the address listed. If you wish to enclose a cover letter, please include it in the body of your email.
+                    %a.centered-link{ href: "/services.html" }
+                      %button.btn.btn-primary{:type => "button"} apply to this job
+                  .col-lg-8
+                    .body-copy
+                      %b Sales and Marketing Consultant
+                      %br
+                      You’ll work with some of our best clients, serving as an advisor and sharing information about pharmaceutical products and related marketing programs with physicians and their staff. If you are an outgoing, experienced self-motivated person, this could be the perfect position, complete with competitive compensation and great potential.  This position is Part-Time and works remotely.
+                      %br
+                      %br
+                      %b Responsibilities
+                      %br
+                      %ul
+                        %li Promote healthcare products to physicians and healthcare professionals by phone, email or online to influence prescribing behavior
+                        %li Build and support relationships with influential healthcare professionals
+                        %li Act as our client’s advocate and representative, delivering accurate information, excellent service and addressing concerns as appropriate
+                        %li Participate in ongoing training and education in customer service
+
+                      %b Credentials
+                      %ul
+                        %li Minimum two years successful pharmaceutical sales experience
+                        %li Strong, dynamic interpersonal and phone skills
+                        %li Considerable experience using current technology and computer applications, including Microsoft Word and Excel
+                        %li Experience with database management or customer relationship software a strong plus
+
+                      %b The Candidate
+                      %ul
+                        %li Very familiar with healthcare industry trends, manufacturers and regulations
+                        %li Willing to embrace a new (and proven successful) approach to pharmaceutical sales
+                        %li Self-starter -- motivated, disciplined and organized
+                        %li Able to drive sales through networking and relationship building
+                        %li Comfortable and confident interacting with all levels of decision makers within the HCP office environment
+                        %li Able to speak comfortably about healthcare, and knowledgeably about our client’s pharmaceutical line
+
+                      %b About Technekes
+                      %br
+                      We’re a technology-driven B2B marketing company with an exceptional emphasis on client service. We work hard, we play hard, and we encourage each other to share ideas and best practices. If you’ve got what it takes, we’d like to hear more!
+
+                    %a.centered-link{ href: "/services.html" }
+                      %button.btn.btn-primary{:type => "button"} apply to this job
+
+                    .body-copy
+                      Please email your resume in .doc, .docx, .pdf, .txt, .rtf, .html, or .ascii format to the address below. If you wish to enclose a cover letter, please include it in the body of your email message.
+                    %br
+                    %br
+
+              #headingThree.panel-heading{:role => "tab"}
+                %h4.panel-title
+                  %a.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree"}
+                    .position
+                      .numeral 03
+                      .position-title-box
+                        .blue-title-small Healthcare Rep on Call (FT)
+              #collapseThree.panel-collapse.collapse.job-description{"aria-labelledby" => "headingThree", :role => "tabpanel"}
+                .row
+                  .col-lg-3
+                    .highlighted-content-box
+                      .subhead Healthcare Rep on Call (FT)
+                    .body-copy Please email your resume in .doc, .docx, .pdf, .txt, .html, or .ascii format to the address listed. If you wish to enclose a cover letter, please include it in the body of your email.
+                    %a.centered-link{ href: "/services.html" }
+                      %button.btn.btn-primary{:type => "button"} apply to this job
+                  .col-lg-8
+                    .body-copy
+                      %b Sales and Marketing Consultant
+                      %br
+                      You’ll work with some of our best clients, serving as an advisor and sharing information about pharmaceutical products and related marketing programs with physicians and their staff. If you are an outgoing, experienced self-motivated person, this could be the perfect position, complete with competitive compensation and great potential.  This position is Part-Time and works remotely.
+                      %br
+                      %br
+                      %b Responsibilities
+                      %br
+                      %ul
+                        %li Promote healthcare products to physicians and healthcare professionals by phone, email or online to influence prescribing behavior
+                        %li Build and support relationships with influential healthcare professionals
+                        %li Act as our client’s advocate and representative, delivering accurate information, excellent service and addressing concerns as appropriate
+                        %li Participate in ongoing training and education in customer service
+
+                      %b Credentials
+                      %ul
+                        %li Minimum two years successful pharmaceutical sales experience
+                        %li Strong, dynamic interpersonal and phone skills
+                        %li Considerable experience using current technology and computer applications, including Microsoft Word and Excel
+                        %li Experience with database management or customer relationship software a strong plus
+
+                      %b The Candidate
+                      %ul
+                        %li Very familiar with healthcare industry trends, manufacturers and regulations
+                        %li Willing to embrace a new (and proven successful) approach to pharmaceutical sales
+                        %li Self-starter -- motivated, disciplined and organized
+                        %li Able to drive sales through networking and relationship building
+                        %li Comfortable and confident interacting with all levels of decision makers within the HCP office environment
+                        %li Able to speak comfortably about healthcare, and knowledgeably about our client’s pharmaceutical line
+
+                      %b About Technekes
+                      %br
+                      We’re a technology-driven B2B marketing company with an exceptional emphasis on client service. We work hard, we play hard, and we encourage each other to share ideas and best practices. If you’ve got what it takes, we’d like to hear more!
+
+                    %a.centered-link{ href: "/services.html" }
+                      %button.btn.btn-primary{:type => "button"} apply to this job
+
+                    .body-copy
+                      Please email your resume in .doc, .docx, .pdf, .txt, .rtf, .html, or .ascii format to the address below. If you wish to enclose a cover letter, please include it in the body of your email message.
+                    %br
+                    %br
+              #headingFour.panel-heading{:role => "tab"}
+                %h4.panel-title
+                  %a.collapsed{"aria-controls" => "collapseFour", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseFour"}
+                    .position
+                      .numeral 04
+                      .position-title-box
+                        .blue-title-small .NET Developer
+              #collapseFour.panel-collapse.collapse.job-description{"aria-labelledby" => "headingThree", :role => "tabpanel"}
+                .row
+                  .col-lg-3
+                    .highlighted-content-box
+                      .subhead .NET Developer
+                    .body-copy Please email your resume in .doc, .docx, .pdf, .txt, .html, or .ascii format to the address listed. If you wish to enclose a cover letter, please include it in the body of your email.
+                    %a.centered-link{ href: "/services.html" }
+                      %button.btn.btn-primary{:type => "button"} apply to this job
+                  .col-lg-8
+                    .body-copy
+                      %b Responsibilities
+                      %br
+                      %ul
+                        %li Building intuitive high volume web applications for a global audience
+                        %li Collaborating with other members of the team to design and implement scalable systems to support millions of users/transactions
+                        %li Researching, learning, and implementing new technologies and best practices
+                        %li Building and delivering consumer-grade, mobile friendly web applications
+                        %li Using JavaScript and CSS knowledge to write modern, object-oriented JavaScript
+
+                      %b Skills & Requirements
+                      %ul
+                        %li Client side MVVM or MVC framework
+                        %li Proficiency in .NET 4.5, ASP.NET MVC 5, C#, Entity Framework 6, SQL
+                        %li Experience with JS, LESS, and single page UI preferred
+                        %li Experience in Oracle SQL preferred
+                        %li Responsive Web Design
+                        %li Database design
+                        %li High school diploma or equivalent required.  4-year degree in Computer Science or related field preferred
+
+                      %b About Technekes
+                      %br
+                      We’re a technology-driven B2B marketing company with an exceptional emphasis on client service. We work hard, we play hard, and we encourage each other to share ideas and best practices. If you’ve got what it takes, we’d like to hear more!
+
+                    %a.centered-link{ href: "/services.html" }
+                      %button.btn.btn-primary{:type => "button"} apply to this job
+
+                    .body-copy
+                      Please email your resume in .doc, .docx, .pdf, .txt, .rtf, .html, or .ascii format to the address below. If you wish to enclose a cover letter, please include it in the body of your email message.
+                    %br
+                    %br
+
 
 
 .grey
