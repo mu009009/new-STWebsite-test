@@ -1,7 +1,9 @@
 .footer
   .container
     .row
-      .col-md-4.col-xs-6.col-xs-offset-3.col-md-offset-0.footer-align.text-xs-center.text-md-left
+      .col-md-4.col-xs-12.col-md-push-4.vcenter
+        = image_tag "footer-gear-2.png", class: "center-block"
+      .col-md-pull-4.col-md-4.col-xs-8.col-xs-offset-2.col-md-offset-0.footer-align.text-xs-center.text-md-left.social-links
         %a{ href: 'https://www.instagram.com/technekes_llc/',
           target: '_blank' }
           %i.fa.fa-instagram.social-icons{'aria-hidden' => 'true'}
@@ -14,8 +16,7 @@
         %a{ href: 'https://www.linkedin.com/company/technekes-llc',
           target: '_blank' }
           %i.fa.fa-linkedin-square.social-icons{'aria-hidden' => 'true'}
-      .col-md-4.col-xs-12.vcenter
-        = image_tag "footer-cog-tagline.jpg", class: "center-block"
-      .col-md-4.col-xs-8.col-xs-offset-2.col-md-offset-0.footer-align.text-xs-center.text-md-right
+
+      .col-md-4.col-xs-10.col-xs-offset-1.col-md-offset-0.footer-align.text-xs-center.text-md-right
         .pull-md-right
           .legal 	&copy; 2016 Technekes, llc

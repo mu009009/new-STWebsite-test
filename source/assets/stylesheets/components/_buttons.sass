@@ -23,7 +23,7 @@
   margin-bottom: 40px
 
 
-.btn-seconday
+.btn-secondary
   background-color: transparent
   border: 2px solid #ffffff
   color: #ffffff
@@ -34,11 +34,12 @@
   i
     padding-left: 10px
 
-.btn-seconday:hover
+.btn-secondary:hover
   background-color: $white
   color: $tks-blue
   font-family: $Montserrat
   opacity: 1.0
+  border: 2px solid $white
   i
     color: $tks-blue
 
@@ -70,11 +71,15 @@
   outline: none
 
 .open-btn
-  background-color: $white
+  background-color: $tks-blue
+  color: $white
   border-radius: 50%
   border: none
   width: 40px
   height: 40px
+  @media screen and (max-width: $break-sm)
+    width: 30px
+    height: 30px
 
 .open-btn:focus
   outline: none

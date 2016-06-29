@@ -5,16 +5,30 @@
 $Lora: 'Lora', serif
 $Montserrat: 'Montserrat', serif
 
+// breakpoints
+$break-xs: 476px
+$break-sm: 638px
+$break-med: 773px
+$break-lg: 991px
+$break-xl: 992px
+$break-home-sm: 421px
+
 .header-headline
   font-family: $Lora
   color: $white
   font-size: 80px
+  @media screen and (max-width: $break-sm)
+    font-size: 40px
 
 .header-body-copy
   font-family: $Lora
   color: $white
   font-size: 18px
   opacity: 0.8
+  padding-right: 40px
+  @media screen and (max-width: $break-sm)
+    font-size: 14px
+    padding-right: 0
 
 .header-info
   font-family: $Lora
@@ -22,6 +36,8 @@ $Montserrat: 'Montserrat', serif
   color: $white
   margin-bottom: 40px
   margin-top: 40px
+  @media screen and (max-width: $break-sm)
+    font-size: 18px
 
 .subhead-header
   font-family: $Montserrat
@@ -29,6 +45,8 @@ $Montserrat: 'Montserrat', serif
   font-size: 18px
   color: $white
   text-transform: uppercase
+  @media screen and (max-width: $break-sm)
+    font-size: 16px
 
 .subhead-header-box
   border-bottom: 2px solid #ff3301
@@ -52,6 +70,9 @@ $Montserrat: 'Montserrat', serif
   font-family: $Montserrat
   font-size: 18px
   text-transform: uppercase
+  opacity: 0.5
+  @media screen and (max-width: $break-sm)
+    font-size: 16px
 
 .subhead-centered
   font-family: $Montserrat
@@ -59,18 +80,25 @@ $Montserrat: 'Montserrat', serif
   font-size: 18px
   text-transform: uppercase
   text-align: center
+  @media screen and (max-width: $break-sm)
+    font-size: 16px
 
 .subhead-saturated
   font-family: $Montserrat
   opacity: 0.9
   font-size: 18px
   text-transform: uppercase
+  @media screen and (max-width: $break-sm)
+    font-size: 16px
 
 .subhead-white
   font-family: $Montserrat
   color: $white
   font-size: 18px
-
+  text-transform: uppercase
+  margin-top: 20px
+  @media screen and (max-width: $break-sm)
+    font-size: 16px
 
 .highlighted-content
   font-size: 26px
@@ -78,6 +106,8 @@ $Montserrat: 'Montserrat', serif
   font-family: $Lora
   margin-bottom: 20px
   font-weight: bold
+  @media screen and (max-width: $break-sm)
+    font-size: 18px
 
 .highlighted-content-saturated
   font-size: 30px
@@ -121,7 +151,14 @@ $Montserrat: 'Montserrat', serif
 .body-copy
   font-family: $Lora
   font-size: 17px
-  color: #999999
+  color: rgba(0, 0, 0, 0.7)
+  @media screen and (max-width: $break-sm)
+    font-size: 14px
+
+.body-copy-small
+  font-family: $Lora
+  font-size: 16px
+  color: rgba(0, 0, 0, 0.7)
 
 .body-copy-bold
   font-family: $Lora
@@ -147,7 +184,6 @@ $Montserrat: 'Montserrat', serif
   font-size: 15px
   text-transform: uppercase
   display: inline-block
-  margin-top: 10px
 
 .blue-title
   font-family: $Lora
@@ -168,6 +204,8 @@ $Montserrat: 'Montserrat', serif
   text-align: center
   letter-spacing: 1px
   margin-bottom: 20px
+  @media screen and (max-width: $break-sm)
+    font-size: 18px
 
 .industry-title
   font-family: $Lora
@@ -179,7 +217,7 @@ $Montserrat: 'Montserrat', serif
 
 .industry-copy
   font-family: $Lora
-  font-size: 17px
+  font-size: 16px
   color: $white
 
 .quote-attribute
@@ -188,6 +226,8 @@ $Montserrat: 'Montserrat', serif
   color: $white
   text-align: center
   opacity: .7
+  @media screen and (max-width: $break-sm)
+    font-size: 14px
 
 .quote-source
   font-family: $Lora
@@ -196,6 +236,8 @@ $Montserrat: 'Montserrat', serif
   text-align: center
   font-style: italic
   display: inline-block
+  @media screen and (max-width: $break-sm)
+    font-size: 14px
 
 .timeline-title
   font-family: $Lora
@@ -209,6 +251,8 @@ $Montserrat: 'Montserrat', serif
 sup
   font-size: 15px
   top: -3.5em
+  @media screen and (max-width: $break-sm)
+    font-size: 10px
 
 .uppercase-link
   font-family: $Montserrat

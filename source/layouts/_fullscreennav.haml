@@ -26,37 +26,44 @@
       .modal-body.text-center
         .container
           .row
-            .col-md-4.nav-card
-              .subhead-nav-box
-                .subhead-header services
-              .nav-headline
-                = link_to 'Capabilities', '/services.html'
-            .col-md-4.nav-card
-              .subhead-nav-box
-                .subhead-header partners
-              .nav-headline
-                = link_to 'Our Friends', '/partners.html'
-            .col-md-4.nav-card
-              .subhead-nav-box
-                .subhead-header about us
-              .nav-headline
-                = link_to 'The Company', '/about.html'
+            %a{ href: '/services.html',
+              target: '_blank' }
+              .col-md-4.nav-card
+                .subhead-nav-box
+                  .subhead-header services
+                .nav-headline
+                  = link_to 'Capabilities', '/services.html'
+            %a{ href: '/partners.html', target: '_blank' }
+              .col-md-4.nav-card
+                .subhead-nav-box
+                  .subhead-header collaboration
+                .nav-headline
+                  = link_to 'Our Partners', '/partners.html'
+            %a{ href: '/about.html', target: '_blank' }
+              .col-md-4.nav-card
+                .subhead-nav-box
+                  .subhead-header about us
+                .nav-headline
+                  = link_to 'The Company', '/about.html'
           .row
-            .col-md-4.nav-card
-              .subhead-nav-box
-                .subhead-header join us
-              .nav-headline
-                = link_to 'Careers', '/joinus.html'
-            .col-md-4.nav-card
-              .subhead-nav-box
-                .subhead-header contact
-              .nav-headline
-                = link_to 'Visit Us', '/visitus.html'
-            .col-md-4.nav-card
-              .subhead-nav-box
-                .subhead-header news & resources
-              .nav-headline
-                = link_to 'Updates & Events', '/news.html'
+            %a{ href: '/joinus.html', target: '_blank' }
+              .col-md-4.nav-card
+                .subhead-nav-box
+                  .subhead-header join us
+                .nav-headline
+                  = link_to 'Careers', '/joinus.html'
+            %a{ href: '/visitus.html', target: '_blank' }
+              .col-md-4.nav-card
+                .subhead-nav-box
+                  .subhead-header contact
+                .nav-headline
+                  = link_to 'Visit Us', '/visitus.html'
+            %a{ href: '/news.html', target: '_blank' }
+              .col-md-4.nav-card
+                .subhead-nav-box
+                  .subhead-header news
+                .nav-headline
+                  = link_to 'Updates & Events', '/news.html'
 
     / /.modal-content
   / /.modal-dialog

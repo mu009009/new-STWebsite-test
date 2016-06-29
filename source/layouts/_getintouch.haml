@@ -3,7 +3,7 @@
     .row
     .contact-expander-text Get in Touch
     .pull-xs-right
-      %button.btn.btn-block.btn-seconday{"data-target" => "#getintouch-expand", "data-toggle" => "collapse", :type => "button"}
+      %button.btn.btn-block.btn-secondary.js-get-in-touch{"data-target" => "#getintouch-expand", "data-toggle" => "collapse", :type => "button"}
         expand
         %i.fa.fa-arrow-up{"aria-hidden" => "true"}
   #getintouch-expand.collapse
@@ -23,6 +23,6 @@
               %label Comments
               %textarea.form-control{ :type => "textarea", rows: "3" }
         .col-md-3
-          %button#getintouch-btn.btn.btn-sm.btn-seconday{ :type => "submit" }
+          %button#getintouch-btn.btn.btn-sm.btn-secondary{ :type => "submit" }
             Send
             %i.fa.fa-arrow-right{"aria-hidden" => "true"}

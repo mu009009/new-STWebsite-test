@@ -1,4 +1,4 @@
-.jumbotron
+.jumbotron.about-header
   .container
     .subhead-header About us
     .header-headline The Company
@@ -7,18 +7,6 @@
         %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend feugiat tincidunt. Duis in justo nisi. Aliquam sed erat massa. Donec placerat nibh quis sapien gravida, nec venenatis erat tincidunt. Praesent sit amet dapibus magna. Proin sit amet mi enim. Cras hendrerit mauris non ipsum suscipit dapibus eget a tortor.
       .col-lg-6.header-body-copy
         %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend feugiat tincidunt. Duis in justo nisi. Aliquam sed erat massa. Donec placerat nibh quis sapien gravida, nec venenatis erat tincidunt. Praesent sit amet dapibus magna. Proin sit amet mi enim. Cras hendrerit mauris non ipsum suscipit dapibus eget a tortor.
-
-.container.content-section.timeline-section
-  .row
-    .col-md-4
-      .subhead Timeline
-      .highlighted-content-box
-        .highlighted-content A Brief History
-      .body-copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a.
-      %br
-      .body-copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a.
-    .col-md-8
-      = partial 'layouts/timeline'
 
 .container.content-section
   .row
@@ -32,12 +20,12 @@
     .col-md-4.leadership-tile
       =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
       .highlighted-content-centered Steve Amedio
-      .subhead-centered President
       .subhead-centered COO
+      .subhead-centered President
       .linkedin-box
         %a{:href => "https://www.linkedin.com/in/steveamedio", target: "_blank"}
           %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
-      .body-copy Steve leads Technekes. He sets the tone for how we operate and grow the business and leads one of our philanthropic efforts too, All-In to Fight Cancer.
+      .body-copy-small Steve leads Technekes. He sets the tone for how we operate and grow the business and leads one of our philanthropic efforts too, All-In to Fight Cancer.
     .col-md-4.leadership-tile
       =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
       .highlighted-content-centered Preston Fay
@@ -47,54 +35,7 @@
       .linkedin-box
         %a{:href => "https://www.linkedin.com/in/prestonfay", target: "_blank"}
           %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
-      .body-copy Preston leads the vision for the company. He, along with Jack, founded the company and now sets the tone for our culture and our path for future growth.
-    .col-md-4.leadership-tile
-      =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
-      .highlighted-content-centered Angelic Gibson
-      .subhead-centered SVP
-      .subhead-centered Information Technology
-      .linkedin-box
-        %a{:href => "https://www.linkedin.com/in/angelicgibson", target: "_blank"}
-          %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
-      .body-copy Angelic leads our technology efforts, delivering software, data and technology solutions for our programs. Angelic works closely with the account team to develop and build software, apps and technology solutions for our clients.
-  .row
-    .col-md-4.leadership-tile
-      =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
-      .highlighted-content-centered Diana Henderson
-      .subhead-centered SVP
-      .subhead-centered Client Services
-      .linkedin-box
-        %a{:href => "https://www.linkedin.com/in/diana-henderson-25557113", target: "_blank"}
-          %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
-      .body-copy Diana leads business development efforts and account services. Her role is instrumental in our evolution and growth and her leadership impacts every client.
-    .col-md-4.leadership-tile
-      =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
-      .highlighted-content-centered Joan Knowlton
-      .subhead-centered Director
-      .subhead-centered Canadian Operations
-      .linkedin-box
-        %a{:href => "https://www.linkedin.com/in/joan-knowlton-4188651b", target: "_blank"}
-          %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
-      .body-copy Joan leads our Canadian work, lending her decades of experience to guide outbound programs that Technekes deploys in the Great North.
-    .col-md-4.leadership-tile
-      =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
-      .highlighted-content-centered Winn Maddrey
-      .subhead-centered VP
-      .subhead-centered Marketing
-      .linkedin-box
-        %a{:href => "https://www.linkedin.com/in/winnmaddrey", target: "_blank"}
-          %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
-      .body-copy Winn leads marketing efforts, supporting the sales function and leading the campaign team. He works on our communications effrots as well.
-  .row
-    .col-md-4.leadership-tile
-      =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
-      .highlighted-content-centered Scott Miner
-      .subhead-centered Director
-      .subhead-centered User Experience
-      .linkedin-box
-        %a{:href => "https://www.linkedin.com/in/scottminer", target: "_blank"}
-          %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
-      .body-copy Scott leads the UX/UI team and is instrumental in how we show and share information with our clients and their audiences. His design point-of- view influences many aspects of our account delivery, from reporting to brand alignment.
+      .body-copy-small Preston leads the vision for the company. He, along with Jack, founded the company and now sets the tone for our culture and our path for future growth.
     .col-md-4.leadership-tile
       =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
       .highlighted-content-centered Jack Ross
@@ -103,7 +44,52 @@
       .linkedin-box
         %a{:href => "https://www.linkedin.com/in/jackross", target: "_blank"}
           %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
-      .body-copy Jack leads our data science efforts. He, along with Preston, founded the company and now leads our efforts on data and emerging technologies.
+      .body-copy-small Jack leads our data science efforts. He, along with Preston, founded the company and now leads our efforts on data and emerging technologies.
+    .col-md-4.leadership-tile
+      =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
+      .highlighted-content-centered Angelic Gibson
+      .subhead-centered SVP
+      .subhead-centered Information Technology
+      .linkedin-box
+        %a{:href => "https://www.linkedin.com/in/angelicgibson", target: "_blank"}
+          %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
+      .body-copy-small Angelic leads our technology efforts, delivering software, data and technology solutions for our programs. Angelic works closely with the account team to develop and build software, apps and technology solutions for our clients.
+    .col-md-4.leadership-tile
+      =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
+      .highlighted-content-centered Diana Henderson
+      .subhead-centered SVP
+      .subhead-centered Client Services
+      .linkedin-box
+        %a{:href => "https://www.linkedin.com/in/diana-henderson-25557113", target: "_blank"}
+          %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
+      .body-copy-small Diana leads business development efforts and account services. Her role is instrumental in our evolution and growth and her leadership impacts every client.
+    .col-md-4.leadership-tile
+      =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
+      .highlighted-content-centered Joan Knowlton
+      .subhead-centered Director
+      .subhead-centered Canadian Operations
+      .linkedin-box
+        %a{:href => "https://www.linkedin.com/in/joan-knowlton-4188651b", target: "_blank"}
+          %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
+      .body-copy-small Joan leads our Canadian work, lending her decades of experience to guide outbound programs that Technekes deploys in the Great North.
+    .col-md-4.leadership-tile
+      =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
+      .highlighted-content-centered Winn Maddrey
+      .subhead-centered VP
+      .subhead-centered Marketing
+      .linkedin-box
+        %a{:href => "https://www.linkedin.com/in/winnmaddrey", target: "_blank"}
+          %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
+      .body-copy-small Winn leads marketing efforts, supporting the sales function and leading the campaign team. He works on our communications effrots as well.
+    .col-md-4.leadership-tile
+      =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
+      .highlighted-content-centered Scott Miner
+      .subhead-centered Director
+      .subhead-centered User Experience
+      .linkedin-box
+        %a{:href => "https://www.linkedin.com/in/scottminer", target: "_blank"}
+          %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
+      .body-copy-small Scott leads the UX/UI team and is instrumental in how we show and share information with our clients and their audiences. His design point-of- view influences many aspects of our account delivery, from reporting to brand alignment.
     .col-md-4.leadership-tile
       =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
       .highlighted-content-centered Ashley Williams
@@ -112,8 +98,7 @@
       .linkedin-box
         %a{:href => "https://www.linkedin.com/in/ashley-williams-b482376", target: "_blank"}
           %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
-      .body-copy Ashley leads our agriculture client work, bringing extensive industry experience to play. Her background makes her a strong counsel for advising on marketing, rebate, and demand creation programs.
-  .row
+      .body-copy-small Ashley leads our agriculture client work, bringing extensive industry experience to play. Her background makes her a strong counsel for advising on marketing, rebate, and demand creation programs.
     .col-md-4.leadership-tile.col-md-offset-4
       =image_tag 'placeholderjoe.jpg', class: 'placeholder center-block'
       .highlighted-content-centered Chris Williams
@@ -122,7 +107,19 @@
       .linkedin-box
         %a{:href => "https://www.linkedin.com/in/christopherwilliams14", target: "_blank"}
           %i.fa.fa-linkedin-square.leadership-linkedin.center-block{"aria-hidden" => "true"}
-      .body-copy Chris leads our corporate strategy, corporate finance and operations. He establishes and manages partnerships and other operational aspects of the business.
+      .body-copy-small Chris leads our corporate strategy, corporate finance and operations. He establishes and manages partnerships and other operational aspects of the business.
+
+.container.timeline-section
+  .row
+    .col-md-4
+      .subhead Timeline
+      .highlighted-content-box
+        .highlighted-content A Brief History
+      .body-copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a.
+      %br
+      .body-copy Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius scelerisque mi, a efficitur ante aliquet at. Praesent pharetra a mauris eu sodales. Vivamus sagittis magna lacus, nec convallis libero placerat a.
+    .col-md-8
+      = partial 'layouts/timeline'
 
 .grey
   .container.content-section
@@ -136,7 +133,8 @@
 
 .container
   .row.content-section
-    .col-md-4
+    .col-md-4.col-xs-12
+      = image_tag "charities/RMHCLogo.png", class: "center-block charity-logo"
     .col-md-8
       .highlighted-content-box
         .subhead Red shoe shootout
@@ -144,7 +142,8 @@
       %a.uppercase-link{href: "#"} Visit site
 
   .row.content-section
-    .col-md-4
+    .col-md-4.col-xs-12
+      = image_tag "charities/allinlogo.png", class: "center-block charity-logo"
     .col-md-8
       .highlighted-content-box
         .subhead all-in to fight cancer

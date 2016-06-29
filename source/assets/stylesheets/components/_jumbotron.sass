@@ -1,10 +1,3 @@
-$break-xs: 476px
-$break-sm: 638px
-$break-med: 773px
-$break-lg: 991px
-$break-xl: 992px
-$break-home-sm: 421px
-
 .jumbotron
   min-height: 600px
   padding-top: 100px
@@ -23,20 +16,45 @@ $break-home-sm: 421px
   align-items: center
   padding-top: 40px
   padding-bottom: 40px
+  background-image: url('headers/home-quote.jpg')
+  background-size: cover
+  background-position: center
 
 .home-header
   text-align: center
   min-height: 800px
+  background-image: url('headers/home.jpg')
+  background-size: cover
+  background-position: center
   display: flex
   align-items: center
+  @media screen and (max-width: $break-sm)
+    min-height: 600px
+    padding-top: 80px
 
 .headquarters-box
-  background-image: url("tks_headquarters.jpg")
+  background-image: url("headers/about-us-headquarters.jpg")
   background-repeat: no-repeat
   background-position: left
   background-size: cover
-  max-width: 1110px
-  margin-left: auto
-  margin-right: auto
   display: flex
   align-items: flex-end
+
+.about-header
+  background-image: url('headers/about-us.jpg')
+  background-size: cover
+  background-position: center
+
+.careers-header
+  background-image: url('headers/careers.jpg')
+  background-size: cover
+  background-position: center
+
+.visit-us-header
+  background-image: url('headers/contact.jpg')
+  background-size: cover
+  background-position: center
+
+.news-header
+  display: flex
+  justify-content: flex-start
