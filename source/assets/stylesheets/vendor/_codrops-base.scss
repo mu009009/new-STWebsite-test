@@ -546,8 +546,8 @@ button:focus {
 	cursor: default;
 }
 
-/* Placeholder element (dummy that gets animated when we click on an item) */
-.placeholder {
+/* co-Placeholder element (dummy that gets animated when we click on an item) */
+.co-placeholder {
 	pointer-events: none;
 	position: absolute;
 	width: 100%;
@@ -561,14 +561,14 @@ button:focus {
 	transform-origin: 0 0;
 }
 
-.placeholder.placeholder--trans-in {
+.co-placeholder.co-placeholder--trans-in {
 	-webkit-transition: -webkit-transform $anim-time;
 	transition: transform $anim-time;
 	-webkit-transition-timing-function: cubic-bezier(0.165,0.84,0.44,1);
 	transition-timing-function: cubic-bezier(0.165,0.84,0.44,1);
 }
 
-.placeholder.placeholder--trans-out {
+.co-placeholder.co-placeholder--trans-out {
 	-webkit-transition: -webkit-transform $anim-time;
 	transition: transform $anim-time;
 }

@@ -6,6 +6,8 @@ $viewport_l: 	$item_width * 4; /* 4 columns */
 $viewport_xl: 	$item_width * 5; /* 5 columns */
 $viewport_xxl: 	$item_width * 6; /* 6 columns */
 
+#theGrid {
+
 @media screen and (min-width: $viewport_xs) {
 	html,
 	body,
@@ -107,20 +109,6 @@ $viewport_xxl: 	$item_width * 6; /* 6 columns */
 	}
 }
 
-@media screen and (min-width: $viewport_xl) {
-	/* 5 columns */
-	.grid__item {
-		width: 20%;
-	}
-}
-
-@media screen and (min-width: $viewport_xxl) {
-	/* 6 columns */
-	.grid__item {
-		width: 16.66%;
-	}
-}
-
 /* small screen changes for sidebar (it becomes an off-canvas menu) */
 @media screen and (max-width: $viewport_xs - 1px) {
 	.sidebar {
@@ -173,4 +161,5 @@ $viewport_xxl: 	$item_width * 6; /* 6 columns */
 	body #cdawrap {
 		display: none;
 	}
+}
 }
