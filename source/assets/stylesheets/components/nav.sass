@@ -4,9 +4,14 @@
     height: 62px
     -webkit-transition: width .4s, height .4s, -webkit-transform .4s
     transition: height .4s, transform .4s
+    @media screen and (max-width: $break-sm)
+      height: 30px
 .small
   img
     height: 50px
+    @media screen and (max-width: $break-sm)
+      height: 30px
+
 
 
 // FULL SCREEN MODAL STYLES
@@ -22,7 +27,7 @@ html,body
     min-height: 100%
     padding: 0
     color: #333
-    @media screen and (max-width: 508px)
+    @media screen and (max-width: $break-sm)
       height: 1400px
 
 .fullscreen .modal-header
