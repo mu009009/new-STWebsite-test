@@ -1,0 +1,133 @@
+.container.content-section
+  .row
+    .col-md-7
+      .subhead What we know
+      .highlighted-content-box
+        .highlighted-content Capabilities
+      .body-copy Technekes is filled with talented folks from a range of different fields of work. These are the areas in which we thrive and build upon every day. Click through to read more about each opportunity.
+.container
+  #theGrid.main
+    %section.grid
+      %a.grid__item.icon-box{:href => "#"}
+        = image_tag "capabilities/demand-generation.png", class: "capabilities-icon center-block"
+        = image_tag "capabilities/demand-generation-color.png", class: "capabilities-icon center-block"
+        .loader
+        .meta.meta--preview
+          %h3.title.title--preview Demand Generation
+      %a.grid__item.icon-box{:href => "#"}
+        = image_tag "capabilities/incentive-loyalty_program-mgmt.png", class: "capabilities-icon center-block"
+        = image_tag "capabilities/incentive-loyalty_program-mgmt-color.png", class: "capabilities-icon center-block"
+        .meta.meta--preview
+          .loader
+          %h3.title.title--preview Incentive/Loyalty Programs
+      %a.grid__item.icon-box{:href => "#"}
+        = image_tag "capabilities/marketing_sales-technology.png", class: "capabilities-icon center-block"
+        = image_tag "capabilities/marketing_sales-technology-color.png", class: "capabilities-icon center-block"
+        .loader
+        .meta.meta--preview
+          %h3.title.title--preview Incentive/Loyalty Programs
+      %a.grid__item.icon-box{:href => "#"}
+        = image_tag "capabilities/teleservices.png", class: "capabilities-icon center-block"
+        = image_tag "capabilities/teleservices-color.png", class: "capabilities-icon center-block"
+        .loader
+        .meta.meta--preview
+          %h3.title.title--preview Teleservices
+
+    %section.content
+      .scroll-wrap
+        %article.content__item
+          .row.content__item__heading
+            .col-xs-12.col-sm-3
+              .cap-tags
+                .tag Data Management
+                .tag Data Hygiene
+                .tag Analytics
+            .col-xs-12.col-sm-6
+              .cap-icon-title
+                = image_tag "capabilities/incentive-loyalty_program-mgmt-color.png", class: "capabilities-icon center-block"
+                %h3.title.title--full Demand Generation
+          .cap-details
+            .row
+              .col-sm-8.cap-summary
+                = lorem.words(50)
+              .col-sm-4.cap-action-items
+                .highlighted-content-box
+                  .cap-action-items__heading
+                    Action Items
+                %ul.cap-action-items__list
+                  - (1..4).each do
+                    %li
+                      = lorem.words(4)
+        %article.content__item
+          .row.content__item__heading
+            .col-xs-12.col-sm-3
+              .cap-tags
+                .tag Data Management
+                .tag Data Hygiene
+                .tag Analytics
+            .col-xs-12.col-sm-6
+              .cap-icon-title
+                = image_tag "capabilities/incentive-loyalty_program-mgmt-color.png", class: "capabilities-icon center-block"
+                %h3.title.title--full Demand Generation
+          .cap-details
+            .row
+              .col-sm-8.cap-summary
+                = lorem.words(50)
+              .col-sm-4.cap-action-items
+                .highlighted-content-box
+                  .cap-action-items__heading
+                    Action Items
+                %ul.cap-action-items__list
+                  - (1..4).each do
+                    %li
+                      = lorem.words(4)
+        %article.content__item
+          .row.content__item__heading
+            .col-xs-12.col-sm-3
+              .cap-tags
+                .tag Data Management
+                .tag Data Hygiene
+                .tag Analytics
+            .col-xs-12.col-sm-6
+              .cap-icon-title
+                = image_tag "capabilities/incentive-loyalty_program-mgmt-color.png", class: "capabilities-icon center-block"
+                %h3.title.title--full Demand Generation
+          .cap-details
+            .row
+              .col-sm-8.cap-summary
+                = lorem.words(50)
+              .col-sm-4.cap-action-items
+                .highlighted-content-box
+                  .cap-action-items__heading
+                    Action Items
+                %ul.cap-action-items__list
+                  - (1..4).each do
+                    %li
+                      = lorem.words(4)
+        %article.content__item
+          .row.content__item__heading
+            .col-xs-12.col-sm-3
+              .cap-tags
+                .tag Data Management
+                .tag Data Hygiene
+                .tag Analytics
+            .col-xs-12.col-sm-6
+              .cap-icon-title
+                = image_tag "capabilities/incentive-loyalty_program-mgmt-color.png", class: "capabilities-icon center-block"
+                %h3.title.title--full Demand Generation
+          .cap-details
+            .row
+              .col-sm-8.cap-summary
+                = lorem.words(50)
+              .col-sm-4.cap-action-items
+                .highlighted-content-box
+                  .cap-action-items__heading
+                    Action Items
+                %ul.cap-action-items__list
+                  - (1..4).each do
+                    %li
+                      = lorem.words(4)
+      %button.close-button
+        %svg{:version => "1.1", :viewPort => "0 0 25 25", :xmlns => "http://www.w3.org/2000/svg"}
+          %line{:stroke => "#888", "stroke-width" => "2", :x1 => "1", :x2 => "25", :y1 => "25", :y2 => "1"} /
+          %line{:stroke => "#888", "stroke-width" => "2", :x1 => "1", :x2 => "25", :y1 => "1", :y2 => "25"} /

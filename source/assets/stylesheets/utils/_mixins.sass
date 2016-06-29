@@ -79,3 +79,9 @@
   background-image: -moz-linear-gradient(left, $startColor, $endColor)
   background-image: -ms-linear-gradient(left, $startColor, $endColor)
   background-image: -o-linear-gradient(left, $startColor, $endColor)
+
+@mixin transition($property: all, $style: ease, $duration: 1s)
+  -moz-transition:    $property $style $duration
+  -o-transition:      $property $style $duration
+  -webkit-transition: $property $style $duration
+  transition:         $property $style $duration

@@ -21,34 +21,7 @@ js_include: 'services.bundle'
 .container.content-section
   #gridContainer
 
-.container.content-section
-  .row
-    .col-md-7
-      .subhead What we know
-      .highlighted-content-box
-        .highlighted-content Capabilities
-      .body-copy Technekes is filled with talented folks from a range of different fields of work. These are the areas in which we thrive and build upon every day. Click through to read more about each opportunity.
-  .row.capabilities-row
-    .col-md-3.col-xs-12.col-sm-6
-      .icon-box
-        = image_tag "capabilities/demand-generation.png", class: "capabilities-icon center-block"
-        = image_tag "capabilities/demand-generation-color.png", class: "capabilities-icon center-block"
-      .what-we-know-title Demand Generation
-    .col-md-3.col-xs-12.col-sm-6
-      .icon-box
-        = image_tag "capabilities/incentive-loyalty_program-mgmt.png", class: "capabilities-icon center-block"
-        = image_tag "capabilities/incentive-loyalty_program-mgmt-color.png", class: "capabilities-icon center-block"
-      .what-we-know-title Incentive/Loyalty Programs
-    .col-md-3.col-xs-12.col-sm-6
-      .icon-box
-        = image_tag "capabilities/marketing_sales-technology.png", class: "capabilities-icon center-block"
-        = image_tag "capabilities/marketing_sales-technology-color.png", class: "capabilities-icon center-block"
-      .what-we-know-title Sales & Marketing Technology
-    .col-md-3.col-xs-12.col-sm-6
-      .icon-box
-        = image_tag "capabilities/teleservices.png", class: "capabilities-icon center-block"
-        = image_tag "capabilities/teleservices-color.png", class: "capabilities-icon center-block"
-      .what-we-know-title Teleservices
+=partial 'capabilities'
 
 .grey
   .container.content-section

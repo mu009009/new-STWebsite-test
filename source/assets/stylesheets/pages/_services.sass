@@ -1,0 +1,95 @@
+.icon-box
+  margin-left: auto
+  margin-right: auto
+  img:nth-child(2)
+    display: none
+
+.capabilities-icon
+  max-width: 150px
+  .content__item--show &
+    border-bottom: 2px solid $accent-red
+    margin-bottom: 20px
+
+.cap-details
+  margin-top: 20px
+  .cap-action-items
+    border-left: 2px solid $accent-grey-dark
+    .highlighted-content-box
+      margin-bottom: 20px
+    .cap-action-items__heading
+      text-transform: uppercase
+      font-family: $Montserrat
+  .cap-summary
+    padding: 20px 20px 20px 40px
+
+.icon-box:hover
+  img:first-child
+    display: none
+  img:nth-child(2)
+    display: block
+    margin-left: auto
+    margin-right: auto
+
+.grid__item:hover::before,
+.grid__item:focus::before
+  border-color: $accent-red
+
+.grid__item::before
+  border-color: $accent-grey-dark
+
+.loader::before
+  background: $accent-red
+
+
+.grid__item
+  .title.title--preview
+    color: $tks-blue
+  &:hover
+    text-decoration: none
+
+.title--full
+  font-size: 26px
+  color: $tks-blue
+
+.content.content--show
+  background: none
+
+.content__item.content__item--show
+  padding: 0
+  min-height: 440px
+  font-family: $Lora
+  background: $accent-grey
+  .content__item__heading
+    padding: 20px 0 30px
+    background: $white
+
+section.grid
+  margin-bottom: 100px
+  flex-wrap: wrap
+
+.scroll-wrap
+  position: initial
+  background: none
+
+.cap-tags
+  margin-left: 20px
+  .tag
+    +border-radius(8px)
+    background: $accent-grey
+    padding: 2px 5px 0
+    margin: 5px
+    display: inline-block
+
+#theGrid
+  margin-bottom: 80px
+  .placeholder
+    width: 100% !important
+    height: 440px
+
+  .close-button
+    svg
+      width: 30px
+      height: 30px
+      &:hover
+        line
+          stroke: black
