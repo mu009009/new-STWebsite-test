@@ -3,9 +3,14 @@
   img
     height: 62px
     -webkit-transition: width .4s, height .4s, -webkit-transform .4s
-    transition: height .4s, transform .4s
+    transition: height .4s, transform .4s, opacity .5s
     @media screen and (max-width: $break-sm)
       height: 35px
+
+.tks-logo:hover
+  img
+    opacity: .6
+    transition: opacity .5s
 .small
   img
     height: 50px
