@@ -1,6 +1,6 @@
 const ServiceItems = [
   {key: 1, name: 'Data Management', icon: "data_management.png", categories: ['ALL', 'FUNNEL']},
-  {key: 2, name: 'Data Hygiene', icon: "data_hygiene.png", categories: ['ALL', 'EXTEND_REACH']},
+  {key: 2, name: 'Data Hygiene', icon: "data-hygiene-color.png", categories: ['ALL', 'EXTEND_REACH']},
   {key: 3, name: 'Analytics', icon: "analytics.png", categories: ['ALL']},
   {key: 4, name: 'IT Integration', icon: "it_integration.png", categories: ['ALL', 'FUNNEL']},
   {key: 5, name: 'Targeting', icon: "targeting.png", categories: ['ALL', 'FUNNEL']},
@@ -11,7 +11,7 @@ const ServiceItems = [
   {key: 10, name: 'Support', icon: "sales_support.png", categories: ['ALL', 'LEADS']},
   {key: 11, name: 'Inside Sales', icon: "inside_sales.png", categories: ['ALL', 'NEW_MARKET']},
   {key: 12, name: 'Marketing Automation', icon: "marketing_automation.png", categories: ['ALL', 'NEW_MARKET']},
-	{key: 13, name: 'UX/Visual Design', icon: "ux_visual_design.png", categories: ['ALL', 'FUNNEL', 'EXTEND_REACH']},
+	{key: 13, name: 'UX/Visual Design', icon: "ux-visual-design-color.png", categories: ['ALL', 'FUNNEL', 'EXTEND_REACH']},
   {key: 14, name: 'App Dev', icon: "app_dev.png", categories: ['ALL', 'LEADS']},
   {key: 15, name: 'Interactive', icon: "interactive.png", categories: ['ALL', 'FUNNEL']},
   {key: 16, name: 'Payments & Incentives', icon: "payments_incentives.png", categories: ['ALL', 'GAP', 'EXTEND_REACH']},
