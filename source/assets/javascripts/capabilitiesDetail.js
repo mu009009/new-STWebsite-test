@@ -122,16 +122,16 @@ import classie from 'desandro-classie';
 	}
 
 	function loadContent(item) {
-		// add expanding element/placeholder 
+		// add expanding element/co-placeholder 
 		var dummy = document.createElement('div');
-		dummy.className = 'placeholder';
+		dummy.className = 'co-placeholder';
 
 		// set the width/heigth and position
 		dummy.style.WebkitTransform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
 		dummy.style.transform = 'translate3d(' + (item.offsetLeft - 5) + 'px, ' + (item.offsetTop - 5) + 'px, 0px) scale3d(' + item.offsetWidth/gridItemsContainer.offsetWidth + ',' + item.offsetHeight/getViewport('y') + ',1)';
 
 		// add transition class 
-		classie.add(dummy, 'placeholder--trans-in');
+		classie.add(dummy, 'co-placeholder--trans-in');
 
 		// insert it after all the grid items
 		gridItemsContainer.appendChild(dummy);
@@ -140,7 +140,7 @@ import classie from 'desandro-classie';
 		classie.add(bodyEl, 'view-single');
 
 		setTimeout(function() {
-			// expands the placeholder
+			// expands the co-placeholder
 			dummy.style.WebkitTransform = 'translate3d(0px, ' + (0) + 'px, 400px)';
 			dummy.style.transform = 'translate3d(0px, ' + (0) + 'px, 400px)';
 			// disallow scroll
@@ -149,8 +149,8 @@ import classie from 'desandro-classie';
 
 		onEndTransition(dummy, function() {
 			// add transition class 
-			classie.remove(dummy, 'placeholder--trans-in');
-			classie.add(dummy, 'placeholder--trans-out');
+			classie.remove(dummy, 'co-placeholder--trans-in');
+			classie.add(dummy, 'co-placeholder--trans-out');
 			// position the content container
 			contentItemsContainer.style.top = 0;
 			// show the main content container
@@ -164,7 +164,10 @@ import classie from 'desandro-classie';
 
 			isAnimating = false;
 		});
-		$('html, body').animate({scrollTop: $('#theGrid').position().top - $('.navbar').height() - 20}, 'slow');
+
+		if (window.innerHeight < 600){
+			$('html, body').animate({scrollTop: $('#theGrid').position().top - $('.navbar').height() - 20}, 'slow');
+		}
 	}
 
 	function hideContent() {
@@ -176,7 +179,7 @@ import classie from 'desandro-classie';
 		classie.remove(bodyEl, 'view-single');
 
 		setTimeout(function() {
-			var dummy = gridItemsContainer.querySelector('.placeholder');
+			var dummy = gridItemsContainer.querySelector('.co-placeholder');
 
 			// classie.removeClass(bodyEl, 'noscroll');
 
