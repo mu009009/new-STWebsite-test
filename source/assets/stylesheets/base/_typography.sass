@@ -19,6 +19,9 @@ $break-home-sm: 421px
   font-size: 80px
   @media screen and (max-width: $break-sm)
     font-size: 40px
+    line-height: 50px
+    margin-bottom: 10px
+    margin-top: 10px
 
 .header-body-copy
   font-family: $Lora
@@ -119,9 +122,12 @@ $break-home-sm: 421px
 
 .highlighted-content-centered
   font-size: 25px
-  opacity: 0.75
+  opacity: 1.0
   font-family: $Lora
   text-align: center
+  font-weight: bold
+  @media screen and (max-width: $break-sm)
+    font-size: 22px
 
 .highlighted-content-box
   position: relative
@@ -173,12 +179,22 @@ $break-home-sm: 421px
   font-size: 18px
   color: #404040
 
+.charity-body-copy
+  font-family: $Lora
+  font-size: 17px
+  color: rgba(0, 0, 0, 0.7)
+  margin-bottom: 10px
+  @media screen and (max-width: $break-sm)
+    font-size: 14px
+
 .contact-expander-text
   font-family: $Lora
   font-size: 28px
   color: #ffffff
   font-style: italic
   display: inline-block
+  @media screen and (max-width: $break-sm)
+    font-size: 20px
 
 .numeral
   font-family: $Montserrat
@@ -265,6 +281,7 @@ sup
   top: -3.5em
   @media screen and (max-width: $break-sm)
     font-size: 10px
+    top: -2.5em
 
 .uppercase-link
   font-family: $Montserrat

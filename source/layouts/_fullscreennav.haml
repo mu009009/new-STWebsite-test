@@ -20,9 +20,7 @@
               %a{ href: 'https://www.linkedin.com/company/technekes-llc',
                 target: '_blank' }
                 %i.fa.fa-linkedin-square.social-icons-nav{'aria-hidden' => 'true'}
-            %button.close-btn{'aria-hidden' => 'true',
-              'data-dismiss' => 'modal', type: 'button'}
-              %i.fa.fa-times{'aria-hidden' => 'true'}
+            = image_tag "menu-close.png", "data-target" => "#menuModal", "data-toggle" => "modal", :type => "button", class: "open-btn"
       .modal-body.text-center
         .container
           .row

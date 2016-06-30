@@ -1,19 +1,29 @@
 .industry-box
   padding: 40px
-  height: 615px
+  min-height: 615px
   margin-bottom: 20px
   display: flex
   flex-direction: column
   justify-content: space-between
+  @media screen and (max-width: $break-sm)
+    padding: 20px
 
 #agriculture
   background-image: url('industries/agriculture.jpg')
+  background-size: cover
+  background-position: center
 
 #b2b
   background-image: url('industries/b2b.jpg')
+  background-size: cover
+  background-position: center
 
 #pharma
   background-image: url('industries/pharma.jpg')
+  background-size: cover
+  background-position: center
 
 #manu
   background-image: url('industries/construction.jpg')
+  background-size: cover
+  background-position: center
