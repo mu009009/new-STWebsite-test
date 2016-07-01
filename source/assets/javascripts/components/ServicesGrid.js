@@ -14,7 +14,7 @@ export default class ServicesGrid extends Component {
 				<ServicesGridItem 
 					activeItem={item.categories.indexOf(selectedFilter)>-1}
 					item={item} 
-					key={item.key} />
+					key={item.key}/>
 			);
 		});
 		return (
