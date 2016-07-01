@@ -2,6 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import FlipMove from 'react-flip-move';
 import ServicesGridItem from './ServicesGridItem';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 export default class ServicesGrid extends Component {
 	render() {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import FilterList from './FilterList';
 import ServicesGrid from './ServicesGrid';
@@ -19,14 +20,16 @@ class Services extends Component {
 	}
 	render() {
 		return (
-			<div className="row">
-				<div className="col-xl-4">
-					<FilterList onFilterSelect={this.onFilterSelect.bind(this)} />
+			<MuiThemeProvider>
+				<div className="row">
+					<div className="col-xl-4">
+						<FilterList onFilterSelect={this.onFilterSelect.bind(this)} />
+					</div>
+					<div className="col-xl-7 grid">
+						<ServicesGrid services={serviceItems} selectedFilter={this.state.selectedFilter} />
+					</div>
 				</div>
-				<div className="col-xl-7 grid">
-					<ServicesGrid services={serviceItems} selectedFilter={this.state.selectedFilter} />
-				</div>
-			</div>
+			</MuiThemeProvider>
 		);
 	}
 }
