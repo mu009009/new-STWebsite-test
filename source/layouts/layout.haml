@@ -28,9 +28,12 @@
     %meta{:content => "#ffffff", :name => "msapplication-TileColor"}/
     %meta{:content => "images/favicon/ms-icon-144x144.png", :name => "msapplication-TileImage"}/
     %meta{:content => "#ffffff", :name => "theme-color"}/
+    :sass
+      #fouc
+        display: none
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-  %body{class: page_classes}
+  %body#fouc{class: page_classes}
     %header
       %nav.navbar.navbar-fixed-top.navbar-light
         .container.nav-header-box
@@ -52,7 +55,8 @@
     = javascript_include_tag 'index.bundle'
     - if current_page.data.js_include
       = javascript_include_tag current_page.data.js_include
-
+    :javascript
+      document.getElementById('fouc').style.display="block";
     // Pmetrics analytics
     :javascript
       var clicky_site_ids = clicky_site_ids || [];
