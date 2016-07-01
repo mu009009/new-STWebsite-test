@@ -1,13 +1,19 @@
 // NAVBAR STYLES
 .tks-logo
   height: 62px
+  opacity: .6
   -webkit-transition: width .4s, height .4s, -webkit-transform .4s
   transition: height .4s, transform .4s, opacity .5s
   @media screen and (max-width: $break-sm)
     height: 35px
 
+.home-link:hover
+  .tks-logo
+    opacity: 1.0
+    transition: opacity .5s
+
 .tks-logo:hover
-  opacity: .6
+  opacity: 1.0
   transition: opacity .5s
   
 .small

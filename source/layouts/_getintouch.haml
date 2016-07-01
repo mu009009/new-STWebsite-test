@@ -2,16 +2,16 @@
   .getintouch-bar.navbar
     .row
     .contact-expander-text Get in Touch
-    .pull-xs-right
-      %button.btn.btn-block.btn-secondary.js-get-in-touch{"data-target" => "#getintouch-expand", "data-toggle" => "collapse", :type => "button"}
+    .pull-sm-right
+      %button.btn.btn-block.btn-secondary.js-get-in-touch{"data-target" => "#getintouch-expand", "data-toggle" => "collapse", :type => "button", value: "Expand"}
         expand
-        %i.fa.fa-arrow-up{"aria-hidden" => "true"}
+        %i.fa.fa-arrow-up.js-arrow.iconChange{"aria-hidden" => "true"}
   #getintouch-expand.collapse
     .container.getintouch-form
       .row
         .col-md-3
           .subhead-header Contact form
-        .col-md-5.col-md-offset-1
+        .col-md-5.col-md-offset-1.col-xs-12
           %form
             %fieldset.form-group
               %label Name
@@ -22,7 +22,6 @@
             %fieldset.form-group
               %label Comments
               %textarea.form-control{ :type => "textarea", rows: "3" }
-        .col-md-3
-          %button#getintouch-btn.btn.btn-sm.btn-secondary{ :type => "submit" }
-            Send
-            %i.fa.fa-arrow-right{"aria-hidden" => "true"}
+            %button.btn.btn-sm.btn-secondary{ :type => "submit" }
+              Send
+              %i.fa.fa-arrow-right{"aria-hidden" => "true"}
