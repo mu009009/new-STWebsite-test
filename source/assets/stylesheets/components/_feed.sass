@@ -2,6 +2,9 @@
   font-family: $Montserrat
   .feed-item
     margin-bottom: 20px
+    &:hover
+      .post-title
+        color: $tks-blue
   a
     color: $tks-grey-dark
     &:hover
@@ -9,19 +12,28 @@
   .post-image-container
     width: 100%
     height: auto
-    +breakpoint(xxs)
-      height: 280px
+    max-height: 280px
     +breakpoint(xs)
-      height: 300px
+      height: 150px
     +breakpoint(sm)
       height: 200px
     +breakpoint(md)
-      height: 250px
+      height: 180px
     +breakpoint(lg)
-      height: 320px
+      height: 210px
     overflow: hidden
     img
       max-width: 100%
+  .news &
+    .post-image-container
+      +breakpoint(xs)
+        height: 150px
+      +breakpoint(sm)
+        height: 130px
+      +breakpoint(md)
+        height: 110px
+      +breakpoint(lg)
+        height: 140px
   .post-title
     font-size: 18px
     font-weight: bold
