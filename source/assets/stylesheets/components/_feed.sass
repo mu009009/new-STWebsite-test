@@ -8,8 +8,18 @@
       text-decoration: none
   .post-image-container
     width: 100%
+    height: auto
+    +breakpoint(xxs)
+      height: 280px
+    +breakpoint(xs)
+      height: 300px
+    +breakpoint(sm)
+      height: 200px
+    +breakpoint(md)
+      height: 250px
+    +breakpoint(lg)
+      height: 320px
     overflow: hidden
-    height: 150px
     img
       max-width: 100%
   .post-title
