@@ -1,20 +1,44 @@
 import React, { Component } from 'react';
-import { Popover, OverlayTrigger } from 'react-bootstrap';
+import Popover from 'material-ui/Popover/Popover';
 
 export default class ServicesGrid extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      open: false,
+      anchorOrigin: {
+        horizontal: 'middle',
+        vertical: 'bottom',
+      },
+      targetOrigin: {
+        horizontal: 'right',
+        vertical: 'center',
+      },
+    };
+  }
+
+  handleTouchTap = (event) => {
+    // This prevents ghost click.
+    event.preventDefault();
+    this.setState({
+      open: true,
+      anchorEl: event.currentTarget,
+    });
+  };
+
+  handleRequestClose = () => {
+    this.setState({
+      open: false,
+    });
+	};
+
 	render() {
     const { item, index, itemsLength, activeItem } = this.props;
 		return (
-			<OverlayTrigger 
-				trigger="click" 
-				rootClose 
-				positionLeft={-50} 
-				placement="left" 
-				overlay={
-					<Popover 
-						id={`popover_${index}`} 
-						title={item.name}>{item.description}</Popover>}>
-			<div className={`service ${activeItem ? 'active' : 'inactive'} `}>
+		<div className={`service ${activeItem ? 'active' : 'inactive'} `}>
+			<div 
+				onClick={this.handleTouchTap} >
 				<div className="service-icon">
 					<img src={`assets/images/services/${item.icon}`}/>
 				</div>
@@ -22,7 +46,18 @@ export default class ServicesGrid extends React.Component {
 					{item.name}
 				</div>
 			</div>
-    </OverlayTrigger>
+			<Popover
+					className="popover"
+          open={this.state.open}
+          anchorEl={this.state.anchorEl}
+          anchorOrigin={this.state.anchorOrigin}
+          targetOrigin={this.state.targetOrigin}
+					onRequestClose={this.handleRequestClose}
+				>
+					<h4>{item.name}</h4>
+					{item.description}
+				</Popover>
+			</div>
 		);
   }
 }
