@@ -1,5 +1,5 @@
 import Velocity from 'velocity-animate'
 
 $(document).ready(function () {
-  $('body').velocity("fadeIn", { duration: 1000 });
+  $('body').velocity("fadeIn", { duration: 800 });
 });
