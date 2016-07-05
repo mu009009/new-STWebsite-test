@@ -1,2 +1,2 @@
 require('./components/Services.js');
-require('./capabilitiesDetail.js');
+require('./components/services/Capabilities.js');
