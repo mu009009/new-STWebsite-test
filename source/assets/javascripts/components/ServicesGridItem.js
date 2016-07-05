@@ -40,7 +40,7 @@ export default class ServicesGrid extends React.Component {
 			<div 
 				onClick={this.handleTouchTap} >
 				<div className="service-icon">
-					<img src={`assets/images/services/${item.icon}`}/>
+					<img src={activeItem ? `assets/images/services/${item.icon}-color.png` : `assets/images/services/${item.icon}.png`}/>
 				</div>
 				<div className="service-label">
 					{item.name}
