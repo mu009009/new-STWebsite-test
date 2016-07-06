@@ -43,10 +43,4 @@ function mapStateToProps(state) {
 	return { ...state.capabilities }
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(actions, dispatch)
-  };
-}
-
-export default connect(mapStateToProps, { selectCapability, dismissCapability })(CapabilitiesGrid);
+export default connect(mapStateToProps, actions)(CapabilitiesGrid);
