@@ -5,7 +5,7 @@ class CapabilitiesGridItem extends Component {
 	render() {
 		const { showDetails, item } = this.props;
 		return (
-			<div onClick={() => showDetails(item)} className="grid__item">
+				<div onClick={() => showDetails(item)} className="grid__item">
 					<div className="icon-container">
 						<img className="capabilities-icon center-block" src={`assets/images/capabilities/${item.icon}.png`} alt={item.name} />
 						<img className="capabilities-icon center-block" src={`assets/images/capabilities/${item.icon}-color.png`} alt={item.name} />
