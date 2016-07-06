@@ -1,9 +1,9 @@
 /* Viewport sizes based on column number */
 $viewport_xs: 	$item_width; /* 1 column */
 $viewport_s: 	$item_width * 2; /* 2 columns */
-$viewport_m: 	$item_width * 4; /* 4 columns */
-$viewport_l: 	$item_width * 4; /* 4 columns */
-$viewport_xl: 	$item_width * 5; /* 5 columns */
+$viewport_m: 	$item_width * 3; /* 4 columns */
+$viewport_l: 	$item_width * 3; /* 4 columns */
+$viewport_xl: 	$item_width * 6; /* 5 columns */
 $viewport_xxl: 	$item_width * 6; /* 6 columns */
 
 #theGrid {
@@ -96,16 +96,16 @@ $viewport_xxl: 	$item_width * 6; /* 6 columns */
 }
 
 @media screen and (min-width: $viewport_m) {
-	/* 3 columns */
+	/* 4 columns */
 	.grid__item {
-		width: 33.333%;
+		width: 33%;
 	}
 }
 
 @media screen and (min-width: $viewport_l) {
 	/* 4 columns */
 	.grid__item {
-		width: 25%;
+		width: 33%;
 	}
 }
 

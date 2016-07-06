@@ -43,7 +43,7 @@ const ServiceItems = [
 		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam diam mi, ut euismod lectus scelerisque quis. Suspendisse faucibus nisl pulvinar augue feugiat, non consequat sapien pretium. Nunc tellus purus.'
 	}, {
 		key: 8,
-		name: 'Teleservices',
+		name: 'TeleServices',
 		icon: "teleservices",
 		categories: ['ALL', 'LEADS'],
 		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam diam mi, ut euismod lectus scelerisque quis. Suspendisse faucibus nisl pulvinar augue feugiat, non consequat sapien pretium. Nunc tellus purus.'
