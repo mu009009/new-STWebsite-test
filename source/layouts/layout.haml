@@ -54,7 +54,8 @@
     = javascript_include_tag 'vendor.bundle'
     = javascript_include_tag 'index.bundle'
     - if current_page.data.js_include
-      = javascript_include_tag current_page.data.js_include
+      -current_page.data.js_include.each do |file|
+        = javascript_include_tag file
     :javascript
       document.getElementById('fouc').style.display="block";
     // Pmetrics analytics
