@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../../actions';
+import { bindActionCreators } from 'redux';
+import { selectCapability, dismissCapability } from '../../actions';
 import CapabilitiesGridItem from './CapabilitiesGridItem';
 import { TransitionSpring } from 'react-motion';
 
 class CapabilitiesGrid extends Component {
 
 	render() {
-		const { showDetails, selectedCapability, capabilities, dismissCapability, selectCapability } = this.props;
+		const { showDetails, selectedCapability, capabilities, selectCapability, dismissCapability } = this.props;
 
 		return (
 			<div className="container">
@@ -34,4 +35,10 @@ function mapStateToProps(state) {
 	return { ...state.capabilities }
 }
 
-export default connect(mapStateToProps, actions)(CapabilitiesGrid);
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(actions, dispatch)
+  };
+}
+
+export default connect(mapStateToProps, { selectCapability, dismissCapability })(CapabilitiesGrid);
