@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
-const CapabilitiesGridItem = ({ item, handleCapabilitySelect }) => {
+class CapabilitiesGridItem extends Component {
+	render() {
+	const { item, selectCapability } = this.props;
 	return (
-			<a className="grid__item icon-box" onClick={() => handleCapabilitySelect(item)}>
+			<a className="grid__item icon-box" onClick={() => selectCapability(item.key)}>
 				<img className="capabilities-icon center-block" src={`assets/images/capabilities/${item.icon}.png`} alt={item.name} />
 				<img className="capabilities-icon center-block" src={`assets/images/capabilities/${item.icon}-color.png`} alt={item.name} />
 				<div className="loader"></div>
@@ -12,7 +14,7 @@ const CapabilitiesGridItem = ({ item, handleCapabilitySelect }) => {
 					</h3>
 				</div>
 			</a>
-	)
+	)}
 };
 
 export default CapabilitiesGridItem;

@@ -4,7 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import FilterList from './FilterList';
 import ServicesGrid from './ServicesGrid';
-import ServiceItems from '../data/ServiceItems';
+import ServiceItems from '../../data/ServiceItems';
 
 const serviceItems = ServiceItems;
 
