@@ -4,8 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import FilterList from './FilterList';
 import ServicesGrid from './ServicesGrid';
-import ServiceItems from '../data/ServiceItems';
-import { allFilters } from '../data/ServicesFilters';
+import ServiceItems from '../../data/ServiceItems';
 
 const serviceItems = ServiceItems;
 
@@ -13,48 +12,21 @@ class Services extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			selectedFilters: allFilters
+			selectedFilter: 'ALL'
 		}
 	}
-	
 	onFilterSelect(selectedFilter) {
-		if (this.state.selectedFilters.indexOf(selectedFilter) > -1) {
-			let index = this.state.selectedFilters.indexOf(selectedFilter);
-			this.setState({
-				selectedFilters: this.state.selectedFilters.filter((x, i) => i !== index)
-			});
-		} 
-		else {
-			this.setState({ 
-				selectedFilters: this.state.selectedFilters.concat(selectedFilter)
-			});
-		}
+		this.setState({ selectedFilter });
 	}
-
-	onToggleFilters() {
-		if (this.state.selectedFilters.length == allFilters.length) {
-			this.setState({
-				selectedFilters: []
-			})
-		} else {
-			this.setState({
-				selectedFilters: allFilters
-			})
-		}
-	}
-	
 	render() {
 		return (
 			<MuiThemeProvider>
 				<div className="row">
 					<div className="col-lg-5">
-						<FilterList 
-							selectedFilters={this.state.selectedFilters} 
-							onToggleFilters={this.onToggleFilters.bind(this)}
-							onFilterSelect={this.onFilterSelect.bind(this)} />
+						<FilterList onFilterSelect={this.onFilterSelect.bind(this)} />
 					</div>
 					<div className="col-lg-7 grid">
-						<ServicesGrid services={serviceItems} selectedFilters={this.state.selectedFilters} />
+						<ServicesGrid services={serviceItems} selectedFilter={this.state.selectedFilter} />
 					</div>
 				</div>
 			</MuiThemeProvider>
