@@ -1,8 +1,8 @@
 #theGrid
   margin-bottom: 80px
   .icon-box
-    margin-left: auto
-    margin-right: auto
+    margin: 10px
+  .icon-container
     img:nth-child(2)
       display: none
 
@@ -25,20 +25,22 @@
     .cap-summary
       padding: 20px 20px 20px 40px
 
-  .icon-box:hover
-    img:first-child
-      display: none
-    img:nth-child(2)
-      display: block
-      margin-left: auto
-      margin-right: auto
-
-  .grid__item:hover::before,
-  .grid__item:focus::before
-    border-color: $accent-red
-
-  .grid__item::before
-    border-color: $accent-grey-dark
+  .grid__item
+    border: 2px solid $accent-grey
+    display: block
+    height: 100%
+    padding: 10px
+    &:hover
+      text-decoration: none
+      cursor: pointer
+      border: 2px solid $accent-red
+      .icon-container
+        img:first-child
+          display: none
+        img:nth-child(2)
+          display: block
+          margin-left: auto
+          margin-right: auto
 
   .loader::before
     background: $accent-red
@@ -48,15 +50,6 @@
     text-align: center
   .title.title--preview
     color: $tks-blue
-  .grid__item
-    border: 2px solid $accent-grey
-    margin: 5px
-    padding: 15px
-    &:hover
-      text-decoration: none
-      cursor: pointer
-      border: 2px solid $accent-red
-
   .title--full
     font-size: 26px
     color: $tks-blue
@@ -109,10 +102,10 @@
 #theGrid
   position: relative
   .content__item--show
-    position: absolute
-    top: 0
-    left: 0
-    z-index: 100
+    // position: absolute
+    // top: 0
+    // left: 0
+    // z-index: 100
 
 .loader
 	height: 1px

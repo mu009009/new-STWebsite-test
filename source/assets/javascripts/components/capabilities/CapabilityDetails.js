@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 class CapabilityDetails extends Component {
 	render() {
-		const { item, dismissCapability, motionValue } = this.props;
+		const { item, dismissCapability } = this.props;
 		return (
-      <article className="col-xs-12 content__item content__item--show">
+      <article style={this.props.style} className="content__item content__item--show">
         <div className="row content__item__heading">
           <div className="col-xs-12 col-sm-3">
             <div className="cap-tags">
@@ -16,7 +16,7 @@ class CapabilityDetails extends Component {
           <div className="col-xs-12 col-sm-6">
             <div className="cap-icon-title">
               <img src={`assets/images/capabilities/${item.icon}-color.png`} className="capabilities-icon center-block" alt="Demand generation color" />
-							<h3 className="title title--full">{item.name}<br/>{motionValue}</h3>
+							<h3 className="title title--full">{item.name}</h3>
 						</div>
 					</div>
 					<div className="col-sm-3">

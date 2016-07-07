@@ -9,10 +9,13 @@ const initialState = {
 export default function(state = initialState, action) {
 	switch (action.type) {
 		case 'CAPABILITY_SELECTED':
-			console.log(action)
-			return { ...state, selectedCapability: action.payload, showDetails: true };
+			const filteredCapabilities = 
+				state.capabilities.filter(function(value) {
+					return action.payload == value.key;
+				});
+			return { ...state, selectedCapability: action.payload, showDetails: true, capabilities: filteredCapabilities };
 		case 'CAPABILITY_DISMISSED':
-			return { ...state, selectedCapability: null, showDetails: false };
+			return { ...state, capabilities: CapabilitiesData,  selectedCapability: null, showDetails: false };
 	}
 	return state;
 }
