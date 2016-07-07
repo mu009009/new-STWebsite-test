@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 import CapabilitiesGridItem from './CapabilitiesGridItem';
-import { TransitionSpring } from 'react-motion';
 
 class CapabilitiesGrid extends Component {
 

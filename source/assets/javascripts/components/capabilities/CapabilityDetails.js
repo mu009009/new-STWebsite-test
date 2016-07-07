@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 
 class CapabilityDetails extends Component {
 	render() {
-		const { item, dismissCapability } = this.props;
-		
-		if (showDetails) {
-			return (
-      <article className="content__item content__item--show">
+		const { item, dismissCapability, motionValue } = this.props;
+		return (
+      <article className="col-xs-12 content__item content__item--show">
         <div className="row content__item__heading">
           <div className="col-xs-12 col-sm-3">
             <div className="cap-tags">
@@ -18,14 +16,16 @@ class CapabilityDetails extends Component {
           <div className="col-xs-12 col-sm-6">
             <div className="cap-icon-title">
               <img src={`assets/images/capabilities/${item.icon}-color.png`} className="capabilities-icon center-block" alt="Demand generation color" />
-							<h3 className="title title--full">{item.name}</h3>
-							<button onClick={dismissCapability()} className="close-button close-button--show">
-								<svg version="1.1" viewport="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-									<line stroke-width={2} stroke="#888" x1={1} x2={25} y1={25} y2={1}>/</line>
-									<line stroke-width={2} stroke="#888" x1={1} x2={25} y1={1} y2={25}>/</line>
-								</svg>
-							</button>
-            </div>
+							<h3 className="title title--full">{item.name}<br/>{motionValue}</h3>
+						</div>
+					</div>
+					<div className="col-sm-3">
+						<button onClick={() => {dismissCapability()}} className="close-button close-button--show pull-right">
+							<svg version="1.1" viewport="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+								<line stroke-width={2} stroke="#888" x1={1} x2={25} y1={25} y2={1}>/</line>
+								<line stroke-width={2} stroke="#888" x1={1} x2={25} y1={1} y2={25}>/</line>
+							</svg>
+						</button>
           </div>
           <div className="col-xs-12 col-sm-10 col-sm-offset-1">
             <p className="text-xs-center text-muted">
@@ -56,7 +56,8 @@ class CapabilityDetails extends Component {
           </div>
         </div>
       </article>
-			);
-		}
+		);
 	}
 }
+
+export default CapabilityDetails;
