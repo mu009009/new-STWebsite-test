@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
-import CapabilitiesGridItem from './CapabilitiesGridItem';
+import CapabilitiesGridItemContainer from './CapabilitiesGridItemContainer';
 
 class CapabilitiesGrid extends Component {
 
@@ -13,7 +13,7 @@ class CapabilitiesGrid extends Component {
 					<section className="grid">
 							{capabilities.map(function(item) {
 								return (
-									<CapabilitiesGridItem 
+									<CapabilitiesGridItemContainer
 										item={item} 
 										key={item.key}
 										selectedCapability={selectedCapability}
