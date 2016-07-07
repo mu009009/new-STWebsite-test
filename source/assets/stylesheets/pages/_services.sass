@@ -43,14 +43,19 @@
   .loader::before
     background: $accent-red
 
-
+  .title
+    font-family: $Lora
+    text-align: center
+  .title.title--preview
+    color: $tks-blue
   .grid__item
-    .title
-      font-family: $Lora
-    .title.title--preview
-      color: $tks-blue
+    border: 2px solid $accent-grey
+    margin: 5px
+    padding: 15px
     &:hover
       text-decoration: none
+      cursor: pointer
+      border: 2px solid $accent-red
 
   .title--full
     font-size: 26px
@@ -61,10 +66,11 @@
     height: 100%
 
   .content__item.content__item--show
-    padding: 0
+    padding: 0 15px
     min-height: 440px
     font-family: $Lora
     background: $accent-grey
+    border: 2px solid $accent-grey
     .content__item__heading
       padding: 20px 0 30px
       background: $white
@@ -91,6 +97,8 @@
     height: 500px
 
   .close-button
+    background: none
+    border: none
     svg
       width: 30px
       height: 30px
