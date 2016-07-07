@@ -10,7 +10,7 @@ if ($('#instafeed').length>0){
 			limit: '20',
 			sortBy: 'most-recent',
 			resolution: 'standard_resolution',
-			template: '<a href="{{link}}" class="instaphoto"><img src="{{image}}" style="height: 200px"/></a>'
+			template: '<a href="{{link}}" target="_blank" class="instaphoto"><img src="{{image}}" style="height: 200px"/></a>'
 	});
 	userFeed.run();
 }
