@@ -54,7 +54,7 @@ export default class ServicesGrid extends React.Component {
           targetOrigin={this.state.targetOrigin}
 					onRequestClose={this.handleRequestClose}
 				>
-		      <h4 className="subhead-saturated">{item.name}</h4>
+		      <h4 className="subhead-popover">{item.name}</h4>
 					<button className="dismiss-popover" onClick={this.handleRequestClose}>
 						<svg version="1.1" viewPort="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 							<line stroke="#888" stroke-width="2" x1="1" x2="20" y1="20" y2="1"></line>
