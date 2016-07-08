@@ -2,7 +2,19 @@ import CapabilitiesData from '../data/CapabilitiesData';
 
 const initialState = {
 	selectedCapability: null,
-	capabilities: CapabilitiesData
+	capabilities: CapabilitiesData,
+	popover: {
+		open: false,
+		anchorEl: null,
+		anchorOrigin: {
+			horizontal: 'middle',
+			vertical: 'bottom',
+		},
+		targetOrigin: {
+			horizontal: 'right',
+			vertical: 'center',
+		}
+	}
 }
 
 export default function(state = initialState, action) {
