@@ -3,7 +3,7 @@
   padding: 5px
   margin: 1px
   font-family: $Montserrat
-  max-width: 129px
+  max-width: 128px
   &:hover
     background: mix(white, $tks-blue, 80%)
     cursor: pointer
@@ -19,20 +19,24 @@
     border: 2px solid #404040
 
 .grid
-  display: flex
-  justify-content: center
   &::after
     opacity: 0
+
+.gridbox
+  display: flex
+  justify-content: center
 
 .filter-item
   button
     display: flex
 
 
+
 .filter-list
   display: block
   .btn
     display: block
+    white-space: normal
 
 .popover
   padding: 15px

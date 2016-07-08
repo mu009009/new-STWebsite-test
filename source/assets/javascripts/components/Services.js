@@ -22,10 +22,10 @@ class Services extends Component {
 		return (
 			<MuiThemeProvider>
 				<div className="row">
-					<div className="col-xl-4">
+					<div className="col-lg-5">
 						<FilterList onFilterSelect={this.onFilterSelect.bind(this)} />
 					</div>
-					<div className="col-xl-7 grid">
+					<div className="col-lg-7 grid">
 						<ServicesGrid services={serviceItems} selectedFilter={this.state.selectedFilter} />
 					</div>
 				</div>

@@ -12,15 +12,15 @@ export default class ServicesGrid extends Component {
 		})
 		const serviceItems = _.reverse(filteredItems).map(function(item) {
 			return (
-				<ServicesGridItem 
+				<ServicesGridItem
 					activeItem={item.categories.indexOf(selectedFilter)>-1}
-					item={item} 
+					item={item}
 					key={item.key}/>
 			);
 		});
 		return (
 			<div>
-				<FlipMove className="row" easing="cubic-bezier(0, 0.2, 0.2, 0)">
+				<FlipMove className="row gridbox" easing="cubic-bezier(0, 0.2, 0.2, 0)">
 					{serviceItems}
 				</FlipMove>
 			</div>
