@@ -8,7 +8,7 @@ const ServiceItems = [
 	}, {
 		key: 2,
 		name: 'Data Hygiene',
-		icon: "data_hygiene",
+		icon: "data-hygiene",
 		categories: ['ALL', 'EXTEND_REACH'],
 		description: 'Technekes provides end-to-end, integrated data hygiene services to clean, standardize and enhance contact and business information across your marketing and sales systems.'
 	}, {
@@ -74,7 +74,7 @@ const ServiceItems = [
 	}, {
 		key: 13,
 		name: 'UX/Visual Design',
-		icon: "ux_visual_design",
+		icon: "ux-visual-design",
 		categories: ['ALL', 'FUNNEL', 'EXTEND_REACH'],
 		description: 'At Technekes, everything we do begins and ends with user experience. For us, usability and design is key to understanding, and understanding drives engagement, and engagement is what creates demand.'
 	}, {
