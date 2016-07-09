@@ -7,26 +7,48 @@ import ServicesGrid from './ServicesGrid';
 import ServiceItems from '../data/ServiceItems';
 
 const serviceItems = ServiceItems;
+const allFilters = ['SALES_SUPPORT','APPS', 'LEADS', 'BOOTS', 'DATA_INTEGRATION', 'LOYALTY'];
 
 class Services extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			selectedFilter: 'ALL'
+			selectedFilters: allFilters
 		}
 	}
+	
 	onFilterSelect(selectedFilter) {
-		this.setState({ selectedFilter });
+		if (this.state.selectedFilters.indexOf(selectedFilter) > -1) {
+			let index = this.state.selectedFilters.indexOf(selectedFilter);
+			this.setState({
+				selectedFilters: this.state.selectedFilters.filter((x, i) => i !== index)
+			});
+		} 
+		else {
+			this.setState({ 
+				selectedFilters: this.state.selectedFilters.concat(selectedFilter)
+			});
+		}
 	}
+
+	onResetFilters() {
+		this.setState({
+			selectedFilters: allFilters
+		})
+	}
+		
 	render() {
 		return (
 			<MuiThemeProvider>
 				<div className="row">
 					<div className="col-lg-5">
-						<FilterList onFilterSelect={this.onFilterSelect.bind(this)} />
+						<FilterList 
+							selectedFilters={this.state.selectedFilters} 
+							onResetFilters={this.onResetFilters.bind(this)}
+							onFilterSelect={this.onFilterSelect.bind(this)} />
 					</div>
 					<div className="col-lg-7 grid">
-						<ServicesGrid services={serviceItems} selectedFilter={this.state.selectedFilter} />
+						<ServicesGrid services={serviceItems} selectedFilters={this.state.selectedFilters} />
 					</div>
 				</div>
 			</MuiThemeProvider>
