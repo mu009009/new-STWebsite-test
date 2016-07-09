@@ -5,9 +5,9 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FilterList from './FilterList';
 import ServicesGrid from './ServicesGrid';
 import ServiceItems from '../data/ServiceItems';
+import { allFilters } from '../data/ServicesFilters';
 
 const serviceItems = ServiceItems;
-const allFilters = ['SALES_SUPPORT','APPS', 'LEADS', 'BOOTS', 'DATA_INTEGRATION', 'LOYALTY'];
 
 class Services extends Component {
 	constructor(props) {
@@ -31,12 +31,18 @@ class Services extends Component {
 		}
 	}
 
-	onResetFilters() {
-		this.setState({
-			selectedFilters: allFilters
-		})
+	onToggleFilters() {
+		if (this.state.selectedFilters.length == allFilters.length) {
+			this.setState({
+				selectedFilters: []
+			})
+		} else {
+			this.setState({
+				selectedFilters: allFilters
+			})
+		}
 	}
-		
+	
 	render() {
 		return (
 			<MuiThemeProvider>
@@ -44,7 +50,7 @@ class Services extends Component {
 					<div className="col-lg-5">
 						<FilterList 
 							selectedFilters={this.state.selectedFilters} 
-							onResetFilters={this.onResetFilters.bind(this)}
+							onToggleFilters={this.onToggleFilters.bind(this)}
 							onFilterSelect={this.onFilterSelect.bind(this)} />
 					</div>
 					<div className="col-lg-7 grid">

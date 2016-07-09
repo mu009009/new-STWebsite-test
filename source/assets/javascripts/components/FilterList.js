@@ -1,8 +1,7 @@
 import React from 'react';
-import { zeroPad } from '../helpers';
-import ServicesFilters from '../data/ServicesFilters';
+import { allFilters, ServicesFilters } from '../data/ServicesFilters';
 
-const FilterList = ({ onResetFilters, onFilterSelect, selectedFilters }) => {
+const FilterList = ({ onToggleFilters, onFilterSelect, selectedFilters }) => {
 	return (
 		<div className="row">
 			<div className="col-xs-12">
@@ -24,7 +23,7 @@ const FilterList = ({ onResetFilters, onFilterSelect, selectedFilters }) => {
 						)
 					})}
 				</div>
-				<button onClick={() => onResetFilters()} className="btn btn-primary capabilities-filter">show all services</button>
+				<button onClick={() => onToggleFilters()} className="btn btn-primary capabilities-filter">{selectedFilters.length == allFilters.length ? "Clear All" : "Show All Services"}</button>
 			</div>
 		</div>
 	)

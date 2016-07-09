@@ -1,4 +1,6 @@
-const ServicesFilters = [
+export const allFilters = ['SALES_SUPPORT','APPS', 'LEADS', 'BOOTS', 'DATA_INTEGRATION', 'LOYALTY'];
+
+export const ServicesFilters = [
 	{
 		key: 1,
 		text: 'Integrating data from all systems that support our marketing and sales activities.',
@@ -25,5 +27,3 @@ const ServicesFilters = [
 		filter: 'LOYALTY'
 	}
 ];
-
-export default ServicesFilters;
