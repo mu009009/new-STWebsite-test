@@ -141,8 +141,8 @@ import classie from 'desandro-classie';
 
 		setTimeout(function() {
 			// expands the co-placeholder
-			dummy.style.WebkitTransform = 'translate3d(0px, ' + (0) + 'px, 400px)';
-			dummy.style.transform = 'translate3d(0px, ' + (0) + 'px, 400px)';
+			dummy.style.WebkitTransform = 'translate3d(0px, ' + (0) + 'px, 500px)';
+			dummy.style.transform = 'translate3d(0px, ' + (0) + 'px, 500px)';
 			// disallow scroll
 			window.addEventListener('scroll', noscroll);
 		}, 25);
@@ -183,8 +183,8 @@ import classie from 'desandro-classie';
 
 			// classie.removeClass(bodyEl, 'noscroll');
 
-			dummy.style.WebkitTransform = 'translate3d(' + gridItem.offsetLeft + 'px, ' + gridItem.offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth/gridItemsContainer.offsetWidth + ',' + gridItem.offsetHeight/getViewport('y') + ',0.5)';
-			dummy.style.transform = 'translate3d(' + gridItem.offsetLeft + 'px, ' + gridItem.offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth/gridItemsContainer.offsetWidth + ',' + gridItem.offsetHeight/getViewport('y') + ',0.5)';
+			dummy.style.WebkitTransform = 'translate3d(' + gridItem.offsetLeft + 'px, ' + gridItem.offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth/gridItemsContainer.offsetWidth + ',' + (gridItem.offsetHeight/getViewport('y'))*1.5 + ',0.5)';
+			dummy.style.transform = 'translate3d(' + gridItem.offsetLeft + 'px, ' + gridItem.offsetTop + 'px, 0px) scale3d(' + gridItem.offsetWidth/gridItemsContainer.offsetWidth + ',' + (gridItem.offsetHeight/getViewport('y'))*1.5 + ',0.5)';
 
 			onEndTransition(dummy, function() {
 				// reset content scroll..
