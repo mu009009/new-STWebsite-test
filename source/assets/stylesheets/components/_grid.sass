@@ -1,9 +1,16 @@
 .service
-  border: 2px solid $tks-red
+  border: 2px solid #404040
   padding: 5px
   margin: 1px
   font-family: $Montserrat
   max-width: 128px
+  transition: all .35s
+  &.inactive
+    border-color: #404040
+    +opacity(0.4)
+  &.active
+    +opacity(1)
+    border-color: $tks-red
   &:hover
     background: mix(white, $tks-blue, 80%)
     cursor: pointer
@@ -14,9 +21,6 @@
   .service-icon
     font-size: 60px
     text-align: center
-  &.inactive
-    +opacity(.4)
-    border: 2px solid #404040
 
 .grid
   &::after
