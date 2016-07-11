@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 class CapabilityDetails extends Component {
 	render() {
-		const { item, dismissCapability } = this.props;
+		const { item, selectedCapability, dismissCapability, itemKey } = this.props;
 		return (
-      <article style={this.props.style} className="content__item content__item--show">
+      <article style={this.props.style} className={`${selectedCapability === itemKey ? 'active' : 'inactive'} content__item`}>
         <div className="row content__item__heading">
           <div className="col-xs-12 col-sm-3">
             <div className="cap-tags">
@@ -15,30 +15,29 @@ class CapabilityDetails extends Component {
           </div>
           <div className="col-xs-12 col-sm-6">
             <div className="cap-icon-title">
-              <img src={`assets/images/capabilities/${item.icon}-color.png`} className="capabilities-icon center-block" alt="Demand generation color" />
+							<img src={`assets/images/capabilities/${item.icon}-color.png`} className="capabilities-icon center-block" alt="Demand generation color" />
+							<div className="loader"></div>
 							<h3 className="title title--full">{item.name}</h3>
 						</div>
 					</div>
-					<div className="col-sm-3">
 						<button onClick={() => {dismissCapability()}} className="close-button close-button--show pull-right">
 							<svg version="1.1" viewport="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
 								<line stroke-width={2} stroke="#888" x1={1} x2={25} y1={25} y2={1}>/</line>
 								<line stroke-width={2} stroke="#888" x1={1} x2={25} y1={1} y2={25}>/</line>
 							</svg>
 						</button>
-          </div>
           <div className="col-xs-12 col-sm-10 col-sm-offset-1">
-            <p className="text-xs-center text-muted">
+            <p className="text-xs-center text-muted title--subhead">
               We help you find, keep and profitably grow your customers.
             </p>
           </div>
         </div>
         <div className="cap-details">
           <div className="row">
-            <div className="col-md-6 cap-summary">
+            <div className="col-xs-12 col-md-6 cap-summary">
               Demand creation is Technekes' process to help you drive sales. We do this by designing, orchestrating and executing highly integrated marketing and sales tactics. We give you the people, technology and know-how to identify decision makers, qualify opportunities and engage customers and prospects in ways that deliver a measurable and profitable return on your marketing dollar.
             </div>
-            <div className="col-md-6 cap-action-items">
+            <div className="col-md-6 col-xs-12 cap-action-items">
               <div className="highlighted-content-box">
                 <div className="cap-action-items__heading">
                   TURNKEY DEMAND CENTER SERVICES TO:
