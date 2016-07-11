@@ -1,6 +1,6 @@
-export function selectCapability(key) {
+export function showDetails(key) {
 	return {
-		type: 'CAPABILITY_SELECTED',
+		type: 'SHOW_DETAILS',
 		payload: key
 	}
 }

@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 import CapabilityDetails from './CapabilityDetails';
 import CapabilitiesGridItem from './CapabilitiesGridItem';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class CapabilitiesGridItemContainer extends Component {
 	render() {
-		const { item, selectCapability, dismissCapability, selectedCapability } = this.props;
+		const { item, showDetails } = this.props;
 		return (
-			<MuiThemeProvider>
-				<div className="icon-box">
-					<CapabilitiesGridItem
-						item={item}
-						selectCapability={selectCapability}/>
-				</div>
-			</MuiThemeProvider>
+			<div className="col-md-4 col-sm-6 col-xs-12 icon-box">
+				<CapabilitiesGridItem
+					item={item}
+					showDetails={showDetails}/>
+			</div>
 		);
 	}
 };
