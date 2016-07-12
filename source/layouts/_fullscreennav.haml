@@ -5,25 +5,28 @@
     .modal-content
       .modal-header
         .container.nav-header-box
-          %a.home-link{href: 'index.html'}
-            = image_tag "technekes.png", class: "tks-logo"
-            %i.fa.fa-home{"aria-hidden" => "true"}
-            %span.hometext home
-          .right
-            .social.hidden-sm-down.social-links
-              %a{ href: 'https://www.instagram.com/technekes_llc/',
-                target: '_blank' }
-                %i.fa.fa-instagram.social-icons-nav{'aria-hidden' => 'true'}
-              %a{ href: 'https://www.facebook.com/technekes/',
-                target: '_blank' }
-                %i.fa.fa-facebook-official.social-icons-nav{'aria-hidden' => 'true'}
-              %a{ href: 'https://twitter.com/Technekes',
-                target: '_blank' }
-                %i.fa.fa-twitter.social-icons-nav{'aria-hidden' => 'true'}
-              %a{ href: 'https://www.linkedin.com/company/technekes-llc',
-                target: '_blank' }
-                %i.fa.fa-linkedin-square.social-icons-nav{'aria-hidden' => 'true'}
-            = image_tag "menu-close.png", "data-target" => "#menuModal", "data-toggle" => "modal", :type => "button", class: "open-btn"
+          .row
+            .col-xs-6
+              %a.home-link{href: 'index.html'}
+                = image_tag "technekes.png", class: "tks-logo"
+                %i.fa.fa-home{"aria-hidden" => "true"}
+                %span.hometext home
+            .col-xs-6
+              .pull-xs-right
+                .social.hidden-sm-down.social-links
+                  %a{ href: 'https://www.instagram.com/technekes_llc/',
+                    target: '_blank' }
+                    %i.fa.fa-instagram.social-icons-nav{'aria-hidden' => 'true'}
+                  %a{ href: 'https://www.facebook.com/technekes/',
+                    target: '_blank' }
+                    %i.fa.fa-facebook-official.social-icons-nav{'aria-hidden' => 'true'}
+                  %a{ href: 'https://twitter.com/Technekes',
+                    target: '_blank' }
+                    %i.fa.fa-twitter.social-icons-nav{'aria-hidden' => 'true'}
+                  %a{ href: 'https://www.linkedin.com/company/technekes-llc',
+                    target: '_blank' }
+                    %i.fa.fa-linkedin-square.social-icons-nav{'aria-hidden' => 'true'}
+                = image_tag "menu-close.png", "data-target" => "#menuModal", "data-toggle" => "modal", :type => "button", class: "open-btn"
       .modal-body.text-center
         .container
           .row

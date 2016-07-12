@@ -7,14 +7,25 @@
   padding-bottom: 40px
 
 .partner-tile
-  margin-bottom: 70px
+  margin-bottom: 20px
+  min-height: 0
+  +breakpoint(lg)
+    min-height: 300px
+  +breakpoint(xl)
+    min-height: 260px
   @media screen and (max-width: $break-sm)
     margin-bottom: 40px
 
 .leadership-tile
-  margin-bottom: 60px
+  margin-bottom: 30px
   margin-left: auto
   margin-right: auto
+  +breakpoint(sm)
+    min-height: 35em
+  +breakpoint(md)
+    min-height: 38em
+  +breakpoint(xl)
+    min-height: 35em
 
 .position-title-box
   border-bottom: 2px solid $accent-grey
