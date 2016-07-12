@@ -20,7 +20,7 @@ export default class ServicesGrid extends React.Component {
 
   handleTouchTap = (event) => {
     // This prevents ghost click.
-		event.preventDefault();
+    event.preventDefault();
     this.setState({
       open: true,
       anchorEl: event.currentTarget,
