@@ -7,9 +7,10 @@ export default class ServicesGrid extends Component {
 	render() {
 		const { selectedFilters, services } = this.props;
 		const serviceItems = services.map(function(item) {
+			let activeItem = _.intersection(selectedFilters, item.categories).length > 0;
 			return (
 				<ServicesGridItem
-					activeItem={_.intersection(selectedFilters, item.categories).length > 0}
+					activeItem={activeItem}
 					item={item}
 					key={item.key}/>
 			);
