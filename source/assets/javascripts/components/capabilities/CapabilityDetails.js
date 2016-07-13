@@ -32,27 +32,25 @@ class CapabilityDetails extends Component {
             </p>
           </div>
         </div>
-        <div className="cap-details">
-          <div className="row">
-            <div className="col-xs-12 col-md-6 cap-summary">
-              Demand creation is Technekes' process to help you drive sales. We do this by designing, orchestrating and executing highly integrated marketing and sales tactics. We give you the people, technology and know-how to identify decision makers, qualify opportunities and engage customers and prospects in ways that deliver a measurable and profitable return on your marketing dollar.
-            </div>
-            <div className="col-md-6 col-xs-12 cap-action-items">
-              <div className="highlighted-content-box">
-                <div className="cap-action-items__heading">
-                  TURNKEY DEMAND CENTER SERVICES TO:
-                </div>
-              </div>
-              <ul className="cap-action-items__list">
-                <li>Identify decision makers</li>
-                <li>Qualify opportunities</li>
-                <li>Maximize customer engagement across multiple channels</li>
-                <li>Generate, nurture and score leads</li>
-                <li>Integrate and align with sales processes</li>
-                <li>Measure program impact and determine ROI</li>
-              </ul>
-            </div>
-          </div>
+				<div className="cap-details row">
+					<div className="col-xs-12 col-md-6 cap-summary">
+						Demand creation is Technekes' process to help you drive sales. We do this by designing, orchestrating and executing highly integrated marketing and sales tactics. We give you the people, technology and know-how to identify decision makers, qualify opportunities and engage customers and prospects in ways that deliver a measurable and profitable return on your marketing dollar.
+					</div>
+					<div className="col-md-6 col-xs-12 cap-action-items">
+						<div className="highlighted-content-box">
+							<div className="cap-action-items__heading">
+								TURNKEY DEMAND CENTER SERVICES TO:
+							</div>
+						</div>
+						<ul className="cap-action-items__list">
+							<li>Identify decision makers</li>
+							<li>Qualify opportunities</li>
+							<li>Maximize customer engagement across multiple channels</li>
+							<li>Generate, nurture and score leads</li>
+							<li>Integrate and align with sales processes</li>
+							<li>Measure program impact and determine ROI</li>
+						</ul>
+					</div>
         </div>
       </article>
 		);
