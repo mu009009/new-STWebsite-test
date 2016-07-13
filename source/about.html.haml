@@ -21,8 +21,8 @@ title: About Us
       .body-copy Jack and Preston have continued to expand the leadership team here at Technekes as we evolve into new industries, new geographies, and new offerings.
 .container
   .row
-    - data.leadership.each do |person|
-      .col-lg-4.col-sm-6.leadership-tile
+    - data.leadership.each_with_index do |person, index|
+      .col-lg-4.col-sm-6.leadership-tile{ class: ("col-lg-offset-4" if index == data.leadership.length - 1)}
         %img.headshot.center-block{ src: "assets/images/headshots/#{person.image}", alt: "#{person.name}" }/
         .highlighted-content-centered
           = person.name
