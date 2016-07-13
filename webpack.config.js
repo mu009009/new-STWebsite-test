@@ -18,7 +18,7 @@ const siteConfig = {
   },
   resolve: {
 		extensions: ['', '.js', '.jsx'],
-		root: __dirname + '/source/assets/javascripts',
+		root: __dirname + '/source/assets/javascripts'
 		// root: [path.join(__dirname, './src')]
   },
 	// resolve: {
@@ -35,7 +35,7 @@ const siteConfig = {
       {
         test: /source\/assets\/javascripts\/.*\.js$/,
         exclude: /node_modules|\.tmp|vendor/,
-        loader: 'babel',
+				loader: 'babel'
       },
 
       { test: require.resolve("jquery"), loader: "expose?$" },
@@ -49,8 +49,8 @@ const siteConfig = {
 			{ test: /\.s*ss$/, loaders: [ 'style', 'css', 'postcss', 'sass' ] },
 			{ test: /\.css$/, loaders: [ 'style', 'css', 'postcss' ] },
 
-			// Load jQuery for Bootstrap 4
-			{ test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' },
+			// // Load jQuery for Bootstrap 4
+			// { test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' },
 
 			// Fonts
 			{
