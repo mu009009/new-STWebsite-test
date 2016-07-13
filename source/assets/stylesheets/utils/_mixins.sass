@@ -1,10 +1,3 @@
-@mixin breakpoint($breakpoint)
-  @if map-has-key($breakpoints, $breakpoint)
-    @media (min-width: #{map-get($breakpoints, $breakpoint)})
-      @content
-  @else
-    @error "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Please make sure it is defined in `$breakpoints` map."
-
 @mixin text-shadow ($string: 0 1px 3px rgba(0, 0, 0, 0.25))
   text-shadow: $string
 
@@ -57,7 +50,6 @@
   -webkit-background-clip: padding-box
   background-clip:         padding-box
 
-
 @mixin opacity ($opacity: 0.5)
   -webkit-opacity:  $opacity
   -moz-opacity:     $opacity
@@ -85,3 +77,14 @@
   -o-transition:      $property $style $duration
   -webkit-transition: $property $style $duration
   transition:         $property $style $duration
+
+@mixin breakpoint($breakpoint)
+  @if map-has-key($breakpoints, $breakpoint)
+    @media (min-width: #{map-get($breakpoints, $breakpoint)})
+      @content
+  @else
+    @error "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Please make sure it is defined in `$breakpoints` map."
+
+@mixin breakpoint-specific($minWidth: 0, $maxWidth: 1200px)
+  @media screen and (min-width: $minWidth) and (max-width: $maxWidth)
+    @content

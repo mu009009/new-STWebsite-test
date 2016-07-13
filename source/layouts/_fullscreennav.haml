@@ -6,12 +6,13 @@
       .modal-header
         .container.nav-header-box
           .row
-            .col-xs-6
+            .col-xs-9.col-sm-7
               %a.home-link{href: 'index.html'}
                 = image_tag "technekes.png", class: "tks-logo"
-                %i.fa.fa-home{"aria-hidden" => "true"}
-                %span.hometext home
-            .col-xs-6
+                .nav-home-icon-link
+                  %i.fa.fa-home{"aria-hidden" => "true"}
+                  %span.hometext home
+            .col-xs-3.col-sm-5
               .pull-xs-right
                 .social.hidden-sm-down.social-links
                   %a{ href: 'https://www.instagram.com/technekes_llc/',

@@ -83,6 +83,11 @@
   opacity: 1.0
   transition: opacity .5s
   cursor: pointer
+  margin-top: 10px
+  .modal-header &
+    margin-top: 0px
+    +breakpoint(md)
+      margin-top: -12px
   @media screen and (max-width: $break-sm)
     height: 30px
 

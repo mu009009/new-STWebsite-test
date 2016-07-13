@@ -1,6 +1,10 @@
+.social
+  margin-top: 7px
 .social-links
   a
     color: $tks-grey
+    i
+      margin-top: 7px
     &:hover, &:focus
       text-decoration: none
       color: $tks-grey-dark
@@ -45,3 +49,13 @@
 
 .home-icon
   height: 20px
+  img
+    display: inline-block
+
+.nav-home-icon-link
+  width: 30px
+  +breakpoint-specific(476px, 550px)
+    width: 65px
+  +breakpoint(sm)
+    width: 70px
+  display: inline-block
