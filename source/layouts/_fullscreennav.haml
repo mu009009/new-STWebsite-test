@@ -7,7 +7,7 @@
         .container.nav-header-box
           .row
             .col-xs-9.col-sm-7
-              %a.home-link{href: 'index.html'}
+              %a.home-link{href: '/'}
                 = image_tag "technekes.png", class: "tks-logo"
                 .nav-home-icon-link
                   %i.fa.fa-home{"aria-hidden" => "true"}
@@ -32,48 +32,44 @@
         .container
           .row
             .col-md-4.col-sm-6
-              %a{ href: 'services.html' }
+              = link_to '/capabilities.html' do
                 .nav-card
                   .subhead-nav-box
                     .subhead-header what we do
                   .nav-headline
-                    = link_to 'Capabilities', '/capabilities.html'
+                    Capabilities
             .col-md-4.col-sm-6
-              %a{ href: 'partners.html' }
+              = link_to '/partners.html' do
                 .nav-card
                   .subhead-nav-box
                     .subhead-header tools & tech
                   .nav-headline
-                    = link_to 'Partners', '/partners.html'
+                    Partners
             .col-md-4.col-sm-6
-              %a{ href: 'about.html' }
+              = link_to '/company.html' do
                 .nav-card
                   .subhead-nav-box
                     .subhead-header about us
                   .nav-headline
-                    = link_to 'The Company', '/company.html'
+                    The Company
             .col-md-4.col-sm-6
-              %a{ href: 'joinus.html' }
+              = link_to '/careers.html' do
                 .nav-card
                   .subhead-nav-box
                     .subhead-header join our team
                   .nav-headline
-                    = link_to 'Careers', '/careers.html'
+                    Careers
             .col-md-4.col-sm-6
-              %a{ href: 'visitus.html' }
+              = link_to '/contact.html' do
                 .nav-card
                   .subhead-nav-box
                     .subhead-header get in touch
                   .nav-headline
-                    = link_to 'Contact Us', '/contact.html'
+                    Contact Us
             .col-md-4.col-sm-6
-              %a{ href: 'news.html' }
+              = link_to '/news.html' do
                 .nav-card
                   .subhead-nav-box
                     .subhead-header updates & events
                   .nav-headline
-                    = link_to 'news', '/news.html'
-
-    / /.modal-content
-  / /.modal-dialog
-/ /.fullscreen
+                    news

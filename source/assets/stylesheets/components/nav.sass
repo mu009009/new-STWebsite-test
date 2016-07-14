@@ -1,12 +1,17 @@
 // NAVBAR STYLES
 .tks-logo
-  height: 62px
+  height: 35px
   opacity: 1.0
   -webkit-transition: width .4s, height .4s, -webkit-transform .4s
   transition: height .4s, transform .4s, opacity .5s
-  height: 50px
-  @media screen and (max-width: map-get($breakpoints, 768px))
-    height: 35px
+  +breakpoint(md)
+    height: 62px
+
+.layout-header-box
+  .open-btn
+    margin-top: 2px
+    +breakpoint(md)
+      margin-top: 11px
 
 .home-link
   opacity: 1.0
@@ -22,12 +27,6 @@
 .tks-logo:hover
   opacity: .6
   transition: opacity .5s
-
-.small
-  height: 50px
-  @media screen and (max-width: $break-sm)
-    height: 35px
-
 
 
 // FULL SCREEN MODAL STYLES

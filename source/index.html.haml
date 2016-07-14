@@ -11,25 +11,31 @@ title: Home
 
     .row
       .col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2
-        .header-info Technekes is a sales and marketing company that creates demand for leading B2B brands.
+        .header-info
+          Technekes is a sales and marketing company that creates demand for
+          leading B2B brands.
     .row
       .col-md-8.col-md-offset-2
-        .header-body-copy We provide turnkey data management, marketing execution and technologies that deliver sales.
+        .header-body-copy
+          We provide turnkey data management, marketing execution and
+          technologies that deliver sales.
 .container.text-xs-center.content-section
   .subhead-box
     .subhead Who We Are
   .row
     .col-md-8.col-md-offset-2
       .highlighted-content
-        When our founders gathered around a kitchen table more than #{tks_longevity} years
-        ago, they combined their skills of marketing savvy, data management and
-        analytics with one goal in mind: to create demand for their clients.
+        When our founders gathered around a kitchen table more than
+        #{tks_longevity} years ago, they combined their skills of marketing
+        savvy, data management and analytics with one goal in mind: to create
+        demand for their clients.
   .row
     .col-md-6.col-md-offset-3
       .body-copy
-        Fast forward to today — the team has grown, the tools have evolved — but the purpose of our work remains the same: create demand.
-  %a.centered-link{ href: "about.html" }
-    %button.btn.btn-primary{:type => "button"} Learn more about us
+        Fast forward to today — the team has grown, the tools have evolved —
+        but the purpose of our work remains the same: create demand.
+  = link_to 'Learn more about us', "/company.html",
+    class: 'centered-link btn btn-primary'
 
 .what-we-do
   .container.text-xs-center.content-section
@@ -40,7 +46,8 @@ title: Home
         .highlighted-content
           It's a question we get every day - what does Technekes do?
         .body-copy
-          While each situation is different, Technekes combines data services, campaign strategy and execution to create demand.
+          While each situation is different, Technekes combines data services,
+          campaign strategy and execution to create demand.
     .row
       .col-xs-12
         .small-highlighted-content In other words, we:
@@ -58,8 +65,8 @@ title: Home
         .what-we-do-tile
           .red-subhead Deploy
           .body-copy marketing technology, data science & proven programs to drive ROI.
-    %a.centered-link{ href: "services.html" }
-      %button.btn.btn-primary{:type => "button"} see our services
+    = link_to 'see our services', "/capabilities.html",
+      class: 'centered-link btn btn-primary'
 .jumbotron.quote-box
   .row
     .col-md-8.col-md-offset-2
@@ -74,9 +81,8 @@ title: Home
       .subhead-box
         .subhead Recent Posts
       #rss-feeds
-      %a.centered-link{ href: "news.html" }
-        %button.btn.btn-primary{:type => "button"} News & Updates
-
+      = link_to 'News & Updates', "/news.html",
+        class: 'centered-link btn btn-primary'
 .instafeed-container
   #instafeed
 .container.content-section.text-xs-center

@@ -23,7 +23,7 @@ title: About Us
   .row
     - data.leadership.each_with_index do |person, index|
       .col-lg-4.col-sm-6.leadership-tile{ class: ("col-lg-offset-4" if index == data.leadership.length - 1)}
-        %img.headshot.center-block{ src: "assets/images/headshots/#{person.image}", alt: "#{person.name}" }/
+        %img.headshot.center-block{ src: "/assets/images/headshots/#{person.image}", alt: "#{person.name}" }/
         .highlighted-content-centered
           = person.name
         .subhead-centered

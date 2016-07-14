@@ -15,7 +15,7 @@ const FilterList = ({ onToggleFilters, onFilterSelect, selectedFilters }) => {
 								onClick={() => onFilterSelect(filter.filter)}
 								className="btn btn-link capabilities-filter">
 								<div className='filter-checkbox'>
-									<img src={`assets/images/services/checkbox-${selectedFilters === filter.filter || selectedFilters === 'ALL'? 'checked' : 'unchecked'}.png`} />
+									<img src={`/assets/images/services/checkbox-${selectedFilters === filter.filter || selectedFilters === 'ALL'? 'checked' : 'unchecked'}.png`} />
 								</div>
 								<div className="filter-text">
 									{filter.text}
