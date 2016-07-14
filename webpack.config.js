@@ -65,7 +65,7 @@ const siteConfig = {
     ]
   },
   plugins: [
-    definePlugin,
+    // definePlugin,
     new Clean(['.tmp']),
     new webpack.ProvidePlugin({
       $: "jquery",
@@ -73,8 +73,13 @@ const siteConfig = {
 			"window.jQuery": "jquery",
 			"Tether": 'tether',
 			"window.Tether": "tether"
-    }),
-		new webpack.optimize.CommonsChunkPlugin("assets/commons.js")
+		}),
+		new webpack.DefinePlugin({
+			'process.env': {
+				'NODE_ENV': JSON.stringify('production')
+			}
+		})
+		// new webpack.optimize.CommonsChunkPlugin("assets/commons.js")
   ]
 };
 
