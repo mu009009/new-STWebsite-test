@@ -13,32 +13,24 @@ class Services extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			selectedFilters: allFilters
+			selectedFilters: 'DATA_INTEGRATION'
 		}
 	}
 	
-	onFilterSelect(selectedFilter) {
-		if (this.state.selectedFilters.indexOf(selectedFilter) > -1) {
-			let index = this.state.selectedFilters.indexOf(selectedFilter);
-			this.setState({
-				selectedFilters: this.state.selectedFilters.filter((x, i) => i !== index)
-			});
-		} 
-		else {
-			this.setState({ 
-				selectedFilters: this.state.selectedFilters.concat(selectedFilter)
-			});
-		}
+	onFilterSelect(selectedFilters) {
+		this.setState({
+			selectedFilters
+		});
 	}
 
 	onToggleFilters() {
-		if (this.state.selectedFilters.length == allFilters.length) {
+		if (this.state.selectedFilters !== 'ALL') {
 			this.setState({
-				selectedFilters: []
+				selectedFilters: 'ALL'
 			})
 		} else {
 			this.setState({
-				selectedFilters: allFilters
+				selectedFilters: null
 			})
 		}
 	}

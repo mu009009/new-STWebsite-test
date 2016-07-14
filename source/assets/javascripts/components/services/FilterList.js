@@ -1,4 +1,5 @@
 import React from 'react';
+import { zeroPad } from '../../helpers';
 import { allFilters, ServicesFilters } from '../../data/ServicesFilters';
 
 const FilterList = ({ onToggleFilters, onFilterSelect, selectedFilters }) => {
@@ -14,7 +15,7 @@ const FilterList = ({ onToggleFilters, onFilterSelect, selectedFilters }) => {
 								onClick={() => onFilterSelect(filter.filter)} 
 								className="btn btn-link capabilities-filter">
 								<div className='filter-checkbox'>
-									<img src={`assets/images/services/checkbox-${selectedFilters.indexOf(filter.filter) > -1 ? 'checked' : 'unchecked'}.png`} />
+									<img src={`assets/images/services/checkbox-${selectedFilters === filter.filter || selectedFilters === 'ALL'? 'checked' : 'unchecked'}.png`} />
 								</div>
 								<div className="filter-text">
 									{filter.text}
@@ -23,7 +24,12 @@ const FilterList = ({ onToggleFilters, onFilterSelect, selectedFilters }) => {
 						)
 					})}
 				</div>
-				<button onClick={() => onToggleFilters()} className="btn btn-primary capabilities-filter">{selectedFilters.length == allFilters.length ? "Clear All" : "Show All Services"}</button>
+				<button 
+					onClick={() => onToggleFilters()} 
+					disabled={selectedFilters === 'ALL'}
+					className="btn btn-primary capabilities-filter">
+					Show All Services
+				</button>
 			</div>
 		</div>
 	)
