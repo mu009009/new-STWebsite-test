@@ -45,6 +45,9 @@ helpers do
   def random_phone
     "(" + rand.to_s[2..4].gsub(/0/) { 4 } + ") " + rand.to_s[2..4] + "-" + rand.to_s[2..5]
   end
+	def tks_longevity
+		Time.now.year - 2000
+	end
 end
 
 set :css_dir, 'assets'
