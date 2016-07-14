@@ -54,7 +54,7 @@ const siteConfig = {
 
 			// Fonts
 			{
-				loader: 'file?name=assets/[name].[ext]',
+				loader: 'file?name=/assets/[name].[ext]',
 				test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)/
 			},
 			// Images
