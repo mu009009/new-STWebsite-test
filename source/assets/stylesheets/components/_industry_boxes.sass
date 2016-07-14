@@ -1,12 +1,24 @@
 .industry-box
   padding: 40px
-  min-height: 615px
+  min-height: 600px
   margin-bottom: 20px
   display: flex
   flex-direction: column
   justify-content: space-between
-  @media screen and (max-width: $break-sm)
+  @media screen and (max-width: $break-xs)
     padding: 20px
+    min-height: 500px
+
+.industry-box-large
+  padding: 40px
+  min-height: 714px
+  margin-bottom: 20px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  @media screen and (max-width: $break-xs)
+    padding: 20px
+    min-height: 500px
 
 #agriculture
   background-image: url('/assets/images/industries/agriculture.jpg')
