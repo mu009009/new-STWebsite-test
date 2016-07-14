@@ -15,7 +15,7 @@ class CapabilityDetails extends Component {
           </div>
           <div className="col-xs-12 col-sm-6">
             <div className="cap-icon-title">
-							<img src={`assets/images/capabilities/${item.icon}-color.png`} className="capabilities-icon center-block" alt="Demand generation color" />
+							<img src={`/assets/images/capabilities/${item.icon}-color.png`} className="capabilities-icon center-block" alt="Demand generation color" />
 							<div className="loader"></div>
 							<h3 className="title title--full">{item.name}</h3>
 						</div>
