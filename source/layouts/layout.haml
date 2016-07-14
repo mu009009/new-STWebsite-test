@@ -27,10 +27,10 @@
   %body#fouc{class: page_classes}
     %header
       %nav.navbar.navbar-fixed-top.navbar-light
-        .container.nav-header-box
+        .container.nav-header-box.layout-header-box
           .row
             .col-xs-6
-              %a{:href => '/'}
+              %a.home-link{:href => '/'}
                 = image_tag "technekes.png", class: "tks-logo"
             .col-xs-6
               = image_tag 'menu-open.png', 'data-target' => '#menuModal',
