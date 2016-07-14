@@ -107,6 +107,18 @@ const ServiceItems = [
 		icon: "directmail",
 		categories: ['SALES_SUPPORT', 'DATA_INTEGRATION', 'LEADS'],
 		description: 'In today’s digital world, well-crafted direct mail is a lost art. Few methods, however, are more effective at generating results. Technekes understands this, and we know how to profitably leverage direct mail to drive response.'
+	},{
+		key: 19,
+		name: 'Strategy & Consulting',
+		icon: "directmail",
+		categories: ['SALES_SUPPORT', 'DATA_INTEGRATION', 'LEADS'],
+		description: 'There’s no substitute for experience, and Technekes’ team is stacked with industry-specific expertise in marketing and technology. Our consultants are ready to help you design and execute your demand creation strategy.'
+	},{
+		key: 20,
+		name: 'Creative',
+		icon: "directmail",
+		categories: ['SALES_SUPPORT', 'DATA_INTEGRATION', 'LEADS'],
+		description: 'The role of our creative team isn’t to build your brand, it’s to create demand for your brand — target-specific, response-driven, one-to-one communications to uncover leads and drive sales.'
 	},
 ];
 

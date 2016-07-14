@@ -22,33 +22,29 @@ class CapabilityDetails extends Component {
 					</div>
 						<button onClick={() => {dismissCapability()}} className="close-button close-button--show pull-right">
 							<svg version="1.1" viewport="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-								<line stroke-width={2} stroke="#888" x1={1} x2={25} y1={25} y2={1}>/</line>
-								<line stroke-width={2} stroke="#888" x1={1} x2={25} y1={1} y2={25}>/</line>
+								<line strokeWidth={2} stroke="#888" x1={1} x2={25} y1={25} y2={1}>/</line>
+								<line strokeWidth={2} stroke="#888" x1={1} x2={25} y1={1} y2={25}>/</line>
 							</svg>
 						</button>
-          <div className="col-xs-12 col-sm-10 col-sm-offset-1">
+          <div className="col-xs-12 col-sm-6 col-sm-offset-3">
             <p className="text-xs-center text-muted title--subhead">
-              We help you find, keep and profitably grow your customers.
+              {item.subhead}
             </p>
           </div>
         </div>
 				<div className="cap-details row">
-					<div className="col-xs-12 col-md-6 cap-summary">
-						Demand creation is Technekes' process to help you drive sales. We do this by designing, orchestrating and executing highly integrated marketing and sales tactics. We give you the people, technology and know-how to identify decision makers, qualify opportunities and engage customers and prospects in ways that deliver a measurable and profitable return on your marketing dollar.
+					<div dangerouslySetInnerHTML={{__html: item.description}} className="col-xs-12 col-md-6 cap-summary">
 					</div>
 					<div className="col-md-6 col-xs-12 cap-action-items">
 						<div className="highlighted-content-box">
 							<div className="cap-action-items__heading">
-								TURNKEY DEMAND CENTER SERVICES TO:
+								{item.listhead}:
 							</div>
 						</div>
 						<ul className="cap-action-items__list">
-							<li>Identify decision makers</li>
-							<li>Qualify opportunities</li>
-							<li>Maximize customer engagement across multiple channels</li>
-							<li>Generate, nurture and score leads</li>
-							<li>Integrate and align with sales processes</li>
-							<li>Measure program impact and determine ROI</li>
+							{item.listitems.map(function(o, i){
+								return <li key={i}>{o}</li>
+							})}
 						</ul>
 					</div>
         </div>
