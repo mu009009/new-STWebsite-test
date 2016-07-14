@@ -6,14 +6,7 @@ class CapabilityDetails extends Component {
 		return (
       <article style={this.props.style} className={`${selectedCapability === itemKey ? 'active' : 'inactive'} content__item`}>
         <div className="row content__item__heading">
-          <div className="col-xs-12 col-sm-3">
-            <div className="cap-tags">
-              <div className="tag">Data Management</div>
-              <div className="tag">Data Hygiene</div>
-              <div className="tag">Analytics</div>
-            </div>
-          </div>
-          <div className="col-xs-12 col-sm-6">
+          <div className="col-xs-12">
             <div className="cap-icon-title">
 							<img src={`assets/images/capabilities/${item.icon}-color.png`} className="capabilities-icon center-block" alt="Demand generation color" />
 							<div className="loader"></div>
@@ -27,13 +20,13 @@ class CapabilityDetails extends Component {
 							</svg>
 						</button>
           <div className="col-xs-12 col-sm-6 col-sm-offset-3">
-            <p className="text-xs-center text-muted title--subhead">
+            <p className="text-xs-center text-muted title--subhead body-copy-small">
               {item.subhead}
             </p>
           </div>
         </div>
 				<div className="cap-details row">
-					<div dangerouslySetInnerHTML={{__html: item.description}} className="col-xs-12 col-md-6 cap-summary">
+					<div dangerouslySetInnerHTML={{__html: item.description}} className="col-xs-12 col-md-6 cap-summary body-copy-small">
 					</div>
 					<div className="col-md-6 col-xs-12 cap-action-items">
 						<div className="highlighted-content-box">
@@ -41,7 +34,7 @@ class CapabilityDetails extends Component {
 								{item.listhead}:
 							</div>
 						</div>
-						<ul className="cap-action-items__list">
+						<ul className="cap-action-items__list body-copy-small">
 							{item.listitems.map(function(o, i){
 								return <li key={i}>{o}</li>
 							})}

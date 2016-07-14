@@ -73,8 +73,8 @@ const ServiceItems = [
 		description: 'Technekes provides comprehensive services to help you successfully design, implement and maintain your marketing automation platform. This includes consulting and strategy, software selection and configuration, systems and data integrations, and deployment and maintenance.'
 	}, {
 		key: 13,
-		name: 'UX/Visual Design',
-		icon: "ux-visual-design",
+		name: 'User Experience',
+		icon: "ux",
 		categories: ['APPS'],
 		description: 'At Technekes, everything we do begins and ends with user experience. For us, usability and design is key to understanding, and understanding drives engagement, and engagement is what creates demand.'
 	}, {
@@ -110,13 +110,13 @@ const ServiceItems = [
 	},{
 		key: 19,
 		name: 'Strategy & Consulting',
-		icon: "directmail",
+		icon: "strategy",
 		categories: ['SALES_SUPPORT', 'DATA_INTEGRATION', 'LEADS'],
 		description: 'There’s no substitute for experience, and Technekes’ team is stacked with industry-specific expertise in marketing and technology. Our consultants are ready to help you design and execute your demand creation strategy.'
 	},{
 		key: 20,
 		name: 'Creative',
-		icon: "directmail",
+		icon: "creative",
 		categories: ['SALES_SUPPORT', 'DATA_INTEGRATION', 'LEADS'],
 		description: 'The role of our creative team isn’t to build your brand, it’s to create demand for your brand — target-specific, response-driven, one-to-one communications to uncover leads and drive sales.'
 	},
