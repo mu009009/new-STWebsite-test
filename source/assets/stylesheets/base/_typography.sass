@@ -47,6 +47,33 @@ $break-home-sm: 421px
   font-size: 18px
   color: $white
   text-transform: uppercase
+  margin-top: 5px
+  @media screen and (max-width: $break-sm)
+    font-size: 16px
+
+.subhead-hero
+  font-family: $Montserrat
+  font-size: 18px
+  color: $subhead-header
+  text-transform: uppercase
+  background-color: rgba(255, 255, 255, 0.6)
+  display: inline-block
+  padding: 5px 10px 2px
+  margin-bottom: 20px
+  margin-top: 10px
+  @media screen and (max-width: $break-sm)
+    font-size: 16px
+
+.subhead-hero-blue
+  font-family: $Montserrat
+  font-size: 18px
+  color: #27a4bc
+  text-transform: uppercase
+  background-color: rgba(255, 255, 255, 0.6)
+  display: inline-block
+  padding: 5px 10px 2px
+  margin-bottom: 20px
+  margin-top: 10px
   @media screen and (max-width: $break-sm)
     font-size: 16px
 
@@ -137,6 +164,23 @@ $break-home-sm: 421px
   @media screen and (max-width: $break-sm)
     font-size: 18px
 
+.highlighted-content-header
+  font-size: 26px
+  opacity: 1.0
+  font-family: $Lora
+  margin-bottom: 1px
+  font-weight: bold
+  @media screen and (max-width: $break-sm)
+    font-size: 18px
+
+.highlighted-content-header-saturated
+  font-size: 30px
+  color: $white
+  font-family: $Lora
+  margin-bottom: 1px
+  @media screen and (max-width: $break-sm)
+    font-size: 18px
+
 .small-highlighted-content
   font-size: 24px
   opacity: 1.0
@@ -165,14 +209,14 @@ $break-home-sm: 421px
   @media screen and (max-width: $break-sm)
     font-size: 22px
 
-.highlighted-content-box
+.subhead-content-box
   position: relative
   margin-bottom: 40px
   ::after
     content: ""
     display: block
     width: 80px
-    padding-bottom: 5px
+    padding-bottom: 10px
     border-bottom: 2px solid #ff3301
 
 .resource-name

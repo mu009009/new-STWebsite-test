@@ -72,8 +72,20 @@ html,body
   @media screen and (max-width: $break-sm)
     margin-top: 40px
 
+.nav-card
+  :before
+    content: ""
+    display: block
+    width: 250px
+    padding-bottom: 10px
+    border-top: 2px solid $tks-blue
+
 .nav-card:hover
-  .subhead-nav-box
+  ::before
+    content: ""
+    display: block
+    width: 250px
+    padding-bottom: 10px
     border-top: 2px solid $tks-red
 
 // .nav-header-box
