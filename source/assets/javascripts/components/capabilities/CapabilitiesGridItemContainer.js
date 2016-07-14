@@ -4,9 +4,9 @@ import CapabilitiesGridItem from './CapabilitiesGridItem';
 
 class CapabilitiesGridItemContainer extends Component {
 	render() {
-		const { item, showDetails } = this.props;
+		const { item, showDetails, selectedCapability } = this.props;
 		return (
-			<div className="col-md-4 col-sm-6 col-xs-12 icon-box">
+			<div className={`col-md-4 col-sm-6 col-xs-12 icon-box ${selectedCapability ? 'hidden' : ''}`}>
 				<CapabilitiesGridItem
 					item={item}
 					showDetails={showDetails}/>

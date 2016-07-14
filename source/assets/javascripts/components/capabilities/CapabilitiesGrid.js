@@ -17,7 +17,8 @@ class CapabilitiesGrid extends Component {
 									<CapabilitiesGridItemContainer
 										item={item} 
 										key={item.key}
-										showDetails={showDetails}/>
+										showDetails={showDetails}
+										selectedCapability={selectedCapability}/>
 								);
 							})}
 					</section>

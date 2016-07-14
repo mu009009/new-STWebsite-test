@@ -87,6 +87,11 @@
           animation: fadeIn .5s .3s forwards, slideUp .5s .3s forwards
   .icon-box
     margin-bottom: 25px
+    transition: all .3s ease
+    opacity: 1
+    &.hidden
+      visibility: hidden
+      opacity: 0
   .icon-container
     img:nth-child(2)
       display: none
