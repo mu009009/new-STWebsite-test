@@ -2,12 +2,15 @@ import Velocity from 'velocity-animate'
 
 $(document).ready(function () {
 	$('body').velocity("fadeIn", { duration: 800 });
-
-	$('a.anchor-link').on('click', function(e){
-			e.preventDefault();
-			$('html, body').animate({
-						scrollTop: $( $.attr(this, 'href') ).offset().top
-					}, 500);
+	
+	var $root = $('html, body');
+	$('a.anchor-link').on('click', function(e) {
+			var href = $.attr(this, 'href')
+			$root.animate({
+					scrollTop: $( href ).offset().top
+			}, 500, function() {
+				window.location.hash = href;
+			});
 			return false;
 	});
 });
