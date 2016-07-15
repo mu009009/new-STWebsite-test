@@ -13,4 +13,10 @@ $(document).ready(function () {
 			});
 			return false;
 	});
+	$('.match-height').matchHeight({
+		byRow: true,
+		property: 'min-height',
+		target: null,
+		remove: false
+	});
 });
