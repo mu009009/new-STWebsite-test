@@ -11,7 +11,9 @@ export default class CapabilitiesIntro extends Component {
 							<div className="subhead">What we do</div>
 						</div>
 						<div className="body-copy">
-							While Technekes' capabilities are broad, they're all designed to do one thing: <i> help  you create demand</i>. Take a moment to learn how we can help you attract, acquire and grow customers.
+							While Technekes' capabilities are broad, they're all designed to 
+							do one thing: <i> help  you create demand</i>. Take a moment to 
+							learn how we can help you attract, acquire and grow customers.
 						</div>
 				</div>
 				</div>

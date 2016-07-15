@@ -2,31 +2,50 @@ import React, { Component } from 'react';
 
 class CapabilityDetails extends Component {
 	render() {
-		const { item, selectedCapability, dismissCapability, itemKey } = this.props;
+		const { 
+			item, 
+			selectedCapability, 
+			dismissCapability, 
+			itemKey } = this.props;
 		return (
-      <article style={this.props.style} className={`${selectedCapability === itemKey ? 'active' : 'inactive'} content__item`}>
+			<article 
+				className={`${selectedCapability === itemKey ? 'active' : 'inactive'} 
+				content__item`}>
         <div className="row content__item__heading">
           <div className="col-xs-12">
             <div className="cap-icon-title">
-							<img src={`/assets/images/capabilities/${item.icon}-color.png`} className="capabilities-icon center-block" alt="Demand generation color" />
+							<img 
+								src={`/assets/images/capabilities/${item.icon}-color.png`} 
+								className="capabilities-icon center-block" 
+								alt="Demand generation color" />
 							<div className="loader"></div>
 							<h3 className="title title--full">{item.name}</h3>
 						</div>
 					</div>
-						<button onClick={() => {dismissCapability()}} className="close-button close-button--show pull-right">
-							<svg version="1.1" viewport="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-								<line strokeWidth={2} stroke="#888" x1={1} x2={25} y1={25} y2={1}>/</line>
-								<line strokeWidth={2} stroke="#888" x1={1} x2={25} y1={1} y2={25}>/</line>
-							</svg>
-						</button>
+					<button 
+						onClick={() => {dismissCapability()}} 
+						className="close-button close-button--show pull-right">
+						<svg 
+							version="1.1" 
+							viewport="0 0 25 25" 
+							xmlns="http://www.w3.org/2000/svg">
+							<line strokeWidth={2} stroke="#888" 
+								x1={1} x2={25} y1={25} y2={1}>/</line>
+							<line strokeWidth={2} stroke="#888" 
+								x1={1} x2={25} y1={1} y2={25}>/</line>
+						</svg>
+					</button>
           <div className="col-xs-12 col-sm-6 col-sm-offset-3">
-            <p className="text-xs-center text-muted title--subhead body-copy-small">
+						<p className="text-xs-center text-muted title--subhead 
+							body-copy-small">
               {item.subhead}
             </p>
           </div>
         </div>
 				<div className="cap-details row">
-					<div dangerouslySetInnerHTML={{__html: item.description}} className="col-xs-12 col-md-6 cap-summary body-copy-small">
+					<div 
+						dangerouslySetInnerHTML={{__html: item.description}} 
+						className="col-xs-12 col-md-6 cap-summary body-copy-small">
 					</div>
 					<div className="col-md-6 col-xs-12 cap-action-items">
 						<div className="highlighted-content-box">
