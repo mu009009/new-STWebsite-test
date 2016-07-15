@@ -2,14 +2,8 @@
   font-family: $Montserrat
   .feed-item
     margin-bottom: 20px
-    +breakpoint(xs)
-      min-height: 300px
-    +breakpoint(sm)
-      min-height: 380px
-    +breakpoint(lg)
-      min-height: 420px
-    +breakpoint(xl)
-      min-height: 380px
+    @media screen and (max-width: map-get($breakpoints, sm))
+      min-height: auto !important
     &:hover
       .post-title
         color: $tks-blue

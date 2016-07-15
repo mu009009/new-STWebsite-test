@@ -33,6 +33,7 @@
     "imports": "^1.0.0",
     "instafeed.js": "^1.4.1",
     "jquery": "^2.2.4",
+    "jquery-match-height": "^0.7.0",
     "jquery-rss": "^3.2.1",
     "less": "^2.7.1",
     "lodash": "^4.13.1",
