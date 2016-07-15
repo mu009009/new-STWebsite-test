@@ -74,46 +74,32 @@
 .btn:focus
   outline: none
 
-.open-btn
+.open-btn, .close-btn
   background-color: $tks-blue
   color: $white
   border-radius: 50%
   border: none
   height: 30px
   opacity: 1.0
-  transition: opacity .5s
+  transition: height .4s, opacity .5s, margin-top .5s
   cursor: pointer
-  margin-top: 10px
+  margin-top: 2px
   .modal-header &
     margin-top: 0px
     +breakpoint(md)
       margin-top: -12px
   +breakpoint(md)
     height: 40px
+    margin-top: 11px
 
-.open-btn:hover
+.open-btn:hover, .close-btn:hover, .home-link:hover
   opacity: .6
   transition: opacity .5s
 
-.home-link:hover
-    opacity: .6
-    transition: opacity .5s
-
-.open-btn:focus
+.open-btn:focus, .close-btn:focus
   outline: none
 
-.close-btn
-  background-color: $tks-blue
-  color: $white
-  border-radius: 50%
-  border: none
-  height: 40px
-  opacity: 1.0
-  transition: opacity .5s
-
-.close-btn:hover
-  opacity: .6
-  transition: opacity .5s
-
-.close-btn:focus
-  outline: none
+.scroll
+  +breakpoint(md)
+    height: 35px
+    margin-top: 5px
