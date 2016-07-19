@@ -3,7 +3,7 @@
   title: 'COO'
   department: 'President'
   linkedin: 'steveamedio'
-  description: 'Steve leads Technekes. He sets the tone for how we operate and grow the business and leads one of our philanthropic efforts too, All-In to Fight Cancer.'
+  description: 'Steve leads Technekes. He sets the tone for how we operate &mdash; growing the business and leading one of our philanthropic efforts too, All-In to Fight Cancer.'
 
 - image: 'preston.jpg'
   name: 'Preston Fay'
@@ -38,14 +38,14 @@
   title: 'Director'
   department: 'Canadian Operations'
   linkedin: 'joan-knowlton-4188651b'
-  description: 'Joan leads our Canadian work, lending her decades of experience to guide outbound programs that Technekes deploys in the Great North.'
+  description: 'Joan leads our Canadian work, lending her decades of experience to Technekes&rsquo; outbound programs in the Great North.'
 
 - image: 'winn.jpg'
   name: 'Winn Maddrey'
   title: 'VP'
   department: 'Marketing'
   linkedin: 'winnmaddrey'
-  description: 'Winn leads marketing efforts, supporting the sales function and leading the campaign team. He works on our communications effrots as well.'
+  description: 'Winn leads marketing efforts, supporting the sales function and leading the campaign team. He works on our communications as well.'
 
 - image: 'scott.jpg'
   name: 'Scott Miner'
