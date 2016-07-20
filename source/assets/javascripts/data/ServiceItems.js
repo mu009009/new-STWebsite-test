@@ -40,7 +40,7 @@ const ServiceItems = [
 		name: 'Multi-Channel',
 		icon: "multi_channel_marketing",
 		categories: ['LEADS', 'BOOTS',  'SALES_SUPPORT', 'LOYALTY'],
-		description: 'Engagement across multiple channels – phone, email, SMS, chat, web, direct mail – drives sales. It’s one of Technekes’“truths.” And we’re among the few with strategic and technical know-how to seamlessly integrate touch points across virtually every channel.'
+		description: 'Engagement across multiple channels – phone, email, SMS, chat, web, direct mail – drives sales. It’s one of Technekes’ “truths.” And we’re among the few with strategic and technical know-how to seamlessly integrate touch points across virtually every channel.'
 	}, {
 		key: 8,
 		name: 'TeleServices',
@@ -100,7 +100,7 @@ const ServiceItems = [
 		name: 'Event Management',
 		icon: "event_management",
 		categories: ['APPS', 'LEADS', 'BOOTS'],
-		description: 'Tradeshows and events are among the best opportunities to engage customers and prospects. Technekes’ event-specific demand creation actions ensure you, attract targets, drive interaction, qualify leads and close sales.'
+		description: 'Tradeshows and events are among the best opportunities to engage customers and prospects. Technekes’ event-specific demand creation actions ensure you attract targets, drive interaction, qualify leads and close sales.'
 	}, {
 		key: 18,
 		name: 'Direct Mail',
