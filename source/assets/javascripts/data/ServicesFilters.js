@@ -15,7 +15,7 @@ export const ServicesFilters = [
 		filter: 'SALES_SUPPORT'
 	}, {
 		key: 4,
-		text: 'Improving leads -- getting them, qualifying them, and closing them.',
+		text: 'Improving leads - getting them, qualifying them, and closing them.',
 		filter: 'LEADS'
 	}, {
 		key: 5,
