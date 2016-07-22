@@ -108,6 +108,8 @@ header.sticky
     background: rgba(0, 0, 0, 0.7)
 
 .hometext
-  font-size: 18px
-  @media screen and (max-width: $break-xs)
-    display: none
+  font-size: 16px
+  display: none
+  +breakpoint(md)
+    font-size: 18px
+    display: inline-block
