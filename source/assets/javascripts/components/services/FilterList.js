@@ -6,7 +6,8 @@ const FilterList = ({ onToggleFilters, onFilterSelect, selectedFilters }) => {
 	return (
 		<div className="row">
 			<div className="col-xs-12">
-				<div className="subhead-saturated filter-header"> What keeps you awake at night? </div>
+				<div className="highlighted-content"> What keeps you awake at night? </div>
+
 				<div className="filter-list">
 					{ServicesFilters.map(filter => {
 						return (

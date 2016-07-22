@@ -48,7 +48,7 @@ class CapabilityDetails extends Component {
 						className="col-xs-12 col-md-6 cap-summary body-copy-small">
 					</div>
 					<div className="col-md-6 col-xs-12 cap-action-items">
-						<div className="subhead-content-box-capabilities">
+						<div className="subhead-content-box-small">
 							<div className="cap-action-items__heading">
 								{item.listhead}:
 							</div>
