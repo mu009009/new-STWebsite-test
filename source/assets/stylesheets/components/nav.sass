@@ -10,24 +10,26 @@
 .home-link
   opacity: 1.0
   transition: opacity .5s
-  i
-    opacity: 1.0
-    transition: opacity .5s
 
 .home-link:hover
-    opacity: .6
+  .nav-home-icon-link
+    opacity: 1.0
     transition: opacity .5s
-
-.tks-logo:hover
-  opacity: .6
-  transition: opacity .5s
 
 .small
   +breakpoint (md)
     height: 50px
   height: 35px
 
-
+.nav-home-icon-link
+  width: 100px
+  opacity: 0.0
+  display: inline-block
+  transition: opacity .5s
+  +breakpoint-specific(476px, 550px)
+    width: 65px
+  +breakpoint(sm)
+    width: 70px
 
 // FULL SCREEN MODAL STYLES
 // --------------------------------------------------
@@ -106,5 +108,6 @@ header.sticky
     background: rgba(0, 0, 0, 0.7)
 
 .hometext
+  font-size: 18px
   @media screen and (max-width: $break-xs)
     display: none
