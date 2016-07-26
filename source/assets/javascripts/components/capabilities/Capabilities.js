@@ -7,7 +7,7 @@ class Capabilities extends Component {
 		return (
 			<div>
 				<CapabilitiesIntro />
-				<CapabilitiesGrid /> 
+				<CapabilitiesGrid />
 			</div>
 		);
 	}
