@@ -46,7 +46,7 @@ const CapabilitiesData = [
 		listitems: ["Outbound", "Inbound", "Customer Support", "Sales Support", "Inside Sales"]
 	}, {
 		key: 6,
-		name: 'Incentive, Loyalty & Rebate Program Management',
+		name: 'Incentive, Rebates & Loyalty Programs',
 		subhead: "Technekes delivers turnkey, end-to-end services for your payment and rewards programs.",
 		icon: "incentive-loyalty_program-mgmt",
 		categories: ['ALL', 'FUNNEL'],

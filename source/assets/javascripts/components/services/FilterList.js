@@ -6,7 +6,7 @@ const FilterList = ({ onToggleFilters, onFilterSelect, selectedFilters }) => {
   return (
     <div className="row">
       <div className="col-xs-12">
-        <div className="highlighted-content"> What keeps you awake at night? </div>
+        <div className="highlighted-content hidden-xs-down"> What keeps you awake at night? </div>
 
         <div className="filter-list hidden-xs-down">
           {ServicesFilters.map(filter => {
@@ -25,18 +25,6 @@ const FilterList = ({ onToggleFilters, onFilterSelect, selectedFilters }) => {
               )
           })}
         </div>
-        <ol className="filter-list hidden-sm-up">
-          {ServicesFilters.map(filter => {
-            return (
-              <li
-                key={filter.key}>
-                <div className="filter-text">
-                  {filter.text}
-                </div>
-              </li>
-              )
-          })}
-        </ol>
         <button
           onClick={() => onToggleFilters()}
           disabled={selectedFilters === 'ALL'}

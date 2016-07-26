@@ -1,4 +1,4 @@
-export const allFilters = ['SALES_SUPPORT','APPS', 'LEADS', 'BOOTS', 'DATA_INTEGRATION', 'LOYALTY'];
+export const allFilters = ['ROI','APPS', 'LEADS', 'BOOTS', 'DATA_INTEGRATION', 'LOYALTY'];
 
 export const ServicesFilters = [
 	{
@@ -11,12 +11,12 @@ export const ServicesFilters = [
 		filter: 'BOOTS'
 	}, {
 		key: 3,
-		text: 'Providing marketing and sales support for our distribution channel partners.',
-		filter: 'SALES_SUPPORT'
+		text: 'Improving leads -- getting them, qualifying them, and closing them.',
+		filter: 'LEADS'
 	}, {
 		key: 4,
-		text: 'Improving leads - getting them, qualifying them, and closing them.',
-		filter: 'LEADS'
+		text: 'Measuring the ROI and effectiveness of our marketing initiatives.',
+		filter: 'ROI'
 	}, {
 		key: 5,
 		text: 'I need purpose-built apps to support my marketing and sales activities.',
