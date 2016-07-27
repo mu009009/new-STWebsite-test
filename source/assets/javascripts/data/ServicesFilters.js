@@ -23,7 +23,7 @@ export const ServicesFilters = [
 		filter: 'APPS'
 	}, {
 		key: 6,
-		text: 'Implementing a loyalty program to reward our best customers',
+		text: 'Implementing a rebate or loyalty program to reward our best channel partners or end-user customers.',
 		filter: 'LOYALTY'
 	}
 ];
