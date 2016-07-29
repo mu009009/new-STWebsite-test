@@ -6,9 +6,9 @@ export default class CapabilitiesIntro extends Component {
 			<div className="container content-section">
 				<div className="row">
 					<div className="col-md-7">
-						<div className="highlighted-content-header">Capabilities</div>
+						<div className="highlighted-content-header">Our Work</div>
 						<div className="subhead-content-box">
-							<div className="subhead">What we do</div>
+							<div className="subhead">Generating Results</div>
 						</div>
 						<div className="body-copy">
 							While Technekes' capabilities are broad, they're all designed to
