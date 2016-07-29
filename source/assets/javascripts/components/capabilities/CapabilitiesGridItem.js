@@ -4,17 +4,17 @@ class CapabilitiesGridItem extends Component {
 	render() {
 		const { item, showDetails, selectedCapability } = this.props;
 		return (
-			<div className={`col-md-4 col-sm-6 col-xs-12 icon-box 
+			<div className={`col-md-4 col-sm-6 col-xs-12 icon-box
 				${selectedCapability ? 'hidden' : ''}`}>
 				<div onClick={() => showDetails(item)} className="grid__item">
 					<div className="icon-container">
-						<img 
-							className="capabilities-icon center-block" 
-							src={`/assets/images/capabilities/${item.icon}.png`} 
+						<img
+							className="capabilities-icon center-block"
+							src={`/assets/images/capabilities/${item.icon}.png`}
 							alt={item.name} />
-						<img 
-							className="capabilities-icon center-block" 
-							src={`/assets/images/capabilities/${item.icon}-color.png`} 
+						<img
+							className="capabilities-icon center-block"
+							src={`/assets/images/capabilities/${item.icon}-color.png`}
 							alt={item.name} />
 					</div>
 					<div className="loader">

@@ -8,6 +8,12 @@ const initialState = {
 export default function(state = initialState, action) {
 	switch (action.type) {
 		case 'SHOW_DETAILS':
+		ga('send', {
+			hitType: 'event',
+			eventCategory: `Details: ${state.capabilities[action.payload.key-1].name}`,
+			eventAction: 'open',
+			eventLabel: 'Capabilities'
+			});
 			if (window.innerHeight < 600){
 				$('html, body').animate({scrollTop: $('#theGrid').position().top - $('.navbar').height() - 20}, 'slow');
 			}

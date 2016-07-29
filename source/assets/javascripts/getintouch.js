@@ -9,6 +9,12 @@ $(".js-get-in-touch").click(function() {
   } else {
     $this.html('Expand <i id="iconChange" class="fa fa-arrow-up"></i>');
   }
+  ga('send', {
+    hitType: 'event',
+    eventCategory: "Get in touch",
+    eventAction: 'open',
+    eventLabel: 'Get in touch'
+  });
 });
 
 // set up velocity movement instead
