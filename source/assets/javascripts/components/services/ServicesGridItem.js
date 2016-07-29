@@ -25,6 +25,12 @@ export default class ServicesGrid extends React.Component {
       open: true,
       anchorEl: event.currentTarget,
     });
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Popover',
+      eventAction: 'open',
+      eventLabel: 'Services'
+    });
   };
 
   handleRequestClose = () => {
