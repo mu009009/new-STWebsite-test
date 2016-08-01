@@ -75,6 +75,7 @@ configure :build do
   activate :relative_assets
 
 	activate :directory_indexes
+  page "/blog.html", :directory_index => false
 
   set :relative_links, true
 end
