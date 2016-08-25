@@ -1,0 +1,24 @@
+{
+  "name": "Technekes",
+  "repository": "https://github.com/technekes/dotcom",
+  "description": "technekes.com",
+  "env": {
+    "NPM_CONFIG_PRODUCTION": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
