@@ -5,7 +5,7 @@
     %meta{:charset => 'utf-8'}/
     %meta{:content => 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no', :name => 'viewport'}/
     %title
-      Technekes#{' | ' + current_page.data.title if current_page.data.title}
+      Stratifyd#{' | ' + current_page.data.title if current_page.data.title}
     %link{:href => "/favicon.ico", :rel => "icon", :type => "image/ico"}/
     %link{:href => "/assets/images/favicon/apple-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}/
     %link{:href => "/assets/images/favicon/apple-icon-60x60.png", :rel => "apple-touch-icon", :sizes => "60x60"}/
@@ -24,48 +24,9 @@
       #fouc
         display: none
 
-  %body#fouc{class: page_classes}
-    %header
-      %nav.navbar.navbar-fixed-top.navbar-light
-        .container.nav-header-box.layout-header-box
-          .row
-            .col-xs-6
-              %a.home-link{:href => '/'}
-                = image_tag "technekes.png", class: "tks-logo"
-            .col-xs-6
-              = image_tag 'menu-open.png', 'data-target' => '#menuModal',
-                'data-toggle' => 'modal', :type => 'button',
-                class: 'open-btn pull-xs-right'
-    = partial 'layouts/fullscreennav'
+  %body
     = yield
-    %br
-    = partial 'layouts/getintouch'
-    = partial 'layouts/footer'
 
     -# = javascript_include_tag 'commons.js'
     = javascript_include_tag 'vendor.bundle'
     = javascript_include_tag 'index.bundle'
-    - if current_page.data.js_include
-      - current_page.data.js_include.each do |file|
-        = javascript_include_tag file
-    :javascript
-      document.getElementById('fouc').style.display="block";
-      // Pmetrics analytics
-      var clicky_site_ids = clicky_site_ids || [];
-      clicky_site_ids.push(11419);
-      (function() {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = ( document.location.protocol == 'https:' ? 'https://pmetrics.performancing.com/js' : 'http://pmetrics.performancing.com/js'  );
-      ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]  ).appendChild( s  );
-      })();
-    <noscript><p><img alt="Performancing Metrics" width="1" height="1" src="//pmetrics.performancing.com/11419ns.gif" /></p></noscript>
-    :javascript
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-15217247-2', 'auto');
-      ga('send', 'pageview');
