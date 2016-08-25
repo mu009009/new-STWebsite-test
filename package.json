@@ -1,7 +1,7 @@
 {
-  "name": "Technekes",
+  "name": "Stratifyd",
   "version": "",
-  "description": "technekes.com website",
+  "description": "Stratifyd.com website",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.2.1",
