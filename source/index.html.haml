@@ -49,3 +49,13 @@ title: Home
 .text-xs-center
   %h5 Blog
   %button.btn Read More Blog Posts
+  %button.btn.btn-lg.btn-danger{"data-content" => "And here's some amazing content. It's very engaging. Right?", "data-toggle" => "popover", :title => "Popover title", :type => "button"} Click to toggle popover
+
+.row
+  .col-md-6
+    .card
+      %img.card-img-top{:alt => "Card image cap", :src => "..."}/
+      .card-block
+        %h4.card-title Card title
+        %p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+        %a.btn.btn-primary{:href => "#"} Go somewhere

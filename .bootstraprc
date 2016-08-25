@@ -70,13 +70,13 @@ styles:
 
   # Components
   animation: true
-  dropdown: false
+  dropdown: true
   button-group: true
   input-group: true
   custom-forms: true
   nav: true
   navbar: true
-  card: false
+  card: true
   breadcrumb: false
   pagination: false
   pager: false
@@ -92,7 +92,7 @@ styles:
   # Components w/ JavaScript
   modal: true
   tooltip: false
-  popover: false
+  popover: true
   carousel: false
 
   # Utility classes
@@ -107,9 +107,9 @@ scripts:
   button: false
   carousel: false
   collapse: true
-  dropdown: false
+  dropdown: true
   modal: true
-  popover: false
+  popover: true
   scrollspy: false
   tab: false
   tooltip: false
