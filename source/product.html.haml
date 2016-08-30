@@ -1,0 +1,89 @@
+---
+title: Product
+---
+.jumbotron.text-xs-center
+  .row
+    .col-md-6.col-md-offset-3
+      %h1.display-3 Signals
+      .body-copy VHS wolf roof party pug, vice humblebrag you probably haven't heard of them tote bag truffaut marfa. Franzen tattooed synth thundercats trust fund, food truck chicharrones. Helvetica health goth marfa, 3 wolf moon lomo leggings occupy pabst viral banh mi meditation truffaut cliche green juice four dollar toast. Mustache viral ethical, distillery williamsburg meh deep v scenester portland church-key try-hard swag. Cardigan 90's portland schlitz fashion axe gastropub, leggings intelligentsia etsy irony.
+
+
+.block
+  .container
+    .text-xs-center
+      %h3 Head-to-Head
+      .row
+        .col-md-4
+          %h5 Team of Data Scientists
+          .body-copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .col-md-4
+          %h1 VS
+        .col-md-4
+          %h5 One Person Using Signals
+          .body-copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%hr
+.block
+  .text-xs-center
+    %h3 Case Studies
+  .container
+    .row
+      .col-md-4
+        .card.blog-card
+          %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
+          .card-block
+            %h4.card-title Card title
+            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            %a.btn.btn-primary{:href => "#"} Go somewhere
+
+      .col-md-4
+        .card.blog-card
+          %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
+          .card-block
+            %h4.card-title Card title
+            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            %a.btn.btn-primary{:href => "#"} Go somewhere
+
+      .col-md-4
+        .card.blog-card
+          %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
+          .card-block
+            %h4.card-title Card title
+            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            %a.btn.btn-primary{:href => "#"} Go somewhere
+
+  .text-xs-center
+    %button.btn Read More Case Studies
+%hr
+
+.block
+  .contianer
+    .row
+      .col-md-5.col-md-offset-1
+        %h3 Take the Signals Challenge
+        .body-copy
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        %button.btn Get Started
+      .col-md-6
+        .text-xs-center
+          %img{:alt => "Card image cap", :src => "assets/images/placeholder.svg", class: "placeholder"}/
+
+.block-dark
+  .container
+    .row
+      .col-md-6.col-md-offset-3
+        .text-xs-center
+          %h3 Contact Us For Pricing Info
+        %form
+          .form-group
+            %label Name
+            %input.form-control{:placeholder => "First Last"}/
+          .form-group
+            %label Email address
+            %input.form-control{"aria-describedby" => "emailHelp", :placeholder => "Enter email", :type => "email"}/
+          .form-group
+            %label Phone Number
+            %input.form-control{:placeholder => "Phone Number", :type => "email"}/
+          .form-group
+            %label{:for => "exampleTextarea"} Example textarea
+            %textarea.form-control{:rows => "3"}
+          %button.btn.btn-primary{:type => "submit"} Send Message

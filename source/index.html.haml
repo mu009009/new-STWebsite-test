@@ -1,23 +1,6 @@
 ---
 title: Home
 ---
-%nav.navbar.navbar-light.bg-faded
-  %ul.nav.navbar-nav
-    %li.nav-item.active
-      %a.nav-link{ href: "#" }
-        Product
-        %span.sr-only (current)
-    %li.nav-item
-      %a.nav-link{ href: "#" } Solutions
-    %li.nav-item
-      %a.nav-link{ href: "#" } About Us
-    %li.nav-item
-      %a.nav-link{ href: "#" } Blog
-  .pull-xs-right
-    %button.btn Try Signals
-    %button.btn Contact Us
-    %a.nav-link{ href: "#" } Log in
-
 .jumbotron.text-xs-center
   .row
     .col-md-6.col-md-offset-3
@@ -28,106 +11,60 @@ title: Home
         %a.btn.btn-primary.btn-lg{ href: "#", role: "button" } About Us
 
 .block
-  .text-xs-center
-    %h3 The Next Generation of Data Analytics
+  .container
+    .text-xs-center
+      %h3 The Next Generation of Data Analytics
+      .row
+        .col-md-6.col-md-offset-3
+          %h5 The Problem With Traditional Data Analytics
+          .body-copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .row
+        .col-md-6.col-md-offset-3
+          %h5 Our Approach
+          .body-copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      %button.btn Solutions
+
+.block-dark
+  .contianer
     .row
-      .col-md-6.col-md-offset-3
-        %h5 The Problem With Traditional Data Analytics
-        .body-copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    .row
-      .col-md-6.col-md-offset-3
-        %h5 Our Approach
-        .body-copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .col-md-6
+        .text-xs-center
+          %img{:alt => "Card image cap", :src => "assets/images/placeholder.svg", class: "placeholder"}/
+      .col-md-5
+        %h3 Signals
+        .body-copy
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        %button.btn Learn More
 
-    %button.btn Solutions
-
-.block.container-fluid
-  .row
-    .col-md-6
-      %img{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
-    .col-md-6
-      %h3 Signals
-      .body-copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      %button.btn Learn More
-
-.block.container-fluid
+.block
   .text-xs-center
     %h3 Blog
-  .row
-    .col-md-2.col-md-offset-3
-      .card.blog-card
-        %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
-        .card-block
-          %h4.card-title Card title
-          .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-          %a.btn.btn-primary{:href => "#"} Go somewhere
+  .container
+    .row
+      .col-md-4
+        .card.blog-card
+          %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
+          .card-block
+            %h4.card-title Card title
+            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            %a.btn.btn-primary{:href => "#"} Go somewhere
 
-    .col-md-2
-      .card.blog-card
-        %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
-        .card-block
-          %h4.card-title Card title
-          .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-          %a.btn.btn-primary{:href => "#"} Go somewhere
+      .col-md-4
+        .card.blog-card
+          %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
+          .card-block
+            %h4.card-title Card title
+            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            %a.btn.btn-primary{:href => "#"} Go somewhere
 
-    .col-md-2
-      .card.blog-card
-        %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
-        .card-block
-          %h4.card-title Card title
-          .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-          %a.btn.btn-primary{:href => "#"} Go somewhere
+      .col-md-4
+        .card.blog-card
+          %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
+          .card-block
+            %h4.card-title Card title
+            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            %a.btn.btn-primary{:href => "#"} Go somewhere
+
   .text-xs-center
     %button.btn Read More Blog Posts
-
-/ Footer
-%footer.block
-  .container-fluid
-    .row
-      .col-md-2.col-md-offset-1
-        %h5.title Product
-        %ul
-          %li
-            %a{:href => "#!"} Link 1
-          %li
-            %a{:href => "#!"} Link 2
-          %li
-            %a{:href => "#!"} Link 3
-          %li
-            %a{:href => "#!"} Link 4
-      %hr.hidden-md-up/
-      .col-md-2
-        %h5.title Solutions
-        %ul
-          %li
-            %a{:href => "#!"} Link 1
-          %li
-            %a{:href => "#!"} Link 2
-          %li
-            %a{:href => "#!"} Link 3
-          %li
-            %a{:href => "#!"} Link 4
-      %hr.hidden-md-up/
-      .col-md-2
-        %h5.title About
-        %ul
-          %li
-            %a{:href => "#!"} Link 1
-          %li
-            %a{:href => "#!"} Link 2
-          %li
-            %a{:href => "#!"} Link 3
-          %li
-            %a{:href => "#!"} Link 4
-      %hr.hidden-md-up/
-      .col-md-2
-        %h5.title Recent Tweets
-        %ul
-          %li
-            %a{:href => "#!"} Link 1
-          %li
-            %a{:href => "#!"} Link 2
-          %li
-            %a{:href => "#!"} Link 3
-          %li
-            %a{:href => "#!"} Link 4

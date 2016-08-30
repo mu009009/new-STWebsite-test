@@ -13,7 +13,9 @@
         display: none
 
   %body
+    = partial "layouts/navbar"
     = yield
+    = partial "layouts/footer"
 
     -# = javascript_include_tag 'commons.js'
     = javascript_include_tag 'vendor.bundle'
