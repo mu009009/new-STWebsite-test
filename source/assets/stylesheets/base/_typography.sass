@@ -2,18 +2,87 @@
 
 
 // font variables
-$Yantra: 'Yantramanav', serif
-$Averia: 'Averia', serif
-$Archivo: 'Archivo', serif
+$yantra: 'Yantramanav', serif
+$averia: 'Averia Serif Libre', serif
+$archivo: 'Archivo Narrow', serif
 
 // weight variables
-$reg-weight: 400
-$bold-weight: 700
-$black-weight: 900
+$reg: 400
+$bold: 700
+$black: 900
 
-.subhead
-  font-family: $Averia
-  font-weight: 700
+body
+  font-family: $yantra
+  font-weight: $reg
+  color: $sec-grey
+  font-size: 17px
+  line-height: 26px
 
-.body-copy
-  font-family: $Yantra
+
+// header styles
+.header-xl, .header, .header-sm, .header-xs
+  font-family: $archivo
+  font-weight: $reg
+  color: $pri-black
+
+.header-xl
+  font-size: 80px
+
+.header
+  font-size: 57px
+  line-height: 58px
+
+.header-sm
+  font-size: 48px
+  line-height: 58px
+
+.header-xs
+  font-size: 30px
+
+
+// serif styles
+.serif-lg, .serif-md, .serif-sm
+  font-family: $averia
+  font-weight: $bold
+  color: $pri-black
+
+.serif-sm
+  font-size: 16px
+
+.serif-md
+  font-size: 22px
+  line-height: 28px
+
+.serif-lg
+  font-size: 28px
+  line-height: 34px
+
+
+// copy styles
+.copy-sm
+  font-size: 15px
+  line-height: 28px
+
+.copy-bold
+  font-size: 17px
+  font-weight: $black
+
+.copy-lg
+  font-size: 21px
+  line-height: 30px
+
+
+// line height
+.tight
+  line-height: 22px
+
+// color overrides
+
+.light
+  color: $sec-white
+
+.blue
+  color: $pri-blue
+
+.blue-line
+  border-bottom: 2px solid $pri-blue

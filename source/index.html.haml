@@ -1,70 +1,97 @@
 ---
 title: Home
 ---
-.jumbotron.text-xs-center
-  .row
-    .col-md-6.col-md-offset-3
-      %h1.display-3 The Fastest Path From Data to Revenue
-      .body-copy This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-      %hr.m-y-2/
-      .body-copy
-        %a.btn.btn-primary.btn-lg{ href: "#", role: "button" } About Us
+.jumbotron-fluid#homeJumbo
+  .container
+    %h1.header.light.m-b-1 The Fastest Path From Data to Revenue
+    .row
+      .col-md-8
+        %p.light
+          Stratifyd was founded in 2012 with two key objectives: create a data
+          analytics platform anyone can use; and make it powerful enough
+          everyonewill want to use.  Our founder, Derek Wang, Ph.D., brought
+          academic eyes to an existing problem and assembled a team to provide
+          a powerful yet simplemethod of navigating and identifying actionable
+          data. His unique approach,abandoning old data models and processes
+          and focusing on deep machine learning, results in a product which
+          quickly drives real revenue for our enterprise clients.
+    %a.btn.btn-primary.m-t-2{ href: "#", role: "button" } About Us
 
 .block
   .container
     .text-xs-center
-      %h3 The Next Generation of Data Analytics
+      .header-sm The Next Generation of Data Analytics
       .row
-        .col-md-6.col-md-offset-3
-          %h5 The Problem With Traditional Data Analytics
-          .body-copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .col-md-8.col-md-offset-2
+          %img{ alt: "Card image cap", src: "assets/images/icons/ex.png", class: "circle-icon m-t-2" }
+          .serif-md.blue.m-y-1 The Challenge With Traditional Data Analytics
+          %p
+            Data proliferation coupled with the pace of business innovation
+            is accelerating and the ability to perform targeted analysis before
+            windows of opportunity close is paramount.  The fundamental challenge
+            of traditional analytics is that it requires you to know what you’re
+            looking for from the start.  As products, feedback and interaction
+            methods evolve - you must constantly maintain those changes in
+            traditional taxonomies and ontological maps.  It takes time, money
+            and specialized skills to stay current, unfortunately most analytical
+            campaigns run beyond the window of opportunity.
+
       .row
-        .col-md-6.col-md-offset-3
-          %h5 Our Approach
-          .body-copy Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .col-md-8.col-md-offset-2
+          %img{ alt: "Card image cap", src: "assets/images/icons/check.png", class: "circle-icon m-t-2" }
+          .serif-md.blue.m-y-1 Our Approach
+          %p
+            Based on the years of academic research and innovation in the
+            field of data science, our platform uses next generation technology
+            to “learn” the contents of any data set without the need for
+            predetermined structures or methods of interpretation.  The unbiased,
+            immediate and highly intuitive results allow users to transition from
+            raw data to decision BEFORE it’s too late.
+      %button.btn.btn-primary-dark.m-t-2 Learn About Our Solutions
 
-      %button.btn Solutions
-
-.block-dark
+.jumbotron-fluid.block#learnJumbo
   .contianer
     .row
       .col-md-6
         .text-xs-center
-          %img{:alt => "Card image cap", :src => "assets/images/placeholder.svg", class: "placeholder"}/
       .col-md-5
-        %h3 Signals
-        .body-copy
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        %button.btn Learn More
+        .header-sm.light.m-b-1 Signals
+        %p.light
+          Signals is an enterprise Business Analytics platform enabling a
+          seamless transition from analysis to action through augmented
+          intelligence. Our customers deliver faster insights across a wide
+          spectrum of disparate data that drives direct revenue.
+        %button.btn.btn-primary.m-t-1 Learn More
 
 .block
-  .text-xs-center
-    %h3 Blog
+  .text-xs-center.m-b-2
+    .header-sm Blog
+    %p.copy-lg.m-y-2 Read about insights driven by Signals.
   .container
     .row
       .col-md-4
         .card.blog-card
-          %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
+          %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }
           .card-block
             %h4.card-title Card title
             .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-            %a.btn.btn-primary{:href => "#"} Go somewhere
+            %a.btn.btn-primary{ href: "#" } Go somewhere
 
       .col-md-4
         .card.blog-card
-          %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
+          %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }
           .card-block
             %h4.card-title Card title
             .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-            %a.btn.btn-primary{:href => "#"} Go somewhere
+            %a.btn.btn-primary{ href: "#" } Go somewhere
 
       .col-md-4
         .card.blog-card
-          %img.card-img-top{:alt => "Card image cap", :src => "assets/images/placeholder.svg"}/
+          %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }
           .card-block
             %h4.card-title Card title
             .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-            %a.btn.btn-primary{:href => "#"} Go somewhere
+            %a.btn.btn-primary{ href: "#" } Go somewhere
 
   .text-xs-center
-    %button.btn Read More Blog Posts
+    %button.btn.btn-primary-dark.m-t-2 Read More Blog Posts

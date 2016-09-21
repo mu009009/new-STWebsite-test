@@ -1,2 +1,6 @@
 AllCops:
   DisplayCopNames: true
+
+Metrics/LineLength:
+  Enabled: false
+  Max: 99

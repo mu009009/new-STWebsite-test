@@ -11,49 +11,21 @@
               Products
             .dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
               %a.dropdown-item{:href => "#"} Signals Overview
-              %a.dropdown-item{:href => "#"} How It Works
-              %a.dropdown-item{:href => "#"} Easy to Use
-              %a.dropdown-item{:href => "#"} Intuitive Visualization
-              %a.dropdown-item{:href => "#"} High-powered Analytics
-              %a.dropdown-item{:href => "#"} Comprehensive Data
+              %a.dropdown-item{:href => "#"} Deeper Dive
 
         %li.nav-item
           .dropdown
             %a#dropdownMenuLink.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-target" => "#", "data-toggle" => "dropdown", :href => "#"}
               Solutions
-            .dropdown-menu#solutions-menu{"aria-labelledby" => "dropdownMenuLink"}
-              .row
-                .col-md-6
-                  .dropdown-header By Role:
-                  %a.dropdown-item{:href => "#"} Business Analyst
-                  %a.dropdown-item{:href => "#"} Executive
-                  %a.dropdown-item{:href => "#"} Operations Manager
-                  %a.dropdown-item{:href => "#"} Product Manager
-                  %hr
-                  .dropdown-header By Analysis Type:
-                  %a.dropdown-item{:href => "#"} Voice of the Customer
-                  %a.dropdown-item{:href => "#"} Customer Experience Management
-                  %a.dropdown-item{:href => "#"} Operations
-                  %a.dropdown-item{:href => "#"} Call/Chat Center
-                  %a.dropdown-item{:href => "#"} Product Managment
-                  %a.dropdown-item{:href => "#"} Marketing & Sales
-                  %hr.hidden-md-up
-                .col-md-6
-                  .dropdown-header By Data Type:
-                  %a.dropdown-item{:href => "#"} Product Ratings & Reviews
-                  %a.dropdown-item{:href => "#"} CRM Data
-                  %a.dropdown-item{:href => "#"} Survey Responses
-                  %a.dropdown-item{:href => "#"} Chat/Voice Transcripts
-                  %a.dropdown-item{:href => "#"} Help Desk Tickets
-                  %a.dropdown-item{:href => "#"} Social Media
-                  %a.dropdown-item{:href => "#"} Email
-                  %a.dropdown-item{:href => "#"} Web Traffic
+            .dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
+              %a.dropdown-item{:href => "#"} Solutions Overview
 
         %li.nav-item
           %a.nav-link{ href: "/about-us.html" } About Us
         %li.nav-item
           %a.nav-link{ href: "#" } Blog
+          
       .pull-xs-right
-        %button.btn Try Signals
-        %button.btn Contact Us
+        %button.btn.btn-primary-dark.nav-btn Try Signals
+        %button.btn.btn-primary-dark.nav-btn Contact Us
         %a.nav-link{ href: "#" } Log in
