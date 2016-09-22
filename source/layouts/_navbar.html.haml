@@ -1,30 +1,29 @@
 %nav.navbar.navbar-light.bg-faded
-  %button.navbar-toggler.hidden-md-up{"aria-controls" => "exCollapsingNavbar2", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#exCollapsingNavbar2", "data-toggle" => "collapse", :type => "button"} ☰
-  #exCollapsingNavbar2.collapse.navbar-toggleable-sm
+  %button.navbar-toggler.hidden-md-up{"aria-controls" => "collapsingNavbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#collapsingNavbar", "data-toggle" => "collapse", :type => "button"} ☰
+  #collapsingNavbar.collapse.navbar-toggleable-sm
     .container-fluid
-      %a.navbar-brand{:href => "/"}
+      %a.navbar-brand.hidden-sm-down{:href => "/"}
         =image_tag "assets/images/Stratifyd-Logo-Final.svg", class: "logo"
       %ul.nav.navbar-nav
-        %li.nav-item.active
+        %li.nav-item
           .dropdown
-            %a#dropdownMenuLink.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-target" => "#", "data-toggle" => "dropdown", :href => "#"}
-              Products
+            %a#dropdownMenuLink.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-target" => "#", "data-toggle" => "dropdown", :href => "#"} Product
             .dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
-              %a.dropdown-item{:href => "#"} Signals Overview
-              %a.dropdown-item{:href => "#"} Deeper Dive
+              %a.dropdown-item{:href => "/product.html"} Signals Overview
+              %a.dropdown-item{:href => "/deeper-dive.html"} Deeper Dive
 
         %li.nav-item
           .dropdown
-            %a#dropdownMenuLink.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-target" => "#", "data-toggle" => "dropdown", :href => "#"}
+            %a#dropdownMenuLink.nav-link{"aria-expanded" => "false", "aria-haspopup" => "true", "data-target" => "#", "data-toggle" => "dropdown", :href => "#"}
               Solutions
             .dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
-              %a.dropdown-item{:href => "#"} Solutions Overview
+              %a.dropdown-item{:href => "/solutions.html"} Solutions Overview
 
         %li.nav-item
           %a.nav-link{ href: "/about-us.html" } About Us
         %li.nav-item
-          %a.nav-link{ href: "#" } Blog
-          
+          %a.nav-link{ href: "/blog.html" } Blog
+
       .pull-xs-right
         %button.btn.btn-primary-dark.nav-btn Try Signals
         %button.btn.btn-primary-dark.nav-btn Contact Us

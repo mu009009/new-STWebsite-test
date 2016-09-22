@@ -1,75 +1,63 @@
 ---
 title: About Us
 ---
-.jumbotron
-  .row.text-xs-center
-    .col-md-6.col-md-offset-3
-      %h1.display-3 About Us
+.jumbotron-fluid#aboutJumbo
   .container
+    .text-xs-center
+      %h1.header.light.m-b-1 About Us
     .row
       .col-md-6
-        .body-copy
-          VHS wolf roof party pug, vice humblebrag you probably haven't heard of them tote bag truffaut marfa. Franzen tattooed synth thundercats trust fund, food truck chicharrones.
-        .body-copy
-          VHS wolf roof party pug, vice humblebrag you probably haven't heard of them tote bag truffaut marfa. Franzen tattooed synth thundercats trust fund, food truck chicharrones. Helvetica health goth marfa, 3 wolf moon lomo leggings occupy pabst viral banh mi meditation truffaut cliche green juice four dollar toast.
-          Mustache viral ethical, distillery williamsburg meh deep v scenester portland church-key try-hard swag. Cardigan 90's portland schlitz fashion axe gastropub, leggings intelligentsia etsy irony.
+        %p.light
+          Signals was born in 2012 when the Federal Government awarded a grant to the Charlotte Visualization Center to develop new methods of processing global textual data to combat disease and terrorism.
+
       .col-md-6
-        .body-copy
-          VHS wolf roof party pug, vice humblebrag you probably haven't heard of them tote bag truffaut marfa. Franzen tattooed synth thundercats trust fund, food truck chicharrones. Helvetica health goth marfa, 3 wolf moon lomo leggings occupy pabst viral banh mi meditation truffaut cliche green juice four dollar toast. Mustache viral ethical, distillery williamsburg meh deep v scenester portland church-key try-hard swag. Cardigan 90's portland schlitz fashion axe gastropub, leggings intelligentsia etsy irony.
+        %p.light
+          From the academia foundation of taking a fresh look at an existing problem, our founder Dr. Derek Wang assembled a team determined to provide a powerful yet simple method of navigating and identifying actionable data without a data scientist or a predefined ontology.
 .block
   .contianer
     .row
-      .col-md-6
+      .col-md-5.col-md-offset-1
         .text-xs-center
-          %img{:alt => "Card image cap", :src => "assets/images/placeholder.svg", class: "placeholder"}/
-      .col-md-5
-        %h3 Signals
-        .body-copy
+          %img{:alt => "Card image cap", :src => "assets/images/about-our-beginning.png", class: "wide"}/
+      .col-md-4.col-md-offset-1
+        .header-sm.m-b-1 Our Beginning
+        %p
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        %button.btn Learn More
-.block
-  .container
-    .text-xs-center
-      %h3 Our Team
+        %button.btn.btn-primary-dark.m-y-1 Learn More
 %hr
 .block
   .container
     .text-xs-center
-      %h3 Leadership
+      .header-sm.m-b-3 Leadership
     .row
       .col-md-3
         .text-xs-center
           = image_tag "assets/images/userplaceholder.png", class: "user"
-          %p Derek Wang, Ph.D.
+          .serif-md.blue Derek Wang, Ph.D.
           %p CEO & Founder
           %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
 
       .col-md-3
         .text-xs-center
           = image_tag "assets/images/userplaceholder.png", class: "user"
-          %p Thomas Kraft
+          .serif-md.blue Thomas Kraft
           %p VP of Engineering
           %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
 
       .col-md-3
         .text-xs-center
           = image_tag "assets/images/userplaceholder.png", class: "user"
-          %p Brad Fleeman
+          .serif-md.blue Brad Fleeman
           %p VP of Global Sales
           %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
 
       .col-md-3
         .text-xs-center
           = image_tag "assets/images/userplaceholder.png", class: "user"
-          %p Li Yu, Ph.D.
+          .serif-md.blue Li Yu, Ph.D.
           %p VP of Data Visualization
           %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
 
-%hr
-.block
-  .container
-    .text-xs-center
-      %h3 Our Partners
 %hr
 .block
   .container
