@@ -1,21 +1,29 @@
-nav
-  .collapse
-    .container-fluid
-      .logo
-        width: 120px
-        margin-right: 20px
-  .nav
+.navbar
+  -webkit-box-shadow: 0px 10px 1px $sec-lightgrey
+  -moz-box-shadow: 0px 10px 1px $sec-lightgrey
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2)
+  z-index: 999
+  background-color: $util-white
+  .logo
+    width: 120px
+    margin-right: 20px
+  .navbar-nav
     .nav-item
       .nav-link
-  .pull-xs-right
-    .nav-btn
-      margin-left: 5px
-      margin-right: 5px
-    .nav-link
-      color: $sec-grey
-      border-bottom: 2px solid $pri-yellow
-      margin-left: 5px
-  .dropdown-item
-    font-family: $yantra
-    color: $sec-grey
-    line-height: 28px
+        color: $sec-grey
+        &:hover
+          color: $sec-lightgrey
+      @media screen and (max-width: $break-med)
+        float: none
+      .login
+        padding-bottom: 0
+        border-bottom: 2px solid $pri-yellow
+      .loginbtn
+        width: 130px
+    .active
+      .nav-link
+        border-bottom: 2px solid $pri-blue
+        padding-bottom: 0
+    .nav-item + .nav-item
+      @media screen and (max-width: $break-med)
+        margin-left: 0

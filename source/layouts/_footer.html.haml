@@ -3,47 +3,53 @@
   .container-fluid
     .row
       .col-md-2.col-md-offset-1
-        .yantra-bold.light.m-b-1 Product
+        .copy-bold.light.m-b-1 Product
         %ul
           %li
-            %a{:href => "#"} Signals Overview
+            %a.footerlink{:href => "#"} Signals Overview
           %li
-            %a{:href => "#"} Deeper Dive
+            %a.footerlink{:href => "#"} Deeper Dive
+          %br
+          %li
+            %a.footerlink{:href => "#"} Try Signals
+          %br
+          %li
+            %a.footerlink{:href => "#"} Log In
 
       .col-md-2
-        .yantra-bold.light.m-b-1 Solutions
+        .copy-bold.light.m-b-1 Solutions
         .row
           .col-md-6
             %ul
               %li
-                %a{:href => "#"} Solutions Overview
+                %a.footerlink{:href => "#"} Solutions Overview
 
       .col-md-2
-        .yantra-bold.light.m-b-1 About
+        .copy-bold.light.m-b-1 About Us
         %ul
           %li
-            %a{:href => "/"} Home
+            %a.footerlink{:href => "/"} Home
           %li
-            %a{:href => "/"} About Us
+            %a.footerlink{:href => "/"} About Us
           %li
-            %a{:href => "/"} Blog
+            %a.footerlink{:href => "/"} Contact Us
+          %li
+            %a.footerlink{:href => "/"} Job Openings
+          %li
+            %a.footerlink{:href => "/"} Blog
 
-      .col-md-2
-        .yantra-bold.light.m-b-1 Support
-        %ul
-          %li
-            %a{:href => "#!"} Take the Signals Challenge
-          %li
-            %a{:href => "#!"} 14-Day Free Trial
-          %li
-            %a{:href => "#!"} Watch Our Demo on Youtube
-          %br
-          %li
-            %a{:href => "#!"} Contact Us
-          %li
-            %a{:href => "/"} Job Openings
-          %li
-            %a{:href => "/"} Log In
-
-      .yantra-bold.light.col-md-2
+      .copy-bold.light.col-md-4
         .m-b-1 Recent LinkedIn Posts
+
+    .row.m-t-3
+      .col-md-5.col-md-offset-1.col-sm-6.col-xs-12.m-t-2.text-xs-center.text-sm-left
+        .copyright Copyright ©	2015 — 2016 Stratifyd, Inc.
+      .col-md-5.text-xs-center.col-xs-12.col-sm-6.m-t-2.text-sm-right
+        %a{ href: "#"}
+          %i.fa.fa-facebook-official{"aria-hidden" => "true"}
+        %a{ href: "#"}
+          %i.fa.fa-twitter{"aria-hidden" => "true"}
+        %a{ href: "#"}
+          %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
+        %a{ href: "#"}
+          %i.fa.fa-youtube-play{"aria-hidden" => "true"}

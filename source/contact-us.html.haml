@@ -7,5 +7,52 @@ title: Contact Us
 
 .block
   .container
-    .text-xs-center
+    .text-xs-center.m-b-3
       .header-sm Where To Find Us
+
+    .row
+      .col-md-5.col-md-offset-1.col-xs-12
+        .location
+          .serif-md.blue United States
+          %ul.address-list
+            %li 1431 W. Morehead Street
+            %li Charlotte, NC 28208
+            %li P. 704-215-4955
+            %li E. email@domain.com
+
+        .location
+          .serif-md.blue China
+          %ul.address-list
+            %li 1431 W. Morehead Street
+            %li Charlotte, NC 28208
+            %li P. 123-456-7890
+            %li E. email@domain.com
+
+        .location
+          .serif-md.blue London
+          %ul.address-list
+            %li 1431 W. Morehead Street
+            %li Charlotte, NC 28208
+            %li P. 123-456-7890
+            %li E. email@domain.com
+      .col-md-5.col-md-offset-1.col-xs-12
+        .serif-md.blue.m-b-1 Contact Form
+        %form
+          .form-group
+            %label Name
+            %input.form-control{ placeholder: "First Last" }/
+          .form-group
+            %label Email
+            %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Enter email", type: "email" }/
+          .form-group
+            %label Phone Number
+            %input.form-control{ placeholder: "Phone Number", type: "email" }/
+          .form-group
+            %label{:for => "exampleTextarea" } Message
+            %textarea.form-control{ rows: "3" }
+
+          %button.btn.btn-primary-dark.wide{type: "submit" } Send Message
+
+  .row
+    .col-xs-12.text-xs-center
+      %img{src: "/assets/images/world-map.png", class:"world"}

@@ -1,1 +1,1 @@
-
+require('./navbar.js');

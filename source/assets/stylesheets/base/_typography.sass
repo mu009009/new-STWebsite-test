@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow|Averia+Serif+Libre:700|Yantramanav:400,900")
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow|Averia+Serif+Libre:700|Yantramanav:300,700")
 
 
 // font variables
@@ -7,16 +7,22 @@ $averia: 'Averia Serif Libre', serif
 $archivo: 'Archivo Narrow', serif
 
 // weight variables
+$light: 300
 $reg: 400
 $bold: 700
 $black: 900
 
 body
   font-family: $yantra
-  font-weight: $reg
+  font-weight: $light
   color: $sec-grey
   font-size: 17px
   line-height: 26px
+  letter-spacing: 0.3px
+  @media screen and (max-width: $break-med)
+    font-size: 15px
+    line-height: 24px
+
 
 .circle
   border-radius: 50%
@@ -29,6 +35,9 @@ body
   margin-top: 20px
   margin-bottom: 20px
 
+.address-list
+  list-style: none
+  padding-left: 0
 
 // header styles
 .header-xl, .header, .header-sm, .header-xs
@@ -38,14 +47,21 @@ body
 
 .header-xl
   font-size: 80px
+  line-height: 80px
 
 .header
   font-size: 57px
   line-height: 58px
+  @media screen and (max-width: $break-med)
+    font-size: 45px
+    line-height: 50px
 
 .header-sm
   font-size: 48px
   line-height: 58px
+  @media screen and (max-width: $break-med)
+    font-size: 35px
+    line-height: 45px
 
 .header-xs
   font-size: 30px
@@ -62,7 +78,9 @@ body
 
 .serif-md
   font-size: 22px
-  line-height: 28px
+  line-height: 30px
+  @media screen and (max-width: $break-med)
+    font-size: 20px
 
 .serif-lg
   font-size: 28px
@@ -76,11 +94,14 @@ body
 
 .copy-bold
   font-size: 17px
-  font-weight: $black
+  font-weight: $bold
+  letter-spacing: 0.64px
 
 .copy-lg
   font-size: 21px
   line-height: 30px
+  @media screen and (max-width: $break-med)
+    font-size: 19px
 
 
 // line height

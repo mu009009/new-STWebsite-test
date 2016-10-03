@@ -1,13 +1,44 @@
-.block, .block-dark
+body
+  padding-top: 75px
+  @media screen and (max-width: $break-med)
+    padding-top: 60px
+
+.block, .block-dark, .block-blue-pad
   padding-top: 70px
   padding-bottom: 70px
+  @media screen and (max-width: $break-med)
+    padding-top: 50px
+    padding-bottom: 50px
 
 .block-dark
-  background-color: $block-dark
+  background-color: $sec-white
 
-.block-blue
+.block-blue,.block-blue-pad
   background-color: $pri-blue
 
 .block-sm
   padding-top: 35px
   padding-bottom: 35px
+
+
+.team-block
+  margin-bottom: 40px
+
+.team
+  min-height: 180px
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+
+.location
+  margin-bottom: 40px
+
+.spec
+  margin-bottom: 40px
+
+.arrowbox
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  justify-content: center
+  

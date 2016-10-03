@@ -49,13 +49,14 @@ title: Home
             raw data to decision BEFORE it’s too late.
       %button.btn.btn-primary-dark.m-t-2 Learn About Our Solutions
 
-.jumbotron-fluid.block#learnJumbo
+.block-blue-pad
   .container
     .row
       .col-md-6
         .text-xs-center
-      .col-md-5
-        .header-sm.light.m-b-1 Signals
+          %img{ src: "assets/images/home-signals2.png", class: "wide" }
+      .col-md-5.text-xs-center.text-md-left
+        .header-sm.light.m-y-1 Signals
         %p.light
           Signals is an enterprise Business Analytics platform enabling a
           seamless transition from analysis to action through augmented
@@ -64,34 +65,32 @@ title: Home
         %button.btn.btn-primary.m-t-1 Learn More
 
 .block
-  .text-xs-center.m-b-2
-    .header-sm Blog
-    %p.copy-lg.m-y-2 Read about insights driven by Signals.
   .container
-    .row
-      .col-md-4
-        .card.blog-card
-          %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }
-          .card-block
-            %h4.card-title Card title
-            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-            %a.btn.btn-primary{ href: "#" } Go somewhere
+    .text-xs-center.m-b-2
+      .header-sm Blog
+      %p.copy-lg.m-y-2 Read about insights driven by Signals.
+    .container-fluid
+      .row
+        .col-lg-4.col-md-6.blog-card
+          .card
+            %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }
+            .card-block.text-xs-center.text-md-left
+              %h4.card-title Card title
+              .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
 
-      .col-md-4
-        .card.blog-card
-          %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }
-          .card-block
-            %h4.card-title Card title
-            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-            %a.btn.btn-primary{ href: "#" } Go somewhere
+        .col-lg-4.col-md-6.blog-card
+          .card
+            %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }
+            .card-block.text-xs-center.text-md-left
+              %h4.card-title Card title
+              .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
 
-      .col-md-4
-        .card.blog-card
-          %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }
-          .card-block
-            %h4.card-title Card title
-            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-            %a.btn.btn-primary{ href: "#" } Go somewhere
+        .col-lg-4.col-md-6.blog-card
+          .card
+            %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }
+            .card-block.text-xs-center.text-md-left
+              %h4.card-title Card title
+              .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
 
-  .text-xs-center
-    %button.btn.btn-primary-dark.m-t-2 Read More Blog Posts
+    .text-xs-center
+      %button.btn.btn-primary-dark.m-t-2 Read More Blog Posts
