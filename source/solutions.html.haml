@@ -12,13 +12,123 @@ title: Solutions
   .container
     .text-xs-center
       .header-sm Our Specialties
+
+
 %hr
 .block
   .container
     .text-xs-center
-      .header-sm Solutions by Role
+      .header-sm.m-b-1 Solutions by Role
+      .row
+        .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1.m-b-3
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla.
+      / Nav tabs
+      %ul.nav.nav-pills.m-b-2.btn-group.hidden-md-down{:role => "tablist"}
+        %li.nav-item
+          %a.nav-link.active{"data-toggle" => "tab", :href => "#marketing_exec", :role => "tab"} Marketing Exec
+        %li.nav-item
+          %a.nav-link{"data-toggle" => "tab", :href => "#voc", :role => "tab"} VOC
+        %li.nav-item
+          %a.nav-link{"data-toggle" => "tab", :href => "#business_exec", :role => "tab"} Business Exec
+        %li.nav-item
+          %a.nav-link{"data-toggle" => "tab", :href => "#hr", :role => "tab"} HR
+        %li.nav-item
+          %a.nav-link{"data-toggle" => "tab", :href => "#cio", :role => "tab"} CIO
+        %li.nav-item
+          %a.nav-link{"data-toggle" => "tab", :href => "#call_exec", :role => "tab"} Call Center Exec
+        %li.nav-item
+          %a.nav-link{"data-toggle" => "tab", :href => "#sales", :role => "tab"} Sales Leader
+
+      / Dropdown
+      .btn-group.hidden-lg-up.m-b-2
+        %button.btn.btn-primary-blue.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+          Marketing Exec
+        .dropdown-menu
+          %a.dropdown-item{"data-toggle" => "tab", :href => "#marketing_exec", :role => "tab"} Marketing Exec
+          %a.dropdown-item{"data-toggle" => "tab", :href => "#voc", :role => "tab"} VOC
+          %a.dropdown-item{"data-toggle" => "tab", :href => "#business_exec", :role => "tab"} Business Exec
+          %a.dropdown-item{"data-toggle" => "tab", :href => "#hr", :role => "tab"} HR
+          %a.dropdown-item{"data-toggle" => "tab", :href => "#cio", :role => "tab"} CIO
+          %a.dropdown-item{"data-toggle" => "tab", :href => "#call_exec", :role => "tab"} Call Center Exec
+          %a.dropdown-item{"data-toggle" => "tab", :href => "#sales", :role => "tab"} Sales Leader
+
+      / Tab panes
+      .tab-content
+        #marketing_exec.fade.in.tab-pane.active{:role => "tabpanel"}
+          %img.role-icon{ :src => "/assets/images/icons/solutions_icons/mark-exec.png" }/
+          .row
+            .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla. Ut laoreet egestas dolor, vitae interdum justo tempus at. Suspendisse eu nunc semper, blandit mauris vitae, blandit nulla. Donec rutrum interdum leo sit amet imperdiet. Morbi at neque luctus, dignissim leo vitae, malesuada augue. Vivamus in consequat dui.
+        #voc.tab-pane.fade{:role => "tabpanel"}
+          %img.role-icon{ :src => "/assets/images/icons/solutions_icons/voc.png" }/
+          .row
+            .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla. Ut laoreet egestas dolor, vitae interdum justo tempus at. Suspendisse eu nunc semper, blandit mauris vitae, blandit nulla. Donec rutrum interdum leo sit amet imperdiet. Morbi at neque luctus, dignissim leo vitae, malesuada augue. Vivamus in consequat dui.
+        #business_exec.tab-pane.fade{:role => "tabpanel"}
+          %img.role-icon{ :src => "/assets/images/icons/solutions_icons/bus-exec.png" }/
+          .row
+            .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla. Ut laoreet egestas dolor, vitae interdum justo tempus at. Suspendisse eu nunc semper, blandit mauris vitae, blandit nulla. Donec rutrum interdum leo sit amet imperdiet. Morbi at neque luctus, dignissim leo vitae, malesuada augue. Vivamus in consequat dui.
+        #hr.tab-pane.fade{:role => "tabpanel"}
+          %img.role-icon{ :src => "/assets/images/icons/solutions_icons/hr.png" }/
+          .row
+            .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla. Ut laoreet egestas dolor, vitae interdum justo tempus at. Suspendisse eu nunc semper, blandit mauris vitae, blandit nulla. Donec rutrum interdum leo sit amet imperdiet. Morbi at neque luctus, dignissim leo vitae, malesuada augue. Vivamus in consequat dui.
+        #cio.tab-pane.fade{:role => "tabpanel"}
+          %img.role-icon{ :src => "/assets/images/icons/solutions_icons/cio.png" }/
+          .row
+            .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla. Ut laoreet egestas dolor, vitae interdum justo tempus at. Suspendisse eu nunc semper, blandit mauris vitae, blandit nulla. Donec rutrum interdum leo sit amet imperdiet. Morbi at neque luctus, dignissim leo vitae, malesuada augue. Vivamus in consequat dui.
+        #call_exec.tab-pane.fade{:role => "tabpanel"}
+          %img.role-icon{ :src => "/assets/images/icons/solutions_icons/call-exec.png" }/
+          .row
+            .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla. Ut laoreet egestas dolor, vitae interdum justo tempus at. Suspendisse eu nunc semper, blandit mauris vitae, blandit nulla. Donec rutrum interdum leo sit amet imperdiet. Morbi at neque luctus, dignissim leo vitae, malesuada augue. Vivamus in consequat dui.
+        #sales.tab-pane.fade{:role => "tabpanel"}
+          %img.role-icon{ :src => "/assets/images/icons/solutions_icons/sales.png" }/
+          .row
+            .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla. Ut laoreet egestas dolor, vitae interdum justo tempus at. Suspendisse eu nunc semper, blandit mauris vitae, blandit nulla. Donec rutrum interdum leo sit amet imperdiet. Morbi at neque luctus, dignissim leo vitae, malesuada augue. Vivamus in consequat dui.
+
 %hr
 .block
   .container
     .text-xs-center
-      .header-sm Solutions by Data Type
+      .header-sm.m-b-1 Solutions by Data Type
+      .row
+        .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1.m-b-3
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla.
+      / Nav tabs
+      %ul.nav.nav-pills.m-b-2.hidden-md-down{:role => "tablist"}
+        %li.nav-item
+          %a.nav-link.active{"data-toggle" => "tab", :href => "#public", :role => "tab"} Public Domain Data
+        %li.nav-item
+          %a.nav-link{"data-toggle" => "tab", :href => "#erp", :role => "tab"} ERP Data
+        %li.nav-item
+          %a.nav-link{"data-toggle" => "tab", :href => "#back_end", :role => "tab"} Back End Data
+      / Dropdown
+      .btn-group.hidden-lg-up.m-b-2
+        %button.btn.btn-primary-blue.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+          Public Domain Data
+        .dropdown-menu
+          %a.dropdown-item{"data-toggle" => "tab", :href => "#public", :role => "tab"} Public Domain Data
+          %a.dropdown-item{"data-toggle" => "tab", :href => "#erp", :role => "tab"} ERP Data
+          %a.dropdown-item{"data-toggle" => "tab", :href => "#back_end", :role => "tab"} Back End Data
+
+      / Tab panes
+      .tab-content
+        #public.tab-pane.active{:role => "tabpanel"}
+          %img.role-icon{:alt => "First slide", :src => "/assets/images/icons/solutions_icons/pub-dom-data.png"}/
+          .row
+            .col-md-6.col-md-offset-3
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla. Ut laoreet egestas dolor, vitae interdum justo tempus at. Suspendisse eu nunc semper, blandit mauris vitae, blandit nulla. Donec rutrum interdum leo sit amet imperdiet. Morbi at neque luctus, dignissim leo vitae, malesuada augue. Vivamus in consequat dui.
+        #erp.tab-pane.fade{:role => "tabpanel"}
+          %img.role-icon{:alt => "First slide", :src => "/assets/images/icons/solutions_icons/erp-data.png"}/
+          .row
+            .col-md-6.col-md-offset-3
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla. Ut laoreet egestas dolor, vitae interdum justo tempus at. Suspendisse eu nunc semper, blandit mauris vitae, blandit nulla. Donec rutrum interdum leo sit amet imperdiet. Morbi at neque luctus, dignissim leo vitae, malesuada augue. Vivamus in consequat dui.
+        #back_end.tab-pane.fade{:role => "tabpanel"}
+          %img.role-icon{:alt => "First slide", :src => "/assets/images/icons/solutions_icons/back-end-data.png"}/
+          .row
+            .col-md-6.col-md-offset-3
+              %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla. Ut laoreet egestas dolor, vitae interdum justo tempus at. Suspendisse eu nunc semper, blandit mauris vitae, blandit nulla. Donec rutrum interdum leo sit amet imperdiet. Morbi at neque luctus, dignissim leo vitae, malesuada augue. Vivamus in consequat dui.

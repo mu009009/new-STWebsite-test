@@ -93,7 +93,7 @@ styles:
   modal: true
   tooltip: false
   popover: true
-  carousel: false
+  carousel: true
 
   # Utility classes
   utilities: true
@@ -105,12 +105,12 @@ styles:
 scripts:
   alert: false
   button: false
-  carousel: false
+  carousel: true
   collapse: true
   dropdown: true
   modal: true
   popover: true
   scrollspy: false
-  tab: false
+  tab: true
   tooltip: false
   util: false
