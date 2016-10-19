@@ -91,7 +91,7 @@ export const dataConfig = {
               ticks: {
                 max: 4,
                 min: 0,
-                stepSize: 1,
+                stepSize: 0.5,
                 callback: function(value) {
                   if (value == 1) {return ["3rd Party Data"];}
                   if (value == 2) {return ["2nd Party Data"];}
@@ -244,7 +244,7 @@ export const analyticsConfig = {
               ticks: {
                 max: 5,
                 min: 0,
-                stepSize: 1,
+                stepSize: 0.5,
                 callback: function(value) {
                   if (value == 1) {return ["Sentiment"];}
                   if (value == 2) {return ["Machine Learning"];}

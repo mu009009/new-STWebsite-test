@@ -6,17 +6,15 @@ $( document ).ready(function() {
   const configArray = [dataConfig, analyticsConfig, visualizationConfig]
   const divArray = $('.js-chartHeader')
 
-  var currentChart = $($('.current').data("chart"))
-  var currentConfig = $('.current').data("config")
-  var visibleChart = new Chart(currentChart, configArray[currentConfig]);
+  var currentConfig = $('.current').data("config");
+  var visibleChart = new Chart($('#Chart'), configArray[currentConfig]);
 
   $('#next').click(function() {
     visibleChart.destroy();
     $('.current').removeClass('current').hide()
         .next().show().addClass('current');
-        var currentChart = $($('.current').data("chart"))
-        var currentConfig = $('.current').data("config")
-        var newChart = new Chart(currentChart, configArray[currentConfig]);
+        var currentConfig = $('.current').data("config");
+        var newChart = new Chart($('#Chart'), configArray[currentConfig]);
     if ($('.current').hasClass('last')) {
         $('#next').attr('disabled', true);
     }
@@ -26,8 +24,11 @@ $( document ).ready(function() {
   });
 
   $('#prev').click(function() {
+      visibleChart.destroy();
       $('.current').removeClass('current').hide()
           .prev().show().addClass('current');
+          var currentConfig = $('.current').data("config");
+          var newChart = new Chart($('#Chart'), configArray[currentConfig]);
       if ($('.current').hasClass('first')) {
           $('#prev').attr('disabled', true);
       }
