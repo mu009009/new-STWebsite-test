@@ -11,7 +11,47 @@ title: Solutions
 .block
   .container
     .text-xs-center
-      .header-sm Our Specialties
+      .header-sm.m-b-1 Our Specialties
+      .row
+        .col-lg-6.col-lg-offset-3.col-md-10.col-md-offset-1.m-b-3
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu dapibus odio, eget hendrerit tortor. Maecenas ut dui lacus. Pellentesque a magna eget risus hendrerit fringilla.
+
+
+#matrix
+  .block-blue-pad
+    .container
+      .text-xs-center
+        #dataSources.current.first.js-chartHeader{ data: { chart: "#dataChart", config: 0 } }
+          .header-sm.light.m-y-1 Data Sources
+          .row
+            .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+              %p.light There are many different platforms that focus on collecting data from disparate data sources. This data source matrix articulates who can process data across the 3 primary data categories.
+
+
+        #analytics.js-chartHeader{ data: { chart: "#analyticsChart", config: 1 } }
+          .header-sm.light.m-y-1 Analytics
+          .row
+            .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+              %p.light Machine learning is the next generation of analytics. The matrix below provides an easily understood view of our competitors.
+
+
+        #visualization.last.js-chartHeader{ data: { chart: "#visualChart", config: 2 } }
+          .header-sm.light.m-y-1 Visualization Layer
+          .row
+            .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+              %p.light Single pane of glass visualization tools are extremely valuable within organizations. The matrix below provides an overview of how Signals compares with other visualization tools.
+
+
+        .row
+          .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+            .text-xs-center
+              %button.btn.btn-primary#prev{:type => "button"} <
+              %button.btn.btn-primary#next{:type => "button"} >
+  .block
+    .container
+      %canvas#dataChart.chart{:height => "150", :width => "300"}
+      %canvas#analyticsChart.chart{:height => "150", :width => "300"}
+      %canvas#visualChart.chart{:height => "150", :width => "300"}{ data: {chart:}}
 
 
 %hr
