@@ -1,5 +1,5 @@
 import Chart from 'chart.js/dist/Chart.bundle.min.js'
-import {dataConfig, analyticsConfig, visualizationConfig} from "chart.js"
+import {dataConfig, analyticsConfig, visualizationConfig} from "chart_config.js"
 
 $( document ).ready(function() {
 
