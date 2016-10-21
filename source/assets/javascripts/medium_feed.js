@@ -62,4 +62,22 @@ $(document).ready(function(){
       }
     );
   }
+  if ($('#medium-home-posts').length>0) {
+    $('#medium-home-posts').rss('http://medium.com/feed/stratifyd',
+      {
+        limit: 3,
+        layoutTemplate: "<div class='row feed-container'>{entries}</div>",
+        entryTemplate: '<div class="col-md-6 col-lg-4 blog-card feed-item"><a target="_blank" href="{url}" class="card"><div class="post-image-container">{teaserImage}</div><div class="post-title highlighted-content">{title}</div><div class="post-body body-copy-small">{shortBodyPlain}</div></a></div>',
+        ssl: true,
+        // success: function() {
+        //   $('.feed-item').matchHeight({
+        //     byRow: true,
+        //     property: 'min-height',
+        //     target: null,
+        //     remove: false
+        //   });
+        // }
+      }
+    );
+  }
 });
