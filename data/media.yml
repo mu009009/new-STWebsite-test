@@ -1,0 +1,17 @@
+- image: 'forbes.png'
+  name: 'Forbes'
+  title: '3 Companies That Turn big Data Into What You Need to Know'
+  description: 'Lorem ipsum dolor sit amet, sit in aliquet molestie vestibulum donec felis, odio euismod lectus, sed nullam imperdiet justo tellus, tempus mauris ornare ut augue. Nullam consequat. Do lectus nonummy.'
+  link: 'http://cdn.embed.ly/providers/logos/forbes.png'
+
+- image: 'datanami.png'
+  name: 'Datanami'
+  title: 'Discover Actionable Insights from Unstructured Data'
+  description: 'Lorem ipsum dolor sit amet, sit in aliquet molestie vestibulum donec felis, odio euismod lectus, sed nullam imperdiet justo tellus, tempus mauris ornare ut augue. Nullam consequat. Do lectus nonummy.'
+  link: 'http://cdn.embed.ly/providers/logos/forbes.png'
+
+- image: 'marketwired.png'
+  name: 'Marlet Wired'
+  title: 'No Data Scientist Required'
+  description: 'Lorem ipsum dolor sit amet, sit in aliquet molestie vestibulum donec felis, odio euismod lectus, sed nullam imperdiet justo tellus, tempus mauris ornare ut augue. Nullam consequat. Do lectus nonummy.'
+  link: 'http://cdn.embed.ly/providers/logos/forbes.png'

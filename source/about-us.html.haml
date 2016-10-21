@@ -62,3 +62,20 @@ title: About Us
   .container
     .text-xs-center
       .header-sm.m-b-2 Media
+    .container-fluid
+      .row
+        - data.media.each do |article|
+          .col-lg-4.col-md-6
+            .card
+              .media-logo-box.text-xs-center
+                %img.card-img-top.media-logo{ alt: "Card image cap", src: "/assets/images/media/#{article.image}" }
+              .card-block.text-xs-center.text-md-left
+                .media-src
+                  = article.name
+                %h4.card-title
+                  = article.title
+                .body-copy.card-text
+                  = article.description
+                %br
+                .text-xs-center
+                  %a.btn.btn-primary-dark{ href: "#{article.link}" } Read full Article
