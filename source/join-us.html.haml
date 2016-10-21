@@ -1,0 +1,37 @@
+---
+title: Join Us
+---
+.jumbotron-fluid#joinJumbo
+  .text-xs-center
+    .header.light.m-b-1 Join Us
+
+.block
+  .container
+    .row
+      .col-md-6.col-md-offset-3
+        .text-xs-center
+          .header-sm.m-b-2 Job Openings
+          .row
+            Signals is a comprehensive analytics platform transforming latent data into unified business insight across Social, 3rd Party and Enterprise systems, at the speed of business.
+    %br
+    .row
+      .col-md-12
+        #accordion{"aria-multiselectable" => "true", :role => "tablist"}
+          - data.jobs.each_with_index do |job, index|
+            #headingOne{:role => "tab"}
+              %h5.mb-0
+                %a.btn.btn-primary-dark{"aria-controls" => "collapseOne", "aria-expanded" => "true", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapse#{index}"}
+                  = job.title
+            .collapse{"aria-labelledby" => "headingOne", :role => "tabpanel", id: "collapse#{index}" }
+              .card-block
+                - if job.description
+                  - job.description.each do |things|
+                    %p= things
+                %br
+                - if job.responsibilities
+                  - job.responsibilities.each do |things|
+                    %p= things
+                %br
+                - if job.candidate
+                  - job.candidate.each do |things|
+                    %p= things
