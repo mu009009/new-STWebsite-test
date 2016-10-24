@@ -1,0 +1,84 @@
+---
+title: Case Study
+---
+.jumbotron-fluid#caseJumbo{ style: "background-image: url()" }
+  .text-xs-center
+    .header.light.m-b-1
+      = study.header
+
+.block-sm
+  .container
+    .row
+      .col-md-4
+        %a.back_link{ href: "javascript:history.back()" } <- Back
+        %img{ src: "" }
+      .col-md-8
+        .header-sm.m-b-3 Executive Summary
+        %p
+          = study.purpose
+
+        - if study.client
+          - study.client.each do |things|
+            %p= things
+
+        %p.serif-md.m-t-3
+          = study.executive_blurb
+
+.block-sm
+  .container
+    .row
+      .col-md-6.col-xs-12.col-md-offset-3.m-b-2
+        .text-xs-center
+          .serif-md.blue.m-b-1 Challenges in Hospitality
+    .row.text-md-left.text-xs-center
+      .col-md-6
+        - if study.challenges
+          - study.challenges.each do |things|
+            %p= things
+      .col-md-6
+        - if study.pain_points
+          %b
+            = study.pain_title
+          %ul
+            - study.pain_points.each do |things|
+              %li= things
+
+.block-sm
+  .container
+    .row
+      .col-md-6.col-xs-12.col-md-offset-3.m-b-2
+        .text-xs-center
+          .serif-md.blue.m-b-1 How Signals Helped
+    .row.text-md-left.text-xs-center
+      .col-md-6
+        %p= study.how
+
+      .col-md-6
+        - if study.key_themes
+          %b
+            = study.theme_title
+          %ul
+            - study.key_themes.each do |things|
+              %li= things
+
+.block-sm
+  .container
+    .row
+      .col-md-6.col-xs-12.col-md-offset-3.m-b-2
+        .text-xs-center
+          .serif-md.blue.m-b-1 Results and Return on Investment
+    .row.text-md-left.text-xs-center
+      .col-md-6
+        - if study.results
+          %b
+            = study.results_title
+          %ul
+            - study.results.each do |things|
+              %li= things
+      .col-md-6
+        - if study.user_response
+          %b
+            = study.user_title
+          %ul
+            - study.user_response.each do |things|
+              %li= things

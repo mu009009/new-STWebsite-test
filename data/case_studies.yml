@@ -1,0 +1,34 @@
+- slug: Hospitality
+  header: Stratifyd Signals for Hospitality
+  purpose: "This study covers voice-of-customer insights on two major hotel chains:"
+  client:
+    - "Hampton by Hilton is a chain of moderately priced, midscale hotels with limited food and beverage facilities. Most Hampton hotels are independently owned and operated by franchisees. The Hampton franchise has more than 2,000 hotels throughout the U.S. and 16 other countries."
+    - "Residence Inn by Marriott is a brand of extended stay hotels, with over 700 all-suite hotels on four continents. The suites are much larger than traditional hotel rooms. Residence Inns are known for their complimentary small hot breakfast in the morning and a free light dinner or snack reception on weekday evenings"
+  executive_blurb: "Stratifyd Signals analyzed over $30,000 Yelp reviews on Hampton by Hilton and Residence Inn. Using the Compare View, we analyzed the voice of customer feedback side-by-side."
+  challenges:
+    - "Thanks to the internet and review sites, it is easy for consumers to see what others are saying about a hotel, and to make a reservation decision based on that customer feedback. If you are the Product Manager of a Hotel chain, this is exactly the type of voice-of-the-customer information you need. Knowing what customer are talking about, the common themes and categories, and watching the trends and geographic analysis, you can make informed decisions about how to improve your business. The challenge is analyzing thousands of reviews, going beyond the star ratings to see the ‘why’, ‘when’, and ‘where’ behind the rating."
+    - "Analyzing text data without Signals is time consuming and takes a lot of resources and prioritization. This causes delays in getting to actionable insights."
+  pain_title: "Pain Points Addressed:"
+  pain_points:
+    - "Quickly analyze both the unstructured text data, and the structured fields such as location, time, rating, etc."
+    - "Analyze different points of the customer experience, from reservation, to check-in, to the stay itself."
+    - "Data connector to Yelp pulled in the entire data set, not just a sampling."
+    - "Compare customer experience against a competitor in a side-by-side view."
+  how: "The Stratifyd SignalsTM platform analyzed customer reviews from both hotel chains - the structured data (such as star ranking and geographic location) and unstructured data (such as the text comments customers type into Yelp or other social media channels). With the built-in data connector to Yelp, we consolidated roughly 30,000 Yelp comments and by conducting a Compare View analysis, quickly and concisely complied the findings into an interactive, visual dashboard."
+  theme_title: "The Stratifyd SignalsTM platform identified key themes in the Voice of Customer Data:"
+  key_themes:
+    - "Flat screen TVs, complimentary breakfast, hot tubs and pools all added to the experience, and among other things, contributed to the comments of “top notch” service and that the majority of guests were “pleasantly surprised” with the quality of their visit."
+    - "A notable difference between the two hotel chains was kitchen equipment; dishwasher, microwave, and refrigerator. Hampton did not offer a dishwasher, and in some cases, no microwave or fridge. For many customers, greater kitchen functionality is a consideration in making a reservation."
+    - "‘Bed bugs’ was mentioned in some of the reviews. The Geo Hotspot widget identifies the specific location of the comments."
+  results_title: "Signals provides these specific returns"
+  results:
+    - "Quickly generated side-by-side competitive analysis on over 30,000 reviews on two hotel chains"
+    - "Machine Learning produced specific, actionable insights, unbiased by pre-built taxonomies"
+    - "Identified specific complaints, such as bed bugs, and when and where the comments were generated"
+    - "Data analysis is sharable, searchable, and in an interactive visual format. No data scientist was required"
+  user_title: "Signals provides these specific returns"
+  user_response:
+    - "Quickly generated side-by-side competitive analysis on over 30,000 reviews on two hotel chains"
+    - "Machine Learning produced specific, actionable insights, unbiased by pre-built taxonomies"
+    - "Identified specific complaints, such as bed bugs, and when and where the comments were generated"
+    - "Data analysis is sharable, searchable, and in an interactive visual format. No data scientist was required"
