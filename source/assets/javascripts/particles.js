@@ -1,8 +1,8 @@
-import Particles from 'particles.js/particles.js';
+// import Particles from 'particles.js/particles.js';
+import Particles from './vendor/particles.js'
 
-if ($('.particles-js').length > 0) {
+if ($('#particles-js').length > 0) {
   particlesJS('particles-js',
-
     {
       "particles": {
         "number": {
@@ -13,10 +13,9 @@ if ($('.particles-js').length > 0) {
           }
         },
         "color": {
-          "value": "#e3e3e3"
+          "value": ['#ccc', '#000'] // not being used, but must be present
         },
         "shape": {
-          "type": ["image"],
           "stroke": {
             "width": 0,
             "color": "#000000"
@@ -24,22 +23,29 @@ if ($('.particles-js').length > 0) {
           "polygon": {
             "nb_sides": 5
           },
+          "type": [
+            "image",
+            "image"
+          ],
           "image": {
-            "src": "http://diylogodesigns.com/blog/wp-content/uploads/2016/04/google-logo-icon-PNG-Transparent-Background.png",
+            "src_list": [
+              "../assets/images/data_connectors/google.svg",
+              "../assets/images/data_connectors/apple.svg"
+            ],
             "width": 100,
             "height": 100
           }
         },
-        "opacity": {
-          "value": 0.5,
-          "random": false,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0.1,
-            "sync": false
-          }
-        },
+        // "opacity": {
+        //   "value": 0.5,
+        //   "random": false,
+        //   "anim": {
+        //     "enable": false,
+        //     "speed": 1,
+        //     "opacity_min": 0.1,
+        //     "sync": false
+        //   }
+        // },
         "size": {
           "value": 20,
           "random": true,
