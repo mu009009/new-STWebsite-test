@@ -9,15 +9,25 @@
         %img{ src: "/assets/images/Stratifyd-Logo-Final.svg", class: "logo" }
       %ul.nav.navbar-nav
         %li.nav-item.btn-group
-          %a.nav-link{:href => "/product.html"} Product
+          = link_to '/product.html' do
+            .nav-link Product
+
         %li.nav-item
-          %a.nav-link{:href => "/solutions.html"} Solutions
+          = link_to '/solutions.html' do
+            .nav-link Solutions
+
         %li.nav-item
-          %a.nav-link{:href => "/about-us.html"} About
+          = link_to '/about-us.html' do
+            .nav-link About
+
         %li.nav-item
-          %a.nav-link{:href => "/blog.html"} Blog
+          = link_to '/blog.html' do
+            .nav-link Blog
+
         %li.nav-item
-          %a.nav-link{:href => "/contact-us.html"} Contact
+          = link_to '/contact-us.html' do
+            .nav-link Contact
+
 
       %hr.hidden-md-up
       %ul.nav.navbar-nav.pull-md-right
