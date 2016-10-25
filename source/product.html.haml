@@ -2,11 +2,12 @@
 title: Product
 ---
 .jumbotron-fluid#signalsJumbo
-  .row
-    .col-md-2.col-md-offset-8
-      .text-xs-center
-        .header.light.blue-line.m-b-1 Signals
-        .serif-sm.light A powerful augmented intelligence engine for your business.
+  .container
+    .row
+      .col-md-2.col-md-offset-8
+        .text-xs-center
+          .header.light.blue-line.m-b-1 Signals
+          .serif-sm.light A powerful augmented intelligence engine for your business.
 .block
   .container
     .row
@@ -132,10 +133,15 @@ title: Product
         .serif-sm.light.m-b-1 Comprehensive Data Analytics Solution
         .light
           Sharing insights across the organization drives action.  Signals allows people to Snapshot, export and share visualizations with everyone, even if they aren’t a Signals user, ensuring that important fact-based information doesn’t stay hidden.
-.block
-  .text-xs-center
-    .header-sm.m-b-2 Data Connectors
-  .container
+
+.section
+  .container-fluid#dataConnector
+    .header-sm.m-b-2.m-t-2.text-xs-center Data Connectors
+    .container
+      .row
+        .col-sm-6.col-sm-offset-3
+          %p.text-xs-center
+            Stratifyd provides our enterprise clients multiple methods to quickly access critical business information. Our growing data connectors range from excel and CSV files, to social marketplaces, to leading business applications and databases - all providing a faster and more comprehensive process to deliver results.
     #particles-js
 
 .block-dark
@@ -176,23 +182,23 @@ title: Product
 
 
 .block-blue
-  .row
-    .col-md-6.col-md-offset-3.contactform
-      .card-block
-        .text-xs-center
-          .header-sm.m-b-2 Contact Us For Pricing Info
-        %form
-          .form-group
-            %label Name
-            %input.form-control{ placeholder: "First Last" }/
-          .form-group
-            %label Email address
-            %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Enter email", type: "email" }/
-          .form-group
-            %label Phone Number
-            %input.form-control{ placeholder: "Phone Number", type: "email" }/
-          .form-group
-            %label{:for => "exampleTextarea" } Example textarea
-            %textarea.form-control{ rows: "3" }
+  .container
+    .row
+      .col-md-6.col-md-offset-3.contactform
+        .card-block
+          .header-sm.m-b-2.text-xs-center Contact Us For Pricing Info
+          %form
+            .form-group
+              %label Name
+              %input.form-control{ placeholder: "First Last" }/
+            .form-group
+              %label Email address
+              %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Enter email", type: "email" }/
+            .form-group
+              %label Phone Number
+              %input.form-control{ placeholder: "Phone Number", type: "email" }/
+            .form-group
+              %label{:for => "exampleTextarea" } Example textarea
+              %textarea.form-control{ rows: "3" }
 
-          %button.btn.btn-primary-dark.wide{type: "submit" } Send Message
+            %button.btn.btn-primary-dark.wide{type: "submit" } Send Message
