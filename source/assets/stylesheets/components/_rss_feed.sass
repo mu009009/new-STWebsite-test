@@ -1,0 +1,81 @@
+.feed-container
+  font-family: $yantra
+  .feed-item
+    margin-bottom: 20px
+    @media screen and (max-width: map-get($breakpoints, sm))
+      min-height: auto !important
+    &:hover
+      .post-title
+        color: $sec-lightgrey
+  a
+    color: $sec-grey
+    &:hover
+      text-decoration: none
+    &.card
+      height: 100%
+  .post-image-container
+    width: 100%
+    height: auto
+    max-height: 280px
+    +breakpoint(xs)
+      height: auto
+    +breakpoint(sm)
+      height: 150px
+    +breakpoint(md)
+      height: 180px
+    +breakpoint(lg)
+      height: 175px
+    +breakpoint(xl)
+      height: 200px
+    overflow: hidden
+    img
+      max-width: 100%
+  .news &
+    .post-image-container
+      +breakpoint(xs)
+        height: auto
+      +breakpoint(sm)
+        height: 200px
+      +breakpoint(md)
+        height: 200px
+      +breakpoint(lg)
+        height: 200px
+      +breakpoint(xl)
+        height: 200px
+  .post-title
+    font-size: 1.5rem
+    font-weight: normal
+    text-align: left
+    margin-bottom: 0.75rem
+    padding: 0 10px
+    font-family: $yantra
+    @media screen and (max-width: $break-sm)
+      font-size: 16px
+  .post-body
+    text-align: left
+    @media screen and (max-width: $break-sm)
+      font-size: 14px
+  .post-date
+    padding: 0 10px
+    color: $sec-grey
+    text-align: left
+    margin-top: 10px
+
+#rss-feeds
+  margin-top: 40px
+
+.featured-post
+  .post-image-container
+    max-height: 250px
+    overflow: hidden
+    img
+      max-width: 600px
+      position: relative
+      top: -20%
+  .date-author
+    margin: 10px 0 20px
+    color: $sec-grey
+  a
+    color: $sec-grey
+    &:hover, &:focus
+      text-decoration: none

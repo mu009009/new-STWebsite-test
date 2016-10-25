@@ -1,0 +1,72 @@
+- slug: Hospitality
+  header: Stratifyd Signals for Hospitality
+  jumbo: casestudy-hospitality.jpg
+  focus: Voice of Customer
+  square: casestudy-hamptoninn.jpg
+  purpose: "This study covers voice-of-customer insights on two major hotel chains:"
+  client:
+    - "Hampton by Hilton is a chain of moderately priced, midscale hotels with limited food and beverage facilities. Most Hampton hotels are independently owned and operated by franchisees. The Hampton franchise has more than 2,000 hotels throughout the U.S. and 16 other countries."
+    - "Residence Inn by Marriott is a brand of extended stay hotels, with over 700 all-suite hotels on four continents. The suites are much larger than traditional hotel rooms. Residence Inns are known for their complimentary small hot breakfast in the morning and a free light dinner or snack reception on weekday evenings"
+  executive_blurb: "Stratifyd Signals analyzed over $30,000 Yelp reviews on Hampton by Hilton and Residence Inn. Using the Compare View, we analyzed the voice of customer feedback side-by-side."
+  challenges:
+    - "Thanks to the internet and review sites, it is easy for consumers to see what others are saying about a hotel, and to make a reservation decision based on that customer feedback. If you are the Product Manager of a Hotel chain, this is exactly the type of voice-of-the-customer information you need. Knowing what customer are talking about, the common themes and categories, and watching the trends and geographic analysis, you can make informed decisions about how to improve your business. The challenge is analyzing thousands of reviews, going beyond the star ratings to see the ‘why’, ‘when’, and ‘where’ behind the rating."
+    - "Analyzing text data without Signals is time consuming and takes a lot of resources and prioritization. This causes delays in getting to actionable insights."
+  pain_title: "Pain Points Addressed:"
+  pain_points:
+    - "Quickly analyze both the unstructured text data, and the structured fields such as location, time, rating, etc."
+    - "Analyze different points of the customer experience, from reservation, to check-in, to the stay itself."
+    - "Data connector to Yelp pulled in the entire data set, not just a sampling."
+    - "Compare customer experience against a competitor in a side-by-side view."
+  how: "The Stratifyd SignalsTM platform analyzed customer reviews from both hotel chains - the structured data (such as star ranking and geographic location) and unstructured data (such as the text comments customers type into Yelp or other social media channels). With the built-in data connector to Yelp, we consolidated roughly 30,000 Yelp comments and by conducting a Compare View analysis, quickly and concisely complied the findings into an interactive, visual dashboard."
+  theme_title: "The Stratifyd SignalsTM platform identified key themes in the Voice of Customer Data:"
+  key_themes:
+    - "Flat screen TVs, complimentary breakfast, hot tubs and pools all added to the experience, and among other things, contributed to the comments of “top notch” service and that the majority of guests were “pleasantly surprised” with the quality of their visit."
+    - "A notable difference between the two hotel chains was kitchen equipment; dishwasher, microwave, and refrigerator. Hampton did not offer a dishwasher, and in some cases, no microwave or fridge. For many customers, greater kitchen functionality is a consideration in making a reservation."
+    - "‘Bed bugs’ was mentioned in some of the reviews. The Geo Hotspot widget identifies the specific location of the comments."
+  results_title: "Signals provides these specific returns"
+  results:
+    - "Quickly generated side-by-side competitive analysis on over 30,000 reviews on two hotel chains"
+    - "Machine Learning produced specific, actionable insights, unbiased by pre-built taxonomies"
+    - "Identified specific complaints, such as bed bugs, and when and where the comments were generated"
+    - "Data analysis is sharable, searchable, and in an interactive visual format. No data scientist was required"
+  user_title: "Signals provides these specific returns"
+  user_response:
+    - "Quickly generated side-by-side competitive analysis on over 30,000 reviews on two hotel chains"
+    - "Machine Learning produced specific, actionable insights, unbiased by pre-built taxonomies"
+    - "Identified specific complaints, such as bed bugs, and when and where the comments were generated"
+    - "Data analysis is sharable, searchable, and in an interactive visual format. No data scientist was required"
+
+- slug: Lenovo
+  header: Stratifyd Signals for Customer Experience
+  jumbo: casestudy-lenovo.jpg
+  focus: Customer Experience
+  square: casestudy-lenovologo.jpg
+  purpose: "This study covers customer experience insights from Lenovo"
+  client:
+    - "Lenovo is a US$34 billion personal technology company and the world's largest PC vendor. Lenovo has more than 33,000 employees in more than 60 countries serving customers in more than 160 countries. They are a global Fortune 500 company, with headquarters in Beijing, China and Morrisville, North Carolina, U.S."
+  quote_blurb: "“Stratifyd allowed us to move analytics to the front line employee, increasing consumability, and placing it in the hands of those who are in the best position to affect change in the organization.”"
+  quote_source: "- Harshad Varia, Customer Experience Sr. Manager"
+  challenges:
+    - "Lenovo had a corporate initiative to actively solicit customer feedback at all points in the customer journey. Data was obtained, but Lenovo’s challenge was how to easily gain insights from the data, and even more importantly, how to provide end-users the ability to access the data for improved decision making. Lenovo wanted end-users to obtain actionable insights in real time from its online chat sessions, customer support sessions, and survey data logs in the North American market. The need to turn customer feedback into something valuable is why Signals was selected."
+    - "Lenovo is leveraging Stratifyd Signals&trade; platform to automatically process textual data from its customer service online chat portal to help identify key patterns, behaviors and potential issues hampering the overall online experience in both macro and micro views."
+    - "The ability to drill down and focus on a specific day, or evaluating sessions over days, weeks or even months, allows Lenovo sales and customer support teams to quickly identify trends and issues and address them head on, while ensuring agents are following protocol and delivering top-notch service."
+  how: "Signals enabled Lenovo end-user teams take a deep dive into the unstructured text of their internal data sets. Analyzing data in real time allows the customer service and customer experience teams to uncover potential issues and without complex IT integrations or by taxing data science teams. Signals has been able to quickly process all the data and present it in a way that allows Lenovo to better manage the overall customer experience."
+  how_list:
+    - "The Stratifyd SignalsTM platform processes large volumes of unstructured and structured textual data from almost any source – emails, chat sessions, text files, e.g. Word and Evernote, blog posts, app reviews, social media and more. It produces quick and actionable insights in seconds by incorporating predictive modeling, machine learning, and robust statistical Natural Language Processing (NLP) algorithms to create visualizations of behavior communities, trends, patterns and outlying themes."
+    - "Key aspects of the solution include no complex integration, an intuitive dashboard, and advanced functionality. The Signals dashboard offers drag-and-drop data importing and drill-down options – such as temporal trends, category overview, or buzzword and geospatial analysis."
+    - "Chat Data: customer service and sales chats were broken down into two groups: Agent and Customer, to improve agent performance, strengthen customer relationships, and generate more revenue."
+  theme_title: "Lenovo added the following customer experience data sets to the chat analysis to better understand ongoing customer demands:"
+  key_themes:
+    - "Opinion Lab Data: eComm comment cards, eComm exit surveys, eSupport comment cards and exit surveys."
+    - "Survey Data: purchase experience survey, chat survey (sales and sales support), product ownership survey."
+    - "Lenovo tech support data."
+  results_title: "Using the Signals platform, Lenovo was able to:"
+  results:
+    - "Expand data analytics beyond the analytics group to the end-user groups so they can affect change in the organization."
+    - "Frontline sales/support agents moved from predictive – ”what is likely to happen” to prescriptive – “what we should do”."
+    - "Strengthen relationships with customer: provide data support and agent monitoring for tactics that improve sales agent’s effectiveness in growing and retaining customers."
+    - "Increase consumption of the data: generated automatic and easy-to-consume results of sales/sales support data"
+  result_quote: "“We leverage Stratifyd theme detection and no longer need to manually build out taxonomies to listen to our customers. This tremendously reduces our time to gain meaningful insights.”"
+  result_quote_src: "- Harshad Varia, Customer Experience Sr. Manager"
+  results_summary: "Lenovo utilizes Signals as part of their standard operational processes to strengthen relationships with customers, provide data support, and improve sales agent’s effectiveness in growing and retaining customers."
+  screenshot: "casestudy-lenovo-screenshot.jpg"

@@ -34,28 +34,32 @@ title: About Us
           = image_tag "assets/images/headshots/team-derek.jpg", class: "user"
           .serif-md.blue Derek Wang, Ph.D.
           %p CEO & Founder
-          %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
+          %a{ href: "https://www.linkedin.com/in/derekxywang", target: "_blank" }
+            %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
 
       .col-md-3.col-xs-12.col-sm-6.m-b-2
         .text-xs-center
           = image_tag "assets/images/headshots/team-thomas.jpg", class: "user"
           .serif-md.blue Thomas Kraft
           %p VP of Engineering
-          %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
+          %a{ href: "https://www.linkedin.com/in/tomakraft", target: "_blank" }
+            %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
 
       .col-md-3.col-xs-12.col-sm-6.m-b-2
         .text-xs-center
           = image_tag "assets/images/headshots/team-brad.jpg", class: "user"
           .serif-md.blue Brad Fleeman
           %p VP of Global Sales
-          %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
+          %a{ href: "https://www.linkedin.com/in/brad-fleeman-8346299", target: "_blank" }
+            %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
 
       .col-md-3.col-xs-12.col-sm-6.m-b-2
         .text-xs-center
           = image_tag "assets/images/headshots/team-li-yu.jpg", class: "user"
           .serif-md.blue Li Yu, Ph.D.
           %p VP of Data Visualization
-          %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
+          %a{ href: "https://www.linkedin.com/in/liyu2", target: "_blank" }
+            %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
 %hr
 .block
   .container
@@ -76,7 +80,7 @@ title: About Us
               .media-logo-box.text-xs-center
                 %img.card-img-top.media-logo{ alt: "Card image cap", src: "/assets/images/media/#{article.image}" }
               .card-block.text-xs-center.text-md-left
-                .media-src
+                .card-subhead
                   = article.name
                 %h4.card-title
                   = article.title
@@ -84,4 +88,4 @@ title: About Us
                   = article.description
                 %br
                 .text-xs-center
-                  %a.btn.btn-primary-dark{ href: "#{article.link}" } Read full Article
+                  %a.btn.btn-primary-dark.wide{ href: "#{article.link}" } Read full Article
