@@ -9,11 +9,12 @@
     %meta{:content => "#ffffff", :name => "msapplication-TileColor"}/
     %meta{:content => "#ffffff", :name => "theme-color"}/
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+
     :sass
       #fouc
         display: none
 
-  %body
+  %body#fouc{class: page_classes}
     = partial "layouts/navbar"
     = yield
     = partial "layouts/footer"
