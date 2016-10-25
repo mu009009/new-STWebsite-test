@@ -17,7 +17,7 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 data.case_studies.each do |study|
-  proxy "/case_study/#{study.slug}.html", "/case_studies/template.html", :locals => { :study => study }, :ignore => true
+  proxy "/#{study.slug}.html", "/case_studies/template.html", :locals => { :study => study }, :ignore => true
 end
 
 # General configuration
@@ -68,6 +68,7 @@ configure :build do
 
   # modify the build directory if you are using s3_sync
   set :build_dir, 'build/'
+  set :images_dir, '/content-server/stratifyd/'
 
   # Minify CSS on build
   # activate :minify_css
