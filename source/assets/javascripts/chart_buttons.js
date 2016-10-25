@@ -2,7 +2,7 @@ import Chart from 'chart.js/dist/Chart.bundle.min.js'
 import {dataConfig, analyticsConfig, visualizationConfig} from "chart_config.js"
 
 $( document ).ready(function() {
-  if($('js-chartHeader').length > 0) {
+  if($('.js-chartHeader').length > 0) {
 
     const configArray = [dataConfig, analyticsConfig, visualizationConfig]
     const divArray = $('.js-chartHeader')
