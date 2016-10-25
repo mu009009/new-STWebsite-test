@@ -156,26 +156,19 @@ title: Product
     .header-sm.m-b-2 Case Studies
   .container
     .row
-      .col-md-4
-        .card.blog-card
-          %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }/
-          .card-block
-            %h4.card-title Card title
-            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+      - data.case_studies.each_with_index do |study, index|
+        .col-md-4
+          %a.case_study_card{ href: "/case_study/#{study.slug}.html" }
+            .card
+              %img.card-img-top{ style: "background-image: url(assets/images/case_studies/#{study.jumbo})" }/
+              .card-block
+                .card-subhead
+                  = study.focus
+                %h4.card-title
+                  = study.header
+                .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
 
-      .col-md-4
-        .card.blog-card
-          %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }/
-          .card-block
-            %h4.card-title Card title
-            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
 
-      .col-md-4
-        .card.blog-card
-          %img.card-img-top{ alt: "Card image cap", src: "assets/images/placeholder.svg" }/
-          .card-block
-            %h4.card-title Card title
-            .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
 
   .text-xs-center
     %button.btn.btn-primary-dark.m-t-2 Read More Case Studies

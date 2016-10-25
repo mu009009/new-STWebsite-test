@@ -1,7 +1,7 @@
 ---
 title: Case Study
 ---
-.jumbotron-fluid#caseJumbo{ style: "background-image: url()" }
+.jumbotron-fluid#caseJumbo{ style: "background-image: url(/assets/images/case_studies/#{study.jumbo})" }
   .text-xs-center
     .header.light.m-b-1
       = study.header
@@ -9,11 +9,14 @@ title: Case Study
 .block-sm
   .container
     .row
-      .col-md-4
+      .col-md-6.m-b-2
+
         %a.back_link{ href: "javascript:history.back()" } <- Back
-        %img{ src: "" }
+    .row
+      .col-md-4
+        %img.case-square.m-y-1{ src: "/assets/images/case_studies/#{study.square}" }
       .col-md-8
-        .header-sm.m-b-3 Executive Summary
+        .header-sm.m-b-1 Executive Summary
         %p
           = study.purpose
 
@@ -22,7 +25,14 @@ title: Case Study
             %p= things
 
         %p.serif-md.m-t-3
-          = study.executive_blurb
+          - if study.executive_blurb
+            = study.executive_blurb
+
+          - if study.quote_blurb
+            = study.quote_blurb
+            .text-xs-right.serif-sm.m-t-1
+              = study.quote_source
+
 
 .block-sm
   .container
@@ -30,13 +40,20 @@ title: Case Study
       .col-md-6.col-xs-12.col-md-offset-3.m-b-2
         .text-xs-center
           .serif-md.blue.m-b-1 Challenges in Hospitality
-    .row.text-md-left.text-xs-center
-      .col-md-6
-        - if study.challenges
-          - study.challenges.each do |things|
-            %p= things
-      .col-md-6
-        - if study.pain_points
+    .row
+      - if !study.pain_points
+        .col-md-6.col-md-offset-3
+          - if study.challenges
+            - study.challenges.each do |things|
+              %p= things
+
+
+      - if study.pain_points
+        .col-md-6
+          - if study.challenges
+            - study.challenges.each do |things|
+              %p= things
+        .col-md-6
           %b
             = study.pain_title
           %ul
@@ -49,9 +66,14 @@ title: Case Study
       .col-md-6.col-xs-12.col-md-offset-3.m-b-2
         .text-xs-center
           .serif-md.blue.m-b-1 How Signals Helped
-    .row.text-md-left.text-xs-center
+    .row
       .col-md-6
         %p= study.how
+
+        - if study.how_list
+          %ul
+            - study.how_list.each do |things|
+              %li= things
 
       .col-md-6
         - if study.key_themes
@@ -67,7 +89,7 @@ title: Case Study
       .col-md-6.col-xs-12.col-md-offset-3.m-b-2
         .text-xs-center
           .serif-md.blue.m-b-1 Results and Return on Investment
-    .row.text-md-left.text-xs-center
+    .row
       .col-md-6
         - if study.results
           %b
@@ -76,9 +98,20 @@ title: Case Study
             - study.results.each do |things|
               %li= things
       .col-md-6
+        - if study.results_summary
+          = study.results_summary
+        - if study.result_quote
+          .serif-md.m-t-3
+            = study.result_quote
+            .text-xs-right.m-t-1.serif-sm
+              = study.result_quote_src
+
         - if study.user_response
           %b
             = study.user_title
           %ul
             - study.user_response.each do |things|
               %li= things
+    .row
+      .col-xs-12
+        %img.wide.m-y-2{ src: "/assets/images/case_studies/#{study.screenshot}"}

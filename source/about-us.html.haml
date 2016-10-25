@@ -80,7 +80,7 @@ title: About Us
               .media-logo-box.text-xs-center
                 %img.card-img-top.media-logo{ alt: "Card image cap", src: "/assets/images/media/#{article.image}" }
               .card-block.text-xs-center.text-md-left
-                .media-src
+                .card-subhead
                   = article.name
                 %h4.card-title
                   = article.title
@@ -88,4 +88,4 @@ title: About Us
                   = article.description
                 %br
                 .text-xs-center
-                  %a.btn.btn-primary-dark{ href: "#{article.link}" } Read full Article
+                  %a.btn.btn-primary-dark.wide{ href: "#{article.link}" } Read full Article
