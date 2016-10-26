@@ -164,7 +164,7 @@ title: Product
     .row
       - data.case_studies.each_with_index do |study, index|
         .col-md-4
-          %a.case_study_card{ href: "/case_study/#{study.slug}.html" }
+          %a.case_study_card{ href: "/#{study.slug}.html" }
             .card
               %img.card_img_box{ style: "background-image: url(assets/images/case_studies/#{study.jumbo})" }/
               .card-block
