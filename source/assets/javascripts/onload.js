@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  $('#fouc').fadeIn(600);
+  $('#fouc').fadeIn(1000);
 });
