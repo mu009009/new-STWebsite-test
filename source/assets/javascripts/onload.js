@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  $('#fouc').fadeIn(1000);
+  window.setTimeout( () => { $('#fouc').fadeIn(1000) } , 500);
 });
