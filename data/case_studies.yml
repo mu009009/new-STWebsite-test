@@ -1,4 +1,5 @@
 - slug: Hospitality
+  featured: true
   header: Stratifyd Signals for Hospitality
   jumbo: casestudy-hospitality.jpg
   focus: Voice of Customer
@@ -37,6 +38,7 @@
     - "Data analysis is sharable, searchable, and in an interactive visual format. No data scientist was required"
 
 - slug: Lenovo
+  featured: true
   header: Stratifyd Signals for Customer Experience
   jumbo: casestudy-lenovo.jpg
   focus: Customer Experience
