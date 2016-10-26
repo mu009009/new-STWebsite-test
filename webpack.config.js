@@ -10,7 +10,7 @@ const definePlugin = new webpack.DefinePlugin({
 const siteConfig = {
   entry: {
 		vendor: [
-			// 'font-awesome-webpack',
+			'font-awesome-webpack',
 			'bootstrap-loader'],
 		index: './source/assets/javascripts/index.js',
   },
