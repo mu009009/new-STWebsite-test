@@ -2,12 +2,11 @@ const webpack = require('webpack');
 // var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const Clean = require('clean-webpack-plugin');
 const path = require('path');
-const definePlugin = new webpack.DefinePlugin({
-  __DEVELOPMENT__: JSON.stringify(JSON.parse(process.env.BUILD_DEVELOPMENT || false)),
-  __PRODUCTION__: JSON.stringify(JSON.parse(process.env.BUILD_PRODUCTION || false))
-});
+const merge = require('webpack-merge');
+const NODE_ENV = JSON.stringify(process.env.NODE_ENV);
+console.log('THE NODE_ENV IS', NODE_ENV);
 
-const siteConfig = {
+const common = {
   entry: {
 		vendor: [
 			'font-awesome-webpack',
@@ -22,11 +21,6 @@ const siteConfig = {
 	// resolve: {
 		// root: __dirname + '/source/assets/javascripts',
   // },
-
-  output: {
-    path: __dirname + '/.tmp/dist',
-    filename: 'assets/[name].bundle.js'
-  },
 
   module: {
 		loaders: [
@@ -44,7 +38,7 @@ const siteConfig = {
       },
 
 			// Load styles
-			{ test: /\.s*ss$/, loaders: [ 'style?sourceMap=true', 'css?sourceMap=true', 'postcss?sourceMap=true', 'sass?sourceMap=true' ] },
+			{ test: /\.s*ss$/, loaders: [ 'style', 'css', 'postcss', 'sass?sourceMap=true' ] },
 			{ test: /\.css$/, loaders: [ 'style', 'css', 'postcss' ] },
 
 			// // Load jQuery for Bootstrap 4
@@ -66,7 +60,6 @@ const siteConfig = {
 			}
     ]
   },
-  devtool: 'source-map',
   plugins: [
     // definePlugin,
     new Clean(['.tmp']),
@@ -76,14 +69,31 @@ const siteConfig = {
 			"window.jQuery": "jquery",
 			"Tether": 'tether',
 			"window.Tether": "tether"
-		}),
-		new webpack.DefinePlugin({
-			'process.env': {
-				'NODE_ENV': JSON.stringify('production')
-			}
 		})
 		// new webpack.optimize.CommonsChunkPlugin("assets/commons.js")
   ]
 };
 
-module.exports = [ siteConfig ];
+let config;
+switch(NODE_ENV) {
+  case '"production"':
+    config = merge(common, {
+      output: {
+        path: __dirname + '/.tmp/dist',
+        publicPath: 'https://s3.amazonaws.com/content-server/stratifyd/',
+        filename: 'assets/[name].bundle.js'
+      }
+    });
+    break;
+  default:
+    config = merge(common, {
+      output: {
+        path: __dirname + '/.tmp/dist',
+        publicPath: 'http://127.0.0.1:4567/',
+        filename: 'assets/[name].bundle.js'
+      },
+      devtool: 'eval-source-map'
+    });
+}
+
+module.exports = [ config ];
