@@ -66,6 +66,7 @@ const siteConfig = {
 			}
     ]
   },
+  devtool: 'source-map',
   plugins: [
     // definePlugin,
     new Clean(['.tmp']),
