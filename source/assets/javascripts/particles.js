@@ -99,7 +99,6 @@ if ($('#particles-js').length > 0) {
               "assets/images/data_connectors/mysql.svg",
               "assets/images/data_connectors/icon_gmail.svg",
               "assets/images/data_connectors/icon_salesforce.svg"
-
             ],
             "width": 100,
             "height": 100
