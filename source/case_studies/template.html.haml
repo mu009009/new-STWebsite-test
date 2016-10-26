@@ -114,4 +114,5 @@ title: Case Study
               %li= things
     .row
       .col-xs-12
-        %img.wide.m-y-2{ src: "/assets/images/case_studies/#{study.screenshot}"}
+        - if study.screenshot
+          %img.wide.m-y-2{ src: "/assets/images/case_studies/#{study.screenshot}"}
