@@ -1,3 +1,8 @@
+if RUBY_VERSION =~ /2.2.4/
+  Encoding.default_external = Encoding::UTF_8
+  Encoding.default_internal = Encoding::UTF_8
+end
+
 ruby '2.2.4'
 # If you do not have OpenSSL installed, change
 # the following line to use 'http://'
