@@ -44,7 +44,7 @@ const siteConfig = {
       },
 
 			// Load styles
-			{ test: /\.s*ss$/, loaders: [ 'style', 'css', 'postcss', 'sass' ] },
+			{ test: /\.s*ss$/, loaders: [ 'style?sourceMap=true', 'css?sourceMap=true', 'postcss?sourceMap=true', 'sass?sourceMap=true' ] },
 			{ test: /\.css$/, loaders: [ 'style', 'css', 'postcss' ] },
 
 			// // Load jQuery for Bootstrap 4
