@@ -20,9 +20,9 @@ title: About Us
         .text-xs-center
           %img{:alt => "Card image cap", :src => "assets/images/about-our-beginning.png", class: "wide m-b-2"}/
       .col-lg-6.col-sm-12.col-lg-offset-1
-        .header-sm.m-b-1 Our Beginning
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        %button.btn.btn-primary-dark.m-y-1 Learn More
+        .header-sm.m-b-1 Signals
+        %p Faced with the challenge of identifying persistent themes from sources across the globe, in multiple languages across different data mediums, we developed the next generation of analytics based on the emerging science of machine learning.  This unique approach targeted the most difficult and untapped analytics landscape - unstructured textual data.  Utilizing machine learning and statistical NLP to eliminate taxonomical and ontological analytics methods drastically improves time to decision, reduces the operational cost of analytics and removes inherent biases resulting from a predetermined interpretation framework.
+        %a.btn.btn-primary-dark.m-y-1{ href: "product.html" } Learn More
 %hr
 .block.leadership
   .container
@@ -76,10 +76,10 @@ title: About Us
       .row
         - data.media.each do |article|
           .col-lg-4.col-md-6
-            .card
+            .card.media-card
               .media-logo-box.text-xs-center
                 %img.card-img-top.media-logo{ alt: "Card image cap", src: "/assets/images/media/#{article.image}" }
-              .card-block.text-xs-center.text-md-left
+              .card-block.text-xs-center.text-md-left.media-card-content
                 .card-subhead
                   = article.name
                 %h4.card-title
