@@ -16,11 +16,16 @@
   height: 550px
 
 #signalsJumbo
-  background-image: url("../images/product-header.jpg")
+  background-image: url("../images/screenshots/Product-Header-iMac-Mockup-overlay.jpg")
   background-position: center
-  background-size: cover
+  background-size: contain
+  background-color: $util-black
+  background-repeat: no-repeat
   height: 550px
   padding-top: 200px
+  @media screen and (min-width: $break-xl)
+    background-position: top
+
 
 #head2headJumbo
   background-image: url("../images/head-to-head.jpg")
@@ -96,7 +101,7 @@
   flex-direction: column
 
 #case_studiesJumbo
-  background-image: url("../images/case_studies/headers/allcasestudies-photo.jpeg")
+  background-image: url("../images/case_studies/headers/allcasestudies-photo.jpg")
   background-position: center
   height: 400px
   display: flex
