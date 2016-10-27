@@ -11,8 +11,9 @@
     background-color: $pri-yellow
     border: 2px solid $pri-yellow
     color: $pri-black
+    text-decoration: none
 
-.btn-primary-dark
+.btn-primary-dark, .link-style
   color: $pri-black
 
 .btn-primary-blue
@@ -38,3 +39,14 @@
 .jobTrigger
   -webkit-transition: width 2s
   transition: width 2s
+
+.link-style, .login
+  border-top: 2px solid transparent
+  border-right: 2px solid transparent
+  border-left: 2px solid transparent
+  border-bottom: 2px solid $pri-yellow
+  font-family: $averia
+  padding: 10px 0
+  &:hover
+    text-decoration: none
+    color: $sec-lightgrey

@@ -23,35 +23,26 @@ title: Contact Us
         .location
           .serif-md.blue China
           %ul.address-list
-            %li 1431 W. Morehead Street
-            %li Charlotte, NC 28208
-            %li P. 123-456-7890
-            %li E. email@domain.com
+            %li 9th, Guanghua road
+            %li Chaoyang District, Beijing SOHO 2
+            %li P. 1 3466 390016
+            -# %li E. email@domain.com
 
         .location
           .serif-md.blue London
           %ul.address-list
-            %li 1431 W. Morehead Street
-            %li Charlotte, NC 28208
-            %li P. 123-456-7890
-            %li E. email@domain.com
+            %li 24 Cornwall Rd
+            %li Dorchester, Dorset DR1 1RX
+            %li P. +44 (0) 7944 724920
+            -# %li E. email@domain.com
+        .location
+          %a.link-style{:href => "/"}
+            Check out our job listings
+
+
       .col-md-5.col-md-offset-1.col-xs-12
         .serif-md.blue.m-b-1 Contact Form
-        %form
-          .form-group
-            %label Name
-            %input.form-control{ placeholder: "First Last" }/
-          .form-group
-            %label Email
-            %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Enter email", type: "email" }/
-          .form-group
-            %label Phone Number
-            %input.form-control{ placeholder: "Phone Number", type: "email" }/
-          .form-group
-            %label{:for => "exampleTextarea" } Message
-            %textarea.form-control{ rows: "3" }
-
-          %button.btn.btn-primary-dark.wide{type: "submit" } Send Message
+        = partial 'contactForm'
   .container
     .row
       .col-xs-12.text-xs-center
