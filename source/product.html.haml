@@ -14,8 +14,7 @@ title: Product
       .col-md-6.col-md-offset-3
         .text-xs-center
           .header-sm.m-b-2 Simple. Powerful. Fast.
-          .row
-            Signals is a comprehensive analytics platform transforming latent data into unified business insight across Social, 3rd Party and Enterprise systems, at the speed of business.
+          Signals is a comprehensive analytics platform transforming latent data into unified business insight across Social, 3rd Party and Enterprise systems, at the speed of business.
 
 .block
   .container
@@ -134,7 +133,7 @@ title: Product
         .light
           Sharing insights across the organization drives action.  Signals allows people to Snapshot, export and share visualizations with everyone, even if they aren’t a Signals user, ensuring that important fact-based information doesn’t stay hidden.
 
-.section.hidden-md-down
+.data-block.hidden-md-down
   .container-fluid#dataConnector
     .header-sm.m-b-2.m-t-2.text-xs-center Data Connectors
     .container
@@ -167,7 +166,8 @@ title: Product
         .col-md-4
           %a.case_study_card{ href: "#{study.slug}.html" }
             .card
-              %img.card_img_box{ style: "background-image: url(assets/images/case_studies/#{study.jumbo})" }/
+              .card_img_box
+                %img.card-img{ src: "assets/images/case_studies/#{study.jumbo}" }/
               .card-block
                 .card-subhead
                   = study.focus
@@ -188,7 +188,7 @@ title: Product
 .block-blue
   .container
     .row
-      .col-md-6.col-md-offset-3.contactform
+      .col-md-8.col-md-offset-2.contactform
         .card-block
           .header-sm.m-b-2.text-xs-center Contact Us For Pricing Info
           %form
