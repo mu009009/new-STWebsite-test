@@ -162,7 +162,8 @@ title: Product
     .header-sm.m-b-2 Case Studies
   .container
     .row
-      - data.case_studies.each_with_index do |study, index|
+      - @featured_cases = data.case_studies.select { |hash| hash[:featured] }
+      - @featured_cases.first(3).each do |study|
         .col-md-4
           %a.case_study_card{ href: "#{study.slug}.html" }
             .card
@@ -172,12 +173,15 @@ title: Product
                   = study.focus
                 %h4.card-title
                   = study.header
-                .body-copy.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                .body-copy.card-text
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
 
 
 
   .text-xs-center
-    %button.btn.btn-primary-dark.m-t-2 Read More Case Studies
+    %a.btn.btn-primary-dark.m-t-2{ href: 'case-studies.html' }
+      Read More Case Studies
 
 
 

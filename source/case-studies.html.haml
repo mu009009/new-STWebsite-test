@@ -1,0 +1,28 @@
+---
+title: Case Studies
+---
+
+.jumbotron-fluid#blogJumbo
+  .row
+    .text-xs-center
+      .header.light Case Studies
+%br/
+%br/
+
+.container
+  .row
+    - data.case_studies.each do |study|
+      %a.col-md-4.case_study_card{ href: "#{study.slug}.html" }
+        .card
+          %img.card_img_box{ alt: study.jumbo.to_s,
+            style: "background-image: url(assets/images/case_studies/#{study.jumbo})" }/
+          .card-block
+            .card-subhead
+              = study.focus
+            %h4.card-title
+              = study.header
+            .body-copy.card-text
+              Some quick example text to build on the card title and make
+              up the bulk of the card's content.
+  %br/
+  %br/
