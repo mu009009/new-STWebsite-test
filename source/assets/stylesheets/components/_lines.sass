@@ -22,3 +22,28 @@
     z-index: 1
     top: 9px
     left: 45%
+
+.giant-arrow
+  position: relative
+  background: transparent
+  border-bottom: 1px solid #ccc
+  margin: 25px 0 35px 0
+  &:after, &:before
+    top: 100%
+    left: 50%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+  &:after
+    border-color: rgba(0, 0, 0, 0)
+    border-top-color: #fff
+    border-width: 30px
+    margin-left: -30px
+  &:before
+    border-color: rgba(0, 0, 0, 0)
+    border-top-color: #ccc
+    border-width: 32px
+    margin-left: -32px
