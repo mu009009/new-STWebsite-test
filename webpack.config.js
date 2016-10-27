@@ -74,7 +74,7 @@ const common = {
   ]
 };
 
-let config;
+var config;
 switch(NODE_ENV) {
   case '"production"':
     config = merge(common, {
