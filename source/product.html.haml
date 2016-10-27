@@ -2,16 +2,22 @@
 title: Product
 ---
 .jumbotron-fluid#signalsJumbo
+  .container.hidden-sm-down
+    .row
+      .col-md-2.col-md-offset-8
+        .text-xs-center
+          .header.light.blue-line.m-b-1 Signals
+          .serif-sm.light A powerful augmented intelligence engine for your business.
 
-.block
+.block.hidden-md-up
   .container
     .row
-      .col-md-6.col-md-offset-3
+      .col-xs-12.col-sm-10.col-sm-offset-1
         .text-xs-center
           .header.m-b-1
-            %span.blue-line Signals
-          .serif-md A powerful augmented intelligence engine for your business.
-%hr
+            %span{ style: "border-bottom: 2px solid #00a1ae"} Signals
+          .serif-sm A powerful augmented intelligence engine for your business.
+
 .block
   .container
     .row
@@ -88,12 +94,16 @@ title: Product
           .box.hidden-md-up
             .serif-md.light minutes
 
-      .row.box.hidden-sm-down
-        .col-md-5
+      .row.hidden-sm-down
+        .col-md-4.col-md-offset-1.box
+          .row
+            .col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1
           .serif-md.light minutes
-        .col-md-2.fill
+        .col-md-2.fill.box
 
-        .col-md-5
+        .col-md-4.box
+          .row
+            .col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1
           .serif-md.light minutes
 
 
@@ -108,7 +118,7 @@ title: Product
           %p
             Signals is designed to augment human intelligence. Our deep-learning analytics engine unifies structured and textual data to deliver comprehensive, topical insights from raw data. Leaders across the organization can make more informed data driven decisions leveraging these analytical foundations.
 
-          %button.btn.btn-primary-dark.m-t-3{ href: "#" } Dig Deeper
+          %a.btn.btn-primary-dark.m-t-3{ href: "deeper-dive.html" } Dig Deeper
 
 .jumbotron-fluid.block#specsJumbo
   .container
@@ -175,7 +185,7 @@ title: Product
               .card-block
                 .card-subhead
                   = study.focus
-                %h4.card-title
+                %h4.serif-md
                   = study.header
                 .body-copy.card-text
                   Some quick example text to build on the card title and make
