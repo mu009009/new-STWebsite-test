@@ -1,4 +1,5 @@
 - slug: Hospitality
+  tag: voc
   featured: true
   header: Stratifyd Signals for Hospitality
   jumbo: casestudy-hospitality.jpg
@@ -38,6 +39,7 @@
     - "Data analysis is sharable, searchable, and in an interactive visual format. No data scientist was required"
 
 - slug: Lenovo
+  tag: business-exec
   featured: true
   header: Stratifyd Signals for Customer Experience
   jumbo: casestudy-lenovo.jpg
