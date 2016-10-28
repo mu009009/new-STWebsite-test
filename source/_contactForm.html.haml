@@ -1,15 +1,4 @@
-%form
-  .form-group
-    %label Name
-    %input.form-control{ placeholder: "First Last" }/
-  .form-group
-    %label Email address
-    %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Enter email", type: "email" }/
-  .form-group
-    %label Phone Number
-    %input.form-control{ placeholder: "Phone Number", type: "email" }/
-  .form-group
-    %label{:for => "exampleTextarea" } Message
-    %textarea.form-control{ rows: "3" }
-
-  %button.btn.btn-primary-dark.wide{type: "submit" } Send Message
+.cognito
+  %script{:src => "https://services.cognitoforms.com/s/XiGqjaL5VESlgf4lHpWtIw"}
+  :javascript
+    Cognito.load("forms", { id: "1" });
