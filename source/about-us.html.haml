@@ -75,7 +75,7 @@ title: About Us
     .container-fluid
       .row
         - data.media.each do |article|
-          .col-lg-4.col-md-6
+          .col-lg-6.col-xl-4
             .card.media-card.match-height{ "data-mh" => "test-group" }
               .media-logo-box.text-xs-center
                 %img.card-img-top.media-logo{ alt: "Card image cap", src: "/assets/images/media/#{article.image}" }
@@ -85,7 +85,7 @@ title: About Us
                 %h4.serif-md.card-title
                   = article.title
                 .body-copy.card-text
-                  = article.description
+                  = truncate(article.description, :length => 180)
                 %br
                 .text-xs-center
                   %a.btn.btn-primary-dark.wide{ href: "#{article.link}" } Read full Article
