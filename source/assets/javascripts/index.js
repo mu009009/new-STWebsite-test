@@ -7,3 +7,4 @@ require('./medium_feed.js');
 require('./onload.js');
 require('./buttons.js');
 require('./countup.js');
+require('./forms.js');
