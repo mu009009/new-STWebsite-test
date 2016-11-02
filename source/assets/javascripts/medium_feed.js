@@ -64,7 +64,7 @@ $(document).ready(function(){
                   {title}
                 </h4>
                 <div class="post-body body-copy-small">
-                  {shortBodyPlain}
+                  {shortBodyPlain}...
                 </div>
               </div>
               </a>
@@ -113,7 +113,19 @@ $(document).ready(function(){
           </div>`,
         ssl: true,
         success: function() {
-          $('.feed-item').matchHeight({
+          $('.card').matchHeight({
+            byRow: true,
+            property: 'min-height',
+            target: null,
+            remove: false
+          });
+          $('.serif-md').matchHeight({
+            byRow: true,
+            property: 'min-height',
+            target: null,
+            remove: false
+          });
+          $('.post-image-container').children().matchHeight({
             byRow: true,
             property: 'min-height',
             target: null,

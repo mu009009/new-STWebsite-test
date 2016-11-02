@@ -6,3 +6,4 @@ require('./particles.js');
 require('./medium_feed.js');
 require('./onload.js');
 require('./buttons.js');
+require('./countup.js');
