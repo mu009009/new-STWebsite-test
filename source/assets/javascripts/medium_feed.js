@@ -46,7 +46,7 @@ $(document).ready(function(){
         limit: 10,
         filterLimit: 9,
         layoutTemplate: "<div class='row feed-container'>{entries}</div>",
-        entryTemplate: '<div class="col-md-6 col-lg-4 blog-card feed-item"><a target="_blank" href="{url}" class="card"><div class="post-image-container">{teaserImage}</div><div class="card-block"><h4 class="serif-md">{title}</h4><div class="post-body body-copy-small">{shortBodyPlain}</div></div></a></div>',
+        entryTemplate: '<div class="col-md-6 col-lg-4 blog-card feed-item matchHeight"><a target="_blank" href="{url}" class="card"><div class="post-image-container">{teaserImage}</div><div class="card-block"><h4 class="serif-md">{title}</h4><div class="post-body body-copy-small">{shortBodyPlain}</div></div></a></div>',
         ssl: true,
         filter: function(entry, tokens) {
           return tokens.index > 0
