@@ -242,7 +242,7 @@ export const analyticsConfig = {
             xAxes: [{
               position: "top",
               ticks: {
-                max: 5,
+                max: 4,
                 min: 0,
                 stepSize: 0.5,
                 callback: function(value) {
