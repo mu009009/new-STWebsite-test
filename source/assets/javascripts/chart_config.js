@@ -89,13 +89,13 @@ export const dataConfig = {
             xAxes: [{
               position: "top",
               ticks: {
-                max: 4,
+                max: 3,
                 min: 0,
                 stepSize: 0.5,
                 callback: function(value) {
-                  if (value == 1) {return ["3rd Party Data"];}
-                  if (value == 2) {return ["2nd Party Data"];}
-                  if (value == 3) {return ["1st Party Data"];}
+                  if (value == 1) {return ["3rd Party", "Data", ""];}
+                  if (value == 2) {return ["2nd Party", "Data", ""];}
+                  if (value == 3) {return ["1st Party", "Data", ""];}
                 },
                 fontColor: "#00a1ae",
                 fontFamily: "'Averia Serif Libre', serif",
@@ -242,13 +242,13 @@ export const analyticsConfig = {
             xAxes: [{
               position: "top",
               ticks: {
-                max: 4,
+                max: 3,
                 min: 0,
                 stepSize: 0.5,
                 callback: function(value) {
-                  if (value == 1) {return ["Sentiment"];}
-                  if (value == 2) {return ["Machine Learning"];}
-                  if (value == 3) {return ["Taxonomical Education"];}
+                  if (value == 1) {return ["Sentiment", "", ""];}
+                  if (value == 2) {return ["Machine", "Learning", ""];}
+                  if (value == 3) {return ["Taxonomical", "Education", ""];}
                 },
                 fontColor: "#00a1ae",
                 fontFamily: "'Averia Serif Libre', serif",

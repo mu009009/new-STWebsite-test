@@ -83,7 +83,7 @@ function SubmittoChannel(){
       }
 //      networkIndicator( true );
       return postToFeedbackChannel(json).fail(function() {
-        showAlertDialog('error', _L('Opps, something wrong.  Please try later.'));
+        showAlertDialog('error', _L('Oops, something wrong.  Please try later.'));
       }).always(function() {
 //        networkIndicator(false);
       });
