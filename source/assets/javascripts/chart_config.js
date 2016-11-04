@@ -75,6 +75,10 @@ export const dataConfig = {
         },
         scales: {
             yAxes: [{
+              gridLines: {
+                zeroLineWidth: 3,
+                zeroLineColor: "#79BC42"
+              },
               ticks: {
                 max: 4,
                 min: -0.5,
@@ -225,6 +229,10 @@ export const analyticsConfig = {
         },
         scales: {
             yAxes: [{
+              gridLines: {
+                zeroLineWidth: 3,
+                zeroLineColor: "#79BC42"
+              },
               ticks: {
                 max: 7,
                 min: -0.5,
@@ -381,6 +389,10 @@ export const visualizationConfig = {
         },
         scales: {
             yAxes: [{
+              gridLines: {
+                zeroLineWidth: 3,
+                zeroLineColor: "#79BC42"
+              },
               ticks: {
                 max: 6,
                 min: -0.5,
