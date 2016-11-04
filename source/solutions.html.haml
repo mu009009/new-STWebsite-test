@@ -438,7 +438,7 @@ title: Solutions
           .header-sm.light.m-y-1 Data Sources
           .row
             .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-              %p.light There are many different platforms that focus on collecting data from disparate data sources. This data source matrix articulates who can process data across the 3 primary data categories.
+              %p.light There are many different platforms that focus on collecting data from disparate data sources. This data source matrix articulates who can process data across the three primary data categories.
 
 
         #analytics.last.js-chartHeader{ data: { config: 1 } }
@@ -446,10 +446,6 @@ title: Solutions
           .row
             .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
               %p.light Machine learning is the next generation of analytics. The matrix below provides an easily understood view of our competitors.
-
-
-
-
 
         .row
           .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
@@ -459,3 +455,41 @@ title: Solutions
   .block
     .container
       %canvas#Chart.chart{:height => "100", :width => "300"}
+
+
+.matrix-mobile.hidden-lg-up
+  .block-blue-pad
+    .container#visualization.current
+      .row
+        .col-xs-12
+          .header-sm.light.m-y-1 Visualization Layer
+          %p.light
+            Single pane of glass visualization tools are extremely valuable within organizations. Unlike other visualization tools, Signals includes:
+            %ul.light
+              %li Flexible Visualization Capabilities 
+              %li Easy Usability, Little Training Required 
+              %li Analytical Capabilities 
+              %li “Live-Share” Collaboration 
+              %li Record Level Navigation
+    .separator
+    .container
+      .row
+        .col-xs-12
+          .header-sm.light.m-y-1 Analytics
+          %p.light
+            Machine learning is the next generation of analytics. Signals does the work for you, ensuring a quicker and easier process, by providing these vital features:
+            %ul.light
+              %li NLP, Text Analytics, Sentiment Analysis 
+              %li Machine Learning, Statistical Analysis
+              %li Taxonomical Education Not Required
+    .separator
+    .container
+      .row
+        .col-xs-12
+          .header-sm.light.m-y-1 Data Sources
+          %p.light
+            There are many different platforms that focus on collecting data from disparate data sources. While others process data from just one or two data categories, Signals processes data across all three primary categories:
+            %ul.light
+              %li 3rd Party or Public Domain Data (Social Media, News, Blogs, etc.)
+              %li 2nd Party Data (SalesForce, Zendesk, etc.) 
+              %li 1st Party or Internal Data (Data Warehouse, Hadoop, etc.)

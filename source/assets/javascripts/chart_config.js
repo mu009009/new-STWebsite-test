@@ -5,6 +5,8 @@ export const dataConfig = {
       {
 
           label: 'Signals',
+          fontSize: 20,
+          fontWeight: 'bold',
           data: [
               {
                   x: 1,
@@ -80,7 +82,7 @@ export const dataConfig = {
                 stepSize: 1,
                 callback: function(value) {
                   if (value == 0) {return "Signals";}
-                  if (value == 1) {return "Other";}
+                  if (value == 1) {return ["Other", "Data Aggregators"];}
                   if (value == 2) {return "Sysomos";}
                   if (value == 3) {return "Radian6";}
                 }
@@ -248,7 +250,7 @@ export const analyticsConfig = {
                 callback: function(value) {
                   if (value == 1) {return ["Sentiment", "", ""];}
                   if (value == 2) {return ["Machine", "Learning", ""];}
-                  if (value == 3) {return ["Taxonomical", "Education", ""];}
+                  if (value == 3) {return ["Taxonomical Education", "Not Required", ""];}
                 },
                 fontColor: "#00a1ae",
                 fontFamily: "'Averia Serif Libre', serif",
