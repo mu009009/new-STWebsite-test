@@ -10,9 +10,9 @@ To get up and running:
 
 * Clone this repo locally
 
-* npm install
+* `npm install`
 
-* bower install
+* `bower install`
 
 * Make sure you are running the correct ruby version (2.2.4p230)
 
