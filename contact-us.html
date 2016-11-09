@@ -146,33 +146,31 @@
                 <label for='exampleTextarea'>Message</label>
                 <textarea class='form-control' rows='3'></textarea>
               </div>
-              <button class='btn btn-primary-dark wide' onclick='SubmittoChannel()' type='button'>Send Message</button>
+              <button class='btn btn-primary-dark wide' onclick='SubmittoChannel()' type='submit'>Send Message</button>
             </form>
             <script>
               function SubmittoChannel(){
-                var bootbox = require('bootbox');
                 var values = [];
                 $('input').each(function() {
-                    values.push($(this).val());
+                  values.push($(this).val());
                   });
               
-                if((values[2]=='')||(values[1]=='')||(values[0]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
+                  if((values[2]=='')||(values[1]=='')||(values[0]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
                   {
-                    bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
+                    //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
                   }
-                else{
+                  else{
                   if(emailCheck(values[2]))
-                    {
-                      bootbox.alert('Your information has succeeded uploaded, our staff members will contact with you soon.')
-                      postUserFeedback(values[2],values[1],values[0], values[3], values[4]);
+                  {
+                    //bootbox.alert('Your information has succeeded uploaded, our staff members will contact with you soon.')
+                    postUserFeedback(values[2],values[1],values[0], values[3], values[4]);
                     }
-                  else
+                    else
                     {
-                      bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
+                    //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
                     }
               
-                }
-                return false;
+                  }
               }
               
               var kFeedbackWebHook = 'https://hooks.slack.com/services/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';
@@ -187,53 +185,49 @@
                 while (/%s/.test(newStr))
                   newStr = newStr.replace("%s", arguments[i++]);
                 return newStr;
-              }
+                }
               
-              function postUserFeedback( email, lastname, firstname, phone, message ) {
+                function postUserFeedback( email, lastname, firstname, phone, company ) {
                 var url = window.location.href;
                 var fallback = "New feedback from <mailto:%s?subject=Stratifyd, Inc. Client Support|%s>".format(email,email);
                 var page = '<'+url+'>';
                 var json = {
-                 attachments : [
+                attachments : [
+                {
+                  fallback: fallback,
+                  pretext: fallback,
+                  color: "warning",
+                  fields:[
                   {
-                     fallback: fallback,
-                     pretext: fallback,
-                     color: "warning",
-                     fields:[
-                       {
-                        title: 'LastName',
-                        value: lastname,
-                        short: false
-                       },
-                      {
-                       title: 'FirstName',
-                       value: firstname,
-                       short: false
-                      },
-                      {
-                      title: 'Phone Number',
-                      value: phone,
-                      short: false
-                      },
-                      {
-                      title: 'Message',
-                      value: message,
-                      short: false
-                      },
-                      {
-                      title: 'Browsing Page',
-                      value: page,
-                      short: false
-                      }
-                     ]
-                  }
-                 ]
-                }
-              
+                    title: 'LastName',
+                    value: lastname,
+                    short: false
+                  },
+                  {
+                    title: 'FirstName',
+                    value: firstname,
+                    short: false
+                  },
+                  {
+                    title: 'Phone Number',
+                    value: phone,
+                    short: false
+                  },
+                  {
+                    title: 'Company Name',
+                    value: company,
+                    short: false
+                  },
+                  {
+                    title: 'Browsing Page',
+                    value: page,
+                    short: false
+                  }]
+                }]
+              }
                 return postToFeedbackChannel(json).fail(function() {
                 showAlertDialog('error', _L('Opps, something wrong.  Please try later.'));
                 }).always(function() {
-              
                 });
               }
               
