@@ -13,8 +13,8 @@
     %input.form-control{ placeholder: "Phone Number", type: "tel" }/
   .form-group
     %label{:for => "exampleTextarea" } Message
-    %textarea.form-control{ rows: "3" }
-  %button.btn.btn-primary-dark.wide{type: "submit", onclick: "SubmittoChannel()" } Send Message
+    %textarea.form-control{ rows: "3", id:"TextMessa"}
+  %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Send Message
 
 :javascript
   function SubmittoChannel(){
@@ -22,6 +22,9 @@
     $('input').each(function() {
       values.push($(this).val());
       });
+
+      var textAreaText = $('#TextMessa').val();
+      values.push(textAreaText);
 
       if((values[2]=='')||(values[1]=='')||(values[0]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
       {
@@ -55,7 +58,7 @@
     return newStr;
     }
 
-    function postUserFeedback( email, lastname, firstname, phone, company ) {
+    function postUserFeedback( email, lastname, firstname, phone, message ) {
     var url = window.location.href;
     var fallback = "New feedback from <mailto:%s?subject=Stratifyd, Inc. Client Support|%s>".format(email,email);
     var page = '<'+url+'>';
@@ -82,8 +85,8 @@
         short: false
       },
       {
-        title: 'Company Name',
-        value: company,
+        title: 'Message',
+        value: message,
         short: false
       },
       {
@@ -124,4 +127,4 @@
       return false;
     }
     return true ;
-  }	
+  }
