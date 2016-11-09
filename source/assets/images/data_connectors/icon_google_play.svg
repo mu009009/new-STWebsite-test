@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"  xml:space="preserve">
+  <g transform="translate(5, 3.01) scale(0.8, 0.8)" >
+      <g clip-path="url(#icon_googleplayCanvas-bezier)">
+          <clipPath>
+              <path d="M 21.03,11.51 L 14.34,7.65 C 14.34,7.65 2.15,0.61 1.43,0.2 0.71,-0.22 0,0.03 0,0.89 0,2.33 0,15.92 0,15.92 0,15.92 0,30.61 0,31.26 0,31.91 0.51,32.19 1.13,31.83 1.76,31.47 14.34,24.2 14.34,24.2 L 21.03,20.34 C 21.03,20.34 26.71,17.06 27.46,16.62 28.22,16.19 28.14,15.59 27.51,15.25 26.87,14.9 21.03,11.51 21.03,11.51 Z M 21.03,11.51" />
+          </clipPath>
+          <path stroke="none" fill="rgb(40, 161, 145)" d="M 0,-0.51 L 0,15.92 0,32.36 16.58,15.92 0,-0.51 Z M 0,-0.51" />
+          <path stroke="none" fill="rgb(105, 231, 117)" d="M 21.03,11.51 L 14.34,7.65 0,-0.63 0,-0.51 16.58,15.92 21.03,11.51 Z M 21.03,11.51" />
+          <path stroke="none" fill="rgb(190, 34, 95)" d="M 0,32.36 L 0,32.48 14.34,24.2 21.03,20.34 16.58,15.92 0,32.36 Z M 0,32.36" />
+          <path stroke="none" fill="rgb(227, 124, 66)" d="M 21.03,11.51 L 16.58,15.92 21.03,20.34 28.68,15.92 21.03,11.51 Z M 21.03,11.51" />
+      </g>
+  </g>
+</svg>

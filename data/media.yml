@@ -1,0 +1,17 @@
+- image: 'forbes.png'
+  name: 'Forbes'
+  title: '3 Companies That Turn big Data Into What You Need to Know'
+  description: 'We live in an era where it’s so easy to get what you want quickly. Just whip out your mobile phone and use an app to order anything from a taxi to a pizza. But there is a major difference between ‘wants’ and ‘needs’. As The Rolling Stones famously sang, “You can’t always get what you want, but if you try sometimes, you just might find — you get what you need.'
+  link: 'http://www.forbes.com/sites/ilyapozin/2015/11/26/3-companies-that-turn-big-data-into-what-you-need-to-know/2/#62dcace114bf'
+
+- image: 'datanami.png'
+  name: 'Datanami'
+  title: 'Discover Actionable Insights from Unstructured Data'
+  description: 'We’ve all heard about the quantity of unstructured data – over 80% of business-relevant information exists in an unstructured format (primarily text). Many companies are looking for tools to derive actionable insights and value from this rapidly growing volume of data, but perceived complexities (cost, expertise, learning curve, time) dissuade them from doing so. However, the advent of visual text analytics platforms has changed the paradigm and made gleaning insight from text easier than ever. Visual text analytics platforms empower everybody to augment decision making processes from data driven foundations and should be an essential component of any comprehensive business intelligence program.'
+  link: 'https://www.datanami.com/2016/02/19/discover-actionable-insights-from-unstructured-data/'
+
+- image: 'marketwired.png'
+  name: 'Marlet Wired'
+  title: 'No Data Scientist Required'
+  description: 'Advanced data analytics has traditionally been costly, time-intensive, complicated, and often reserved for the large enterprise, but Taste Analytics is looking to change that with the launch of the Stratifyd Signals platform, making data discovery simple and approachable for everyone -- no data scientist required.'
+  link: 'http://www.marketwired.com/press-release/no-data-scientist-required-with-launch-of-taste-analytics-signals-2070841.htm'

@@ -1,0 +1,33 @@
+.navbar
+  -webkit-box-shadow: 0px 10px 1px $sec-lightgrey
+  -moz-box-shadow: 0px 10px 1px $sec-lightgrey
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2)
+  z-index: 999
+  background-color: $util-white
+  .logo
+    width: 120px
+    margin-right: 20px
+  .navbar-nav
+    .nav-item
+      a:hover
+        text-decoration: none  
+      .nav-link
+        color: $sec-grey
+        &:hover
+          color: $sec-lightgrey
+      @media screen and (max-width: $break-med)
+        float: none
+      .login
+        padding-bottom: 0
+        border-bottom: 2px solid $pri-yellow
+      .loginbtn
+        width: 130px
+    .active
+      .nav-link
+        border-bottom: 2px solid $pri-blue
+        padding-bottom: 0
+        @media screen and (max-width: $break-med)
+          width: 60px
+    .nav-item + .nav-item
+      @media screen and (max-width: $break-med)
+        margin-left: 0

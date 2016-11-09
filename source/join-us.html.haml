@@ -1,0 +1,61 @@
+---
+title: Join Us
+---
+.jumbotron-fluid#joinJumbo
+  .text-xs-center
+    .header.light.m-b-1 Join Us
+
+.block
+  .container
+    .row
+      .col-md-6.col-md-offset-3
+        .text-xs-center
+          .header-sm.m-b-2 Job Openings
+    .row
+      .col-md-6
+        While the available positions change, Stratifyd wants innovative, fun team members on its team. Check out our listings and apply if you want to work in a great environment.
+      .col-md-6
+        Don’t see the opportunity you’re looking for? No worries – just apply to our General Submission, attach your resume, and let us know why you'd be a good fit.
+.block
+  .container
+    .row
+      .col-md-12
+        #accordion{"aria-multiselectable" => "true", :role => "tablist"}
+          - data.jobs.each_with_index do |job, index|
+            #headingOne{:role => "tab"}
+              %h5.mb-0.text-xs-center
+                %a.btn.btn-primary-dark.jobTrigger{"aria-controls" => "collapseOne", "aria-expanded" => "true", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapse#{index}"}
+                  = job.title
+            .collapse{"aria-labelledby" => "headingOne", :role => "tabpanel", id: "collapse#{index}" }
+              .row
+                .col-md-6.col-md-offset-3
+                  .card-block
+                    .text-xs-center
+                      .serif-md.blue.m-b-1
+                        = job.title
+                    - if job.description
+                      - job.description.each do |things|
+                        %p= things
+                        %br
+                    - if job.responsibilities
+                      - job.responsibilities.each do |things|
+                        %p= things
+                        %br
+                    - if job.candidate
+                      - job.candidate.each do |things|
+                        %p= things
+                        %br
+                    .text-xs-center
+                      .serif-md.blue.m-b-1 About Stratifyd
+
+                    %p We are a team of computer scientists and engineers with one simple goal in mind - to help companies make fact-based decisions from their unstructured data sources - easily.  Our client list includes multiple Fortune 500 companies, the US Government, and businesses and agencies of all sizes.  They represent some of the most creative thinkers in the world, solving problems in complex areas like branding, design, public relation, strategy, and innovation.
+
+                    %p Stratifyd offers a turnkey platform that enables everybody to glean intelligence from textual data without the need for a data scientist. By combining our powerful augmented intelligence engine with an interactive visual interface, all textual touch points can be analyzed in self serve fashion - survey, chat, email, call center, transcription, proprietary fields, social media, blogs, forums, and all other sources of feedback.
+
+                    .text-xs-center
+                      .serif-md.blue.m-b-1 Interested?
+                    %p
+                      Send your resume to us at
+                      %a.blue{ href: "mailto:info@stratifyd.com" }
+                        info@stratifyd.com
+                      along with a little bit about yourself to get the conversation started.

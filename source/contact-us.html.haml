@@ -1,0 +1,49 @@
+---
+title: Contact Us
+---
+.jumbotron-fluid#contactJumbo
+  .text-xs-center
+    .header.light Contact Us
+
+.block
+  .container
+    .text-xs-center.m-b-3
+      .header-sm Where To Find Us
+
+    .row
+      .col-md-5.col-md-offset-1.col-xs-12
+        .location
+          .serif-md.blue United States
+          %ul.address-list
+            %li 1431 W. Morehead Street
+            %li Charlotte, NC 28208
+            %li P. 704-215-4955
+            %li E. email@domain.com
+
+        .location
+          .serif-md.blue China
+          %ul.address-list
+            %li 9th, Guanghua road
+            %li Chaoyang District, Beijing SOHO 2
+            %li P. 1 3466 390016
+            -# %li E. email@domain.com
+
+        .location
+          .serif-md.blue London
+          %ul.address-list
+            %li 24 Cornwall Rd
+            %li Dorchester, Dorset DR1 1RX
+            %li P. +44 (0) 7944 724920
+            -# %li E. email@domain.com
+        .location
+          %a.link-style{:href => "join-us.html"}
+            Check out our job listings
+
+
+      .col-md-5.col-md-offset-1.col-xs-12
+        .serif-md.blue.m-b-1 Contact Form
+        = partial 'contactForm'
+  .container
+    .row
+      .col-xs-12.text-xs-center
+        %img{src: "/assets/images/world-map.png", class:"world"}
