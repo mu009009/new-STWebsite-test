@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta charset='utf-8'>
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+    <title>
+      Stratifyd | Deeper Dive
+    </title>
+    <link href='/apple-icon-57x57.png' rel='apple-touch-icon' sizes='57x57'>
+    <link href='/apple-icon-60x60.png' rel='apple-touch-icon' sizes='60x60'>
+    <link href='/apple-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='/apple-icon-76x76.png' rel='apple-touch-icon' sizes='76x76'>
+    <link href='/apple-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
+    <link href='/apple-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'>
+    <link href='/apple-icon-144x144.png' rel='apple-touch-icon' sizes='144x144'>
+    <link href='/apple-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'>
+    <link href='/apple-icon-180x180.png' rel='apple-touch-icon' sizes='180x180'>
+    <link href='/android-icon-192x192.png' rel='icon' sizes='192x192' type='image/png'>
+    <link href='/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+    <link href='/favicon-96x96.png' rel='icon' sizes='96x96' type='image/png'>
+    <link href='/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+    <link href='/manifest.json' rel='manifest'>
+    <meta content='#ffffff ' name='msapplication-TileColor'>
+    <meta content='/ms-icon-144x144.png' name='msapplication-TileImage'>
+    <meta content='#ffffff ' name='theme-color'>
+    <meta content='#ffffff' name='msapplication-TileColor'>
+    <meta content='#ffffff' name='theme-color'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+    <style>
+      #fouc {
+        display: none; }
+    </style>
+  </head>
+  <body class='deeper-dive' id='fouc'>
+    <nav class='navbar navbar-fixed-top'>
+      <button aria-controls='exCollapsingNavbar' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler hidden-md-up' data-target='#exCollapsingNavbar' data-toggle='collapse' type='button'>
+        ☰
+      </button>
+      <a class='navbar-brand pull-xs-right pull-md-left hidden-md-up' href='index.html'>
+        <img class='logo' src='assets/images/Stratifyd-Logo-Final.svg'>
+      </a>
+      <div class='collapse navbar-toggleable-sm' id='exCollapsingNavbar'>
+        <div class='p-a-1'>
+          <a class='navbar-brand pull-xs-right pull-md-left hidden-sm-down' href='index.html'>
+            <img class='logo' src='assets/images/Stratifyd-Logo-Final.svg'>
+          </a>
+          <ul class='nav navbar-nav'>
+            <li class='nav-item btn-group'>
+              <a href="product.html"><div class='nav-link'>Product</div>
+              </a>
+            </li>
+            <li class='nav-item'>
+              <a href="solutions.html"><div class='nav-link'>Solutions</div>
+              </a>
+            </li>
+            <li class='nav-item'>
+              <a href="about-us.html"><div class='nav-link'>About</div>
+              </a>
+            </li>
+            <li class='nav-item'>
+              <a href="blog.html"><div class='nav-link'>Blog</div>
+              </a>
+            </li>
+            <li class='nav-item'>
+              <a href="contact-us.html"><div class='nav-link'>Contact</div>
+              </a>
+            </li>
+          </ul>
+          <hr class='hidden-md-up'>
+          <ul class='nav navbar-nav pull-md-right'>
+            <li class='nav-item'>
+              <a class='btn btn-primary-dark nav-btn' href='try-signals.html'>Try Signals</a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link login hidden-sm-down' href='https://beta.tasteanalytics.com/login.html#sign-in' target='_blank'>Log in</a>
+              <button class='btn btn-primary-dark nav-btn hidden-md-up m-t-1 loginbtn'>Log In</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class='jumbotron-fluid' id='diveJumbo'>
+      <div class='text-xs-center'>
+        <div class='header light m-b-1'>Deeper Dive</div>
+      </div>
+    </div>
+    <div class='block-sm'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-6 col-xs-12 col-md-offset-3 m-b-2'>
+            <div class='text-xs-center'>
+              <div class='header-sm m-b-3'>Technical Product Specs</div>
+              <div class='header-xs circle'>1</div>
+              <div class='serif-md blue m-b-1'>Deep Textual Learning</div>
+            </div>
+          </div>
+        </div>
+        <div class='row text-md-left text-xs-center'>
+          <div class='col-md-6'>
+            <p>Patented Signals analysis technology reads, assembles and processes wordgrams of varying length within every textual element to “learn” statistically relevant topics within the text. Built on a mixture of RNN, Semantic Parsing, Multi-Model Data Connection, Graph Models, LSTM, Signals’ analytics engine dynamically creates semantic associations across all textual elements, grouping related elements together into categories, top trends, and geo clusters.</p>
+          </div>
+          <div class='col-md-6'>
+            <p>Autonomously learning the content of any textual data provides a fast, unbiased method for processing customer comments, product reviews, chat sessions, voice to transcript interactions, survey data and other unstructured content</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='block-sm'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-6 col-xs-12 col-md-offset-3 m-b-2'>
+            <div class='text-xs-center'>
+              <div class='header-xs circle'>2</div>
+              <div class='serif-md blue m-b-1'>Smart Structure Data Discovery</div>
+            </div>
+          </div>
+        </div>
+        <div class='row text-md-left text-xs-center'>
+          <div class='col-md-6'>
+            <p>Signals solves the challenge of textual analytics and enables in-line structured data exploration, automated predictive results, and effortless collaboration within your analytics context. Specifically, the Signals intelligence core engine will automatically categorize your structured data based on known Numerical, Categorical, Ordinal, Temporal, User and Geographical data types.</p>
+            <p>Automatic spatial-temporal algorithms, such as KDE, Graph-Model, Convolutional Neural Network (CNN) and Page-Rank weighting, Signals performs multiple complex processing elements to identify key elements within any data set.</p>
+          </div>
+          <div class='col-md-6'>
+            <p>From ad hoc jobs to enterprise data sets, the ability to select and dimension data, including sentiment, geography, category and topics associated with unstructured textual data across these structured dimensions for discrete analysis is fast and easy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='block-sm'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-6 col-xs-12 col-md-offset-3 m-b-2'>
+            <div class='text-xs-center'>
+              <div class='header-xs circle'>3</div>
+              <div class='serif-md blue m-b-1'>Predictive Analysis</div>
+            </div>
+          </div>
+        </div>
+        <div class='row text-md-left text-xs-center'>
+          <div class='col-md-6 col-md-offset-3'>
+            <p>Using deep-learning algorithms, Signals enables predictive analytics on user behaviors, user modeling, event modeling, trend spotting, and topic summarization.  These foundational predictive elements deliver the insights necessary to tune business practices and drive business value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='block-sm'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-6 col-xs-12 col-md-offset-3 m-b-2'>
+            <div class='text-xs-center'>
+              <div class='header-xs circle'>4</div>
+              <div class='serif-md blue m-b-1'>Advanced Natural Language Processing</div>
+            </div>
+          </div>
+        </div>
+        <div class='row text-md-left text-xs-center'>
+          <div class='col-md-6'>
+            <p>Natural Language Processing is a fundamental processing core within Signals.  Supporting and performing NLP natively in 24 distinct languages, Signals eliminates core language translation and human tagging, automatically detecting originating language identifiers without user interaction.</p>
+          </div>
+          <div class='col-md-6'>
+            <p>Signals automatically performs complex parts of speech parsing, tagging, Named entity extraction, lemmatization (cleaning), tokenization, knowledge-graph association, emoji identification, and other language nuances to navigate through the ambiguity and imprecision of written and spoken language.  The end result is the ability to discern relevant content, emotion and even sarcasm within unstructured textual elements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='block-sm'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-6 col-xs-12 col-md-offset-3 m-b-2'>
+            <div class='text-xs-center'>
+              <div class='header-xs circle'>5</div>
+              <div class='serif-md blue m-b-1'>Multi-Lingual Sentiment Analysis</div>
+            </div>
+          </div>
+        </div>
+        <div class='row text-md-left text-xs-center'>
+          <div class='col-md-6'>
+            <p>Signals uses proprietary technology, including Hidden Markov Model and Deep Learning (RNN),  opinion analysis, and statistical analysis to assess sentiment across all 24 supported languages. Sentiment is calculated on multiple levels, leveraging Part-Of-Speech identification to build dynamic sentiment scores.</p>
+          </div>
+          <div class='col-md-6'>
+            <p>Signals provides an intuitive Visual Feedback L within the UI to set or tune sentiments specific to product, industry or speciality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='block-sm'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-6 col-xs-12 col-md-offset-3 m-b-2'>
+            <div class='text-xs-center'>
+              <div class='header-xs circle'>6</div>
+              <div class='serif-md blue m-b-1'>Dynamic Topic Summarization</div>
+            </div>
+          </div>
+        </div>
+        <div class='row text-md-left text-xs-center'>
+          <div class='col-md-6 col-md-offset-3'>
+            <p>Signals identifies clusters of semantically similar textual elements and groups them into unique topic groups for each processed data set. Centered around these opinion-critical, unique categorical n-grams, the engine further identifies specific words, phrases, and language constructs that are associated with positive and negative meanings in the topical categories. In addition to words and phrases, a contextual analysis around the data-driven category is utilized to improve the accuracy of the sentiment and properly reflect its semantic differences within each category.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='block-sm'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-6 col-xs-12 col-md-offset-3 m-b-2'>
+            <div class='text-xs-center'>
+              <div class='header-xs circle'>7</div>
+              <div class='serif-md blue m-b-1'>Global Geographical analysis</div>
+            </div>
+          </div>
+        </div>
+        <div class='row text-md-left text-xs-center'>
+          <div class='col-md-6'>
+            <p>Signals provides street-level geo encoding with a 95%+ global accuracy rate.</p>
+          </div>
+          <div class='col-md-6'>
+            <p>Signals' robust Geo-Analytics processing engine automatically performs space-time-kernel density estimation to generate a relative Heat Index for different sentiment categories across geo dimensions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='block-sm'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-6 col-xs-12 col-md-offset-3 m-b-2'>
+            <div class='text-xs-center'>
+              <div class='header-xs circle'>8</div>
+              <div class='serif-md blue m-b-1'>Temporal Analysis</div>
+            </div>
+          </div>
+        </div>
+        <div class='row text-md-left text-xs-center'>
+          <div class='col-md-6 col-md-offset-3'>
+            Temporal information accompanying structured and unstructured data is
+            paramount in understanding quantitative events and their potential
+            underlying relationships across disparate data sets. Signals utilizes
+            Time-Series Predictive analysis, Deep Learning, and Event-Analysis to
+            identify unexpected trends and patterns across structured and unstructured data.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='block-sm'>
+      <div class='container'>
+        <hr>
+        <div class='row'>
+          <div class='col-md-6 col-md-offset-3 m-t-3'>
+            <div class='text-xs-center'>
+              <div class='serif-md blue m-y-1'>White paper</div>
+              <p>Deep Machine learning and the science of analytics can appear complex but download our whitepaper to learn how Stratifyd simplifies the process.</p>
+              <a class='btn btn-primary-dark m-y-3' href='#' id='whitePaper'>Request White Paper</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class='block'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-lg-2 col-sm-3 col-xs-6 text-xs-center text-sm-left'>
+            <div class='copy-bold light m-b-1'>Product</div>
+            <ul>
+              <li>
+                <a class='footerlink' href='product.html'>Signals Overview</a>
+              </li>
+              <li>
+                <a class='footerlink' href='deeper-dive.html'>Deeper Dive</a>
+              </li>
+              <li>
+                <a class='footerlink' href='https://beta.tasteanalytics.com/login.html#sign-in' target='_blank'>Log In</a>
+              </li>
+              <li>
+                <a class='footerlink' href='try-signals.html'>Try Signals</a>
+              </li>
+            </ul>
+          </div>
+          <div class='col-lg-2 col-sm-3 col-xs-6 text-xs-center text-sm-left'>
+            <div class='copy-bold light m-b-1'>Solutions</div>
+            <ul>
+              <li>
+                <a class='footerlink' href='solutions.html'>Overview</a>
+              </li>
+            </ul>
+          </div>
+          <br class='hidden-xs-up'>
+          <div class='col-lg-2 col-sm-3 col-xs-6 text-xs-center text-sm-left'>
+            <div class='copy-bold light m-b-1'>About Us</div>
+            <ul>
+              <li>
+                <a class='footerlink' href='index.html'>Home</a>
+              </li>
+              <li>
+                <a class='footerlink' href='about-us.html'>About Us</a>
+              </li>
+              <li>
+                <a class='footerlink' href='blog.html'>Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class='col-lg-2 col-sm-3 col-xs-6 text-xs-center text-sm-left'>
+            <div class='copy-bold light m-b-1'>Support</div>
+            <ul>
+              <li>
+                <a class='footerlink' href='contact-us.html'>Contact Us</a>
+              </li>
+              <li>
+                <a class='footerlink' href='join-us.html'>Job Openings</a>
+              </li>
+            </ul>
+          </div>
+          <div class='col-md-4 copy-bold light hidden-md-down'>
+            <a class='twitter-timeline' data-chrome='transparent nofooter noborders noscrollbar' data-height='300' data-link-color='#00a1ae' data-theme='dark' data-width='600' href='https://twitter.com/StratifydTweets'>Tweets by StratifydTweets</a>
+            <script async='' charset='utf-8' src='//platform.twitter.com/widgets.js'></script>
+          </div>
+        </div>
+        <div class='row m-t-3'>
+          <div class='col-md-6 col-sm-6 col-xs-12 m-t-2 text-xs-center text-sm-left'>
+            <div class='copyright'>Copyright ©	2015 — 2016 Stratifyd, Inc.</div>
+          </div>
+          <div class='col-md-6 text-xs-center col-xs-12 col-sm-6 m-t-2 text-sm-right'>
+            <a href='https://www.facebook.com/stratifyd/' target='_blank'>
+              <i aria-hidden='true' class='fa fa-facebook-official'></i>
+            </a>
+            <a href='https://twitter.com/StratifydTweets' target='_blank'>
+              <i aria-hidden='true' class='fa fa-twitter'></i>
+            </a>
+            <a href='https://www.linkedin.com/company/stratifyd' target='_blank'>
+              <i aria-hidden='true' class='fa fa-linkedin-square'></i>
+            </a>
+            <a href='https://www.youtube.com/channel/UCAkngNoMwJDNjEPzX3lIBsw' target='_blank'>
+              <i aria-hidden='true' class='fa fa-youtube-play'></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/vendor.bundle.js"></script>
+    <script src="assets/index.bundle.js"></script>
+    <script>
+      window.intercomSettings = {
+        app_id: "yobfq5ll"
+      };
+      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/loi0ozwr';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+    </script>
+  </body>
+</html>
