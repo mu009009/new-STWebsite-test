@@ -80,7 +80,7 @@ switch(NODE_ENV) {
     config = merge(common, {
       output: {
         path: __dirname + '/.tmp/dist',
-        publicPath: 'https://s3.amazonaws.com/test-www-stratifyd-com/',
+        publicPath: 'http://test-www-stratifyd-com.s3-us-west-2.amazonaws.com/',
         filename: 'assets/[name].bundle.js'
       }
     });

@@ -56,7 +56,7 @@ end
 
 set :css_dir, 'assets'
 set :js_dir, 'assets'
-set :images_dir, '/assets/images'
+set :images_dir, '/assets/images/'
 
 # Build-specific configuration
 configure :build do
@@ -68,7 +68,7 @@ configure :build do
 
   # modify the build directory if you are using s3_sync
   set :build_dir, 'build/'
-  set :images_dir, 'test-www-stratifyd-com'
+  set :images_dir, 'assets/images/'
 
   # Minify CSS on build
   # activate :minify_css
