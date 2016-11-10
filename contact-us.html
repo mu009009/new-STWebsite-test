@@ -73,7 +73,7 @@
               <a class='btn btn-primary-dark nav-btn' href='try-signals.html'>Try Signals</a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link login hidden-sm-down' href='https://beta.tasteanalytics.com/login.html#sign-in' target='_blank'>Log in</a>
+              <a class='nav-link login hidden-sm-down' href='https://signals.stratifyd.com/login.html#sign-in' target='_blank'>Log in</a>
               <button class='btn btn-primary-dark nav-btn hidden-md-up m-t-1 loginbtn'>Log In</button>
             </li>
           </ul>
@@ -128,15 +128,15 @@
             <form>
               <div class='form-group'>
                 <label>First Name</label>
-                <input class='form-control' placeholder='First Name'>
+                <input class='form-control' onclick='RestInput()' placeholder='First Name'>
               </div>
               <div class='form-group'>
                 <label>Last Name</label>
-                <input class='form-control' placeholder='Last Name'>
+                <input class='form-control' onclick='RestInput()' placeholder='Last Name'>
               </div>
-              <div class='form-group'>
+              <div class='form-group' id='EmailGroup'>
                 <label>Email address</label>
-                <input aria-describedby='emailHelp' class='form-control' placeholder='Email Address' type='email'>
+                <input aria-describedby='emailHelp' class='form-control' id='emailInput' onclick='RestInput()' placeholder='Email Address' type='email'>
               </div>
               <div class='form-group'>
                 <label>Phone Number</label>
@@ -151,8 +151,21 @@
             <script>
               function SubmittoChannel(){
                 var values = [];
-                $('input').each(function() {
+                $('input').each(function(k) {
                   values.push($(this).val());
+                  if(k<3)
+                  {
+                    console.log($(this).val());
+                    if($(this).val()=='')
+                    {
+                      erroralert(this);
+                      if(k==2)
+                      {
+                        $(this).attr('value','Please fill a valid email address, and you may not use your gmail');
+                      }
+                    }
+                  }
+              
                   });
               
                   var textAreaText = $('#TextMessa').val();
@@ -160,20 +173,40 @@
               
                   if((values[2]=='')||(values[1]=='')||(values[0]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
                   {
+                    if(values[2]!='')
+                    {
+                      if(!(emailCheck(values[2])))
+                      {
+                        document.getElementById('emailinput').value = null;
+                        erroralert('#emailinput');
+                        $('#emailinput').attr('value','Please fill a valid email address, and you may not sign up with your gmail');
+                      }
+                    }
                     //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
                   }
                   else{
-                  if(emailCheck(values[2]))
-                  {
-                    //bootbox.alert('Your information has succeeded uploaded, our staff members will contact with you soon.')
-                    postUserFeedback(values[2],values[1],values[0], values[3], values[4]);
+                    if(emailCheck(values[2]))
+                    {
+                      //bootbox.alert('Your information has succeeded uploaded, our staff members will contact with you soon.')
+                      postUserFeedback(values[2],values[1],values[0], values[3], values[4]);
                     }
                     else
                     {
-                    //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
+                      document.getElementById('emailinput').value = null;
+                      erroralert('#emailinput');
+                      $('#emailinput').attr('value','Please fill a valid email address, and you may not sign up with your gmail');
+                      //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
                     }
               
                   }
+              }
+              
+              function erroralert(target)
+              {
+                $(target).css('transition','0.2s');
+                $(target).css('border-color','red');
+                $(target).css('color','red');
+                $(target).attr('value','Please fill this part');
               }
               
               var kFeedbackWebHook = 'https://hooks.slack.com/services/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';
@@ -259,6 +292,10 @@
                   return false;
                 }
                 return true ;
+              }
+              
+              function RestInput(){
+                $('input').attr('value',null);
               }
             </script>
           </div>

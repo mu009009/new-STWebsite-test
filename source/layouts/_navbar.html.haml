@@ -1,0 +1,39 @@
+%nav.navbar.navbar-fixed-top
+  %button.navbar-toggler.hidden-md-up{"aria-controls" => "exCollapsingNavbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#exCollapsingNavbar", "data-toggle" => "collapse", :type => "button"}
+    ☰
+  %a.navbar-brand.pull-xs-right.pull-md-left.hidden-md-up{:href => "index.html"}
+    %img{ src: "/assets/images/Stratifyd-Logo-Final.svg", class: "logo" }
+  #exCollapsingNavbar.collapse.navbar-toggleable-sm
+    .p-a-1
+      %a.navbar-brand.pull-xs-right.pull-md-left.hidden-sm-down{:href => "index.html"}
+        %img{ src: "/assets/images/Stratifyd-Logo-Final.svg", class: "logo" }
+      %ul.nav.navbar-nav
+        %li.nav-item.btn-group
+          = link_to 'product.html' do
+            .nav-link Product
+
+        %li.nav-item
+          = link_to 'solutions.html' do
+            .nav-link Solutions
+
+        %li.nav-item
+          = link_to 'about-us.html' do
+            .nav-link About
+
+        %li.nav-item
+          = link_to 'blog.html' do
+            .nav-link Blog
+
+        %li.nav-item
+          = link_to 'contact-us.html' do
+            .nav-link Contact
+
+
+      %hr.hidden-md-up
+      %ul.nav.navbar-nav.pull-md-right
+        %li.nav-item
+          %a.btn.btn-primary-dark.nav-btn{ href: "try-signals.html"} Try Signals
+
+        %li.nav-item
+          %a.nav-link.login.hidden-sm-down{ href: "https://signals.stratifyd.com/login.html#sign-in", target: "_blank" } Log in
+          %button.btn.btn-primary-dark.nav-btn.hidden-md-up.m-t-1.loginbtn Log In
