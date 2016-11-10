@@ -1,26 +1,37 @@
-%form
+%form.contactForm
   .form-group
-    %label First Name
-    %input.form-control{ placeholder: "First Name" }/
+    %label{id: "inputlabel0"} First Name
+    %input.form-control{ placeholder: "First Name", onclick: "alertReset()"}/
   .form-group
-    %label Last Name
-    %input.form-control{ placeholder: "Last Name" }/
+    %label{id: "inputlabel1"} Last Name
+    %input.form-control{ placeholder: "Last Name", onclick: "alertReset()" }/
   .form-group
-    %label Email address
-    %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Email Address", type: "email" }/
+    %label{id: "inputlabel2"} Email address
+    %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Email Address", type: "email", id:"emailInput", onclick: "alertReset()" }/
   .form-group
-    %label Phone Number
-    %input.form-control{ placeholder: "Phone Number", type: "tel" }/
+    %label{id: "inputlabel3"} Phone Number
+    %input.form-control{ placeholder: "Phone Number", type: "tel", onclick: "alertReset()" }/
   .form-group
-    %label{:for => "exampleTextarea" } Message
-    %textarea.form-control{ rows: "3", id:"TextMessa"}
+    %label{:for => "exampleTextarea", id: "inputlabel4" } Message
+    %textarea.form-control{ rows: "3", id:"TextMessa", onclick: "alertReset()"}
   %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Send Message
 
 :javascript
   function SubmittoChannel(){
     var values = [];
-    $('input').each(function() {
+    $('input').each(function(k) {
       values.push($(this).val());
+      if(k<3)
+      {
+        if($(this).val()=="")
+        {
+          alertTarget(this,k);
+          if(k==2)
+          {
+            $('#inputlabel'+k).text('Please fill this part, and you may not use your gmail');
+          }
+        }
+      }
       });
 
       var textAreaText = $('#TextMessa').val();
@@ -35,9 +46,12 @@
       {
         //bootbox.alert('Your information has succeeded uploaded, our staff members will contact with you soon.')
         postUserFeedback(values[2],values[1],values[0], values[3], values[4]);
+        alertSuccess();
         }
         else
         {
+          alertTarget('#emailInput',2);
+          $('#inputlabel2').text('Sorry, you may not use your gmail');
         //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
         }
 
@@ -58,7 +72,43 @@
     return newStr;
     }
 
-    function postUserFeedback( email, lastname, firstname, phone, message ) {
+  function alertSuccess() {
+
+    $('input').each(function(k) {
+      if($(this).val()!="")
+      {
+        $('#inputlabel'+k).css('color','#00a1ae');
+        $('#inputlabel'+k).text('Success Submit! Thank You!');
+      }
+    })
+    if($('#TextMessa').val()!="")
+    {
+      $('#inputlabel4').css('color','#00a1ae');
+      $('#inputlabel4').text('Success Submit! Thank You!');
+    }
+
+  }
+
+  function alertReset() {
+    $('input').each(function(k) {
+        $(this).css('border-color','#ccc');
+        $('#inputlabel'+k).css('color','#6a6a6a');
+    })
+    $('#inputlabel0').text('First Name');
+    $('#inputlabel1').text('Last Name');
+    $('#inputlabel2').text('Email address');
+    $('#inputlabel3').text('Phone Number');
+    $('#inputlabel4').color('#6a6a6a');
+    $('#inputlabel4').text('Message');
+  }
+
+  function alertTarget(target,k) {
+    $('#inputlabel'+k).css('color','red');
+    $('#inputlabel'+k).text('Please fill this part');
+    $(target).css('border-color','red');
+  }
+
+  function postUserFeedback( email, lastname, firstname, phone, message ) {
     var url = window.location.href;
     var fallback = "New feedback from <mailto:%s?subject=Stratifyd, Inc. Client Support|%s>".format(email,email);
     var page = '<'+url+'>';
