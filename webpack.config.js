@@ -80,7 +80,7 @@ switch(NODE_ENV) {
     config = merge(common, {
       output: {
         path: __dirname + '/.tmp/dist',
-        publicPath: 'https://mu009009.github.io/',
+        publicPath: '',
         filename: 'assets/[name].bundle.js'
       }
     });
