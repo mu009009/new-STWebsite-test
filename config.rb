@@ -68,7 +68,7 @@ configure :build do
 
   # modify the build directory if you are using s3_sync
   set :build_dir, 'build/'
-  set :images_dir, '/content-server/stratifyd/'
+  set :images_dir, 'test-www-stratifyd-com'
 
   # Minify CSS on build
   # activate :minify_css
@@ -90,9 +90,9 @@ end
 #export AWS_SECRET_ACCESS_KEY=""
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                = 'content-server' # The name of the S3 bucket you are targetting. This is globally unique.
-  s3_sync.prefix 								= 'stratifyd'
-	s3_sync.region                = 'us-east-1'     # The AWS region for your bucket.
+  s3_sync.bucket                = 'test-www-stratifyd-com' # The name of the S3 bucket you are targetting. This is globally unique.
+  # s3_sync.prefix 								= 'stratifyd'
+	s3_sync.region                = 'us-west-2'     # The AWS region for your bucket.
   s3_sync.delete                = false # We delete stray files by default.
   s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
   s3_sync.prefer_gzip           = true
