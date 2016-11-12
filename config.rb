@@ -28,12 +28,12 @@ configure :development do
 end
 
 activate :external_pipeline,
-	 name: :webpack,
-	 command: build? ?
-	 "export NODE_ENV=production && ./node_modules/webpack/bin/webpack.js -p" :
-	 "export NODE_ENV=development && ./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
-	 source: ".tmp/dist",
-	 latency: 1
+   name: :webpack,
+   command: build? ?
+   "export NODE_ENV=production && ./node_modules/webpack/bin/webpack.js -p" :
+   "export NODE_ENV=development && ./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
+   source: ".tmp/dist",
+   latency: 1
 
 ###
 # Helpers
@@ -49,9 +49,9 @@ helpers do
   def random_phone
     "(" + rand.to_s[2..4].gsub(/0/) { 4 } + ") " + rand.to_s[2..4] + "-" + rand.to_s[2..5]
   end
-	def tks_longevity
-		Time.now.year - 2000
-	end
+  def tks_longevity
+    Time.now.year - 2000
+  end
 end
 
 set :css_dir, 'assets'
@@ -79,7 +79,7 @@ configure :build do
   # Use relative URLs
   activate :relative_assets
 
-	# activate :directory_indexes
+  # activate :directory_indexes
   page "/blog.html", :directory_index => false
 
   set :relative_links, true
@@ -92,7 +92,7 @@ end
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                = 'test-www-stratifyd-com' # The name of the S3 bucket you are targetting. This is globally unique.
   # s3_sync.prefix 								= 'stratifyd'
-	s3_sync.region                = 'us-west-2'     # The AWS region for your bucket.
+  s3_sync.region                = 'us-west-2'     # The AWS region for your bucket.
   s3_sync.delete                = false # We delete stray files by default.
   s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
   s3_sync.prefer_gzip           = true

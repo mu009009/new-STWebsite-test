@@ -78,7 +78,7 @@
 - slug: Executive Management
   tag: executive-mange
   featured: true
-  header: Stratifyd Signals for Executive Management
+  header: Signals for Executive Management
   jumbo: exec-photo.jpg
   focus: Executive Management
   square: shutterstock.jpg
@@ -115,3 +115,70 @@
   result_quote: "“What’s your next move? Executives need a real-time dashboard for business performance, one that’s easy to digest, and easy to dive into the details. Signals is that platform.”"
   result_quote_src: ""
   results_summary: "Signals enabled the executive team to react quickly to trends in volume or direction, and share internally with the management team and with vendor partners."
+
+- slug: Retail
+  tag: retail
+  featured: true
+  header: Stratifyd Signals for Retail
+  jumbo: lowes-retail-photo.jpg
+  focus: Retail
+  square: shutterstock.jpg
+  purpose: "A Fortune® 500 retail company headquartered in the U.S. utilized Stratifyd technology for data analytics."
+  client:
+    - "In 2015, the retailer had over $59 billion in sales. The retailer operates or services more than 2,000 home improvement and hardware stores in the United States, Canada and Mexico."
+  quote_blurb: "“A large retailer used Stratifyd technology for text analysis of customer emails, processing thousands of documents in minutes.”"
+  quote_source: ""
+  challenges:
+    - "A large home retailer gets thousands of customer emails. Customer service would naturally expect a fair number of them to be complaints about their store layout, certain product lines, and a campaign that didn’t go over well. Understanding customer feedback is important to this large organization. Going through thousands of emails manually is a herculean task, and prone for missed correlation and classification of the data, and missed opportunities to make improvements in customer satisfaction. This challenge facing the retailer was a perfect fit for machine-based learning, and the Natural Language Processing (NLP) power of the Signals platform. The need to turn thousands of unstructured text emails into something valuable is why our technology was used."
+  how: "Signals™ enabled the retailer’s customer service teams take a deep dive into the unstructured text of their customer emails. Analyzing data in real time allows the customer service and customer experience teams to uncover potential issues and without complex IT integrations or by taxing data science teams. Signals has been able to quickly process all the emails and present it in a way that allows the retailer to better manage the overall customer experience."
+  how_list:
+    - "The Stratifyd Signals™ platform processes large volumes of unstructured and structured textual data from almost any source. Email was the source in this case study, but the platform can also analyze chat sessions, text files, e.g. Word and Evernote, blog posts, app reviews, social media and more. Signals produces quick and actionable insights in seconds by incorporating predictive modeling,machine learning, and robust statistical NLP algorithms to create visualizations of behavior communities, trends, patterns and outlying themes."
+  key_themes:
+    - "Key aspects of the solution include no complex integration, and an intuitive dashboard. The Signals dashboard offers drag-and-drop data importing and drill-down options – such as temporal trends, category overview, or buzzword and geospatial analysis."
+    - "Additional data sets: The retailer is able to add additional data sets to the email data so they can better understand ongoing customer demands: o Comment Cards and exit surveys o Purchase experience surveys, online chat, product ownership surveys o Tech support data."
+  results_title: "The retailer correctly assumed they would see complaints about their store layout, certain product lines, and a campaign that didn’t go over well."
+  results:
+    - "What they didn’t expect the data to tell them was that there were ongoing problems with stores not properly recognizing their military discount policy. Retail locations in certain geographic regions were denying the discount to qualified members of the armed services causing much frustration with their clientele. Once this issue was identified, the company was able to quickly reeducate their employees on proper military discount policies."
+  result_quote: "“The speed of the platform to turn data into revenue is a key selection criterion for using Signals. Large data sets, including those with the unstructured text, can be analyzed in minutes.”"
+  result_quote_src: ""
+  results_summary: "The Signals platform can be used as a standard operational process, analyzing data on a daily basis, to strengthen relationships with customers."
+
+- slug: Marketing
+  tag: marketing
+  featured: true
+  header: Marketing Agency selects Stratifyd
+  jumbo: marketing-photo.jpg
+  focus: Marketing
+  square: casestudy-hamptoninn.jpg
+  purpose: "Stratifyd Signals™ was recently selected as a text analytics platform by a large Marketing Agency with offices in the northeast and southeast U.S."
+  client:
+    - "The agency builds worlds around brands by seamlessly integrating strategic planning, digital development, content creation and distribution, customer experience and a host of other disciplines."
+  quote_blurb: "We are often in extremely competitive situations with clients, and need to provide research insights beyond basic social media feedback. Stratifyd provides an easy-to-use tool for analyzing customer reviews, enabling our analysis and proposals to stand out from our competitors."
+  quote_source: "- Chief Strategy Officer"
+  challenges:
+    - "The agency market is ultra-competitive, and the company is constantly challenged to stand out from the competition and provide greater value. This challenge was fully evident when the agency competed for marketing business with a fast food chain and a supermarket account."
+    - "The agency needed a way to differentiate their research, analysis, insights, and recommendations. Specifically they needed an easy to use, self-service platform that enabled on-the-fly research to these companies and their competitors.The agency needed to go beyond basic social media sites like Twitter and Facebook, and analyze the user reviews."
+  how: "Signals allowed the agency to take a deep dive into the voice of the customer data on the fast food chain and supermarket. They analyzed customer reviews, and found opportunities to improve business practices and resolve issues identified by these customers and their competitors:"
+  how_list:
+    - "The Stratifyd Signals™ platform processes large volumes of unstructured and structured textual data from almost any source. Email was the source in this case study, but the platform can also analyze chat sessions, text files, e.g. Word and Evernote, blog posts, app reviews, social media and more. Signals produces quick and actionable insights in seconds by incorporating predictive modeling,machine learning, and robust statistical NLP algorithms to create visualizations of behavior communities, trends, patterns and outlying themes."
+    - "Common Topics: The agency found the most common topics contained in customer reviews."
+    - "Recurring Themes and Trends: Signals enabled the agency to stratify the data over time, making it easy to see themes recurring in the data month over month."
+  theme_title: "Signals™ allowed the agency to take a deep dive into the voice of the customer data on the fast food chain and supermarket."
+  key_themes:
+    - "Flat screen TVs, complimentary breakfast, hot tubs and pools all added to the experience, and among other things, contributed to the comments of “top notch” service and that the majority of guests were “pleasantly surprised” with the quality of their visit."
+    - "Pre-built Data Connectors: The agency gathered voice of the customer data using the Signals data connector to Yelp, one of many built-in data connectors to ecommerce websites. The Yelp connector provided customer reviews reflecting their needs, wants, likes, and dislikes. The customer reviews were presented in an interactive visual interface that allowed them to drill down into the data."
+    - "Common Topics: The agency found the most common topics contained in customer reviews. Topics were placed into categories to pinpoint important areas in which to focus, and then drill down into the ‘why’ behind the data."
+    - "Recurring Themes and Trends: Signals enabled the agency to stratify the data over time, making it easy to see themes recurring in the data month over month. The agency analyzed the differences between the fast food chain and supermarket customer reviews over time. Signals custom widgets made it an easy process to analyze customer reviews by the star rating. The agency can analyze all the <3 star ratings simultaneously, and drill down specifically into the individual ratings to see what customers were saying."
+    - "Geographic Differences: An important aspect of the analysis was examining customer reviews by region. This research analysis shed insight into specific store performance, and the customer perception of those stores."
+  results_title: "Using Signals™, the agency was able to:"
+  results:
+    - "Quickly generated side-by-side competitive analysis on over 30,000 reviews on two hotel chains"
+    - "Tailor proposals on a geographic level for each client."
+    - "Tailor proposals to address specific customer pain points that were most common, and continuing to occur."
+    - "Make data-driven decisions on the actual Yelp reviews, rather than gut-feel or social media alone."
+    - "Quickly research clients and their competitors."
+    - "Utilize customer review segments and compare behavior patterns over time to prioritize areas of marketing."
+    - "Listen to customer’s desired features and technology."
+    - "Make analytics a regular customer review process step."
+  result_quote: "“Stratifyd is a terrific partner. Not only is the Signals platform ideal for providing customer insights, but the platform is fast, easy to use, and completely selfservice.”"
+  result_quote_src: "- Chief Strategy Officer"
