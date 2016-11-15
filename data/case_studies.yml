@@ -1,7 +1,7 @@
 - slug: Hospitality
   tag: voc
   featured: true
-  header: Stratifyd Signals for Hospitality
+  header: Stratifyd Signals™ for Hospitality
   jumbo: casestudy-hospitality.jpg
   focus: Voice of Customer
   square: casestudy-hamptoninn.jpg
@@ -9,29 +9,29 @@
   client:
     - "Hampton by Hilton is a chain of moderately priced, midscale hotels with limited food and beverage facilities. Most Hampton hotels are independently owned and operated by franchisees. The Hampton franchise has more than 2,000 hotels throughout the U.S. and 16 other countries."
     - "Residence Inn by Marriott is a brand of extended stay hotels, with over 700 all-suite hotels on four continents. The suites are much larger than traditional hotel rooms. Residence Inns are known for their complimentary small hot breakfast in the morning and a free light dinner or snack reception on weekday evenings"
-  executive_blurb: "Stratifyd Signals analyzed over $30,000 Yelp reviews on Hampton by Hilton and Residence Inn. Using the Compare View, we analyzed the voice of customer feedback side-by-side."
+  executive_blurb: "Stratifyd Signals™ analyzed over 30,000 Yelp reviews on Hampton by Hilton and Residence Inn. Using the Compare View, we analyzed the voice of customer feedback side-by-side."
   challenges:
     - "Thanks to the internet and review sites, it is easy for consumers to see what others are saying about a hotel, and to make a reservation decision based on that customer feedback. If you are the Product Manager of a Hotel chain, this is exactly the type of voice-of-the-customer information you need. Knowing what customer are talking about, the common themes and categories, and watching the trends and geographic analysis, you can make informed decisions about how to improve your business. The challenge is analyzing thousands of reviews, going beyond the star ratings to see the ‘why’, ‘when’, and ‘where’ behind the rating."
-    - "Analyzing text data without Signals is time consuming and takes a lot of resources and prioritization. This causes delays in getting to actionable insights."
+    - "Analyzing text data without Signals™ is time consuming and takes a lot of resources and prioritization. This causes delays in getting to actionable insights."
   pain_title: "Pain Points Addressed:"
   pain_points:
     - "Quickly analyze both the unstructured text data, and the structured fields such as location, time, rating, etc."
     - "Analyze different points of the customer experience, from reservation, to check-in, to the stay itself."
     - "Data connector to Yelp pulled in the entire data set, not just a sampling."
     - "Compare customer experience against a competitor in a side-by-side view."
-  how: "The Stratifyd SignalsTM platform analyzed customer reviews from both hotel chains - the structured data (such as star ranking and geographic location) and unstructured data (such as the text comments customers type into Yelp or other social media channels). With the built-in data connector to Yelp, we consolidated roughly 30,000 Yelp comments and by conducting a Compare View analysis, quickly and concisely complied the findings into an interactive, visual dashboard."
-  theme_title: "The Stratifyd SignalsTM platform identified key themes in the Voice of Customer Data:"
+  how: "The Stratifyd Signals™ platform analyzed customer reviews from both hotel chains - the structured data (such as star ranking and geographic location) and unstructured data (such as the text comments customers type into Yelp or other social media channels). With the built-in data connector to Yelp, we consolidated roughly 30,000 Yelp comments and by conducting a Compare View analysis, quickly and concisely complied the findings into an interactive, visual dashboard."
+  theme_title: "The Stratifyd Signals™ platform identified key themes in the Voice of Customer Data:"
   key_themes:
     - "Flat screen TVs, complimentary breakfast, hot tubs and pools all added to the experience, and among other things, contributed to the comments of “top notch” service and that the majority of guests were “pleasantly surprised” with the quality of their visit."
     - "A notable difference between the two hotel chains was kitchen equipment; dishwasher, microwave, and refrigerator. Hampton did not offer a dishwasher, and in some cases, no microwave or fridge. For many customers, greater kitchen functionality is a consideration in making a reservation."
     - "‘Bed bugs’ was mentioned in some of the reviews. The Geo Hotspot widget identifies the specific location of the comments."
-  results_title: "Signals provides these specific returns"
+  results_title: "Signals™ provides these specific returns"
   results:
     - "Quickly generated side-by-side competitive analysis on over 30,000 reviews on two hotel chains"
     - "Machine Learning produced specific, actionable insights, unbiased by pre-built taxonomies"
     - "Identified specific complaints, such as bed bugs, and when and where the comments were generated"
     - "Data analysis is sharable, searchable, and in an interactive visual format. No data scientist was required"
-  user_title: "Signals provides these specific returns"
+  user_title: "Signals™ provides these specific returns"
   user_response:
     - "Quickly generated side-by-side competitive analysis on over 30,000 reviews on two hotel chains"
     - "Machine Learning produced specific, actionable insights, unbiased by pre-built taxonomies"
@@ -41,7 +41,7 @@
 - slug: Lenovo
   tag: business-exec
   featured: true
-  header: Stratifyd Signals for Customer Experience
+  header: Stratifyd Signals™ for Customer Experience
   jumbo: casestudy-lenovo.jpg
   focus: Customer Experience
   square: casestudy-lenovologo.jpg
@@ -51,20 +51,20 @@
   quote_blurb: "“Stratifyd allowed us to move analytics to the front line employee, increasing consumability, and placing it in the hands of those who are in the best position to affect change in the organization.”"
   quote_source: "- Harshad Varia, Customer Experience Sr. Manager"
   challenges:
-    - "Lenovo had a corporate initiative to actively solicit customer feedback at all points in the customer journey. Data was obtained, but Lenovo’s challenge was how to easily gain insights from the data, and even more importantly, how to provide end-users the ability to access the data for improved decision making. Lenovo wanted end-users to obtain actionable insights in real time from its online chat sessions, customer support sessions, and survey data logs in the North American market. The need to turn customer feedback into something valuable is why Signals was selected."
-    - "Lenovo is leveraging Stratifyd Signals&trade; platform to automatically process textual data from its customer service online chat portal to help identify key patterns, behaviors and potential issues hampering the overall online experience in both macro and micro views."
+    - "Lenovo had a corporate initiative to actively solicit customer feedback at all points in the customer journey. Data was obtained, but Lenovo’s challenge was how to easily gain insights from the data, and even more importantly, how to provide end-users the ability to access the data for improved decision making. Lenovo wanted end-users to obtain actionable insights in real time from its online chat sessions, customer support sessions, and survey data logs in the North American market. The need to turn customer feedback into something valuable is why Signals™ was selected."
+    - "Lenovo is leveraging Stratifyd Signals™&trade; platform to automatically process textual data from its customer service online chat portal to help identify key patterns, behaviors and potential issues hampering the overall online experience in both macro and micro views."
     - "The ability to drill down and focus on a specific day, or evaluating sessions over days, weeks or even months, allows Lenovo sales and customer support teams to quickly identify trends and issues and address them head on, while ensuring agents are following protocol and delivering top-notch service."
-  how: "Signals enabled Lenovo end-user teams take a deep dive into the unstructured text of their internal data sets. Analyzing data in real time allows the customer service and customer experience teams to uncover potential issues and without complex IT integrations or by taxing data science teams. Signals has been able to quickly process all the data and present it in a way that allows Lenovo to better manage the overall customer experience."
+  how: "Signals™ enabled Lenovo end-user teams take a deep dive into the unstructured text of their internal data sets. Analyzing data in real time allows the customer service and customer experience teams to uncover potential issues and without complex IT integrations or by taxing data science teams. Signals™ has been able to quickly process all the data and present it in a way that allows Lenovo to better manage the overall customer experience."
   how_list:
-    - "The Stratifyd SignalsTM platform processes large volumes of unstructured and structured textual data from almost any source – emails, chat sessions, text files, e.g. Word and Evernote, blog posts, app reviews, social media and more. It produces quick and actionable insights in seconds by incorporating predictive modeling, machine learning, and robust statistical Natural Language Processing (NLP) algorithms to create visualizations of behavior communities, trends, patterns and outlying themes."
-    - "Key aspects of the solution include no complex integration, an intuitive dashboard, and advanced functionality. The Signals dashboard offers drag-and-drop data importing and drill-down options – such as temporal trends, category overview, or buzzword and geospatial analysis."
+    - "The Stratifyd Signals™ platform processes large volumes of unstructured and structured textual data from almost any source – emails, chat sessions, text files, e.g. Word and Evernote, blog posts, app reviews, social media and more. It produces quick and actionable insights in seconds by incorporating predictive modeling, machine learning, and robust statistical Natural Language Processing (NLP) algorithms to create visualizations of behavior communities, trends, patterns and outlying themes."
+    - "Key aspects of the solution include no complex integration, an intuitive dashboard, and advanced functionality. The Signals™ dashboard offers drag-and-drop data importing and drill-down options – such as temporal trends, category overview, or buzzword and geospatial analysis."
     - "Chat Data: customer service and sales chats were broken down into two groups: Agent and Customer, to improve agent performance, strengthen customer relationships, and generate more revenue."
   theme_title: "Lenovo added the following customer experience data sets to the chat analysis to better understand ongoing customer demands:"
   key_themes:
     - "Opinion Lab Data: eComm comment cards, eComm exit surveys, eSupport comment cards and exit surveys."
     - "Survey Data: purchase experience survey, chat survey (sales and sales support), product ownership survey."
     - "Lenovo tech support data."
-  results_title: "Using the Signals platform, Lenovo was able to:"
+  results_title: "Using the Signals™ platform, Lenovo was able to:"
   results:
     - "Expand data analytics beyond the analytics group to the end-user groups so they can affect change in the organization."
     - "Frontline sales/support agents moved from predictive – ”what is likely to happen” to prescriptive – “what we should do”."
@@ -72,19 +72,19 @@
     - "Increase consumption of the data: generated automatic and easy-to-consume results of sales/sales support data"
   result_quote: "“We leverage Stratifyd theme detection and no longer need to manually build out taxonomies to listen to our customers. This tremendously reduces our time to gain meaningful insights.”"
   result_quote_src: "- Harshad Varia, Customer Experience Sr. Manager"
-  results_summary: "Lenovo utilizes Signals as part of their standard operational processes to strengthen relationships with customers, provide data support, and improve sales agent’s effectiveness in growing and retaining customers."
+  results_summary: "Lenovo utilizes Signals™ as part of their standard operational processes to strengthen relationships with customers, provide data support, and improve sales agent’s effectiveness in growing and retaining customers."
   screenshot: "casestudy-lenovo-screenshot.jpg"
 
 - slug: Executive Management
   tag: executive-mange
   featured: true
-  header: Signals for Executive Management
+  header: Signals™ for Executive Management
   jumbo: exec-photo.jpg
   focus: Executive Management
   square: shutterstock.jpg
   purpose: "Sales. Customer Experience. Marketing. HR."
   client:
-    - "As a business executive you need your hand on the pulse of the business in all these areas, in real-time. Signals can aggregate all the sales data, customer care data, HR and marketing data together on a single Dashboard, enabling an executive the ability to examine the high-level operation output of the organization on a daily, weekly, monthly base. Analytics becomes part of the daily operational processes, helping you make better, data-driven decisions."
+    - "As a business executive you need your hand on the pulse of the business in all these areas, in real-time. Signals™ can aggregate all the sales data, customer care data, HR and marketing data together on a single Dashboard, enabling an executive the ability to examine the high-level operation output of the organization on a daily, weekly, monthly base. Analytics becomes part of the daily operational processes, helping you make better, data-driven decisions."
   quote_blurb: "“The buzzword section was easy to work with; allowing filtering to which dataset you would like to view.”"
   quote_source: "- Business Unit Leader "
   challenges:
@@ -95,53 +95,53 @@
     - "No common view for multiple data sets, like Cases/Community/Social/Uservoice."
     - "Customer Care and Voice of Customer data was not always available in a timely manner."
     - "The Need: A visual dashboard tool to allow the executives to analyze data sets quickly and get to insights faster."
-    - "The Solution: Signals enhances the power of analytics by making executive interaction with data easy and productive. To answer the question “What Changed?” executives can compare different versions of data with just one click. Automated ‘delta’ functions immediately visualize data set comparisons. Knowing what changed from the previous period makes analysis and corrective action faster. All things are under an executive’s control. Doing ad-hoc comparisons help executives stay alert to trends and emerging issues in your business."
-  how: "Signals is a machine-learning platform, with a Natural Language Processing (NLP) engine. Signals clusters terms based on semantic relationships and relative significance of the texts in the data."
+    - "The Solution: Signals™ enhances the power of analytics by making executive interaction with data easy and productive. To answer the question “What Changed?” executives can compare different versions of data with just one click. Automated ‘delta’ functions immediately visualize data set comparisons. Knowing what changed from the previous period makes analysis and corrective action faster. All things are under an executive’s control. Doing ad-hoc comparisons help executives stay alert to trends and emerging issues in your business."
+  how: "Signals™ is a machine-learning platform, with a Natural Language Processing (NLP) engine. Signals™ clusters terms based on semantic relationships and relative significance of the texts in the data."
   how_list:
-    - "No longer have to sample data; Signals ingests 100% of available data."
-    - "Old process: High likelihood that data would be available only after 3-4 days from generation (not real-time). Signals provides up to 30-60 minute updates (can also run daily), and has the ability to compare time periods directly in the dashboard."
-    - "Signals enabled the executive team to react quickly to trends in volume or direction, and share internally with the management team and with vendor partners."
-  theme_title: "No longer have to sample data; Signals ingests 100% of available data."
+    - "No longer have to sample data; Signals™ ingests 100% of available data."
+    - "Old process: High likelihood that data would be available only after 3-4 days from generation (not real-time). Signals™ provides up to 30-60 minute updates (can also run daily), and has the ability to compare time periods directly in the dashboard."
+    - "Signals™ enabled the executive team to react quickly to trends in volume or direction, and share internally with the management team and with vendor partners."
+  theme_title: "No longer have to sample data; Signals™ ingests 100% of available data."
   key_themes:
-    - "Signals is a machine-learning platform,with a Natural Language Processing (NLP) engine. Signals clusters terms based on semantic relationships and relative significance of the texts in the data."
-    - "Analyze Salesforce Data – Old Process vs Signals: purchase experience survey, chat survey (sales and sales support), product ownership survey."
+    - "Signals™ is a machine-learning platform,with a Natural Language Processing (NLP) engine. Signals™ clusters terms based on semantic relationships and relative significance of the texts in the data."
+    - "Analyze Salesforce Data – Old Process vs Signals™: purchase experience survey, chat survey (sales and sales support), product ownership survey."
     - "Lenovo tech support data."
-  results_title: "Using the Signals platform, Lenovo was able to:"
+  results_title: "Using the Signals™ platform, Lenovo was able to:"
   results:
     - "Integrate uservoice and NPS data"
     - "See the most vocal customers easily"
     - "Instant Sharable Insights: No need for manual bucketing by analysts, and anyone can access."
     - "Ability to provide more actionable insights, from different types of structured and unstructured data, across all areas of the business."
-  result_quote: "“What’s your next move? Executives need a real-time dashboard for business performance, one that’s easy to digest, and easy to dive into the details. Signals is that platform.”"
+  result_quote: "“What’s your next move? Executives need a real-time dashboard for business performance, one that’s easy to digest, and easy to dive into the details. Signals™ is that platform.”"
   result_quote_src: ""
-  results_summary: "Signals enabled the executive team to react quickly to trends in volume or direction, and share internally with the management team and with vendor partners."
+  results_summary: "Signals™ enabled the executive team to react quickly to trends in volume or direction, and share internally with the management team and with vendor partners."
 
 - slug: Retail
   tag: retail
   featured: true
-  header: Stratifyd Signals for Retail
+  header: Stratifyd Signals™ for Retail
   jumbo: lowes-retail-photo.jpg
   focus: Retail
-  square: shutterstock.jpg
+  square: Retail_Square.jpg
   purpose: "A Fortune® 500 retail company headquartered in the U.S. utilized Stratifyd technology for data analytics."
   client:
     - "In 2015, the retailer had over $59 billion in sales. The retailer operates or services more than 2,000 home improvement and hardware stores in the United States, Canada and Mexico."
   quote_blurb: "“A large retailer used Stratifyd technology for text analysis of customer emails, processing thousands of documents in minutes.”"
   quote_source: ""
   challenges:
-    - "A large home retailer gets thousands of customer emails. Customer service would naturally expect a fair number of them to be complaints about their store layout, certain product lines, and a campaign that didn’t go over well. Understanding customer feedback is important to this large organization. Going through thousands of emails manually is a herculean task, and prone for missed correlation and classification of the data, and missed opportunities to make improvements in customer satisfaction. This challenge facing the retailer was a perfect fit for machine-based learning, and the Natural Language Processing (NLP) power of the Signals platform. The need to turn thousands of unstructured text emails into something valuable is why our technology was used."
-  how: "Signals™ enabled the retailer’s customer service teams take a deep dive into the unstructured text of their customer emails. Analyzing data in real time allows the customer service and customer experience teams to uncover potential issues and without complex IT integrations or by taxing data science teams. Signals has been able to quickly process all the emails and present it in a way that allows the retailer to better manage the overall customer experience."
+    - "A large home retailer gets thousands of customer emails. Customer service would naturally expect a fair number of them to be complaints about their store layout, certain product lines, and a campaign that didn’t go over well. Understanding customer feedback is important to this large organization. Going through thousands of emails manually is a herculean task, and prone for missed correlation and classification of the data, and missed opportunities to make improvements in customer satisfaction. This challenge facing the retailer was a perfect fit for machine-based learning, and the Natural Language Processing (NLP) power of the Signals™ platform. The need to turn thousands of unstructured text emails into something valuable is why our technology was used."
+  how: "Signals™ enabled the retailer’s customer service teams take a deep dive into the unstructured text of their customer emails. Analyzing data in real time allows the customer service and customer experience teams to uncover potential issues and without complex IT integrations or by taxing data science teams. Signals™ has been able to quickly process all the emails and present it in a way that allows the retailer to better manage the overall customer experience."
   how_list:
-    - "The Stratifyd Signals™ platform processes large volumes of unstructured and structured textual data from almost any source. Email was the source in this case study, but the platform can also analyze chat sessions, text files, e.g. Word and Evernote, blog posts, app reviews, social media and more. Signals produces quick and actionable insights in seconds by incorporating predictive modeling,machine learning, and robust statistical NLP algorithms to create visualizations of behavior communities, trends, patterns and outlying themes."
+    - "The Stratifyd Signals™ platform processes large volumes of unstructured and structured textual data from almost any source. Email was the source in this case study, but the platform can also analyze chat sessions, text files, e.g. Word and Evernote, blog posts, app reviews, social media and more. Signals™ produces quick and actionable insights in seconds by incorporating predictive modeling,machine learning, and robust statistical NLP algorithms to create visualizations of behavior communities, trends, patterns and outlying themes."
   key_themes:
-    - "Key aspects of the solution include no complex integration, and an intuitive dashboard. The Signals dashboard offers drag-and-drop data importing and drill-down options – such as temporal trends, category overview, or buzzword and geospatial analysis."
+    - "Key aspects of the solution include no complex integration, and an intuitive dashboard. The Signals™ dashboard offers drag-and-drop data importing and drill-down options – such as temporal trends, category overview, or buzzword and geospatial analysis."
     - "Additional data sets: The retailer is able to add additional data sets to the email data so they can better understand ongoing customer demands: o Comment Cards and exit surveys o Purchase experience surveys, online chat, product ownership surveys o Tech support data."
   results_title: "The retailer correctly assumed they would see complaints about their store layout, certain product lines, and a campaign that didn’t go over well."
   results:
     - "What they didn’t expect the data to tell them was that there were ongoing problems with stores not properly recognizing their military discount policy. Retail locations in certain geographic regions were denying the discount to qualified members of the armed services causing much frustration with their clientele. Once this issue was identified, the company was able to quickly reeducate their employees on proper military discount policies."
-  result_quote: "“The speed of the platform to turn data into revenue is a key selection criterion for using Signals. Large data sets, including those with the unstructured text, can be analyzed in minutes.”"
+  result_quote: "“The speed of the platform to turn data into revenue is a key selection criterion for using Signals™. Large data sets, including those with the unstructured text, can be analyzed in minutes.”"
   result_quote_src: ""
-  results_summary: "The Signals platform can be used as a standard operational process, analyzing data on a daily basis, to strengthen relationships with customers."
+  results_summary: "The Signals™ platform can be used as a standard operational process, analyzing data on a daily basis, to strengthen relationships with customers."
 
 - slug: Marketing
   tag: marketing
@@ -149,7 +149,7 @@
   header: Marketing Agency selects Stratifyd
   jumbo: marketing-photo.jpg
   focus: Marketing
-  square: casestudy-hamptoninn.jpg
+  square: Marketing_Square.jpg
   purpose: "Stratifyd Signals™ was recently selected as a text analytics platform by a large Marketing Agency with offices in the northeast and southeast U.S."
   client:
     - "The agency builds worlds around brands by seamlessly integrating strategic planning, digital development, content creation and distribution, customer experience and a host of other disciplines."
@@ -158,17 +158,17 @@
   challenges:
     - "The agency market is ultra-competitive, and the company is constantly challenged to stand out from the competition and provide greater value. This challenge was fully evident when the agency competed for marketing business with a fast food chain and a supermarket account."
     - "The agency needed a way to differentiate their research, analysis, insights, and recommendations. Specifically they needed an easy to use, self-service platform that enabled on-the-fly research to these companies and their competitors.The agency needed to go beyond basic social media sites like Twitter and Facebook, and analyze the user reviews."
-  how: "Signals allowed the agency to take a deep dive into the voice of the customer data on the fast food chain and supermarket. They analyzed customer reviews, and found opportunities to improve business practices and resolve issues identified by these customers and their competitors:"
+  how: "Signals™ allowed the agency to take a deep dive into the voice of the customer data on the fast food chain and supermarket. They analyzed customer reviews, and found opportunities to improve business practices and resolve issues identified by these customers and their competitors:"
   how_list:
-    - "The Stratifyd Signals™ platform processes large volumes of unstructured and structured textual data from almost any source. Email was the source in this case study, but the platform can also analyze chat sessions, text files, e.g. Word and Evernote, blog posts, app reviews, social media and more. Signals produces quick and actionable insights in seconds by incorporating predictive modeling,machine learning, and robust statistical NLP algorithms to create visualizations of behavior communities, trends, patterns and outlying themes."
+    - "The Stratifyd Signals™ platform processes large volumes of unstructured and structured textual data from almost any source. Email was the source in this case study, but the platform can also analyze chat sessions, text files, e.g. Word and Evernote, blog posts, app reviews, social media and more. Signals™ produces quick and actionable insights in seconds by incorporating predictive modeling,machine learning, and robust statistical NLP algorithms to create visualizations of behavior communities, trends, patterns and outlying themes."
     - "Common Topics: The agency found the most common topics contained in customer reviews."
-    - "Recurring Themes and Trends: Signals enabled the agency to stratify the data over time, making it easy to see themes recurring in the data month over month."
+    - "Recurring Themes and Trends: Signals™ enabled the agency to stratify the data over time, making it easy to see themes recurring in the data month over month."
   theme_title: "Signals™ allowed the agency to take a deep dive into the voice of the customer data on the fast food chain and supermarket."
   key_themes:
     - "Flat screen TVs, complimentary breakfast, hot tubs and pools all added to the experience, and among other things, contributed to the comments of “top notch” service and that the majority of guests were “pleasantly surprised” with the quality of their visit."
-    - "Pre-built Data Connectors: The agency gathered voice of the customer data using the Signals data connector to Yelp, one of many built-in data connectors to ecommerce websites. The Yelp connector provided customer reviews reflecting their needs, wants, likes, and dislikes. The customer reviews were presented in an interactive visual interface that allowed them to drill down into the data."
+    - "Pre-built Data Connectors: The agency gathered voice of the customer data using the Signals™ data connector to Yelp, one of many built-in data connectors to ecommerce websites. The Yelp connector provided customer reviews reflecting their needs, wants, likes, and dislikes. The customer reviews were presented in an interactive visual interface that allowed them to drill down into the data."
     - "Common Topics: The agency found the most common topics contained in customer reviews. Topics were placed into categories to pinpoint important areas in which to focus, and then drill down into the ‘why’ behind the data."
-    - "Recurring Themes and Trends: Signals enabled the agency to stratify the data over time, making it easy to see themes recurring in the data month over month. The agency analyzed the differences between the fast food chain and supermarket customer reviews over time. Signals custom widgets made it an easy process to analyze customer reviews by the star rating. The agency can analyze all the <3 star ratings simultaneously, and drill down specifically into the individual ratings to see what customers were saying."
+    - "Recurring Themes and Trends: Signals™ enabled the agency to stratify the data over time, making it easy to see themes recurring in the data month over month. The agency analyzed the differences between the fast food chain and supermarket customer reviews over time. Signals™ custom widgets made it an easy process to analyze customer reviews by the star rating. The agency can analyze all the <3 star ratings simultaneously, and drill down specifically into the individual ratings to see what customers were saying."
     - "Geographic Differences: An important aspect of the analysis was examining customer reviews by region. This research analysis shed insight into specific store performance, and the customer perception of those stores."
   results_title: "Using Signals™, the agency was able to:"
   results:
@@ -180,5 +180,37 @@
     - "Utilize customer review segments and compare behavior patterns over time to prioritize areas of marketing."
     - "Listen to customer’s desired features and technology."
     - "Make analytics a regular customer review process step."
-  result_quote: "“Stratifyd is a terrific partner. Not only is the Signals platform ideal for providing customer insights, but the platform is fast, easy to use, and completely selfservice.”"
+  result_quote: "“Stratifyd is a terrific partner. Not only is the Signals™ platform ideal for providing customer insights, but the platform is fast, easy to use, and completely selfservice.”"
   result_quote_src: "- Chief Strategy Officer"
+
+- slug: Business Analyst
+  tag: business analyst
+  featured: true
+  header: Stratifyd Signals™ for Business Intelligence
+  jumbo: bi-photo.jpg
+  focus: Business Analyst
+  square: Business_Analyst.jpg
+  purpose: "Stratifyd Signals™ was recently selected as the business intelligence platform by a large painting and coating company."
+  client:
+    - "The company is one of the largest suppliers of paint, primers, stains and surface finish products. The company is dedicated to meeting the coating and color needs of architectural and design professionals, as well as DIYers."
+  quote_blurb: "““I felt that the team at Stratifyd went above and beyond to help me out."
+  quote_source: "- Director of Innovation and New Product Development"
+  challenges:
+    - "The company conducted in-depth customer research through long interviews of customers and prospects. The live interviews were recorded and transcribed into text, resulting in hundreds of pages of voice-of-thecustomer feedback. Their first challenge was to gain insights from this massive volume of unstructured textual data."
+    - "A second challenge was in the area of social media analysis. The company had been working with a different platform for social media research, but it required trained researchers to do the analysis. When they wanted additional analysis and reports, it required another engagement to analyze the data and present another report. The users preferred a self-service tool to conduct additional deep dives into the data on a regular basis. Both projects prompted selection of Stratifyd as a business intelligence partner."
+  how: "Signals enabled the Coatings Product Development group to take a deep dive into the unstructured text of their customer feedback. The large volume of transcribed interviews processed in minutes. An interactive, easy to read visualization greeted the user. By clicking on a category, theme, timeframe, or location, they could dive deeper into the data to see the ‘why’ behind the data. You do not have to be a data scientist to use the platform. Signals also made fast work of the social media conversations, highlighting the most important topics of conversations."
+  how_list:
+    - "The Stratifyd Signals™ platform processes large volumes of unstructured and structured textual data. It produces actionable insights in minutes through predictive modeling, machine learning, and robust statistical Natural Language Processing (NLP) algorithms to create visualizations of behavior communities, trends, patterns and outlying themes."
+  theme_title: "Signals also made fast work of the social media conversations, highlighting the most important topics of conversations."
+  key_themes:
+    - "Key aspects of the solution include no complex integration, an intuitive dashboard, and advanced functionality. Signals™ offers dragand-drop data importing and drill-down options – temporal trends, category overview, buzzword and geospatial analysis."
+    - "Interview/Survey Data: Signals™ processes structured, semistructured, and unstructured data, making it a powerful tool to analyze voice-of-customer data. From tens of thousands of social media mentions, to dozens of interview transcriptions, to surveys, the platform supports any data source."
+  results_title: "Using Signals™, the agency was able to:"
+  results:
+    - "Discovered there was a large amount of conversation from consumers talking about a specific product attribute. They were aware of the feature of the product, but did not realize its importance, and the volume of social conversation it drove. Signals highlighted this specific feature attribute, making them aware of the importance of it in their product."
+    - "Gained customer insights in the areas of product development, ideation, and process improvement ideas."
+    - "Identified a new tool to gain insights that were invisible before. The alternative was manually reading all the long transcriptions."
+    - "Made it possible to probe into the “why” in the data."
+    - "Utilize the platform on an operational basis to dig deeper into relationships within the data."
+  result_quote: "“With the Stratifyd Signals™ platform, we identified a new tool to gain insights that were completely invisible before.”"
+  result_quote_src: "- Director of Innovation and New Product Development"
