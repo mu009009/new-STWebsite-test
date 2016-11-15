@@ -90,7 +90,7 @@ end
 #export AWS_SECRET_ACCESS_KEY=""
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                = 'test-www-stratifyd-com' # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.bucket                = 'www.stratifyd.com' # The name of the S3 bucket you are targetting. This is globally unique.
   # s3_sync.prefix 								= 'stratifyd'
   s3_sync.region                = 'us-west-2'     # The AWS region for your bucket.
   s3_sync.delete                = false # We delete stray files by default.
