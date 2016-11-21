@@ -1,4 +1,4 @@
-%form.contactForm{id:'contactForm'}
+%form.contactForm{id:'contactFormGroup'}
   .form-group
     %label{id: "inputlabel0"} First Name
     %input.form-control{ placeholder: "First Name", onclick: "alertReset()"}/
@@ -87,7 +87,7 @@
       $('#inputlabel4').text('Success Submit! Thank You!');
     }
 
-    document.getElementById("contactForm").reset();
+    document.getElementById('contactFormGroup').reset();
 
   }
 
