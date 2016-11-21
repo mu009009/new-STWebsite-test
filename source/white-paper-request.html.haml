@@ -1,0 +1,23 @@
+---
+title: White Paper Request
+---
+.jumbotron-fluid#whitePaperJumbo
+  .text-xs-center
+    .header.light
+
+.block
+  .container
+    .white-allign.m-b-3
+      .header-sm White Paper
+
+    .row
+      .col-md-8.col-xs-12
+        .white-allign.serif-md.blue How Signals Help You Archieve Your Goal
+        .form-group.white-allign{style:'display:inline-block'}
+          %img{src: "/assets/images/white_paper_cover.jpg", class:"whiteBookCover"}
+          %p.whitePaperIntro
+            Traditional data analytics requires the user to know what they are looking for at the beginning of a study. Analysis is often performed when there is good prior knowledge about the characteristics of the data set and the problem being addressed.
+
+      .col-md-4.col-xs-12
+        .serif-md.blue.m-b-1 Contact Form
+        = partial 'whitePaperForm'

@@ -10,7 +10,7 @@
           %li
             %a.footerlink{:href => "deeper-dive.html"} Deeper Dive
           %li
-            %a.footerlink{:href => "https://beta.tasteanalytics.com/login.html#sign-in", target: "_blank"} Log In
+            %a.footerlink{:href => "https://signals.stratifyd.com/login.html#sign-in", target: "_blank"} Log In
           %li
             %a.footerlink{:href => "try-signals.html"} Try Signals
 
@@ -59,13 +59,10 @@
         %a{ target: "_blank", href: "https://www.youtube.com/channel/UCAkngNoMwJDNjEPzX3lIBsw"}
           %i.fa.fa-youtube-play{"aria-hidden" => "true"}
 
--# <!-- Google Tag Manager -->
-%noscript
-  %iframe{src: "//www.googletagmanager.com/ns.html?id=GTM-P4LXLN" height: "0" width:"0" style:"display:none;visibility:hidden"}
-:javascript
-  (function(w,d,s,l,i){
-    w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-    var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-    j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-P4LXLN');
--# <!-- End Google Tag Manager -->
+  -# %div
+  -#   %a{href:"javascript:void(0);", id:"siteSealFauxBadge", style:"text-decoration: none; font-family: Arial, Verdana, Helvetica;"}
+  -#     %div{align:"center", alt:"Click to Verify", title:"Click to Verify", style:"border-width: 0px; background-image: url(&quot;https://tracedseals.starfieldtech.com/siteseal/images/siteseal_base_lite.gif&quot;); background-repeat: no-repeat; cursor: pointer; width: 132px; height: 31px;"}
+  -#       %div{style:"position: relative; top: 20px; left: 12px; width: 106px; line-height: 7.5pt;"}
+  -#         %div{style:"color: rgb(106, 156, 186); font-weight: bold; font-size: 6pt;"}2016-10-04
+  -#   %span{id:"cdSiteSeal1"}
+  -#     %script{src:"//tracedseals.starfieldtech.com/siteseal/get?scriptId=cdSiteSeal1&amp;cdSealType=Seal1&amp;sealId=55e4ye7y7mb73cfa6ba1101911a15c8d0y7mb7355e4ye7d421d4f71f148652db",type:"text/javascript"}
