@@ -12,7 +12,10 @@
     %label{id: "inputlabel3"} Phone Number
     %input.form-control{ placeholder: "Phone Number", type: "tel", onclick: "alertReset()" }/
   .form-group
-    %label{:for => "exampleTextarea", id: "inputlabel4" } Message
+    %label{id: "inputlabel4"} Company Name
+    %input.form-control{ placeholder: "Company Name", type: "company", onclick: "alertReset()" }/
+  .form-group
+    %label{:for => "exampleTextarea", id: "inputlabel5" } Message
     %textarea.form-control{ rows: "3", id:"TextMessa", onclick: "alertReset()"}
   %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Send Message
 
@@ -21,7 +24,7 @@
     var values = [];
     $('input').each(function(k) {
       values.push($(this).val());
-      if(k<3)
+      if(k<5)
       {
         if($(this).val()=="")
         {
@@ -37,7 +40,7 @@
       var textAreaText = $('#TextMessa').val();
       values.push(textAreaText);
 
-      if((values[2]=='')||(values[1]=='')||(values[0]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
+      if((values[2]=='')||(values[1]=='')||(values[0]=='')||(values[3]=='')||(values[4]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
       {
         //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
       }
@@ -45,7 +48,7 @@
       if(emailCheck(values[2]))
       {
         //bootbox.alert('Your information has succeeded uploaded, our staff members will contact with you soon.')
-        postUserFeedback(values[2],values[1],values[0], values[3], values[4]);
+        postUserFeedback(values[2],values[1],values[0], values[3], values[5], values[4]);
         alertSuccess();
         }
         else
@@ -83,8 +86,8 @@
     })
     if($('#TextMessa').val()!="")
     {
-      $('#inputlabel4').css('color','#00a1ae');
-      $('#inputlabel4').text('Success Submit! Thank You!');
+      $('#inputlabel5').css('color','#00a1ae');
+      $('#inputlabel5').text('Success Submit! Thank You!');
     }
 
     document.getElementById('contactFormGroup').reset();
@@ -100,8 +103,10 @@
     $('#inputlabel1').text('Last Name');
     $('#inputlabel2').text('Email address');
     $('#inputlabel3').text('Phone Number');
-    $('#inputlabel4').css('color','#6a6a6a');
-    $('#inputlabel4').text('Message');
+    $('#inputlabel4').text('Company');
+
+    $('#inputlabel5').css('color','#6a6a6a');
+    $('#inputlabel5').text('Message');
   }
 
   function alertTarget(target,k) {
@@ -110,7 +115,7 @@
     $(target).css('border-color','red');
   }
 
-  function postUserFeedback( email, lastname, firstname, phone, message ) {
+  function postUserFeedback( email, lastname, firstname, phone, message, company ) {
     var url = window.location.href;
     var fallback = "New feedback from <mailto:%s?subject=Stratifyd, Inc. Client Support|%s>".format(email,email);
     var page = '<'+url+'>';
@@ -134,6 +139,11 @@
       {
         title: 'Phone Number',
         value: phone,
+        short: false
+      },
+      {
+        title: 'Company',
+        value: company,
         short: false
       },
       {
