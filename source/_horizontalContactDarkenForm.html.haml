@@ -1,0 +1,213 @@
+.card_horizontal_contact_box
+  %form.contactForm{id:'horizontalGroup'}
+    .header-sm.m-y-1 See How Signals Can Tell Your Data Story
+    .serif-md.m-y-1 Fill out the form to get one-on-one demo.
+    -# .main_element_card
+    -#   <script src="https://www.linkedin.com/autofill/js/autofill.js" type="text/javascript" async></script>
+    -#   <script type="IN/Form2" data-form="horizontalGroup" data-field-firstname="linkFirst" data-field-lastname="linkLast" data-field-phone="linkphone" data-field-email="emailInput" data-field-company="linkCompany"></script>
+      -# %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Auto Fill With Linkedin
+    .sub_element_card
+      .input-group
+        %label.input-group-addon{id: "inputlabel0", onclick: "alertReset()"} First Name:
+        %input.form-control{ onclick: "alertReset()", id:"linkFirst"}/
+    .sub_element_card
+      .input-group
+        %label.input-group-addon{id: "inputlabel1", onclick: "alertReset()"} Last Name:
+        %input.form-control{ onclick: "alertReset()", id:"linkLast"}/
+    .sub_element_card
+      .input-group
+        %label.input-group-addon{id: "inputlabel2", onclick: "alertReset()"} Email:
+        %input.form-control{"aria-describedby" => "emailHelp", type: "email", id:"emailInput", onclick: "alertReset()"}/
+    .sub_element_card
+      .input-group
+        %label.input-group-addon{id: "inputlabel3", onclick: "alertReset()"} Phone:
+        %input.form-control{ type: "tel", onclick: "alertReset()", id: "linkphone"}/
+    .sub_element_card
+      .input-group
+        %label.input-group-addon{id: "inputlabel4", onclick: "alertReset()"} Company:
+        %input.form-control{ type: "company", onclick: "alertReset()", id: "linkCompany"}/
+    .sub_element_card
+      .input-group
+        %label.input-group-addon{id: "inputlabel5", onclick: "alertReset()"} Let's Meet:
+        %input.form-control{ type:"date", onclick: "alertReset()"}/
+    .main_element_card
+      %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Request Demo
+
+:javascript
+  function SubmittoChannel(){
+    var values = [];
+    $('input').each(function(k) {
+      console.log(this);
+      console.log($(this).val());
+      values.push($(this).val());
+      if(k<6)
+      {
+        if($(this).val()=="")
+        {
+          alertTarget(this,k);
+          if(k==2)
+          {
+            $('#inputlabel'+k).text('Please fill this part');
+          }
+        }
+      }
+      });
+
+      var textAreaText = $('#TextMessa').val();
+      values.push(textAreaText);
+
+      if((values[2]=='')||(values[1]=='')||(values[0]=='')||(values[3]=='')||(values[4]=='')||(values[5]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
+      {
+        //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
+      }
+      else{
+      if(emailCheck(values[2]))
+      {
+        //bootbox.alert('Your information has succeeded uploaded, our staff members will contact with you soon.')
+        postUserFeedback(values[2],values[1],values[0], values[3], values[4], values[5]);
+        alertSuccess();
+        }
+        else
+        {
+          alertTarget('#emailInput',2);
+          $('#inputlabel2').text('Sorry, you may not use your gmail');
+        //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
+        }
+
+      }
+  }
+
+  var kFeedbackWebHook = 'https://hooks.slack.com/services/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';
+  function postToFeedbackChannel(json) {
+    var string = JSON.stringify(json);
+    var jxh = $.post( kFeedbackWebHook, string );
+    return jxh;
+  }
+
+  String.prototype.format = function() {
+    var i = 0, newStr = this;
+    while (/%s/.test(newStr))
+      newStr = newStr.replace("%s", arguments[i++]);
+    return newStr;
+    }
+
+  function alertSuccess() {
+
+    $('input').each(function(k) {
+      if($(this).val()!="")
+      {
+        $('#inputlabel'+k).css('color','#00a1ae');
+        $('#inputlabel'+k).text('Success Submit! Thank You!');
+      }
+    })
+    if($('#TextMessa').val()!="")
+    {
+      $('#inputlabel5').css('color','#00a1ae');
+      $('#inputlabel5').text('Success Submit! Thank You!');
+    }
+
+    document.getElementById('horizontalGroup').reset();
+
+  }
+
+  function alertReset() {
+    $('input').each(function(k) {
+        $(this).css('border-color','#ccc');
+        $(this).css('color','#6a6a6a');
+        $('#inputlabel'+k).css('border-color','#ccc');
+        $('#inputlabel'+k).css('color','#6a6a6a');
+    })
+    $('#inputlabel0').text('First Name:');
+    $('#inputlabel1').text('Last Name:');
+    $('#inputlabel2').text('Email:');
+    $('#inputlabel3').text('Phone:');
+    $('#inputlabel4').text('Company:');
+    $('#inputlabel5').text("Let's Meet:")
+  }
+
+  function alertTarget(target,k) {
+    $('#inputlabel'+k).css('color','red');
+    $('#inputlabel'+k).css('border-color','red');
+    $('#inputlabel'+k).text('Please fill this part');
+    $(target).css('border-color','red');
+    if(k == 5)
+    {
+      $(target).css('color','red');
+    }
+  }
+
+  function postUserFeedback( email, lastname, firstname, phone, company, meetTime ) {
+    var url = window.location.href;
+    var fallback = "New feedback from <mailto:%s?subject=Stratifyd, Inc. Client Support|%s>".format(email,email);
+    var page = '<'+url+'>';
+    var json = {
+    attachments : [
+    {
+      fallback: fallback,
+      pretext: fallback,
+      color: "warning",
+      fields:[
+      {
+        title: 'LastName',
+        value: lastname,
+        short: false
+      },
+      {
+        title: 'FirstName',
+        value: firstname,
+        short: false
+      },
+      {
+        title: 'Phone Number',
+        value: phone,
+        short: false
+      },
+      {
+        title: 'Company',
+        value: company,
+        short: false
+      },
+      {
+        title: 'Schedule Meet At',
+        value: meetTime,
+        short: false
+      },
+      {
+        title: 'Browsing Page',
+        value: page,
+        short: false
+      }]
+    }]
+  }
+    return postToFeedbackChannel(json).fail(function() {
+    showAlertDialog('error', _L('Opps, something wrong.  Please try later.'));
+    }).always(function() {
+    });
+  }
+
+  function emailCheck(emailAddr)
+  {
+    if((emailAddr == null) || (emailAddr.length < 2)) return false ;
+    var aPos = emailAddr.indexOf("@" ,1) ;
+    var lowerAddr = emailAddr.toLowerCase();
+    if(aPos < 0)
+    {
+      return false ;
+    }
+    if(emailAddr.indexOf("." ,aPos+2) < 0)
+    {
+      return false ;
+    }
+    var judgeifGmail = lowerAddr.indexOf("@gmail");
+    console.log(judgeifGmail);
+    if(judgeifGmail>0)
+    {
+      return false;
+    }
+    var judgeifQQ = lowerAddr.indexOf("@qq")
+    if(judgeifQQ>0)
+    {
+      return false;
+    }
+    return true ;
+  }

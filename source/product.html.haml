@@ -230,10 +230,13 @@ title: Product
     %a.btn.btn-primary-dark.m-t-2{ href: 'case-studies.html' }
       Read More Case Studies
 
-.block-blue#contact
+-# .block-blue#contact
+-#   .container
+-#     .row
+-#       .col-md-8.col-md-offset-2.contactform
+-#         .card-block
+-#           .header-sm.m-b-2.text-xs-center Contact Us For More Information
+-#           = partial 'contactForm'
+.block-blue-pad
   .container
-    .row
-      .col-md-8.col-md-offset-2.contactform
-        .card-block
-          .header-sm.m-b-2.text-xs-center Contact Us For More Information
-          = partial 'contactForm'
+    = partial 'horizontalContactForm'
