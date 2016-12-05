@@ -6,7 +6,11 @@
     %label{id: "inputlabel1"} Last Name
     %input.form-control{ placeholder: "Last Name", onclick: "alertReset()" }/
   .form-group
+<<<<<<< HEAD
     %label{id: "inputlabel2"} Email address
+=======
+    %label{id: "inputlabel2"} Email Address
+>>>>>>> master
     %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Email Address", type: "email", id:"emailInput", onclick: "alertReset()" }/
   .form-group
     %label{id: "inputlabel3"} Phone Number
@@ -28,7 +32,11 @@
           alertTarget(this,k);
           if(k==2)
           {
+<<<<<<< HEAD
             $('#inputlabel'+k).text('Please fill this part with your valid email');
+=======
+            $('#inputlabel'+k).text('Please fill this part');
+>>>>>>> master
           }
         }
       }
@@ -61,7 +69,11 @@
         else
         {
           alertTarget('#emailInput',2);
+<<<<<<< HEAD
           $('#inputlabel2').text('Sorry, please use your valid email, thank you');
+=======
+          $('#inputlabel2').text('Sorry, you may not use your gmail');
+>>>>>>> master
         //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
         }
 
