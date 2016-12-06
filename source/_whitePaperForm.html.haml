@@ -1,19 +1,19 @@
 %form.contactForm{id:'whitePaperGroup'}
   .form-group
     %label{id: "inputlabel0"} First Name
-    %input.form-control{ placeholder: "First Name", onclick: "alertReset()"}/
+    %input.form-control{ placeholder: "First Name", onclick: "alertReset()", id: "WhiteFirstName"}/
   .form-group
     %label{id: "inputlabel1"} Last Name
-    %input.form-control{ placeholder: "Last Name", onclick: "alertReset()" }/
+    %input.form-control{ placeholder: "Last Name", onclick: "alertReset()", id: "WhiteLastName" }/
   .form-group
     %label{id: "inputlabel2"} Email Address
-    %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Email Address", type: "email", id:"emailInput", onclick: "alertReset()" }/
+    %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Email Address", type: "email", id:"emailInput", onclick: "alertReset()", id: "WhiteEmail" }/
   .form-group
     %label{id: "inputlabel3"} Phone Number
-    %input.form-control{ placeholder: "Phone Number", type: "tel", onclick: "alertReset()" }/
+    %input.form-control{ placeholder: "Phone Number", type: "tel", onclick: "alertReset()", id: "WhitePhone" }/
   .form-group
     %label{id: "inputlabel4"} Company Name
-    %input.form-control{ placeholder: "Company Name", type: "company", onclick: "alertReset()" }/
+    %input.form-control{ placeholder: "Company Name", type: "company", onclick: "alertReset()", id: "WhiteCompany" }/
   %a{href:'/assets/images/Stratifyd_White_Paper.pdf', download:'', id:'download_pdf', style:'display: none;'} Test Download
 %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Request White Paper
 

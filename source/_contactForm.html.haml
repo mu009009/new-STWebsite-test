@@ -1,19 +1,19 @@
 %form.contactForm{id:'contactFormGroup'}
   .form-group
     %label{id: "inputlabel0"} First Name
-    %input.form-control{ placeholder: "First Name", onclick: "alertReset()"}/
+    %input.form-control{ placeholder: "First Name", onclick: "alertReset()", id: "contactFirst"}/
   .form-group
     %label{id: "inputlabel1"} Last Name
-    %input.form-control{ placeholder: "Last Name", onclick: "alertReset()" }/
+    %input.form-control{ placeholder: "Last Name", onclick: "alertReset()", id: "contactLast" }/
   .form-group
-    %label{id: "inputlabel2"} Email address
+    %label{id: "inputlabel2"} Email Address
     %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Email Address", type: "email", id:"emailInput", onclick: "alertReset()" }/
   .form-group
     %label{id: "inputlabel3"} Phone Number
-    %input.form-control{ placeholder: "Phone Number", type: "tel", onclick: "alertReset()" }/
+    %input.form-control{ placeholder: "Phone Number", type: "tel", onclick: "alertReset()", id: "contactPhone" }/
   .form-group
     %label{id: "inputlabel4"} Company Name
-    %input.form-control{ placeholder: "Company Name", type: "company", onclick: "alertReset()" }/
+    %input.form-control{ placeholder: "Company Name", type: "company", onclick: "alertReset()", id: "contactCompany" }/
   .form-group
     %label{:for => "exampleTextarea", id: "inputlabel5" } Message
     %textarea.form-control{ rows: "3", id:"TextMessa", onclick: "alertReset()"}
@@ -24,7 +24,7 @@
     var values = [];
     $('input').each(function(k) {
       values.push($(this).val());
-      if(k<5)
+      if((k<5)&&(k!=3))
       {
         if($(this).val()=="")
         {
@@ -40,7 +40,7 @@
       var textAreaText = $('#TextMessa').val();
       values.push(textAreaText);
 
-      if((values[2]=='')||(values[1]=='')||(values[0]=='')||(values[3]=='')||(values[4]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
+      if((values[2]=='')||(values[1]=='')||(values[0]=='')||(values[4]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
       {
         //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
       }
@@ -101,9 +101,9 @@
     })
     $('#inputlabel0').text('First Name');
     $('#inputlabel1').text('Last Name');
-    $('#inputlabel2').text('Email address');
+    $('#inputlabel2').text('Email Address');
     $('#inputlabel3').text('Phone Number');
-    $('#inputlabel4').text('Company');
+    $('#inputlabel4').text('Company Name');
 
     $('#inputlabel5').css('color','#6a6a6a');
     $('#inputlabel5').text('Message');
