@@ -14,6 +14,7 @@
   .form-group
     %label{id: "inputlabel4"} Company Name
     %input.form-control{ placeholder: "Company Name", type: "company", onclick: "alertReset()" }/
+  %a{href:'/assets/images/Stratifyd_White_Paper.pdf', download:'', id:'download_pdf', style:'display: none;'} Test Download
 %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Request White Paper
 
 :javascript
@@ -61,7 +62,7 @@
         else
         {
           alertTarget('#emailInput',2);
-          $('#inputlabel2').text('Sorry, you may not use your gmail');
+          $('#inputlabel2').text('Sorry, please check your email');
         //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
         }
 
@@ -120,7 +121,8 @@
     }*/
 
     document.getElementById('whitePaperGroup').reset();
-    window.open('/assets/images/Stratifyd_White_Paper.pdf');
+    document.getElementById('download_pdf').click();
+    window.location = '/congratulation.html';
 
   }
 
@@ -133,7 +135,7 @@
     $('#inputlabel1').text('Last Name');
     $('#inputlabel2').text('Email Address');
     $('#inputlabel3').text('Phone Number');
-    $('#inputlabel4').text('Company');
+    $('#inputlabel4').text('Company Name');
     /*$('#inputlabel5').text('State');
     $('#inputlabel6').text('City');
 
