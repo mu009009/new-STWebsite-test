@@ -6,11 +6,7 @@
     %label{id: "inputlabel1"} Last Name
     %input.form-control{ placeholder: "Last Name", onclick: "alertReset()" }/
   .form-group
-<<<<<<< HEAD
-    %label{id: "inputlabel2"} Email address
-=======
     %label{id: "inputlabel2"} Email Address
->>>>>>> master
     %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Email Address", type: "email", id:"emailInput", onclick: "alertReset()" }/
   .form-group
     %label{id: "inputlabel3"} Phone Number
@@ -18,6 +14,7 @@
   .form-group
     %label{id: "inputlabel4"} Company Name
     %input.form-control{ placeholder: "Company Name", type: "company", onclick: "alertReset()" }/
+  %a{href:'/assets/images/Stratifyd_White_Paper.pdf', download:'', id:'download_pdf', style:'display: none;'} Test Download
 %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Request White Paper
 
 :javascript
@@ -32,11 +29,7 @@
           alertTarget(this,k);
           if(k==2)
           {
-<<<<<<< HEAD
-            $('#inputlabel'+k).text('Please fill this part with your valid email');
-=======
             $('#inputlabel'+k).text('Please fill this part');
->>>>>>> master
           }
         }
       }
@@ -69,11 +62,7 @@
         else
         {
           alertTarget('#emailInput',2);
-<<<<<<< HEAD
-          $('#inputlabel2').text('Sorry, please use your valid email, thank you');
-=======
-          $('#inputlabel2').text('Sorry, you may not use your gmail');
->>>>>>> master
+          $('#inputlabel2').text('Sorry, please check your email');
         //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
         }
 
@@ -132,7 +121,8 @@
     }*/
 
     document.getElementById('whitePaperGroup').reset();
-    window.open('/assets/images/Stratifyd_White_Paper.pdf');
+    document.getElementById('download_pdf').click();
+    window.location = '/congratulation.html';
 
   }
 
@@ -145,7 +135,7 @@
     $('#inputlabel1').text('Last Name');
     $('#inputlabel2').text('Email Address');
     $('#inputlabel3').text('Phone Number');
-    $('#inputlabel4').text('Company');
+    $('#inputlabel4').text('Company Name');
     /*$('#inputlabel5').text('State');
     $('#inputlabel6').text('City');
 

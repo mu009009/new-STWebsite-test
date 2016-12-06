@@ -31,7 +31,7 @@
           alertTarget(this,k);
           if(k==2)
           {
-            $('#inputlabel'+k).text('Please fill this part, and you may not use your gmail');
+            $('#inputlabel'+k).text('Please fill this part');
           }
         }
       }
@@ -54,7 +54,7 @@
         else
         {
           alertTarget('#emailInput',2);
-          $('#inputlabel2').text('Sorry, you may not use your gmail');
+          $('#inputlabel2').text('Sorry, please check your email');
         //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
         }
 
@@ -177,7 +177,7 @@
     {
       return false ;
     }
-    var judgeifGmail = lowerAddr.indexOf("@gmail");
+    /*var judgeifGmail = lowerAddr.indexOf("@gmail");
     console.log(judgeifGmail);
     if(judgeifGmail>0)
     {
@@ -187,6 +187,6 @@
     if(judgeifQQ>0)
     {
       return false;
-    }
+    }*/
     return true ;
   }
