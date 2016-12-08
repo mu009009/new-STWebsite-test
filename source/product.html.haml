@@ -206,29 +206,15 @@ title: Product
               %img{ alt: "Card image cap", src: "assets/images/screenshots/ipad-mockup.png", class: "wide" }/
 
 .block
-  .text-xs-center
-    .header-sm.m-b-2 Case Studies
   .container
-    .row
-      - @featured_cases = data.case_studies.select { |hash| hash[:featured] }
-      - @featured_cases.first(3).each do |study|
-        .col-md-4
-          %a.case_study_card{ href: "#{study.slug}.html" }
-            .card
-              .card_img_box
-                %img.card-img{ src: "assets/images/case_studies/headers/#{study.jumbo}" }/
-              .card-block
-                .card-subhead
-                  = study.focus
-                %h4.serif-md
-                  = study.header
-                .body-copy.card-text
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card's content.
+    .text-xs-center.m-b-2
+      .header-sm Blog
+      %p.copy-lg.m-y-2 Read about insights driven by Signals.
+    .container-fluid
+      #medium-home-posts
 
-  .text-xs-center
-    %a.btn.btn-primary-dark.m-t-2{ href: 'case-studies.html' }
-      Read More Case Studies
+    .text-xs-center
+      %a.btn.btn-primary-dark.m-t-2{ href: "blog.html", role: "button" } Read More Blog Posts
 
 -# .block-blue#contact
 -#   .container
