@@ -26,7 +26,11 @@
 
     %meta{:content => "#ffffff", :name => "msapplication-TileColor"}/
     %meta{:content => "#ffffff", :name => "theme-color"}/
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+    %link{:href=> "https://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet"}
+    %link{:rel=>'stylesheet', :type=>"text/css", :href=>"https://cloud.typography.com/6205756/6815372/css/fonts.css"}    
+    %script{src:"http://code.jquery.com/jquery-1.9.1.js"}
+    %script{src:"http://code.jquery.com/ui/1.10.2/jquery-ui.js"}
+    %script{src: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"}
 
     :sass
       #fouc
@@ -36,6 +40,7 @@
     %noscript
       %iframe{src: "//www.googletagmanager.com/ns.html?id=GTM-P4LXLN", height: "0", width:"0", style:"display:none;visibility:hidden"}
       -# <!-- End Google Tag Manager -->
+
     :javascript
       (function(w,d,s,l,i){
       w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
@@ -52,7 +57,10 @@
     = javascript_include_tag 'vendor.bundle'
     = javascript_include_tag 'index.bundle'
 
-
+    :javascript
+      function JumptoHelp(){
+        window.open("http://help.stratifyd.com/support/home");
+      }
 
     :javascript
       window.intercomSettings = {

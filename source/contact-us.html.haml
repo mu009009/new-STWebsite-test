@@ -14,10 +14,18 @@ title: Contact Us
       .col-md-5.col-md-offset-1.col-xs-12
         .location
           .serif-md.blue United States
+          .sub-serif-md.blue North Carolina
           %ul.address-list
             %li 1431 W. Morehead Street
             %li Charlotte, NC 28208
             %li P. 704-215-4955
+            %li webcontact@stratifyd.com
+
+        .location
+          .sub-serif-md.blue Silicon Valley
+          %ul.address-list
+            %li 4500 Great America Pkwy
+            %li Santa Clara, CA 95054
             %li webcontact@stratifyd.com
 
         .location
@@ -41,7 +49,12 @@ title: Contact Us
 
 
       .col-md-5.col-md-offset-1.col-xs-12
-        .serif-md.blue.m-b-1 Contact Form
+        .serif-md.blue.m-b-1{style: 'display: inline-block; width: 100%; margin-bottom: 0px !important;'}
+          %div{style:'width: 50%; float: left; text-align: left;'}
+            %p Contact Form
+          %div{style:'width: 50%; float: right; text-align: right;'}
+            <script src="https://www.linkedin.com/autofill/js/autofill.js" type="text/javascript" async></script>
+            <script type="IN/Form2" data-form="contactFormGroup" data-field-firstname="contactFirst" data-field-lastname="contactLast" data-field-phone="contactPhone" data-field-email="emailInput" data-field-company="contactCompany"></script>
         = partial 'contactForm'
   .container
     .row

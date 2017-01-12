@@ -1,23 +1,25 @@
 %form.contactForm{id:'whitePaperGroup'}
   .form-group
     %label{id: "inputlabel0"} First Name
-    %input.form-control{ placeholder: "First Name", onclick: "alertReset()"}/
+    %input.form-control{ placeholder: "First Name", onclick: "alertReset()", id: "WhiteFirstName"}/
   .form-group
     %label{id: "inputlabel1"} Last Name
-    %input.form-control{ placeholder: "Last Name", onclick: "alertReset()" }/
+    %input.form-control{ placeholder: "Last Name", onclick: "alertReset()", id: "WhiteLastName" }/
   .form-group
     %label{id: "inputlabel2"} Email Address
-    %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Email Address", type: "email", id:"emailInput", onclick: "alertReset()" }/
+    %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Email Address", type: "email", id:"emailInput", onclick: "alertReset()"}/
   .form-group
     %label{id: "inputlabel3"} Phone Number
-    %input.form-control{ placeholder: "Phone Number", type: "tel", onclick: "alertReset()" }/
+    %input.form-control{ placeholder: "Phone Number", type: "tel", onclick: "alertReset()", id: "WhitePhone" }/
   .form-group
     %label{id: "inputlabel4"} Company Name
-    %input.form-control{ placeholder: "Company Name", type: "company", onclick: "alertReset()" }/
-  %a{href:'/assets/images/Stratifyd_White_Paper.pdf', download:'', id:'download_pdf', style:'display: none;'} Test Download
+    %input.form-control{ placeholder: "Company Name", type: "company", onclick: "alertReset()", id: "WhiteCompany" }/
+    %a{href:'/assets/images/Stratifyd_White_Paper.pdf', download:'', target:"_blank", id:'download_pdf', style:'display: none;'}
+  -# %iframe{id:'download_pdf', style:'display: none;', src:'/assets/images/Stratifyd_White_Paper.pdf'}
 %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Request White Paper
 
 :javascript
+
   function SubmittoChannel(){
     var values = [];
     $('input').each(function(k) {
@@ -34,19 +36,6 @@
         }
       }
       });
-
-      /*var GeoInfo = $('#geoBtnValue').val();
-      if(GeoInfo!='Select Your Country')
-      {
-        values.push(GeoInfo);
-      }
-      else
-      {
-        values.push("");
-      }
-
-      var textAreaText = $('#TextMessa').val();
-      values.push(textAreaText);*/
 
       if((values[2]=='')||(values[1]=='')||(values[0]=='')/*||(values[3]=='')||(values[4]=='')*/)//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
       {
@@ -122,8 +111,17 @@
 
     document.getElementById('whitePaperGroup').reset();
     document.getElementById('download_pdf').click();
-    window.location = '/congratulation.html';
+    var a = document.getElementbyId('download_pdf');
+    a.setAttribute("download", "Stratifyd_White_Paper.pdf");
 
+      if(a.download != "undefined")
+      {
+         // download attribute is supported
+      }
+      else
+      {
+        window.open('/assets/images/Stratifyd_White_Paper.pdf');
+      }
   }
 
   function alertReset() {
@@ -136,13 +134,6 @@
     $('#inputlabel2').text('Email Address');
     $('#inputlabel3').text('Phone Number');
     $('#inputlabel4').text('Company Name');
-    /*$('#inputlabel5').text('State');
-    $('#inputlabel6').text('City');
-
-    $('#inputlabel7').css('color','#6a6a6a');
-    $('#inputlabel7').text('Region');
-    $('#inputlabel8').css('color','#6a6a6a');
-    $('#inputlabel8').text('Message');*/
   }
 
   function alertTarget(target,k) {
@@ -151,7 +142,7 @@
     $(target).css('border-color','red');
   }
 
-  function postUserFeedback( email, lastname, firstname, phone, company ) {
+  function postUserFeedback( email, lastname, firstname, phone, company) {
     var url = window.location.href;
     var fallback = "New feedback from <mailto:%s?subject=Stratifyd, Inc. Client Support|%s>".format(email,email);
     var page = '<'+url+'>';
@@ -186,32 +177,14 @@
         title: 'Browsing Page',
         value: page,
         short: false
-      }
-      /*{
-        title: 'Region',
-        value: region,
-        short: false
-      },
-      {
-        title: 'State',
-        value: state,
-        short: false
-      },
-      {
-        title: 'City',
-        value: city,
-        short: false
-      },
-      {
-        title: 'Message',
-        value: message,
-        short: false
-      },*/]
+      }]
     }]
   }
     return postToFeedbackChannel(json).fail(function() {
     showAlertDialog('error', _L('Opps, something wrong.  Please try later.'));
     }).always(function() {
+      var urlEncode = encodeURI('#FN=' + firstname + '&LN=' + lastname + '&PhN=' + phone + '&CN=' + company + '&EM=' + email)
+      window.location = '/congratulation.html' + urlEncode;
     });
   }
 
@@ -228,526 +201,5 @@
     {
       return false ;
     }
-    /*var judgeifGmail = lowerAddr.indexOf("@gmail");
-    console.log(judgeifGmail);
-    if(judgeifGmail>0)
-    {
-      return false;
-    }
-    var judgeifQQ = lowerAddr.indexOf("@qq")
-    if(judgeifQQ>0)
-    {
-      return false;
-    }*/
     return true ;
   }
-
--# .form-group
-  -#   %label{id: "inputlabel7"} Region
-  -#   .dropdown{id:'GeoDropDown'}
-  -#     %button.btn.btn-secondary-outline.dropdown-toggle.form-control{type:"button", onClick: "dropdownToggle()", id: "geoBtnValue", value:"United States of America"} United States of America
-  -#     %span.caret
-  -#     %ul.dropdown-menu.form-control{style:"max-height: 240px; overflow-y: auto"}
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AF"}Afghanistan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AL"}Albania
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"DZ"}Algeria
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AS"}American Samoa
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AD"}Andorra
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AG"}Angola
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AI"}Anguilla
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AG"}Antigua & Barbuda
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AR"}Argentina
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AA"}Armenia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AW"}Aruba
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AU"}Australia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AT"}Austria
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AZ"}Azerbaijan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BS"}Bahamas
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BH"}Bahrain
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BD"}Bangladesh
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BB"}Barbados
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BY"}Belarus
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BE"}Belgium
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BZ"}Belize
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BJ"}Benin
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BM"}Bermuda
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BT"}Bhutan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BO"}Bolivia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BL"}Bonaire
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BA"}Bosnia Herzegovina
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BW"}Botswana
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BR"}Brazil
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BC"}British Indian Ocean Ter
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BN"}Brunei
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BG"}Bulgaria
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BF"}Burkina Faso
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"BI"}Burundi
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"KH"}Cambodia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CM"}Cameroon
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CA"}Canada
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"IC"}Canary Islands
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CV"}Cape Verde
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"KY"}Cayman Islands
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CF"}Central African Republic
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TD"}Chad
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CD"}Channel Islands
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CL"}Chile
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CN"}China
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CI"}Christmas Island
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CS"}Cocos Island
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CO"}Colombia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CC"}Comoros
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CG"}Congo
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CK"}Cook Islands
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CR"}Costa Rica
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CT"}Cote D'Ivoire
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"HR"}Croatia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CU"}Cuba
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CB"}Curacao
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CY"}Cyprus
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CZ"}Czech Republic
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"DK"}Denmark
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"DJ"}Djibouti
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"DM"}Dominica
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"DO"}Dominican Republic
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TM"}East Timor
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"EC"}Ecuador
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"EG"}Egypt
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SV"}El Salvador
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GQ"}Equatorial Guinea
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ER"}Eritrea
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"EE"}Estonia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ET"}Ethiopia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"FA"}Falkland Islands
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"FO"}Faroe Islands
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"FJ"}Fiji
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"FI"}Finland
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"FR"}France
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GF"}French Guiana
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PF"}French Polynesia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"FS"}French Southern Ter
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GA"}Gabon
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GM"}Gambia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GE"}Georgia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"DE"}Germany
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GH"}Ghana
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GI"}Gibraltar
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GB"}Great Britain
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GR"}Greece
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GL"}Greenland
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GD"}Grenada
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GP"}Guadeloupe
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GU"}Guam
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GT"}Guatemala
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GN"}Guinea
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GY"}Guyana
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"HT"}Haiti
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"HW"}Hawaii
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"HN"}Honduras
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"HK"}Hong Kong
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"HU"}Hungary
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"IS"}Iceland
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"IN"}India
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ID"}Indonesia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"IA"}Iran
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"IQ"}Iraq
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"IR"}Ireland
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"IM"}Isle of Man
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"IL"}Israel
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"IT"}Italy
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"JM"}Jamaica
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"JP"}Japan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"JO"}Jordan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"KZ"}Kazakhstan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"KE"}Kenya
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"KI"}Kiribati
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NK"}Korea North
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"KS"}Korea South
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"KW"}Kuwait
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"KG"}Kyrgyzstan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LA"}Laos
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LV"}Latvia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LB"}Lebanon
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LS"}Lesotho
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LR"}Liberia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LY"}Libya
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LI"}Liechtenstein
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LT"}Lithuania
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LU"}Luxembourg
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MO"}Macau
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MK"}Macedonia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MG"}Madagascar
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MY"}Malaysia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MW"}Malawi
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MV"}Maldives
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ML"}Mali
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MT"}Malta
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MH"}Marshall Islands
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MQ"}Martinique
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MR"}Mauritania
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MU"}Mauritius
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ME"}Mayotte
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MX"}Mexico
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MI"}Midway Islands
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MD"}Moldova
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MC"}Monaco
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MN"}Mongolia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MS"}Montserrat
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MA"}Morocco
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MZ"}Mozambique
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MM"}Myanmar
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NA"}Nambia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NU"}Nauru
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NP"}Nepal
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AN"}Netherland Antilles
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NL"}Netherlands (Holland, Europe)
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NV"}Nevis
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NC"}New Caledonia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NZ"}New Zealand
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NI"}Nicaragua
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NE"}Niger
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NG"}Nigeria
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NW"}Niue
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NF"}Norfolk Island
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NO"}Norway
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"OM"}Oman
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PK"}Pakistan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PW"}Palau Island
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PS"}Palestine
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PA"}Panama
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PG"}Papua New Guinea
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PY"}Paraguay
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PE"}Peru
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PH"}Philippines
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PO"}Pitcairn Island
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PL"}Poland
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PT"}Portugal
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PR"}Puerto Rico
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"QA"}Qatar
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ME"}Republic of Montenegro
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"RS"}Republic of Serbia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"RE"}Reunion
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"RO"}Romania
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"RU"}Russia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"RW"}Rwanda
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"NT"}St Barthelemy
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"EU"}St Eustatius
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"HE"}St Helena
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"KN"}St Kitts-Nevis
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LC"}St Lucia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"MB"}St Maarten
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"PM"}St Pierre Miquelon
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"VC"}St Vincent Grenadines
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SP"}Saipan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SO"}Samoa
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AS"}Samoa American
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SM"}San Marino
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ST"}Sao Tome Principe
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SA"}Saudi Arabia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SN"}Senegal
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"RS"}Serbia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SC"}Seychelles
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SL"}Sierra Leone
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SG"}Singapore
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SK"}Slovakia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SI"}Slovenia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SB"}Solomon Islands
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"OI"}Somalia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ZA"}South Africa
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ES"}Spain
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"LK"}Sri Lanka
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SD"}Sudan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SR"}Suriname
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SZ"}Swaziland
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SE"}Sweden
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"CH"}Switzerland
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"SY"}Syria
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TA"}Tahiti
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TW"}Taiwan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TJ"}Tajikistan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TZ"}Tanzania
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TH"}Thailand
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TG"}Togo
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TK"}Tokelau
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TO"}Tonga
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TT"}Trinidad Tobago
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TN"}Tunisia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TR"}Turkey
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TU"}Turkmenistan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TC"}Turks Caicos Is
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"TV"}Tuvalu
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"UG"}Uganda
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"UA"}Ukraine
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"AE"}United Arab Emirates
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"GB"}United Kingdom
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"US"}United States of America
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"UY"}Uruguay
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"UZ"}Uzbekistan
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"VU"}Vanuatu
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"VS"}Vatican City State
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"VE"}Venezuela
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"VN"}Vietnam
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"VB"}Virgin Islands (Brit)
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"VA"}Virgin Islands (USA)
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"WK"}Wake Island
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"WF"}Wallis Futana Is
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"YE"}Yemen
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ZR"}Zaire
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ZM"}Zambia
-  -#       %li.countryLi{onClick:"selectGeo(this)"}
-  -#         %a{value:"ZW"}Zimbabwe
-  -# .form-group
-  -#   %label{id: "inputlabel5"} State
-  -#   %input.form-control{ placeholder: "State", type: "tel", onclick: "alertReset()" }/
-  -# .form-group
-  -#   %label{id: "inputlabel6"} City
-  -#   %input.form-control{ placeholder: "City", type: "tel", onclick: "alertReset()" }/
-  -# .form-group
-  -#   %label{:for => "exampleTextarea", id: "inputlabel8" } Message
-  -#   %textarea.form-control{ rows: "3", id:"TextMessa", onclick: "alertReset()"}

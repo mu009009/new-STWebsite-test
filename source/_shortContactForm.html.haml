@@ -1,0 +1,185 @@
+%form.contactForm{id:'shortcontactFormGroup'}
+  .form-group
+    %label{id: "inputlabel0"} First Name
+    %input.form-control{ placeholder: "First Name", onclick: "alertReset()", id: "contactFirst"}/
+  .form-group
+    %label{id: "inputlabel1"} Last Name
+    %input.form-control{ placeholder: "Last Name", onclick: "alertReset()", id: "contactLast" }/
+  .form-group
+    %label{id: "inputlabel2"} Email Address
+    %input.form-control{"aria-describedby" => "emailHelp", placeholder: "Email Address", type: "email", id:"emailInput", onclick: "alertReset()" }/
+  .form-group
+    .input-group
+      %input{type: "checkbox", onclick: "alertReset()", id: "democheck", style: "float: left; margin-top: 6px"}
+      %label.input-group-addon{id: "inputlabel3", style: "float: left; background-color: transparent; border: none;" } I would like to request the demo
+  %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()"} Sign Up Now
+
+:javascript
+  function SubmittoChannel(){
+    var values = [];
+    $('input').each(function(k) {
+      if(k<3)
+      {
+        values.push($(this).val());
+        if($(this).val()=="")
+        {
+          alertTarget(this,k);
+          if(k==2)
+          {
+            $('#inputlabel'+k).text('Please fill this part');
+          }
+        }
+      }
+      else if(k==3){
+        console.log('checkbox value')
+        if($(this).is(':checked'))
+        {
+          values.push('I would like request the demo.');
+        }
+        else{
+          values.push('');
+        }
+      }
+      });
+
+      if((values[2]=='')||(values[1]=='')||(values[0]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
+      {
+        //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
+      }
+      else{
+      if(emailCheck(values[2]))
+      {
+        //bootbox.alert('Your information has succeeded uploaded, our staff members will contact with you soon.')
+        postUserFeedback(values[2],values[1],values[0], values[3]);
+        alertSuccess();
+        }
+        else
+        {
+          alertTarget('#emailInput',2);
+          $('#inputlabel2').text('Sorry, please check your email');
+        //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
+        }
+
+      }
+  }
+
+  var kFeedbackWebHook = 'https://hooks.slack.com/services/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';
+  function postToFeedbackChannel(json) {
+    var string = JSON.stringify(json);
+    var jxh = $.post( kFeedbackWebHook, string );
+    return jxh;
+  }
+
+  String.prototype.format = function() {
+    var i = 0, newStr = this;
+    while (/%s/.test(newStr))
+      newStr = newStr.replace("%s", arguments[i++]);
+    return newStr;
+    }
+
+  function alertSuccess() {
+
+    $('input').each(function(k) {
+      if($(this).val()!="")
+      {
+        $('#inputlabel'+k).css('color','#00a1ae');
+        $('#inputlabel'+k).text('Success Submit! Thank You!');
+      }
+    })
+    if($('#TextMessa').val()!="")
+    {
+      $('#inputlabel5').css('color','#00a1ae');
+      $('#inputlabel5').text('Success Submit! Thank You!');
+    }
+
+    document.getElementById('shortcontactFormGroup').reset();
+
+  }
+
+  function alertReset() {
+    $('input').each(function(k) {
+        $(this).css('border-color','#ccc');
+        $('#inputlabel'+k).css('color','#6a6a6a');
+    })
+    $('#inputlabel0').text('First Name');
+    $('#inputlabel1').text('Last Name');
+    $('#inputlabel2').text('Email Address');
+    $('#inputlabel3').text('I would like to request the demo');
+    $('#inputlabel4').text('Company Name');
+
+    $('#inputlabel5').css('color','#6a6a6a');
+    $('#inputlabel5').text('Message');
+  }
+
+  function alertTarget(target,k) {
+    $('#inputlabel'+k).css('color','red');
+    $('#inputlabel'+k).text('Please fill this part');
+    $(target).css('border-color','red');
+  }
+
+  function postUserFeedback( email, lastname, firstname, requestDemo) {
+    var url = window.location.href;
+    var fallback = "New feedback from <mailto:%s?subject=Stratifyd, Inc. Client Support|%s>".format(email,email);
+    var page = '<'+url+'>';
+    var json = {
+    attachments : [
+    {
+      fallback: fallback,
+      pretext: fallback,
+      color: "warning",
+      fields:[
+      {
+        title: 'LastName',
+        value: lastname,
+        short: false
+      },
+      {
+        title: 'FirstName',
+        value: firstname,
+        short: false
+      },
+      {
+        title: 'If request the demo',
+        value: requestDemo,
+        short: false
+      },
+      {
+        title: 'Browsing Page',
+        value: page,
+        short: false
+      }]
+    }]
+  }
+    return postToFeedbackChannel(json).fail(function() {
+    showAlertDialog('error', _L('Opps, something wrong.  Please try later.'));
+    }).always(function() {
+      window.location = '/thank-sign-up.html';
+    });
+  }
+
+  function emailCheck(emailAddr)
+  {
+    if((emailAddr == null) || (emailAddr.length < 2)) return false ;
+    var aPos = emailAddr.indexOf("@" ,1) ;
+    var lowerAddr = emailAddr.toLowerCase();
+    if(aPos < 0)
+    {
+      return false ;
+    }
+    if(emailAddr.indexOf("." ,aPos+2) < 0)
+    {
+      return false ;
+    }
+    /*var judgeifGmail = lowerAddr.indexOf("@gmail");
+    console.log(judgeifGmail);
+    if(judgeifGmail>0)
+    {
+      return false;
+    }
+    var judgeifQQ = lowerAddr.indexOf("@qq")
+    if(judgeifQQ>0)
+    {
+      return false;
+    }*/
+    return true ;
+  }

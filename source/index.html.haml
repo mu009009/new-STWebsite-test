@@ -7,15 +7,15 @@ title: Home
     .row
       .col-md-8
         %p.light
-          Stratifyd was founded in 2012 with two key objectives: create a data
-          analytics platform anyone can use; and make it powerful enough everyone
-          will want to use. Our founder, Derek Wang, Ph.D., brought an academic approach
-          to an existing challenge and assembled a team to develop a powerful yet simple
-          method of identifying and visualizing both structured and unstructured data.
-          By abandoning traditional models and processes and allowing augmented human
-          intelligence through our patented machine learning, Stratifyd has enabled our
-          customers to turn their unstructured and unused data into revenue opportunities.
-    %a.btn.btn-primary.m-t-2.button-primary-dark-bg{ href: "about-us.html", role: "button" } About Us
+          Stratifyd was founded in 2015 with two key objectives: create a data
+          analytics platform anyone can use; and make it powerful enough that
+          everyone will want to use it. Our founder, Derek Wang, Ph.D., brought
+          an academic approach to an existing challenge and assembled a team to
+          develop a powerful yet simple method of identifying and visualizing
+          both structured and unstructured data. By abandoning traditional models
+          and processes and allowing augmented human intelligence through our
+          patented machine learning, Stratifyd has enabled our customers to turn
+          their unstructured and unused data into revenue opportunities.
 
 .block
   .container
@@ -50,6 +50,7 @@ title: Home
             immediate and highly intuitive results allow users to transition from
             raw data to decision BEFORE it’s too late.
       %a.btn.btn-primary-dark.m-t-2{ href: "solutions.html", role: "button" } Learn About Our Solutions
+
 .block-blue-pad
   .container
     .row
@@ -66,16 +67,168 @@ title: Home
         %a.btn.btn-primary.m-t-1{ href: "product.html", role: "button" } Learn More
 
 .block
+  .text-xs-center
+    .header-sm.m-b-2 Case Studies
   .container
-    .text-xs-center.m-b-2
-      .header-sm Blog
-      %p.copy-lg.m-y-2 Read about insights driven by Signals.
-    .container-fluid
-      #medium-home-posts
+    .row
+      - @featured_cases = data.case_studies.select { |hash| hash[:featured] }
+      - @featured_cases.first(3).each do |study|
+        .col-md-4
+          %a.case_study_card{ href: "#{study.slug}.html" }
+            .card
+              .card_img_box
+                %img.card-img{ src: "assets/images/case_studies/headers/#{study.jumbo}" }/
+              .card-block
+                .card-subhead
+                  = study.focus
+                %h4.serif-md
+                  = study.header
+                -# .body-copy.card-text
+                -#   Some quick example text to build on the card title and make
+                -#   up the bulk of the card's content.
 
-    .text-xs-center
-      %a.btn.btn-primary-dark.m-t-2{ href: "blog.html", role: "button" } Read More Blog Posts
-
+  .text-xs-center
+    %a.btn.btn-primary-dark.m-t-2{ href: 'case-studies.html' }
+      Read More Case Studies
 .block-blue-pad
   .container
     = partial 'horizontalContactForm'
+
+-# .jumbotron-fluid#homeJumbo{style:'padding-bottom: 0px'}
+-#   .title-special-background
+-#   .background-light-trans
+-#     .container.text-xs-center
+-#       %h1.header.m-b-1 DATA TO REVENUE
+-#       .row
+-#         .col-md-12
+-#           %label The Fastest Path From Data to Revenue
+-#       %a.btn.btn-warning-yellow.m-t-2{ href: "product.html", role: "button" } Learn More
+-#       .index-title-image
+-#         %img{ src: "../assets/images/Laptop1-screen.png", class: 'title-sub-background'}
+-#
+-# .index-title-boxbar
+-#   .index-gradient-three-boxes
+-#     .col-xs-12.m-t-2
+-#       %h3.light Daily Live Demo
+-#       %p.light 4:00 pm EST
+-#       %a.btn.btn-primary{ href: "request-demo.html", role: "button"} Sign Up Now
+-#   .index-gradient-three-boxes
+-#     .col-xs-12.m-t-2
+-#       %h3.light Client Quote
+-#       %p.light Lenovo
+-#       %a.btn.btn-primary{ href: "case-studies.html", role: "button"} Case Studies
+-#   .index-gradient-three-boxes
+-#     .col-xs-12.m-t-2
+-#       %h3.light Weighing Options
+-#       %p.light{style:'opacity: 0;'} Know more about us
+-#       %a.btn.btn-primary{ href: "blog.html", role: "button"} Read More
+-#
+-# .block-blue-pad{style:'margin-top: -8px'}
+-#   .container
+-#     .text-xs-center
+-#       %h1.header-sm.light{style:'padding-bottom: 20px'} THE STRATIFYD EDGE
+-#       .row
+-#         .index-subinfo-box
+-#           .info-box-no-ani
+-#             %img{ alt: "Card image cap", src: "assets/images/icons/Revolutionary_Intelligence_white.png", class: "big-icon m-t-2" }
+-#             %h4.light.m-t-2 Revolutionary Intelligence
+-#             %p.light Some Describition
+-#           .info-box-no-ani
+-#             %img{ alt: "Card image cap", src: "assets/images/icons/Realized_Insights_White.png", class: "big-icon m-t-2" }
+-#             %h4.light.m-t-2 Realized Insights
+-#             %p.light Some Describition
+-#           .info-box-no-ani
+-#             %img{ alt: "Card image cap", src: "assets/images/icons/Radical_Collaboration_white.png", class: "big-icon m-t-2" }
+-#             %h4.light.m-t-2 Radical Collaboration
+-#             %p.light Some Describition
+-#
+-# .block.block-third-dark{style: 'background-image: url("assets/images/Combine-city-background-better.jpg"); background-position: top; background-size: cover;'}
+-#   .container
+-#     .text-xs-center
+-#       %h1.header-sm.light{style:'padding-bottom: 20px'} SOLUTIONS FOR EVERY STRATA
+-#       .row
+-#         .info-box-ani
+-#           .dobule-height-box
+-#             .half-height-box
+-#               %img{ alt: "Card image cap", src: "assets/images/icons/Hospitality_White.png", class: "square-icon m-t-2" }
+-#               %h4.light.m-t-2 Business Executive
+-#             .half-height-box
+-#               %p.light.m-t-2 There should be some text there
+-#               %a.blue{ href: "solutions.htm"} Learn More
+-#         .info-box-ani
+-#           .dobule-height-box
+-#             .half-height-box
+-#               %img{ alt: "Card image cap", src: "assets/images/icons/Customer_Experience_White.png", class: "square-icon m-t-2" }
+-#               %h4.light.m-t-2 Customer Experience
+-#             .half-height-box
+-#               %p.light.m-t-2 There should be some text there
+-#               %a.blue{ href: "solutions.html"} Learn More
+-#         .info-box-ani
+-#           .dobule-height-box
+-#             .half-height-box
+-#               %img{ alt: "Card image cap", src: "assets/images/icons/Executive_White.png", class: "square-icon m-t-2" }
+-#               %h4.light.m-t-2 HR
+-#             .half-height-box
+-#               %p.light.m-t-2 There should be some text there
+-#               %a.blue{ href: "solutions.html"} Learn More
+-#         .info-box-ani
+-#           .dobule-height-box
+-#             .half-height-box
+-#               %img{ alt: "Card image cap", src: "assets/images/icons/Product_development_White.png", class: "square-icon m-t-2" }
+-#               %h4.light.m-t-2 Product Development
+-#             .half-height-box
+-#               %p.light.m-t-2 There should be some text there
+-#               %a.blue{ href: "solutions.html"} Learn More
+-#         .info-box-ani
+-#           .dobule-height-box
+-#             .half-height-box
+-#               %img{ alt: "Card image cap", src: "assets/images/icons/Marketing_White.png", class: "square-icon m-t-2" }
+-#               %h4.light.m-t-2 Marketing
+-#             .half-height-box
+-#               %p.light.m-t-2 There should be some text there
+-#               %a.blue{ href: "solutions.html"} Learn More
+-#         .info-box-ani
+-#           .dobule-height-box
+-#             .half-height-box
+-#               %img{ alt: "Card image cap", src: "assets/images/icons/IT_White.png", class: "square-icon m-t-2" }
+-#               %h4.light.m-t-2 IT
+-#             .half-height-box
+-#               %p.light.m-t-2 There should be some text there
+-#               %a.blue{ href: "solutions.html"} Learn More
+-#
+-#       .row
+-#         .col-xs-12
+-#           %a.btn.btn-primary.m-t-2{ href: "solutions.html"} View All Solutions
+-# .block.block-green
+-#   .text-xs-center
+-#     %h1.header-sm.light.m-b-2 CASE STUDIES
+-#   .container
+-#     .row
+-#       - @featured_cases = data.case_studies.select { |hash| hash[:featured] }
+-#       - @featured_cases.first(3).each do |study|
+-#         .col-md-4
+-#           %a.case_study_card{ href: "#{study.slug}.html" }
+-#             .card{style:'background-color: transparent; border: none'}
+-#               .card_img_box
+-#                 %img.card-img{ src: "assets/images/case_studies/headers/#{study.jumbo}" }/
+-#               .card-block
+-#                 .card-subhead
+-#                   = study.focus
+-#                 %h4.serif-md.light
+-#                   = study.header
+-#                 -# .body-copy.card-text
+-#                 -#   Some quick example text to build on the card title and make
+-#                 -#   up the bulk of the card's content.
+-#   .text-xs-center
+-#     %a.btn.btn-primary.m-t-2{ href: 'case-studies.html' }
+-#       Read More Case Studies
+
+-# .block-blue-pad{style:'margin-top: -8px'}
+-#   .container
+-#     .text-xs-center
+-#       %h1.header-sm.light{style:'padding-bottom: 20px'} HOW CAN STRATIFYD HELP YOU?
+-#       .row
+-#         .col-xs-12.col-xs-offset-0.col-md-4.col-md-offset-2.text-xs-center
+-#           %a.btn.btn-primary.m-t-2{ href: 'request-demo.html' } Request Demo
+-#         .col-xs-12.col-xs-offset-0.col-md-4.text-xs-center
+-#           %a.btn.btn-primary.m-t-2{ href: 'contact-us.html' } Contact Us

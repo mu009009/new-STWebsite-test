@@ -4,10 +4,10 @@ title: Product
 .jumbotron-fluid#signalsJumbo
   .container.hidden-sm-down
     .row
-      .col-md-4.col-md-offset-8
+      .col-md-5.col-md-offset-7
         .text-xs-center
           .header.light.m-b-1
-            %span{ style: "border-bottom: 2px solid #00a1ae"} Signals
+            %span{ style: "border-bottom: 2px solid #00a1ae"} Stratifyd  Signals™
           .serif-sm.light Your AI-Powered Next-Gen Data Analytics platform.
 
 .block.hidden-md-up
@@ -147,10 +147,52 @@ title: Product
         .text-xs-center
           .header-sm.m-b-3 Product Specs
           .serif-md.blue.m-b-2 How It Works
-          %p
-            Signals is designed to augment human intelligence. Our deep-learning analytics engine unifies structured and textual data to deliver comprehensive, topical insights from raw data. Leaders across the organization can make more informed data driven decisions leveraging these analytical foundations.
-
+          %p Signals is designed to augment human intelligence. Our deep-learning analytics engine unifies structured and textual data to deliver comprehensive, topical insights from raw data. Leaders across the organization can make more informed data driven decisions leveraging these analytical foundations.
           %a.btn.btn-primary-dark.m-y-3{ href: "deeper-dive.html" } Dig Deeper
+
+-# .block-dark
+-#   .container
+-#     .text-xs-center
+-#       .header-sm The Next Generation of Data Analytics
+-#       .col-lg-6.col-lg-offset-0.col-md-8.col-md-offset-2.no-Padding
+-#         %img{ alt: "Card image cap", src: "assets/images/icons/ex.png", class: "circle-icon m-t-2" }
+-#         .serif-md.blue.m-y-1 Traditional Data Analytics
+-#         .card-form
+-#           .left-top
+-#             %p Need data scientists and business analysts
+-#         .card-form
+-#           .left-top
+-#             %p Hard to meet the need for speed
+-#         .card-form
+-#           .left-top
+-#             %p Hard to understanding the data
+-#         .card-form
+-#           .left-top
+-#             %p Hard to displaying meaningful result
+-#         .card-form
+-#           .left-bottom
+-#             %p Collaboration is hard or impossible
+-#       .col-lg-6.col-lg-offset-0.col-md-8.col-md-offset-2.no-Padding
+-#         %img{ alt: "Card image cap", src: "assets/images/icons/check.png", class: "circle-icon m-t-2" }
+-#         .serif-md.blue.m-y-1 Stratifyd Approach
+-#         .card-form
+-#           .right-top
+-#             %p Intuitive to use with 30 minutes traning
+-#         .card-form
+-#           .right-top
+-#             %p All-in-one data analytics platform that effectively extracts insights from any data
+-#         .card-form
+-#           .right-top
+-#             %p Deploys Machine learning to do the heavy lifting and visually facilitates you to depict analysis results
+-#         .card-form
+-#           .right-top
+-#             %p Domain-knowledge based dashboard turns your data into actionable insights, efficiently
+-#         .card-form
+-#           .right-bottom
+-#             %p Easily and securely share with your team members
+-#       .col-lg-12
+-#         %a.btn.btn-primary-dark.m-y-3{ href: "deeper-dive.html" } Dig Deeper
+        -# %a.btn.btn-primary-dark.m-t-2{ href: "solutions.html", role: "button" } Learn About Our Solutions
 
 
 .jumbotron-fluid.block#specsJumbo
@@ -190,20 +232,20 @@ title: Product
 -#           %p
 -#             A localized version of our platform enables enterprises to install and operate Signals on local servers and computing infrastructure in your internal data center. This means the data lives in your data center, and meets the security requirements you have in place. Our on-premise software is considered shrink wrap, which means the instance lives on your servers instead of the cloud. Many companies in banking and healthcare require local data storage, with HIPAA and internal compliance in place. Signals-in-a-box gives you all the power of our platform on your local environment.
 
-.block-dark
-  .container
-    .row
-      .col-md-5.col-md-offset-1
-        .header-sm.m-b-1 Take the Signals Challenge
-        %p Unstructured textual analytics is the largest contributor to cost, time and ambiguity in enterprise analytics investments.  See how quickly you can capture, load, process, visualize and navigate unstructured textual data by taking the Signals Challenge now.
-        %p
-          %b Coming Soon...
-        -# %button.btn.btn-primary-dark.m-y-2 Get Started
-      .col-md-6
-        .row
-          .col-md-6.col-md-offset-3.col-xs-10.col-xs-offset-1{ style: "width: 100%; margin-left: 15px"}
-            .text-xs-center
-              %img{ alt: "Card image cap", src: "assets/images/screenshots/ipad-mockup.png", class: "wide" }/
+-# .block-dark
+-#   .container
+-#     .row
+-#       .col-md-5.col-md-offset-1
+-#         .header-sm.m-b-1 Take the Signals Challenge
+-#         %p Unstructured textual analytics is the largest contributor to cost, time and ambiguity in enterprise analytics investments.  See how quickly you can capture, load, process, visualize and navigate unstructured textual data by taking the Signals Challenge now.
+-#         %p
+-#           %b Coming Soon...
+-#         -# %button.btn.btn-primary-dark.m-y-2 Get Started
+-#       .col-md-6
+-#         .row
+-#           .col-md-6.col-md-offset-3.col-xs-10.col-xs-offset-1{ style: "width: 100%; margin-left: 15px"}
+-#             .text-xs-center
+-#               %img{ alt: "Card image cap", src: "assets/images/screenshots/ipad-mockup.png", class: "wide" }/
 
 .block
   .text-xs-center
@@ -222,13 +264,24 @@ title: Product
                   = study.focus
                 %h4.serif-md
                   = study.header
-                .body-copy.card-text
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card's content.
+                -# .body-copy.card-text
+                -#   Some quick example text to build on the card title and make
+                -#   up the bulk of the card's content.
 
   .text-xs-center
     %a.btn.btn-primary-dark.m-t-2{ href: 'case-studies.html' }
       Read More Case Studies
+
+-# .block
+-#   .container
+-#     .text-xs-center.m-b-2
+-#       .header-sm Blog
+-#       %p.copy-lg.m-y-2 Read about insights driven by Signals.
+-#     .container-fluid
+-#       #medium-home-posts
+-#
+-#     .text-xs-center
+-#       %a.btn.btn-primary-dark.m-t-2{ href: "blog.html", role: "button" } Read More Blog Posts
 
 -# .block-blue#contact
 -#   .container

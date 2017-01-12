@@ -1,6 +1,6 @@
 .btn
   border-radius: 0px
-  font-family: $averia
+  font-family: $yantra
   padding: 10px 50px
 
 .btn-primary, .btn-primary-dark, .btn-primary-blue, .btn-primary-dark-sm
@@ -17,6 +17,41 @@
   color: $pri-black
 
 .btn-primary-blue
+  color: $pri-blue
+
+.btn-fill-blue
+  background-color: $pri-blue
+  color: $util-white
+  &:hover
+    background-color: $util-white
+    color: $pri-blue
+
+.btn-warning-yellow
+  background-color: $pri-yellow
+  color: $pri-black
+  &:hover
+    background-color: $util-white
+    color: $pri-black
+
+.half-button
+  width: 40%
+  text-align: center
+  padding: 10px 5px
+
+.btn-secondary, .btn-secondary-dark, .btn-secondary-blue, .btn-secondary-dark-sm
+  background-color: $util-clear
+  border: 2px solid $light-grey
+  color: $sec-white
+  &:hover
+    background-color: $light-grey
+    border: 2px solid $light-grey
+    color: $pri-black
+    text-decoration: none
+
+.btn-secondary-dark
+  color: $pri-black
+
+.btn-secondary-blue
   color: $pri-blue
 
 .nav-btn
@@ -45,7 +80,7 @@
   border-right: 2px solid transparent
   border-left: 2px solid transparent
   border-bottom: 2px solid $pri-yellow
-  font-family: $averia
+  font-family: $yantra
   padding: 10px 0
   &:hover
     text-decoration: none

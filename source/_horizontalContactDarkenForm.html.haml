@@ -2,7 +2,9 @@
   %form.contactForm{id:'horizontalGroup'}
     .header-sm.m-y-1 See How Signals Can Tell Your Data Story
     .serif-md.m-y-1 Fill out the form to get one-on-one demo.
-    -# .main_element_card
+    .main_element_card
+      <script src="https://www.linkedin.com/autofill/js/autofill.js" type="text/javascript" async></script>
+      <script type="IN/Form2" data-form="horizontalGroup" data-field-firstname="linkFirst" data-field-lastname="linkLast" data-field-phone="linkphone" data-field-email="emailInput" data-field-company="linkCompany"></script>
     -#   <script src="https://www.linkedin.com/autofill/js/autofill.js" type="text/javascript" async></script>
     -#   <script type="IN/Form2" data-form="horizontalGroup" data-field-firstname="linkFirst" data-field-lastname="linkLast" data-field-phone="linkphone" data-field-email="emailInput" data-field-company="linkCompany"></script>
       -# %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Auto Fill With Linkedin
@@ -29,18 +31,64 @@
     .sub_element_card
       .input-group
         %label.input-group-addon{id: "inputlabel5", onclick: "alertReset()"} Let's Meet:
-        %input.form-control{ type:"date", onclick: "alertReset()"}/
+        %input.form-control{ type:"date", onclick: "alertReset()", id:"sandbox-container"}/
     .main_element_card
       %button.btn.btn-primary-dark.wide{type: "button", onclick: "SubmittoChannel()" } Request Demo
 
 :javascript
+  var datefield=document.createElement("input")
+  datefield.setAttribute("type", "date")
+  if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+        document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
+        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n')
+  }
+
+  var JudgeDateType = datefield.type;
+
+  if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
+      jQuery(function($){ //on document.ready
+          $('#sandbox-container').datepicker();
+      })
+  }
+
+  var Tomorrow = GetTomorrow(JudgeDateType);
+
+  console.log(Tomorrow);
+  $('#sandbox-container').val(Tomorrow);
+
+  function GetTomorrow(JudgeDateType){
+    var CurrentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+    var day = CurrentDate.getDate().toString();
+    if(day.length<2)
+    {
+      day = '0' + day;
+    }
+    var month = (CurrentDate.getMonth() + 1).toString();
+    if(month.length<2)
+    {
+      month = '0' + month;
+    }
+    var year = CurrentDate.getFullYear().toString();
+    var Tomorrow = null;
+    if(JudgeDateType!="date")
+    {
+      Tomorrow = month + '/' + day + '/' + year;
+    }
+    else {
+      Tomorrow = year+ '-' + month + '-' + day;
+    }
+
+    return Tomorrow
+  }
+
   function SubmittoChannel(){
     var values = [];
     $('input').each(function(k) {
       console.log(this);
       console.log($(this).val());
       values.push($(this).val());
-      if(k<6)
+      if((k<6)&&(k!=3))
       {
         if($(this).val()=="")
         {
@@ -56,7 +104,7 @@
       var textAreaText = $('#TextMessa').val();
       values.push(textAreaText);
 
-      if((values[2]=='')||(values[1]=='')||(values[0]=='')||(values[3]=='')||(values[4]=='')||(values[5]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
+      if((values[2]=='')||(values[1]=='')||(values[0]=='')||(values[4]=='')||(values[5]==''))//values[2]is the email, values[1] is the lastname, values[0] is the firstname, values[3] is the phone number, values[4] is the company name, you can also find the order in the function postUserFeedback, and you could change this based on how you pase the data.
       {
         //bootbox.alert('Your full name and valid company email address is required, you may not sign up with your gmail.');
       }

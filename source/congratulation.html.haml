@@ -5,14 +5,80 @@ title: Congratulation
   .text-xs-center
     .header.light
 
-.block
-  .container
-    .row
-      .col-xs-12
-        .serif-lg.blue.m-b-1.text-xs-center Thank you for requesting the White Paper!
-        -# .form-group.white-allign{style:'display:inline-block'}
-        -#   %img{src: "/assets/images/white_paper_cover.jpg", class:"whiteBookCover_Congratulate"}
+-# .block
+-#   .container
+-#     .row
+-#       .col-xs-12
+-#         .serif-lg.blue.m-b-1.text-xs-center Thank you for requesting the White Paper!
+-#         -# .form-group.white-allign{style:'display:inline-block'}
+-#         -#   %img{src: "/assets/images/white_paper_cover.jpg", class:"whiteBookCover_Congratulate"}
 
-.block-blue-pad
+.block{style:"padding-top: 0px;"}
   .container
-    = partial 'horizontalContactForm'
+    = partial 'horizontalContactDarkenForm'
+
+:javascript
+  AutoFillWithURL();
+
+  function AutoFillWithURL(){
+    var currentURL = window.location.href.toString();
+    console.log(currentURL);
+    currentURL = decodeURI(currentURL);
+    var urlLength = currentURL.length;
+    var FirIN = currentURL.indexOf("#FN=");
+    var LastIN = currentURL.indexOf("&LN=");
+    var PhoneIN = currentURL.indexOf("&PhN=");
+    var CompanyIN = currentURL.indexOf("&CN=");
+    var EmailIN = currentURL.indexOf("&EM=");
+
+    var FirstName = currentURL.substring(FirIN,LastIN);
+    var LastName = currentURL.substring(LastIN,PhoneIN);
+    var PhoneNM = currentURL.substring(PhoneIN,CompanyIN);
+    var CompanyName = currentURL.substring(CompanyIN,EmailIN);
+    var EmailAd = currentURL.substring(EmailIN,urlLength);
+
+    FirstName = FirstName.slice(4);
+    LastName = LastName.slice(4);
+    PhoneNM = PhoneNM.slice(5);
+    CompanyName = CompanyName.slice(4);
+    EmailAd = EmailAd.slice(4);
+
+    if(checkStr(FirstName))
+    {
+      $('#linkFirst').val(FirstName);
+    }
+    if(checkStr(LastName))
+    {
+      $('#linkLast').val(LastName);
+    }
+    if(checkStr(PhoneNM))
+    {
+      $('#linkphone').val(PhoneNM);
+    }
+    if(checkStr(CompanyName))
+    {
+      $('#linkCompany').val(CompanyName);
+    }
+    if(checkStr(EmailAd))
+    {
+      $('#emailInput').val(EmailAd);
+    }
+
+    console.log(FirstName);
+    console.log(LastName);
+    console.log(PhoneNM);
+    console.log(CompanyName);
+    console.log(EmailAd);
+    console.log($('linkFirst').val())
+  }
+
+  function checkStr(str)
+  {
+    if(str.length>0)
+    {
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
