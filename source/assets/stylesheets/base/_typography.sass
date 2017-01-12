@@ -2,9 +2,9 @@
 
 
 // font variables
-$yantra: 'Yantramanav', serif
-$averia: 'Averia Serif Libre', serif
-$archivo: 'Archivo Narrow', serif
+$yantra: 'Open Sans', sans-serif
+$averia: 'Gotham A','Gotham B'
+$archivo: 'Gotham A', 'Gotham B'
 
 // weight variables
 $light: 300
@@ -40,9 +40,9 @@ body
   padding-left: 0
 
 // header styles
-.header-xl, .header, .header-sm, .header-xs
+.header-xl, .header, .header-sm, .header-xs, .header-truly-xs
   font-family: $archivo
-  font-weight: $reg
+  font-weight: $bold
   color: $pri-black
 
 .header-xl
@@ -56,12 +56,37 @@ body
     font-size: 45px
     line-height: 50px
 
+.error404
+  font-size: 180px
+  @media screen and (max-width: $break-med)
+    font-size: 120px
+
+.errorMT
+  margin-top: 10vh
+  @media screen and (max-width: $break-lg)
+    margin-top: 5vh
+  @media screen and (max-width: $break-sm)
+    margin-top: 0
+
 .header-sm
   font-size: 48px
   line-height: 58px
+  @media screen and (max-width: $break-lg)
+    font-size: 40px
+    line-height: 50px
   @media screen and (max-width: $break-med)
     font-size: 35px
     line-height: 45px
+
+.header-truly-xs
+  font-size: 38px
+  line-height: 48px
+  @media screen and (max-width: $break-lg)
+    font-size: 30px
+    line-height: 40px
+  @media screen and (max-width: $break-med)
+    font-size: 25px
+    line-height: 35px
 
 .header-xs
   font-size: 30px
@@ -70,7 +95,7 @@ body
 // serif styles
 .serif-lg, .serif-md, .serif-sm
   font-family: $averia
-  font-weight: $bold
+  font-weight: $reg
   color: $pri-black
 
 .serif-sm
@@ -115,6 +140,9 @@ body
 
 .blue
   color: $pri-blue
+
+.weight-light
+  font-weight: $light
 
 .white-allign
   text-align: left

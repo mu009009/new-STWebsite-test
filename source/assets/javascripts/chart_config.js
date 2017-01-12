@@ -4,23 +4,23 @@ export const dataConfig = {
       datasets: [
       {
 
-          label: 'Signals',
+          label: 'Stratifyd Signals',
           fontSize: 20,
           fontWeight: 'bold',
           data: [
               {
                   x: 1,
-                  y: 0,
+                  y: 3,
                   r: 7
               },
               {
                   x: 2,
-                  y: 0,
+                  y: 3,
                   r: 7
               },
               {
                   x: 3,
-                  y: 0,
+                  y: 3,
                   r: 7
               }
           ],
@@ -32,12 +32,12 @@ export const dataConfig = {
           data: [
               {
                   x: 1,
-                  y: 1,
+                  y: 2,
                   r: 7
               },
               {
                   x: 2,
-                  y: 1,
+                  y: 2,
                   r: 7
               }
           ],
@@ -49,7 +49,7 @@ export const dataConfig = {
           data: [
               {
                   x: 1,
-                  y: 2,
+                  y: 1,
                   r: 7
               }
           ],
@@ -61,7 +61,7 @@ export const dataConfig = {
           data: [
               {
                   x: 1,
-                  y: 3,
+                  y: 0,
                   r: 7
               }
           ],
@@ -85,10 +85,10 @@ export const dataConfig = {
                 padding: 30,
                 stepSize: 1,
                 callback: function(value) {
-                  if (value == 0) {return "Signals";}
-                  if (value == 1) {return ["Other", "Data Aggregators"];}
-                  if (value == 2) {return "Sysomos";}
-                  if (value == 3) {return "Radian6";}
+                  if (value == 3) {return "Stratifyd Signals";}
+                  if (value == 2) {return ["Other", "Data Aggregators"];}
+                  if (value == 1) {return "Sysomos";}
+                  if (value == 0) {return "Radian6";}
                 }
               }
             }],
@@ -119,21 +119,21 @@ export const analyticsConfig = {
       datasets: [
       {
 
-          label: 'Signals',
+          label: 'Stratifyd Signals',
           data: [
               {
                   x: 1,
-                  y: 0,
+                  y: 6,
                   r: 7
               },
               {
                   x: 2,
-                  y: 0,
+                  y: 6,
                   r: 7
               },
               {
                   x: 3,
-                  y: 0,
+                  y: 6,
                   r: 7
               }
           ],
@@ -145,12 +145,12 @@ export const analyticsConfig = {
           data: [
               {
                   x: 1,
-                  y: 1,
+                  y: 5,
                   r: 7
               },
               {
                   x: 2,
-                  y: 1,
+                  y: 5,
                   r: 7
               }
           ],
@@ -162,11 +162,11 @@ export const analyticsConfig = {
           data: [
               {
                   x: 1,
-                  y: 2,
+                  y: 4,
                   r: 7
               }, {
                   x: 2,
-                  y: 2,
+                  y: 4,
                   r: 7
               }
           ],
@@ -193,7 +193,7 @@ export const analyticsConfig = {
           data: [
               {
                   x: 1,
-                  y: 4,
+                  y: 2,
                   r: 7
               }
           ],
@@ -204,7 +204,7 @@ export const analyticsConfig = {
           data: [
               {
                   x: 1,
-                  y: 5,
+                  y: 1,
                   r: 7
               }
           ],
@@ -215,7 +215,7 @@ export const analyticsConfig = {
           data: [
               {
                   x: 1,
-                  y: 6,
+                  y: 0,
                   r: 7
               }
           ],
@@ -239,13 +239,13 @@ export const analyticsConfig = {
                 padding: 30,
                 stepSize: 1,
                 callback: function(value) {
-                  if (value == 0) {return "Signals";}
-                  if (value == 1) {return "SAS";}
-                  if (value == 2) {return "Rapidminer";}
+                  if (value == 6) {return "Stratifyd Signals";}
+                  if (value == 5) {return "SAS";}
+                  if (value == 4) {return "Rapidminer";}
                   if (value == 3) {return "KNIME";}
-                  if (value == 4) {return "Lexalytics";}
-                  if (value == 5) {return "Alchemy API";}
-                  if (value == 6) {return "Clarabridge";}
+                  if (value == 2) {return "Lexalytics";}
+                  if (value == 1) {return "Alchemy API";}
+                  if (value == 0) {return "Clarabridge";}
                 }
               }
             }],
@@ -276,31 +276,31 @@ export const visualizationConfig = {
       datasets: [
       {
 
-          label: 'Signals',
+          label: 'Stratifyd Signals',
           data: [
               {
                   x: 1,
-                  y: 0,
+                  y: 5,
                   r: 7
               },
               {
                   x: 2,
-                  y: 0,
+                  y: 5,
                   r: 7
               },
               {
                   x: 3,
-                  y: 0,
+                  y: 5,
                   r: 7
               },
               {
                   x: 4,
-                  y: 0,
+                  y: 5,
                   r: 7
               },
               {
                   x: 5,
-                  y: 0,
+                  y: 5,
                   r: 7
               },
           ],
@@ -312,12 +312,12 @@ export const visualizationConfig = {
           data: [
               {
                   x: 1,
-                  y: 1,
+                  y: 4,
                   r: 7
               },
               {
                   x: 2,
-                  y: 1,
+                  y: 4,
                   r: 7
               }
           ],
@@ -329,12 +329,12 @@ export const visualizationConfig = {
           data: [
               {
                   x: 1,
-                  y: 2,
+                  y: 3,
                   r: 7
               },
               {
                   x: 2,
-                  y: 2,
+                  y: 3,
                   r: 7
               }
           ],
@@ -346,12 +346,12 @@ export const visualizationConfig = {
           data: [
               {
                   x: 1,
-                  y: 3,
+                  y: 2,
                   r: 7
               },
               {
                   x: 2,
-                  y: 3,
+                  y: 2,
                   r: 7
               }
           ],
@@ -363,7 +363,7 @@ export const visualizationConfig = {
           data: [
               {
                   x: 1,
-                  y: 4,
+                  y: 1,
                   r: 7
               }
           ],
@@ -375,7 +375,7 @@ export const visualizationConfig = {
           data: [
               {
                   x: 1,
-                  y: 5,
+                  y: 0,
                   r: 7
               }
           ],
@@ -399,14 +399,14 @@ export const visualizationConfig = {
                 padding: 30,
                 stepSize: 1,
                 callback: function(value) {
-                  if (value == 0) {
-                    return "Signals";
+                  if (value == 5) {
+                    return "Stratifyd Signals";
                   }
-                  if (value == 1) {return "DOMO";}
-                  if (value == 2) {return "Power BI";}
-                  if (value == 3) {return "BIME";}
-                  if (value == 4) {return "Tableau";}
-                  if (value == 5) {return "QlikView";}
+                  if (value == 4) {return "DOMO";}
+                  if (value == 3) {return "Power BI";}
+                  if (value == 2) {return "BIME";}
+                  if (value == 1) {return "Tableau";}
+                  if (value == 0) {return "QlikView";}
                 }
               }
             }],

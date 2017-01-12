@@ -27,7 +27,7 @@
     %meta{:content => "#ffffff", :name => "msapplication-TileColor"}/
     %meta{:content => "#ffffff", :name => "theme-color"}/
     %link{:href=> "https://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet"}
-    %link{:rel=>'stylesheet', :type=>"text/css", :href=>"https://cloud.typography.com/6205756/6815372/css/fonts.css"}    
+    %link{:rel=>'stylesheet', :type=>"text/css", :href=>"https://cloud.typography.com/6205756/6815372/css/fonts.css"}        
     %script{src:"http://code.jquery.com/jquery-1.9.1.js"}
     %script{src:"http://code.jquery.com/ui/1.10.2/jquery-ui.js"}
     %script{src: "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"}
@@ -48,8 +48,7 @@
       j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-P4LXLN');
 
-  %body#fouc{class: page_classes}
-    = partial "layouts/navbar"
+  %body#fouc{class: page_classes, style: 'padding-top: 0px'}
     = yield
     = partial "layouts/footer"
 

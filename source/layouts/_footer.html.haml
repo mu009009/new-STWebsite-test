@@ -1,5 +1,7 @@
 / Footer
+-# %footer.block{style: "padding-top: 0px; padding-bottom: 0px;"}
 %footer.block
+  -# .background-trans{style: "padding-top: 70px; padding-bottom: 70px;"}
   .container
     .row
       .col-lg-2.col-sm-3.col-xs-6.text-xs-center.text-sm-left
@@ -13,13 +15,11 @@
             %a.footerlink{:href => "https://signals.stratifyd.com/login.html#sign-in", target: "_blank"} Log In
           %li
             %a.footerlink{:href => "try-signals.html"} Try Signals
-
       .col-lg-2.col-sm-3.col-xs-6.text-xs-center.text-sm-left
         .copy-bold.light.m-b-1 Solutions
         %ul
           %li
             %a.footerlink{:href => "solutions.html"} Overview
-
       %br.hidden-xs-up
       .col-lg-2.col-sm-3.col-xs-6.text-xs-center.text-sm-left
         .copy-bold.light.m-b-1 About Us
@@ -30,7 +30,6 @@
             %a.footerlink{:href => "about-us.html"} About Us
           %li
             %a.footerlink{:href => "blog.html"} Blog
-
       .col-lg-2.col-sm-3.col-xs-6.text-xs-center.text-sm-left
         .copy-bold.light.m-b-1 Support
         %ul
@@ -40,14 +39,9 @@
             %a.footerlink{:href => "join-us.html"} Job Openings
           %li
             %a.footerlink{:href => "#", :onclick=> "JumptoHelp()"} Help Center
-
       .col-md-4.copy-bold.light.hidden-md-down
         %a.twitter-timeline{"data-height" => "300", "data-width" => "600", "data-link-color" => "#00a1ae", "data-theme" => "dark", "data-chrome" => "transparent nofooter noborders noscrollbar", :href => "https://twitter.com/StratifydTweets"} Tweets by StratifydTweets
         %script{:async => "", :charset => "utf-8", :src => "//platform.twitter.com/widgets.js"}
-
-
-
-
     .row.m-t-3
       .col-md-6.col-sm-6.col-xs-12.m-t-2.text-xs-center.text-sm-left
         .copyright Copyright ©	2015 — 2016 Stratifyd, Inc.
@@ -60,6 +54,7 @@
           %i.fa.fa-linkedin-square{"aria-hidden" => "true"}
         %a{ target: "_blank", href: "https://www.youtube.com/channel/UCAkngNoMwJDNjEPzX3lIBsw"}
           %i.fa.fa-youtube-play{"aria-hidden" => "true"}
+
 -# %div
 -#   %a{href:"javascript:void(0);", id:"siteSealFauxBadge", style:"text-decoration: none; font-family: Arial, Verdana, Helvetica;"}
 -#     %div{align:"center", alt:"Click to Verify", title:"Click to Verify", style:"border-width: 0px; background-image: url(&quot;https://tracedseals.starfieldtech.com/siteseal/images/siteseal_base_lite.gif&quot;); background-repeat: no-repeat; cursor: pointer; width: 132px; height: 31px;"}

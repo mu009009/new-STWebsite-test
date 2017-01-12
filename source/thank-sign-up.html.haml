@@ -1,0 +1,30 @@
+---
+title: Thank You Sign Up
+---
+
+.jumbotron-fluid#signUpJumbo
+  .text-xs-center
+    .header-sm.light Thanks for signing up for this webinar
+    .serif-sm.light.weight-light{style: "margin-top: 15px"} THURSDAY, DECEMBER 22TH
+
+.block
+  .container
+    .text-xs-center.m-b-3
+      .serif-lg More with your data analytics
+      .sub-serif-sm.weight-light{style: "margin-top: 15px"} checkout the other resource we have for you.
+
+    .row
+      .col-md-4.col-md-offset-0.col-xs-10.col-xs-offset-1.social-media.main-margin-top
+        .social-media-icon-box.background-orange#user_case_Icon{ onClick: "boxOnclick('case-studies.html')"}
+        %a.btn.btn-secondary-blue.sub-margin-top{ href: "case-studies.html"} User Cases
+      .col-md-4.col-md-offset-0.col-xs-10.col-xs-offset-1.social-media.main-margin-top
+        .social-media-icon-box.background-purple#blog_Icon{ onClick: "boxOnclick('blog.html')"}
+        %a.btn.btn-secondary-blue.sub-margin-top{ href: "blog.html"} Blog
+      .col-md-4.col-md-offset-0.col-xs-10.col-xs-offset-1.social-media.main-margin-top
+        .social-media-icon-box.background-blue#resource_Icon{ onClick: "boxOnclick('http://help.stratifyd.com/support/home')"}
+        %a.btn.btn-secondary-blue.sub-margin-top{ href: "http://help.stratifyd.com/support/home"}  Help Center
+
+:javascript
+  function boxOnclick(targetPage){
+    window.location.href = targetPage;
+  }
