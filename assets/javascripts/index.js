@@ -8,3 +8,4 @@ require('./onload.js');
 require('./buttons.js');
 require('./countup.js');
 require('./forms.js');
+require('./tooltip.js');

@@ -1,697 +1,131 @@
-@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow|Averia+Serif+Libre:700|Yantramanav:300,700");
-body {
-  font-family: "Yantramanav", serif;
-  font-weight: 300;
-  color: #6a6a6a;
-  font-size: 17px;
-  line-height: 26px;
-  letter-spacing: 0.3px; }
-  @media screen and (max-width: 767px) {
-    body {
-      font-size: 15px;
-      line-height: 24px; } }
-
-.circle {
-  border-radius: 50%;
-  border: 2px solid #b0b1b3;
-  padding-top: 14px;
-  height: 60px;
-  width: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.address-list {
-  list-style: none;
-  padding-left: 0; }
-
-.header-xl, .header, .header-sm, .header-xs {
-  font-family: "Archivo Narrow", serif;
-  font-weight: 400;
-  color: #383838; }
-
-.header-xl {
-  font-size: 80px;
-  line-height: 80px; }
-
-.header {
-  font-size: 57px;
-  line-height: 58px; }
-  @media screen and (max-width: 767px) {
-    .header {
-      font-size: 45px;
-      line-height: 50px; } }
-
-.header-sm {
-  font-size: 48px;
-  line-height: 58px; }
-  @media screen and (max-width: 767px) {
-    .header-sm {
-      font-size: 35px;
-      line-height: 45px; } }
-
-.header-xs {
-  font-size: 30px;
-  color: #b0b1b3; }
-
-.serif-lg, .serif-md, .serif-sm {
-  font-family: "Averia Serif Libre", serif;
-  font-weight: 700;
-  color: #383838; }
-
-.serif-sm {
-  font-size: 16px; }
-
-.serif-md {
-  font-size: 22px;
-  line-height: 30px; }
-  @media screen and (max-width: 767px) {
-    .serif-md {
-      font-size: 20px; } }
-
-.serif-lg {
-  font-size: 28px;
-  line-height: 34px; }
-
-.copy-sm {
-  font-size: 15px;
-  line-height: 28px; }
-
-.copy-bold {
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 0.64px; }
-
-.copy-lg {
-  font-size: 21px;
-  line-height: 30px; }
-  @media screen and (max-width: 767px) {
-    .copy-lg {
-      font-size: 19px; } }
-
-.tight {
-  line-height: 22px; }
-
-.light {
-  color: #f5f5f5; }
-
-.blue {
-  color: #00a1ae; }
-
-body {
-  padding-top: 75px; }
-  @media screen and (max-width: 767px) {
-    body {
-      padding-top: 60px; } }
-
-.block, .block-dark, .block-blue-pad, .data-block {
-  padding-top: 70px;
-  padding-bottom: 70px; }
-  @media screen and (max-width: 767px) {
-    .block, .block-dark, .block-blue-pad, .data-block {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
-
-.block-dark {
-  background-color: #f5f5f5; }
-
-.block-blue, .block-blue-pad {
-  background-color: #00a1ae; }
-
-.block-sm {
-  padding-top: 35px;
-  padding-bottom: 35px; }
-
-.data-block {
-  padding-bottom: 0; }
-
-.team-block {
-  margin-bottom: 40px; }
-
-.team {
-  min-height: 180px; }
-
-.location {
-  margin-bottom: 40px; }
-
-.spec {
-  margin-bottom: 40px; }
-
-.box {
-  border: 2px solid #ffffff; }
-
-.fill {
-  background-color: #ffffff;
-  height: 35px; }
-
-#dataSources {
-  display: none; }
-
-#analytics {
-  display: none; }
-
-.separator {
-  border-top: 1px solid #f5f5f5;
-  height: 1px;
-  margin-top: 15px; }
-
-footer {
-  background-image: url("../images/footer.jpg");
-  background-size: cover;
-  background-position: 0% 90%;
-  min-height: 500px; }
-  footer .footerlink {
-    color: #ffffff;
-    opacity: 0.8; }
-    footer .footerlink:hover {
-      opacity: 1;
-      text-decoration: none; }
-  footer a .fa {
-    font-size: 30px;
-    margin-left: 7px;
-    margin-right: 7px;
-    opacity: 0.6; }
-  footer a:hover {
-    opacity: 1;
-    text-decoration: none;
-    color: #ffffff; }
-  footer ul {
-    list-style-type: none;
-    padding-left: 0; }
-  footer .copyright {
-    opacity: 0.6;
-    color: #ffffff; }
-
-.navbar {
-  -webkit-box-shadow: 0px 10px 1px #b0b1b3;
-  -moz-box-shadow: 0px 10px 1px #b0b1b3;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 999;
-  background-color: #ffffff; }
-  .navbar .logo {
-    width: 120px;
-    margin-right: 20px; }
-  .navbar .navbar-nav .nav-item a:hover {
-    text-decoration: none; }
-  .navbar .navbar-nav .nav-item .nav-link {
-    color: #6a6a6a; }
-    .navbar .navbar-nav .nav-item .nav-link:hover {
-      color: #b0b1b3; }
-  @media screen and (max-width: 767px) {
-    .navbar .navbar-nav .nav-item {
-      float: none; } }
-  .navbar .navbar-nav .nav-item .login {
-    padding-bottom: 0;
-    border-bottom: 2px solid #f5CC1C; }
-  .navbar .navbar-nav .nav-item .loginbtn {
-    width: 130px; }
-  .navbar .navbar-nav .active .nav-link {
-    border-bottom: 2px solid #00a1ae;
-    padding-bottom: 0; }
-    @media screen and (max-width: 767px) {
-      .navbar .navbar-nav .active .nav-link {
-        width: 60px; } }
-  @media screen and (max-width: 767px) {
-    .navbar .navbar-nav .nav-item + .nav-item {
-      margin-left: 0; } }
-
-.card_img_box {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 270px;
-  overflow-x: hidden;
-  width: 100%;
-  position: relative;
-  border-radius: 0px;
-  border: none; }
-
-.card-img {
-  position: absolute;
-  top: 0;
-  max-height: 270px;
-  border-radius: 0px; }
-
-.card {
-  border-radius: 0px; }
-
-.card-img-top {
-  border-radius: 0px; }
-
-.blog-card {
-  margin-left: auto;
-  margin-right: auto; }
-
-a.case_study_card {
-  text-decoration: none;
-  color: inherit; }
-  a.case_study_card:hover {
-    text-decoration: none; }
-
-.card {
-  height: 100%; }
-
-.media-logo-box {
-  height: 200px;
-  padding-top: 40px; }
-  @media screen and (max-width: 767px) {
-    .media-logo-box {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      height: auto; } }
-
-.media-logo {
-  max-width: 250px; }
-
-.card-subhead {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #b0b1b3; }
-
-.card-title {
-  min-height: 90px; }
-
-.media-card-content {
-  height: 400px; }
-
-.small-case-img {
-  width: 200px;
-  height: 100px; }
-
-.btn {
-  border-radius: 0px;
-  font-family: "Averia Serif Libre", serif;
-  padding: 10px 50px; }
-
-.btn-primary, .btn-primary-dark, .btn-primary-blue, .btn-primary-dark-sm {
-  background-color: transparent;
-  border: 2px solid #f5CC1C;
-  color: #f5f5f5; }
-  .btn-primary:hover, .btn-primary-dark:hover, .btn-primary-blue:hover, .btn-primary-dark-sm:hover {
-    background-color: #f5CC1C;
-    border: 2px solid #f5CC1C;
-    color: #383838;
-    text-decoration: none; }
-
-.btn-primary-dark, .link-style {
-  color: #383838; }
-
-.btn-primary-blue {
-  color: #00a1ae; }
-
-.nav-btn {
-  padding: 5px 20px; }
-
-.wide {
-  width: 100%;
-  -webkit-transition: width 2s;
-  transition: width 2s; }
-
-.back_link {
-  border-bottom: 2px solid #f5CC1C;
-  color: #383838; }
-  .back_link:hover {
-    text-decoration: none; }
-
-.button-primary-dark-bg {
-  background: rgba(0, 0, 0, 0.6) !important; }
-
-.jobTrigger {
-  -webkit-transition: width 2s;
-  transition: width 2s; }
-
-.link-style, .login {
-  border-top: 2px solid transparent;
-  border-right: 2px solid transparent;
-  border-left: 2px solid transparent;
-  border-bottom: 2px solid #f5CC1C;
-  font-family: "Averia Serif Libre", serif;
-  padding: 10px 0; }
-  .link-style:hover, .login:hover {
-    text-decoration: none;
-    color: #b0b1b3; }
-
-.btn-primary-dark-sm {
-  padding: 5px 25px;
-  color: #000000; }
-
-.placeholder {
-  width: 400px; }
-
-.user {
-  border-radius: 50%;
-  width: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px; }
-
-.world {
-  width: 100%;
-  margin-top: 60px;
-  max-width: 1000px; }
-
-.case-square {
-  width: 100%; }
-
-.jumbotron-fluid {
-  background-size: cover; }
-
-#homeJumbo {
-  background-image: url("../images/home-header-light-2.gif");
-  background-position: bottom;
-  min-height: 600px;
-  padding-top: 150px;
-  padding-bottom: 40px; }
-  @media screen and (max-width: 991px) {
-    #homeJumbo {
-      padding-top: 50px; } }
-
-#learnJumbo {
-  height: 550px; }
-
-#signalsJumbo {
-  background-image: url("../images/product-header.jpg");
-  background-position: center;
-  background-size: cover;
-  background-color: #000000;
-  background-repeat: no-repeat;
-  height: 550px;
-  padding-top: 200px; }
-  @media screen and (max-width: 767px) {
-    #signalsJumbo {
-      background-position: 40% 20%;
-      height: 400px; } }
-
-#head2headJumbo {
-  background-image: url("../images/head-to-head.jpg");
-  background-position: center; }
-
-#specsJumbo {
-  background-image: url("../images/product-specs.jpg");
-  background-position: center; }
-
-#diveJumbo {
-  background-image: url("../images/deeperdive-header.jpg");
-  height: 400px;
-  padding-top: 150px;
-  align-content: center; }
-
-#aboutJumbo {
-  background-image: url("../images/about-header.jpg");
-  height: 400px;
-  padding-top: 100px; }
-
-#solutionsJumbo {
-  background-image: url("../images/solutions-header.jpg");
-  height: 550px;
-  background-position: center;
-  padding-top: 200px; }
-
-#blogJumbo {
-  background-image: url("../images/blog-header.jpg");
-  height: 400px;
-  background-position: center;
-  padding-top: 150px; }
-
-#contactJumbo {
-  background-image: url("../images/contact-header.jpg");
-  height: 400px;
-  background-position: center;
-  padding-top: 150px; }
-
-#worldJumbo {
-  background-image: url("../images/world-map.png");
-  height: 800px;
-  background-position: center;
-  width: 100%;
-  background-size: cover; }
-
-#joinJumbo {
-  background-image: url("../images/joinus-header.jpg");
-  height: 400px;
-  align-content: center;
-  padding-top: 150px; }
-
-#caseJumbo {
-  height: 400px;
-  align-content: center;
-  padding-top: 150px; }
-
-#case_studiesJumbo {
-  background-image: url("../images/case_studies/headers/allcasestudies-photo.jpg");
-  background-position: center;
-  height: 400px;
-  text-align: center;
-  padding-top: 150px; }
-
-#tryJumbo {
-  background-image: url("../images/trysignals-header.jpg");
-  background-position: center;
-  background-size: cover;
-  padding-top: 150px;
-  height: 400px; }
-
-#dataConnector {
-  height: 550px;
-  overflow: hidden; }
-
-#demoBox {
-  background-image: url("../images/requestdemo-photo.jpg");
-  background-position: bottom;
-  background-size: cover;
-  border-top: 1px solid #b0b1b3; }
-
-#contact {
-  border-top: 1px solid #b0b1b3; }
-
-.circle-icon {
-  height: 60px; }
-  @media screen and (max-width: 767px) {
-    .circle-icon {
-      height: 42px; } }
-
-.icon {
-  height: 50px; }
-
-.leadership .fa-linkedin-square {
-  font-size: 30px;
-  color: #0077B5; }
-
-.arrow {
-  width: 169px;
-  height: 70px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.role-icon {
-  height: 80px;
-  width: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px; }
-
-.line {
-  width: 70%; }
-  .line:after {
-    content: "";
-    position: absolute;
-    border-style: solid;
-    border-width: 7px 7px 0;
-    border-color: #FFFFFF transparent;
-    display: block;
-    width: 0;
-    z-index: 1;
-    top: 8px;
-    left: 45%; }
-  .line:before {
-    content: "";
-    position: absolute;
-    border-style: solid;
-    border-width: 7px 7px 0;
-    border-color: #7F7F7F transparent;
-    display: block;
-    width: 0;
-    z-index: 1;
-    top: 9px;
-    left: 45%; }
-
-.giant-arrow {
-  position: relative;
-  background: transparent;
-  border-bottom: 1px solid #ccc;
-  margin: 25px 0 35px 0; }
-  .giant-arrow:after, .giant-arrow:before {
-    top: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none; }
-  .giant-arrow:after {
-    border-color: transparent;
-    border-top-color: #fff;
-    border-width: 30px;
-    margin-left: -30px; }
-  .giant-arrow:before {
-    border-color: transparent;
-    border-top-color: #ccc;
-    border-width: 32px;
-    margin-left: -32px; }
-
-.separator {
-  border-top: 1px solid #eee;
-  height: 1px;
-  margin-top: 15px;
-  opacity: 0.5; }
-
-footer a {
-  color: #f5f5f5;
-  opacity: 0.7; }
-
-.contactform {
-  background-color: #ffffff;
-  padding: 50px 50px; }
-
-.cognito .c-label label {
-  font-weight: 300;
-  font-family: "Yantramanav", serif;
-  font-size: 17px;
-  color: #6a6a6a; }
-.cognito .c-forms-confirmation .c-forms-confirmation-message span {
-  text-align: center;
-  font-size: 22px;
-  font-family: "Averia Serif Libre", serif; }
-
-#c-submit-button {
-  background-color: #ffffff;
-  color: #000000;
-  font-family: "Averia Serif Libre", serif;
-  font-size: 1rem;
-  width: 100%;
-  border-radius: 0;
-  border: 2px solid #f5CC1C; }
-
-.nav-pills {
-  display: inline-block; }
-  .nav-pills .nav-item .nav-link {
-    font-family: "Averia Serif Libre", serif;
-    color: #00a1ae;
-    border-radius: 0;
-    border-bottom: 2px solid #ffffff; }
-    .nav-pills .nav-item .nav-link:focus {
-      background-color: #ffffff;
-      color: #00a1ae; }
-  .nav-pills .nav-item .active {
-    background-color: #ffffff;
-    border-bottom: 2px solid #f5CC1C; }
-
-.feed-container {
-  font-family: "Yantramanav", serif; }
-  .feed-container .feed-item {
-    margin-bottom: 20px; }
-    @media screen and (max-width: 34em) {
-      .feed-container .feed-item {
-        min-height: auto !important; } }
-    .feed-container .feed-item:hover .post-title {
-      color: #b0b1b3; }
-  .feed-container a {
-    color: #6a6a6a; }
-    .feed-container a:hover {
-      text-decoration: none; }
-    .feed-container a.card {
-      height: 100%; }
-  .feed-container .post-image-container {
-    width: 100%;
-    height: auto;
-    max-height: 280px;
-    overflow: hidden; }
-    @media (min-width: 24em) {
-      .feed-container .post-image-container {
-        height: auto; } }
-    @media (min-width: 34em) {
-      .feed-container .post-image-container {
-        height: 150px; } }
-    @media (min-width: 48em) {
-      .feed-container .post-image-container {
-        height: 180px; } }
-    @media (min-width: 62em) {
-      .feed-container .post-image-container {
-        height: 175px; } }
-    @media (min-width: 75em) {
-      .feed-container .post-image-container {
-        height: 200px; } }
-    .feed-container .post-image-container img {
-      max-width: 100%; }
-  @media (min-width: 24em) {
-    .news .feed-container .post-image-container {
-      height: auto; } }
-  @media (min-width: 34em) {
-    .news .feed-container .post-image-container {
-      height: 200px; } }
-  @media (min-width: 48em) {
-    .news .feed-container .post-image-container {
-      height: 200px; } }
-  @media (min-width: 62em) {
-    .news .feed-container .post-image-container {
-      height: 200px; } }
-  @media (min-width: 75em) {
-    .news .feed-container .post-image-container {
-      height: 200px; } }
-  .feed-container .post-title {
-    font-size: 1.5rem;
-    font-weight: normal;
-    text-align: left;
-    margin-bottom: 0.75rem;
-    padding: 0 10px;
-    font-family: "Yantramanav", serif; }
-    @media screen and (max-width: 543px) {
-      .feed-container .post-title {
-        font-size: 16px; } }
-  .feed-container .post-body {
-    text-align: left; }
-    @media screen and (max-width: 543px) {
-      .feed-container .post-body {
-        font-size: 14px; } }
-  .feed-container .post-date {
-    padding: 0 10px;
-    color: #6a6a6a;
-    text-align: left;
-    margin-top: 10px; }
-
-#rss-feeds {
-  margin-top: 40px; }
-
-.featured-post .post-image-container {
-  max-height: 250px;
-  overflow: hidden; }
-  .featured-post .post-image-container img {
-    max-width: 600px;
-    position: relative;
-    top: -20%; }
-.featured-post .date-author {
-  margin: 10px 0 20px;
-  color: #6a6a6a; }
-.featured-post a {
-  color: #6a6a6a; }
-  .featured-post a:hover, .featured-post a:focus {
-    text-decoration: none; }
-
-#twitter-widget-0 .timeline-Widget {
-  background-color: red !important; }
-  #twitter-widget-0 .timeline-Widget .timeline-header .timeline-header-title {
-    color: pink; }
-
-.analytics {
-  width: 733px;
-  height: 550px; }
-
-.data-sources {
-  width: 820px;
-  height: 392px; }
-
-.visualization-layer {
-  width: 984px;
-  height: 496px; }
+/*
+Error: File to import not found or unreadable: components/tooltip.
+        on line 37 of /Users/apple/Documents/New_STWebsite/new-STWebsite-test/source/assets/stylesheets/index.sass
+
+32: 
+33: // 7. Themes (admin, logged-in, logged-out)
+34: 
+35: 
+36: // 8. Tooltips
+37: @import "components/tooltip"
+
+Backtrace:
+/Users/apple/Documents/New_STWebsite/new-STWebsite-test/source/assets/stylesheets/index.sass:37
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/renderers/sass.rb:68:in `evaluate'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/file_renderer.rb:79:in `render'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/template_renderer.rb:186:in `_render_with_all_renderers'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/template_renderer.rb:149:in `block in render'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/activesupport-4.2.7/lib/active_support/notifications.rb:166:in `instrument'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/util.rb:21:in `instrument'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/template_renderer.rb:148:in `render'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/sitemap/resource.rb:154:in `render'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/rack.rb:112:in `process_request'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/rack.rb:66:in `block in call'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/rack.rb:65:in `catch'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/rack.rb:65:in `call'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/rack-1.6.4/lib/rack/urlmap.rb:66:in `block in call'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `each'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `call'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/core_extensions/inline_url_rewriter.rb:74:in `call'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/rack-1.6.4/lib/rack/builder.rb:153:in `call'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/rack-1.6.4/lib/rack/mock.rb:74:in `request'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/rack-1.6.4/lib/rack/mock.rb:56:in `get'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/builder.rb:230:in `block in output_resource'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/activesupport-4.2.7/lib/active_support/notifications.rb:166:in `instrument'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/util.rb:21:in `instrument'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/builder.rb:223:in `output_resource'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:451:in `call'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:451:in `call_with_index'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:422:in `process_incoming_jobs'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:404:in `block in worker'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:395:in `fork'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:395:in `worker'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:386:in `block in create_workers'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:385:in `each'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:385:in `each_with_index'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:385:in `create_workers'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:327:in `work_in_processes'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/parallel-1.9.0/lib/parallel.rb:241:in `map'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/builder.rb:135:in `output_resources'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/builder.rb:129:in `output_files'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/builder.rb:71:in `block in run!'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/activesupport-4.2.7/lib/active_support/notifications.rb:166:in `instrument'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/util.rb:21:in `instrument'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/builder.rb:70:in `run!'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-cli-4.1.10/lib/middleman-cli/build.rb:80:in `block in build'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/activesupport-4.2.7/lib/active_support/notifications.rb:166:in `instrument'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-core-4.1.10/lib/middleman-core/util.rb:21:in `instrument'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-cli-4.1.10/lib/middleman-cli/build.rb:79:in `build'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `block in invoke_all'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `each'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `map'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/invocation.rb:133:in `invoke_all'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/group.rb:232:in `dispatch'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/invocation.rb:115:in `invoke'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor.rb:40:in `block in register'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+/Users/apple/.rvm/gems/ruby-2.2.4@global/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+/Users/apple/.rvm/gems/ruby-2.2.4/gems/middleman-cli-4.1.10/bin/middleman:72:in `<top (required)>'
+/Users/apple/.rvm/gems/ruby-2.2.4/bin/middleman:23:in `load'
+/Users/apple/.rvm/gems/ruby-2.2.4/bin/middleman:23:in `<main>'
+/Users/apple/.rvm/gems/ruby-2.2.4/bin/ruby_executable_hooks:15:in `eval'
+/Users/apple/.rvm/gems/ruby-2.2.4/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: components/tooltip.\A         on line 37 of /Users/apple/Documents/New_STWebsite/new-STWebsite-test/source/assets/stylesheets/index.sass\A \A 32: \A 33: // 7. Themes (admin, logged-in, logged-out)\A 34: \A 35: \A 36: // 8. Tooltips\A 37: @import \"components/tooltip\""; }

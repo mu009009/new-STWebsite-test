@@ -80,7 +80,7 @@ $(document).ready(function(){
             target: null,
             remove: false
           });
-          $('.post-image-container').children().matchHeight({
+          $('.post-image-container').matchHeight({
             byRow: true,
             property: 'min-height',
             target: null,
@@ -125,7 +125,7 @@ $(document).ready(function(){
             target: null,
             remove: false
           });
-          $('.post-image-container').children().matchHeight({
+          $('.post-image-container').matchHeight({
             byRow: true,
             property: 'min-height',
             target: null,
